@@ -1,0 +1,7 @@
+`@minecraft/server-graphics`
+
+== Change Log ==
+=== 1.0.0-beta ===
+- Added `@minecraft/server-graphics` module
+
+== /Change Log ==

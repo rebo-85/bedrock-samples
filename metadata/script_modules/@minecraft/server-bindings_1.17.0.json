@@ -1,10 +1,8 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -109,8 +107,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -126,8 +123,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -299,8 +295,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -337,8 +332,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -409,8 +403,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -1109,10 +1102,8 @@
           "name": "Component"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponent",
       "properties": [
         {
@@ -1145,10 +1136,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentEntityFallOnEvent",
       "properties": [
         {
@@ -1205,10 +1194,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentOnPlaceEvent",
       "properties": [
         {
@@ -1241,10 +1228,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentPlayerDestroyEvent",
       "properties": [
         {
@@ -1297,10 +1282,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentPlayerInteractEvent",
       "properties": [
         {
@@ -1373,10 +1356,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentPlayerPlaceBeforeEvent",
       "properties": [
         {
@@ -1469,13 +1450,10 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentRandomTickEvent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1483,10 +1461,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -1567,8 +1543,7 @@
         }
       ],
       "name": "BlockComponentRegistry",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1583,10 +1558,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentStepOffEvent",
       "properties": [
         {
@@ -1624,10 +1597,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentStepOnEvent",
       "properties": [
         {
@@ -1665,13 +1636,10 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockComponentTickEvent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1679,12 +1647,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "BlockEvent",
       "properties": [
         {
@@ -1732,10 +1697,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "BlockExplodeAfterEvent",
       "properties": [
         {
@@ -1781,10 +1744,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -1891,8 +1852,7 @@
         }
       ],
       "name": "BlockExplodeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1948,8 +1908,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2091,8 +2050,7 @@
           "value": "minecraft:inventory"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "BlockInventoryComponent",
       "properties": [
         {
@@ -2123,12 +2081,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "iterator": {
         "error_types": [
           {
@@ -2147,8 +2102,7 @@
         }
       },
       "name": "BlockLocationIterator",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -2156,14 +2110,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -2301,8 +2252,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -2598,8 +2548,7 @@
       ],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -2620,8 +2569,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -2704,8 +2652,7 @@
       ],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2721,8 +2668,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -2743,8 +2689,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -2760,8 +2705,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2777,8 +2721,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2851,8 +2794,7 @@
         }
       ],
       "name": "BlockRecordPlayerComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -3125,10 +3067,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -3162,8 +3102,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -3185,8 +3124,7 @@
         }
       ],
       "name": "BlockStates",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -3194,12 +3132,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "BlockStateType",
       "properties": [
         {
@@ -3266,12 +3201,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "BlockType",
       "properties": [
         {
@@ -3297,10 +3229,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -3334,8 +3264,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -3357,8 +3286,7 @@
         }
       ],
       "name": "BlockTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -3373,8 +3301,7 @@
           "name": "BlockVolumeBase"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -3539,14 +3466,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -3562,8 +3486,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -3583,8 +3506,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -3600,8 +3522,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -3617,8 +3538,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -3687,8 +3607,7 @@
         }
       ],
       "name": "BlockVolumeBase",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -3703,10 +3622,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ButtonPushAfterEvent",
       "properties": [
         {
@@ -3739,13 +3656,10 @@
           "name": "IButtonPushAfterEventSignal"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ButtonPushAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -3753,14 +3667,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -3889,8 +3800,7 @@
         }
       ],
       "name": "Camera",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -3905,10 +3815,8 @@
           "name": "SystemInfo"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ClientSystemInfo",
       "properties": [
         {
@@ -3953,12 +3861,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "CommandResult",
       "properties": [
         {
@@ -3988,14 +3893,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4036,10 +3938,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -4085,8 +3985,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -4173,8 +4072,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4498,14 +4396,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4528,8 +4423,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4557,8 +4451,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4659,8 +4552,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4688,8 +4580,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4716,8 +4607,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4745,8 +4635,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4774,8 +4663,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4803,8 +4691,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4893,8 +4780,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -5432,14 +5318,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -5500,10 +5383,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -5626,8 +5507,7 @@
         }
       ],
       "name": "DataDrivenEntityTriggerAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -5635,10 +5515,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -6809,12 +6687,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "DimensionType",
       "properties": [
         {
@@ -6840,10 +6715,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -6880,8 +6753,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -6906,8 +6778,7 @@
         }
       ],
       "name": "DimensionTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -6915,14 +6786,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -7016,12 +6884,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EffectAddAfterEvent",
       "properties": [
         {
@@ -7062,10 +6927,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -7188,8 +7051,7 @@
         }
       ],
       "name": "EffectAddAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -7197,12 +7059,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EffectAddBeforeEvent",
       "properties": [
         {
@@ -7287,10 +7146,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -7397,8 +7254,7 @@
         }
       ],
       "name": "EffectAddBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -7406,14 +7262,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -7430,8 +7283,7 @@
         }
       ],
       "name": "EffectType",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -7439,10 +7291,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -7476,8 +7326,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -7499,8 +7348,7 @@
         }
       ],
       "name": "EffectTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -7508,10 +7356,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -7583,10 +7429,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -7620,8 +7464,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -7643,8 +7486,7 @@
         }
       ],
       "name": "EnchantmentTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -7652,10 +7494,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -8032,8 +7872,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8056,8 +7895,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -8191,8 +8029,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8286,8 +8123,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8315,8 +8151,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8403,8 +8238,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8507,8 +8341,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8590,8 +8423,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8614,8 +8446,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8643,8 +8474,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8667,8 +8497,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8750,8 +8579,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -8767,8 +8595,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -8893,8 +8720,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -9915,8 +9741,7 @@
           "value": "minecraft:addrider"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityAddRiderComponent",
       "properties": [
         {
@@ -9979,8 +9804,7 @@
       ],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -10001,8 +9825,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -10089,12 +9912,10 @@
           "name": "EntityComponent"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -10110,8 +9931,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -10127,8 +9947,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -10267,10 +10086,8 @@
           "name": "EntityComponent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "EntityBaseMovementComponent",
       "properties": [
         {
@@ -10322,8 +10139,7 @@
       ],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -10344,8 +10160,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -10528,11 +10343,9 @@
           "value": "minecraft:can_climb"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityCanClimbComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -10560,11 +10373,9 @@
           "value": "minecraft:can_fly"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityCanFlyComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -10592,11 +10403,9 @@
           "value": "minecraft:can_power_jump"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityCanPowerJumpComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -10624,8 +10433,7 @@
           "value": "minecraft:color2"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityColor2Component",
       "properties": [
         {
@@ -10671,8 +10479,7 @@
           "value": "minecraft:color"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityColorComponent",
       "properties": [
         {
@@ -10714,10 +10521,8 @@
           "name": "Component"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "EntityComponent",
       "properties": [
         {
@@ -10743,12 +10548,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityDefinitionFeedItem",
       "properties": [
         {
@@ -10793,12 +10595,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityDieAfterEvent",
       "properties": [
         {
@@ -10839,10 +10638,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -10965,8 +10762,7 @@
         }
       ],
       "name": "EntityDieAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -11096,8 +10892,7 @@
         }
       ],
       "name": "EntityEquippableComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -11125,11 +10920,9 @@
           "value": "minecraft:fire_immune"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityFireImmuneComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -11157,11 +10950,9 @@
           "value": "minecraft:floats_in_liquid"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityFloatsInLiquidComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -11189,8 +10980,7 @@
           "value": "minecraft:flying_speed"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityFlyingSpeedComponent",
       "properties": [
         {
@@ -11245,8 +11035,7 @@
           "value": "minecraft:friction_modifier"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityFrictionModifierComponent",
       "properties": [
         {
@@ -11301,8 +11090,7 @@
           "value": "minecraft:ground_offset"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityGroundOffsetComponent",
       "properties": [
         {
@@ -11359,8 +11147,7 @@
       ],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -11406,12 +11193,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityHealthChangedAfterEvent",
       "properties": [
         {
@@ -11475,10 +11259,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -11601,8 +11383,7 @@
         }
       ],
       "name": "EntityHealthChangedAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -11630,11 +11411,9 @@
           "value": "minecraft:health"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityHealthComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -11642,12 +11421,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityHitBlockAfterEvent",
       "properties": [
         {
@@ -11718,10 +11494,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -11844,8 +11618,7 @@
         }
       ],
       "name": "EntityHitBlockAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -11853,12 +11626,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityHitEntityAfterEvent",
       "properties": [
         {
@@ -11899,10 +11669,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -12025,8 +11793,7 @@
         }
       ],
       "name": "EntityHitEntityAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12034,12 +11801,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityHurtAfterEvent",
       "properties": [
         {
@@ -12099,10 +11863,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -12225,8 +11987,7 @@
         }
       ],
       "name": "EntityHurtAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12254,8 +12015,7 @@
           "value": "minecraft:inventory"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityInventoryComponent",
       "properties": [
         {
@@ -12404,11 +12164,9 @@
           "value": "minecraft:is_baby"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsBabyComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12436,11 +12194,9 @@
           "value": "minecraft:is_charged"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsChargedComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12468,11 +12224,9 @@
           "value": "minecraft:is_chested"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsChestedComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12500,11 +12254,9 @@
           "value": "minecraft:is_dyeable"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsDyeableComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12532,11 +12284,9 @@
           "value": "minecraft:is_hidden_when_invisible"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsHiddenWhenInvisibleComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12564,11 +12314,9 @@
           "value": "minecraft:is_ignited"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsIgnitedComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12596,11 +12344,9 @@
           "value": "minecraft:is_illager_captain"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsIllagerCaptainComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12628,11 +12374,9 @@
           "value": "minecraft:is_saddled"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsSaddledComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12660,11 +12404,9 @@
           "value": "minecraft:is_shaking"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsShakingComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12692,11 +12434,9 @@
           "value": "minecraft:is_sheared"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsShearedComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12724,11 +12464,9 @@
           "value": "minecraft:is_stackable"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsStackableComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12756,11 +12494,9 @@
           "value": "minecraft:is_stunned"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsStunnedComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12788,11 +12524,9 @@
           "value": "minecraft:is_tamed"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityIsTamedComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12820,8 +12554,7 @@
           "value": "minecraft:item"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityItemComponent",
       "properties": [
         {
@@ -12867,11 +12600,9 @@
           "value": "minecraft:lava_movement"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityLavaMovementComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -12927,8 +12658,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -13081,12 +12811,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityLoadAfterEvent",
       "properties": [
         {
@@ -13117,10 +12844,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -13227,8 +12952,7 @@
         }
       ],
       "name": "EntityLoadAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13256,8 +12980,7 @@
           "value": "minecraft:mark_variant"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMarkVariantComponent",
       "properties": [
         {
@@ -13312,11 +13035,9 @@
           "value": "minecraft:movement.amphibious"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementAmphibiousComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13344,11 +13065,9 @@
           "value": "minecraft:movement.basic"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementBasicComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13376,11 +13095,9 @@
           "value": "minecraft:movement"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13408,11 +13125,9 @@
           "value": "minecraft:movement.fly"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementFlyComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13440,11 +13155,9 @@
           "value": "minecraft:movement.generic"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementGenericComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13472,8 +13185,7 @@
           "value": "minecraft:movement.glide"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementGlideComponent",
       "properties": [
         {
@@ -13542,11 +13254,9 @@
           "value": "minecraft:movement.hover"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementHoverComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13574,11 +13284,9 @@
           "value": "minecraft:movement.jump"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementJumpComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13606,11 +13314,9 @@
           "value": "minecraft:movement.skip"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementSkipComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13638,8 +13344,7 @@
           "value": "minecraft:movement.sway"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityMovementSwayComponent",
       "properties": [
         {
@@ -13708,11 +13413,9 @@
           "value": "minecraft:navigation.climb"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityNavigationClimbComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -13727,10 +13430,8 @@
           "name": "EntityComponent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "EntityNavigationComponent",
       "properties": [
         {
@@ -14046,11 +13747,9 @@
           "value": "minecraft:navigation.float"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityNavigationFloatComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -14078,11 +13777,9 @@
           "value": "minecraft:navigation.fly"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityNavigationFlyComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -14110,11 +13807,9 @@
           "value": "minecraft:navigation.generic"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityNavigationGenericComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -14142,11 +13837,9 @@
           "value": "minecraft:navigation.hover"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityNavigationHoverComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -14174,11 +13867,9 @@
           "value": "minecraft:navigation.walk"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityNavigationWalkComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -14206,8 +13897,7 @@
           "value": "minecraft:onfire"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityOnFireComponent",
       "properties": [
         {
@@ -14647,8 +14337,7 @@
           "value": "minecraft:push_through"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityPushThroughComponent",
       "properties": [
         {
@@ -14683,12 +14372,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityRemoveAfterEvent",
       "properties": [
         {
@@ -14729,10 +14415,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -14855,8 +14539,7 @@
         }
       ],
       "name": "EntityRemoveAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -14864,12 +14547,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityRemoveBeforeEvent",
       "properties": [
         {
@@ -14895,10 +14575,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -15005,8 +14683,7 @@
         }
       ],
       "name": "EntityRemoveBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -15088,8 +14765,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -15105,8 +14781,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -15127,8 +14802,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -15149,8 +14823,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -15318,8 +14991,7 @@
           "value": "minecraft:riding"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityRidingComponent",
       "properties": [
         {
@@ -15365,8 +15037,7 @@
           "value": "minecraft:scale"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityScaleComponent",
       "properties": [
         {
@@ -15421,8 +15092,7 @@
           "value": "minecraft:skin_id"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntitySkinIdComponent",
       "properties": [
         {
@@ -15457,12 +15127,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntitySpawnAfterEvent",
       "properties": [
         {
@@ -15508,10 +15175,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -15618,8 +15283,7 @@
         }
       ],
       "name": "EntitySpawnAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -15647,8 +15311,7 @@
           "value": "minecraft:strength"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityStrengthComponent",
       "properties": [
         {
@@ -16012,12 +15675,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "EntityType",
       "properties": [
         {
@@ -16065,8 +15725,7 @@
       ],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -16114,8 +15773,7 @@
         }
       ],
       "name": "EntityTypeFamilyComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -16123,10 +15781,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -16160,8 +15816,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -16183,8 +15838,7 @@
         }
       ],
       "name": "EntityTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -16212,11 +15866,9 @@
           "value": "minecraft:underwater_movement"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityUnderwaterMovementComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -16244,8 +15896,7 @@
           "value": "minecraft:variant"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityVariantComponent",
       "properties": [
         {
@@ -16295,11 +15946,9 @@
           "value": "minecraft:wants_jockey"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "EntityWantsJockeyComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -16307,14 +15956,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -16380,10 +16026,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -16490,8 +16134,7 @@
         }
       ],
       "name": "ExplosionAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -16506,8 +16149,7 @@
           "name": "ExplosionAfterEvent"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -16571,10 +16213,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -16681,8 +16321,7 @@
         }
       ],
       "name": "ExplosionBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -16690,14 +16329,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -16762,12 +16398,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "FeedItemEffect",
       "properties": [
         {
@@ -16850,8 +16483,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "constants": [
         {
           "is_read_only": true,
@@ -16884,11 +16516,9 @@
           "value": 0
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "FluidContainer",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -16896,12 +16526,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "GameRuleChangeAfterEvent",
       "properties": [
         {
@@ -16958,10 +16585,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -17068,8 +16693,7 @@
         }
       ],
       "name": "GameRuleChangeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -17077,12 +16701,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "GameRules",
       "properties": [
         {
@@ -17853,10 +17474,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -17963,8 +17582,7 @@
         }
       ],
       "name": "IButtonPushAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -17972,10 +17590,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -18082,8 +17698,7 @@
         }
       ],
       "name": "ILeverActionAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -18091,12 +17706,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "InputInfo",
       "properties": [
         {
@@ -18161,10 +17773,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -18271,8 +17881,7 @@
         }
       ],
       "name": "IPlayerJoinAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -18280,10 +17889,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -18390,8 +17997,7 @@
         }
       ],
       "name": "IPlayerLeaveAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -18399,10 +18005,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -18509,8 +18113,7 @@
         }
       ],
       "name": "IPlayerSpawnAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -18518,12 +18121,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemCompleteUseAfterEvent",
       "properties": [
         {
@@ -18583,10 +18183,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -18693,8 +18291,7 @@
         }
       ],
       "name": "ItemCompleteUseAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -18702,12 +18299,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemCompleteUseEvent",
       "properties": [
         {
@@ -18755,13 +18349,10 @@
           "name": "Component"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -18769,12 +18360,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponentBeforeDurabilityDamageEvent",
       "properties": [
         {
@@ -18871,13 +18459,10 @@
           "name": "ItemCompleteUseEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponentCompleteUseEvent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -18885,12 +18470,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponentConsumeEvent",
       "properties": [
         {
@@ -18931,12 +18513,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponentHitEntityEvent",
       "properties": [
         {
@@ -19012,12 +18591,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponentMineBlockEvent",
       "properties": [
         {
@@ -19093,10 +18669,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -19177,8 +18751,7 @@
         }
       ],
       "name": "ItemComponentRegistry",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -19186,12 +18759,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponentUseEvent",
       "properties": [
         {
@@ -19244,10 +18814,8 @@
           "name": "ItemUseOnEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ItemComponentUseOnEvent",
       "properties": [
         {
@@ -19308,8 +18876,7 @@
           "value": "minecraft:compostable"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "ItemCompostableComponent",
       "properties": [
         {
@@ -19547,8 +19114,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -19833,8 +19399,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -19900,8 +19465,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -20017,8 +19581,7 @@
           "value": "minecraft:food"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "ItemFoodComponent",
       "properties": [
         {
@@ -20097,12 +19660,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemReleaseUseAfterEvent",
       "properties": [
         {
@@ -20167,10 +19727,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -20277,8 +19835,7 @@
         }
       ],
       "name": "ItemReleaseUseAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -20286,14 +19843,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -20309,8 +19863,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -20380,8 +19933,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -20402,8 +19954,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -20455,8 +20006,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -20543,8 +20093,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -20565,8 +20114,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -20586,8 +20134,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -20608,8 +20155,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -21186,12 +20732,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemStartUseAfterEvent",
       "properties": [
         {
@@ -21251,10 +20794,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -21361,8 +20902,7 @@
         }
       ],
       "name": "ItemStartUseAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -21370,12 +20910,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemStartUseOnAfterEvent",
       "properties": [
         {
@@ -21451,10 +20988,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -21561,8 +21096,7 @@
         }
       ],
       "name": "ItemStartUseOnAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -21570,12 +21104,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemStopUseAfterEvent",
       "properties": [
         {
@@ -21640,10 +21171,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -21750,8 +21279,7 @@
         }
       ],
       "name": "ItemStopUseAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -21759,12 +21287,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemStopUseOnAfterEvent",
       "properties": [
         {
@@ -21825,10 +21350,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -21935,8 +21458,7 @@
         }
       ],
       "name": "ItemStopUseOnAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -21944,12 +21466,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemType",
       "properties": [
         {
@@ -21975,10 +21494,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -22012,8 +21529,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -22035,8 +21551,7 @@
         }
       ],
       "name": "ItemTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -22044,12 +21559,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemUseAfterEvent",
       "properties": [
         {
@@ -22095,10 +21607,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -22205,8 +21715,7 @@
         }
       ],
       "name": "ItemUseAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -22221,10 +21730,8 @@
           "name": "ItemUseAfterEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ItemUseBeforeEvent",
       "properties": [
         {
@@ -22255,10 +21762,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -22365,8 +21870,7 @@
         }
       ],
       "name": "ItemUseBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -22374,12 +21878,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemUseOnAfterEvent",
       "properties": [
         {
@@ -22480,10 +21981,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -22590,8 +22089,7 @@
         }
       ],
       "name": "ItemUseOnAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -22606,10 +22104,8 @@
           "name": "ItemUseOnAfterEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ItemUseOnBeforeEvent",
       "properties": [
         {
@@ -22640,10 +22136,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -22750,8 +22244,7 @@
         }
       ],
       "name": "ItemUseOnBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -22759,12 +22252,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ItemUseOnEvent",
       "properties": [
         {
@@ -22842,10 +22332,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "LeverActionAfterEvent",
       "properties": [
         {
@@ -22893,13 +22381,10 @@
           "name": "ILeverActionAfterEventSignal"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "LeverActionAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -22914,8 +22399,7 @@
           "name": "BlockVolumeBase"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -23011,8 +22495,7 @@
         }
       ],
       "name": "ListBlockVolume",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -23020,8 +22503,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "constants": [
         {
           "is_read_only": true,
@@ -23057,11 +22539,9 @@
           "value": "minecraft:the_end"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "MinecraftDimensionTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -23069,14 +22549,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -23290,8 +22767,7 @@
         }
       ],
       "name": "MolangVariableMap",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -23306,10 +22782,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PistonActivateAfterEvent",
       "properties": [
         {
@@ -23350,10 +22824,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -23460,8 +22932,7 @@
         }
       ],
       "name": "PistonActivateAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -23476,8 +22947,7 @@
           "name": "Entity"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -23554,8 +23024,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -23601,8 +23070,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -23623,8 +23091,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -23770,8 +23237,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -23979,8 +23445,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -24244,10 +23709,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PlayerBreakBlockAfterEvent",
       "properties": [
         {
@@ -24328,10 +23791,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -24454,8 +23915,7 @@
         }
       ],
       "name": "PlayerBreakBlockAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -24470,10 +23930,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PlayerBreakBlockBeforeEvent",
       "properties": [
         {
@@ -24544,10 +24002,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -24670,8 +24126,7 @@
         }
       ],
       "name": "PlayerBreakBlockBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -24701,8 +24156,7 @@
       ],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -24748,12 +24202,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerDimensionChangeAfterEvent",
       "properties": [
         {
@@ -24839,10 +24290,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -24949,8 +24398,7 @@
         }
       ],
       "name": "PlayerDimensionChangeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -24958,12 +24406,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerEmoteAfterEvent",
       "properties": [
         {
@@ -25004,10 +24449,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -25114,8 +24557,7 @@
         }
       ],
       "name": "PlayerEmoteAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -25123,12 +24565,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerGameModeChangeAfterEvent",
       "properties": [
         {
@@ -25184,10 +24623,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -25294,8 +24731,7 @@
         }
       ],
       "name": "PlayerGameModeChangeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -25303,12 +24739,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerGameModeChangeBeforeEvent",
       "properties": [
         {
@@ -25389,10 +24822,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -25499,8 +24930,7 @@
         }
       ],
       "name": "PlayerGameModeChangeBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -25508,12 +24938,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerInputModeChangeAfterEvent",
       "properties": [
         {
@@ -25569,10 +24996,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -25679,8 +25104,7 @@
         }
       ],
       "name": "PlayerInputModeChangeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -25688,12 +25112,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerInputPermissionCategoryChangeAfterEvent",
       "properties": [
         {
@@ -25749,10 +25170,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -25859,8 +25278,7 @@
         }
       ],
       "name": "PlayerInputPermissionCategoryChangeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -25868,10 +25286,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -25985,12 +25401,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerInteractWithBlockAfterEvent",
       "properties": [
         {
@@ -26116,10 +25529,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -26226,8 +25637,7 @@
         }
       ],
       "name": "PlayerInteractWithBlockAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -26235,12 +25645,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerInteractWithBlockBeforeEvent",
       "properties": [
         {
@@ -26366,10 +25773,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -26476,8 +25881,7 @@
         }
       ],
       "name": "PlayerInteractWithBlockBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -26485,12 +25889,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerInteractWithEntityAfterEvent",
       "properties": [
         {
@@ -26571,10 +25972,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -26681,8 +26080,7 @@
         }
       ],
       "name": "PlayerInteractWithEntityAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -26690,12 +26088,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerInteractWithEntityBeforeEvent",
       "properties": [
         {
@@ -26776,10 +26171,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -26886,8 +26279,7 @@
         }
       ],
       "name": "PlayerInteractWithEntityBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -26895,12 +26287,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerJoinAfterEvent",
       "properties": [
         {
@@ -26948,13 +26337,10 @@
           "name": "IPlayerJoinAfterEventSignal"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PlayerJoinAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -26962,12 +26348,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerLeaveAfterEvent",
       "properties": [
         {
@@ -27015,13 +26398,10 @@
           "name": "IPlayerLeaveAfterEventSignal"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PlayerLeaveAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -27029,12 +26409,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerLeaveBeforeEvent",
       "properties": [
         {
@@ -27060,10 +26437,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -27170,8 +26545,7 @@
         }
       ],
       "name": "PlayerLeaveBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -27186,10 +26560,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PlayerPlaceBlockAfterEvent",
       "properties": [
         {
@@ -27215,10 +26587,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -27341,8 +26711,7 @@
         }
       ],
       "name": "PlayerPlaceBlockAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -27350,12 +26719,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PlayerSpawnAfterEvent",
       "properties": [
         {
@@ -27413,13 +26779,10 @@
           "name": "IPlayerSpawnAfterEventSignal"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PlayerSpawnAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -27434,10 +26797,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PressurePlatePopAfterEvent",
       "properties": [
         {
@@ -27486,10 +26847,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -27596,8 +26955,7 @@
         }
       ],
       "name": "PressurePlatePopAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -27612,10 +26970,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "PressurePlatePushAfterEvent",
       "properties": [
         {
@@ -27679,10 +27035,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -27789,8 +27143,7 @@
         }
       ],
       "name": "PressurePlatePushAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -27798,14 +27151,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -27911,10 +27261,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -28021,8 +27369,7 @@
         }
       ],
       "name": "ProjectileHitBlockAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -28030,14 +27377,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -28143,10 +27487,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -28253,8 +27595,7 @@
         }
       ],
       "name": "ProjectileHitEntityAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -28262,10 +27603,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -28403,8 +27742,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -28425,8 +27763,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -28526,8 +27863,7 @@
         }
       ],
       "name": "Scoreboard",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -28535,14 +27871,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -28563,8 +27896,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -28639,10 +27971,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -28708,8 +28038,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -28782,8 +28111,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -28847,8 +28175,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -29006,12 +28333,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ScoreboardScoreInfo",
       "properties": [
         {
@@ -29056,14 +28380,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -29169,8 +28490,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -29186,8 +28506,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -29507,8 +28826,7 @@
         }
       ],
       "name": "ScreenDisplay",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -29516,12 +28834,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "ScriptEventCommandMessageAfterEvent",
       "properties": [
         {
@@ -29637,10 +28952,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -29763,8 +29076,7 @@
         }
       ],
       "name": "ScriptEventCommandMessageAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -29772,12 +29084,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "Seat",
       "properties": [
         {
@@ -29879,10 +29188,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -29976,8 +29283,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -30057,8 +29363,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -30198,10 +29503,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -30434,8 +29737,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -30556,8 +29858,7 @@
         }
       ],
       "name": "StructureManager",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -30565,10 +29866,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -30649,8 +29948,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -30694,8 +29992,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -30809,8 +30106,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -30989,12 +30285,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "SystemAfterEvents",
       "properties": [
         {
@@ -31023,12 +30316,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "SystemInfo",
       "properties": [
         {
@@ -31061,10 +30351,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "TargetBlockHitAfterEvent",
       "properties": [
         {
@@ -31143,10 +30431,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -31253,8 +30539,7 @@
         }
       ],
       "name": "TargetBlockHitAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -31262,10 +30547,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -31330,10 +30613,8 @@
           "name": "BlockEvent"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "TripWireTripAfterEvent",
       "properties": [
         {
@@ -31379,10 +30660,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -31489,8 +30768,7 @@
         }
       ],
       "name": "TripWireTripAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -31498,12 +30776,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "WeatherChangeAfterEvent",
       "properties": [
         {
@@ -31559,10 +30834,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -31669,8 +30942,7 @@
         }
       ],
       "name": "WeatherChangeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -31678,12 +30950,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "WeatherChangeBeforeEvent",
       "properties": [
         {
@@ -31773,10 +31042,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -31883,8 +31150,7 @@
         }
       ],
       "name": "WeatherChangeBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -31892,14 +31158,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -31915,8 +31178,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -31936,8 +31198,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -31975,8 +31236,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -31996,8 +31256,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -32105,8 +31364,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -32127,8 +31385,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -32179,8 +31436,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -32251,8 +31507,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -32705,8 +31960,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -32828,12 +32082,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "WorldAfterEvents",
       "properties": [
         {
@@ -33621,12 +32872,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "WorldBeforeEvents",
       "properties": [
         {
@@ -33853,15 +33101,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "WorldInitializeAfterEvent",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -33869,10 +33113,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -33979,8 +33221,7 @@
         }
       ],
       "name": "WorldInitializeAfterEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -33988,12 +33229,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "WorldInitializeBeforeEvent",
       "properties": [
         {
@@ -34034,10 +33272,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -34144,8 +33380,7 @@
         }
       ],
       "name": "WorldInitializeBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -34215,8 +33450,7 @@
       "value": 20
     }
   ],
-  "dependencies": [
-  ],
+  "dependencies": [],
   "enums": [
     {
       "constants": [
@@ -38274,8 +37508,7 @@
   "errors": [
     {
       "name": "BlockCustomComponentAlreadyRegisteredError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38284,8 +37517,7 @@
     },
     {
       "name": "BlockCustomComponentReloadNewComponentError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38294,8 +37526,7 @@
     },
     {
       "name": "BlockCustomComponentReloadNewEventError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38304,8 +37535,7 @@
     },
     {
       "name": "BlockCustomComponentReloadVersionError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38314,8 +37544,7 @@
     },
     {
       "name": "CommandError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38324,8 +37553,7 @@
     },
     {
       "name": "ContainerRulesError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38334,8 +37562,7 @@
     },
     {
       "name": "CustomComponentInvalidRegistryError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38372,8 +37599,7 @@
     },
     {
       "name": "EnchantmentLevelOutOfBoundsError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38382,8 +37608,7 @@
     },
     {
       "name": "EnchantmentTypeNotCompatibleError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38392,8 +37617,7 @@
     },
     {
       "name": "EnchantmentTypeUnknownIdError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38402,8 +37626,7 @@
     },
     {
       "name": "EntitySpawnError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38412,8 +37635,7 @@
     },
     {
       "name": "InvalidContainerSlotError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38468,8 +37690,7 @@
     },
     {
       "name": "InvalidIteratorError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38478,8 +37699,7 @@
     },
     {
       "name": "InvalidStructureError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38488,8 +37708,7 @@
     },
     {
       "name": "ItemCustomComponentAlreadyRegisteredError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38498,8 +37717,7 @@
     },
     {
       "name": "ItemCustomComponentReloadNewComponentError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38508,8 +37726,7 @@
     },
     {
       "name": "ItemCustomComponentReloadNewEventError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38518,8 +37735,7 @@
     },
     {
       "name": "ItemCustomComponentReloadVersionError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38528,8 +37744,7 @@
     },
     {
       "name": "LocationInUnloadedChunkError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38538,8 +37753,7 @@
     },
     {
       "name": "LocationOutOfWorldBoundariesError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38548,8 +37762,7 @@
     },
     {
       "name": "RawMessageError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38558,8 +37771,7 @@
     },
     {
       "name": "UnloadedChunksError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -38567,12 +37779,10 @@
       }
     }
   ],
-  "functions": [
-  ],
+  "functions": [],
   "interfaces": [
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "BlockCustomComponent",
       "properties": [
         {
@@ -38871,8 +38081,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "BlockEventOptions",
       "properties": [
         {
@@ -38923,8 +38132,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "BlockFillOptions",
       "properties": [
         {
@@ -38965,8 +38173,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "BlockFilter",
       "properties": [
         {
@@ -39097,8 +38304,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "BlockHitInformation",
       "properties": [
         {
@@ -39139,8 +38345,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "BlockRaycastHit",
       "properties": [
         {
@@ -39247,8 +38452,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraDefaultOptions",
       "properties": [
         {
@@ -39269,8 +38473,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraEaseOptions",
       "properties": [
         {
@@ -39315,8 +38518,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraFadeOptions",
       "properties": [
         {
@@ -39357,8 +38559,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraFadeTimeOptions",
       "properties": [
         {
@@ -39411,8 +38612,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraFixedBoomOptions",
       "properties": [
         {
@@ -39453,8 +38653,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraSetFacingOptions",
       "properties": [
         {
@@ -39505,8 +38704,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraSetLocationOptions",
       "properties": [
         {
@@ -39542,8 +38740,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraSetPosOptions",
       "properties": [
         {
@@ -39594,8 +38791,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraSetRotOptions",
       "properties": [
         {
@@ -39646,8 +38842,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "CameraTargetOptions",
       "properties": [
         {
@@ -39683,8 +38878,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "DefinitionModifier",
       "properties": [
         {
@@ -39725,8 +38919,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "DimensionLocation",
       "properties": [
         {
@@ -39789,8 +38982,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "Enchantment",
       "properties": [
         {
@@ -39825,8 +39017,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityApplyDamageByProjectileOptions",
       "properties": [
         {
@@ -39862,8 +39053,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityApplyDamageOptions",
       "properties": [
         {
@@ -39899,8 +39089,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityDamageSource",
       "properties": [
         {
@@ -39951,8 +39140,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityDataDrivenTriggerEventOptions",
       "properties": [
         {
@@ -40023,8 +39211,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityEffectOptions",
       "properties": [
         {
@@ -40069,8 +39256,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityEventOptions",
       "properties": [
         {
@@ -40121,8 +39307,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityFilter",
       "properties": [
         {
@@ -40472,8 +39657,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityHitInformation",
       "properties": [
         {
@@ -40622,8 +39806,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityQueryPropertyOptions",
       "properties": [
         {
@@ -40728,8 +39911,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityQueryScoreOptions",
       "properties": [
         {
@@ -40808,8 +39990,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityRaycastHit",
       "properties": [
         {
@@ -40925,8 +40106,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EqualsComparison",
       "properties": [
         {
@@ -40968,8 +40148,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "ExplosionOptions",
       "properties": [
         {
@@ -41040,8 +40219,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "GreaterThanComparison",
       "properties": [
         {
@@ -41066,8 +40244,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "GreaterThanOrEqualsComparison",
       "properties": [
         {
@@ -41092,8 +40269,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "ItemCustomComponent",
       "properties": [
         {
@@ -41328,8 +40504,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "LessThanComparison",
       "properties": [
         {
@@ -41354,8 +40529,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "LessThanOrEqualsComparison",
       "properties": [
         {
@@ -41380,8 +40554,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "MusicOptions",
       "properties": [
         {
@@ -41445,8 +40618,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "NotEqualsComparison",
       "properties": [
         {
@@ -41488,8 +40660,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "PlayAnimationOptions",
       "properties": [
         {
@@ -41584,8 +40755,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "PlayerSoundOptions",
       "properties": [
         {
@@ -41649,8 +40819,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "ProjectileShootOptions",
       "properties": [
         {
@@ -41680,8 +40849,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RangeComparison",
       "properties": [
         {
@@ -41720,8 +40888,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RawMessage",
       "properties": [
         {
@@ -41829,8 +40996,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RawMessageScore",
       "properties": [
         {
@@ -41871,8 +41037,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RawText",
       "properties": [
         {
@@ -41903,8 +41068,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RGB",
       "properties": [
         {
@@ -41988,8 +41152,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "ScoreboardObjectiveDisplayOptions",
       "properties": [
         {
@@ -42025,8 +41188,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "ScriptEventMessageFilterOptions",
       "properties": [
         {
@@ -42052,8 +41214,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "StructureCreateOptions",
       "properties": [
         {
@@ -42109,8 +41270,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "StructurePlaceOptions",
       "properties": [
         {
@@ -42264,8 +41424,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "TeleportOptions",
       "properties": [
         {
@@ -42351,8 +41510,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "TitleDisplayOptions",
       "properties": [
         {
@@ -42454,8 +41612,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "Vector2",
       "properties": [
         {
@@ -42494,8 +41651,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "Vector3",
       "properties": [
         {
@@ -42548,8 +41704,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "VectorXZ",
       "properties": [
         {
@@ -42588,8 +41743,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "WorldSoundOptions",
       "properties": [
         {
@@ -42673,7 +41827,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "0196a2fa-8fb5-79a7-b29e-ce3cbc644f82"
+  "type_aliases": [],
+  "uuid": "0196a2fa-8fb5-79a7-b29e-ce3cbc644f82",
+  "version": "1.17.0",
+  "minecraft_version": "1.20.0"
 }

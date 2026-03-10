@@ -24,5 +24,6 @@
   ],
   "module_type": "vanilla_data",
   "name": "mojang-cameraPresets",
-  "vanilla_data_type": "cameraPresets"
+  "vanilla_data_type": "cameraPresets",
+  "minecraft_version": "1.20.0"
 }

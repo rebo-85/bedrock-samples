@@ -1,0 +1,7 @@
+`@minecraft/server-admin`
+
+== Change Log ==
+=== 1.0.0-beta ===
+- Added `@minecraft/server-admin` module
+
+== /Change Log ==

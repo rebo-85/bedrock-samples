@@ -1,10 +1,8 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -105,8 +103,7 @@
         }
       ],
       "name": "HttpClient",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -114,10 +111,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -244,10 +239,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -592,12 +585,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "HttpResponse",
       "properties": [
         {
@@ -677,12 +667,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "NetworkBeforeEvents",
       "properties": [
         {
@@ -729,10 +716,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -855,8 +840,7 @@
         }
       ],
       "name": "PacketReceiveBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -864,12 +848,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PacketReceivedBeforeEvent",
       "properties": [
         {
@@ -959,12 +940,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "PacketSendBeforeEvent",
       "properties": [
         {
@@ -1040,10 +1018,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -1166,8 +1142,7 @@
         }
       ],
       "name": "PacketSendBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1175,10 +1150,8 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
+  "constants": [],
+  "dependencies": [],
   "enums": [
     {
       "constants": [
@@ -3686,8 +3659,7 @@
     },
     {
       "name": "MalformedHttpRequestError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -3695,12 +3667,10 @@
       }
     }
   ],
-  "functions": [
-  ],
+  "functions": [],
   "interfaces": [
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "PacketEventOptions",
       "properties": [
         {
@@ -3807,7 +3777,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "777b1798-13a6-401c-9cba-0cf17e31a81b"
+  "type_aliases": [],
+  "uuid": "777b1798-13a6-401c-9cba-0cf17e31a81b",
+  "version": "1.0.0-beta",
+  "minecraft_version": "1.20.0"
 }

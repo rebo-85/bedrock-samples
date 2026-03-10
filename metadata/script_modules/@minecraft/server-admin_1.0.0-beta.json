@@ -1,12 +1,9 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "AdminBeforeEvents",
       "properties": [
         {
@@ -32,14 +29,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -142,8 +136,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -199,10 +192,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -324,8 +315,7 @@
         }
       ],
       "name": "AsyncPlayerJoinBeforeEventSignal",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -333,10 +323,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -365,8 +353,7 @@
         }
       ],
       "name": "SecretString",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -374,10 +361,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -441,10 +426,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -508,12 +491,9 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
-  "enums": [
-  ],
+  "constants": [],
+  "dependencies": [],
+  "enums": [],
   "errors": [
     {
       "name": "DisconnectedError",
@@ -600,8 +580,7 @@
   ],
   "interfaces": [
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "TransferPlayerIpPortOptions",
       "properties": [
         {
@@ -636,8 +615,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "TransferPlayerNetherNetOptions",
       "properties": [
         {
@@ -715,7 +693,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "53d7f2bf-bf9c-49c4-ad1f-7c803d947920"
+  "type_aliases": [],
+  "uuid": "53d7f2bf-bf9c-49c4-ad1f-7c803d947920",
+  "version": "1.0.0-beta",
+  "minecraft_version": "1.20.0"
 }

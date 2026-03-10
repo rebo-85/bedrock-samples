@@ -5,8 +5,9 @@
     "name": "@minecraft/server-bindings",
     "version": "2.6.0-beta"
   },
-  "peer_dependencies": [
-  ],
+  "peer_dependencies": [],
   "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-  "wrapper_module": "@minecraft/server-bindings-wrapper"
+  "wrapper_module": "@minecraft/server-bindings-wrapper",
+  "version": "2.6.0-beta",
+  "minecraft_version": "1.20.0"
 }

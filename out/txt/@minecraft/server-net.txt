@@ -1,0 +1,7 @@
+`@minecraft/server-net`
+
+== Change Log ==
+=== 1.0.0-beta ===
+- Added `@minecraft/server-net` module
+
+== /Change Log ==

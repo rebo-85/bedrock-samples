@@ -1,12 +1,8 @@
 {
-  "classes": [
-  ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
-  "enums": [
-  ],
+  "classes": [],
+  "constants": [],
+  "dependencies": [],
+  "enums": [],
   "errors": [
     {
       "name": "ArgumentOutOfBoundsError",
@@ -154,17 +150,14 @@
       }
     }
   ],
-  "functions": [
-  ],
-  "interfaces": [
-  ],
+  "functions": [],
+  "interfaces": [],
   "module_type": "script",
   "name": "@minecraft/common",
-  "objects": [
-  ],
-  "peer_dependencies": [
-  ],
-  "type_aliases": [
-  ],
-  "uuid": "77ec12b4-1b2b-4c98-8d34-d1cd63f849d5"
+  "objects": [],
+  "peer_dependencies": [],
+  "type_aliases": [],
+  "uuid": "77ec12b4-1b2b-4c98-8d34-d1cd63f849d5",
+  "version": "1.0.0",
+  "minecraft_version": "1.20.0"
 }

@@ -1,10 +1,8 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -1302,8 +1300,7 @@
         }
       ],
       "name": "Atmospherics",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1311,18 +1308,12 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
-  "enums": [
-  ],
-  "errors": [
-  ],
-  "functions": [
-  ],
-  "interfaces": [
-  ],
+  "constants": [],
+  "dependencies": [],
+  "enums": [],
+  "errors": [],
+  "functions": [],
+  "interfaces": [],
   "module_type": "script",
   "name": "@minecraft/server-graphics",
   "objects": [
@@ -1363,7 +1354,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "3c7acfd1-b8e2-48a3-98af-cfeb489d1457"
+  "type_aliases": [],
+  "uuid": "3c7acfd1-b8e2-48a3-98af-cfeb489d1457",
+  "version": "1.0.0-beta",
+  "minecraft_version": "1.20.0"
 }

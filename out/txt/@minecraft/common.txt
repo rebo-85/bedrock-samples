@@ -1,0 +1,20 @@
+`@minecraft/common`
+
+== Change Log ==
+=== 1.2.0 ===
+- Added enum `InvalidArgumentErrorType`
+
+=== 1.1.0 ===
+- Added interface `NumberRange`
+  ```ts
+  export interface NumberRange {
+    max: number;
+    min: number;
+  }
+
+  ```
+
+=== 1.0.0 ===
+- Added `@minecraft/common` module
+
+== /Change Log ==

@@ -3580,8 +3580,7 @@
     },
     {
       "name": "minecraft:acacia_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 830,
       "serialization_id": "tile.acacia_fence"
     },
@@ -3645,8 +3644,7 @@
     },
     {
       "name": "minecraft:acacia_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 997,
       "serialization_id": "tile.acacia_planks"
     },
@@ -3770,29 +3768,25 @@
     },
     {
       "name": "minecraft:air",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 0,
       "serialization_id": "tile.air"
     },
     {
       "name": "minecraft:allium",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1086,
       "serialization_id": "tile.red_flower.allium"
     },
     {
       "name": "minecraft:allow",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 210,
       "serialization_id": "tile.allow"
     },
     {
       "name": "minecraft:amethyst_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 582,
       "serialization_id": "tile.amethyst_block"
     },
@@ -3808,15 +3802,13 @@
     },
     {
       "name": "minecraft:ancient_debris",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 526,
       "serialization_id": "tile.ancient_debris"
     },
     {
       "name": "minecraft:andesite",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 849,
       "serialization_id": "tile.stone.andesite"
     },
@@ -3887,8 +3879,7 @@
     },
     {
       "name": "minecraft:azalea",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 592,
       "serialization_id": "tile.azalea"
     },
@@ -3920,8 +3911,7 @@
     },
     {
       "name": "minecraft:azure_bluet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1087,
       "serialization_id": "tile.red_flower.houstonia"
     },
@@ -3995,8 +3985,7 @@
     },
     {
       "name": "minecraft:bamboo_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 770,
       "serialization_id": "tile.bamboo_fence"
     },
@@ -4037,8 +4026,7 @@
     },
     {
       "name": "minecraft:bamboo_mosaic",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 764,
       "serialization_id": "tile.bamboo_mosaic"
     },
@@ -4077,8 +4065,7 @@
     },
     {
       "name": "minecraft:bamboo_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 765,
       "serialization_id": "tile.bamboo_planks"
     },
@@ -4192,8 +4179,7 @@
     },
     {
       "name": "minecraft:barrier",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 416,
       "serialization_id": "tile.barrier"
     },
@@ -4209,8 +4195,7 @@
     },
     {
       "name": "minecraft:beacon",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 138,
       "serialization_id": "tile.beacon"
     },
@@ -4352,8 +4337,7 @@
     },
     {
       "name": "minecraft:birch_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 831,
       "serialization_id": "tile.birch_fence"
     },
@@ -4417,8 +4401,7 @@
     },
     {
       "name": "minecraft:birch_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 995,
       "serialization_id": "tile.birch_planks"
     },
@@ -4552,22 +4535,19 @@
     },
     {
       "name": "minecraft:black_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 866,
       "serialization_id": "tile.carpet.black"
     },
     {
       "name": "minecraft:black_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 897,
       "serialization_id": "tile.concrete.black"
     },
     {
       "name": "minecraft:black_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 978,
       "serialization_id": "tile.concretePowder.black"
     },
@@ -4583,43 +4563,37 @@
     },
     {
       "name": "minecraft:black_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 882,
       "serialization_id": "tile.shulkerBoxBlack"
     },
     {
       "name": "minecraft:black_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 942,
       "serialization_id": "tile.stained_glass.black"
     },
     {
       "name": "minecraft:black_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 912,
       "serialization_id": "tile.stained_glass_pane.black"
     },
     {
       "name": "minecraft:black_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 993,
       "serialization_id": "tile.stained_hardened_clay.black"
     },
     {
       "name": "minecraft:black_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 809,
       "serialization_id": "tile.wool.black"
     },
     {
       "name": "minecraft:blackstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 528,
       "serialization_id": "tile.blackstone"
     },
@@ -4713,22 +4687,19 @@
     },
     {
       "name": "minecraft:blue_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 862,
       "serialization_id": "tile.carpet.blue"
     },
     {
       "name": "minecraft:blue_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 893,
       "serialization_id": "tile.concrete.blue"
     },
     {
       "name": "minecraft:blue_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 974,
       "serialization_id": "tile.concretePowder.blue"
     },
@@ -4744,50 +4715,43 @@
     },
     {
       "name": "minecraft:blue_ice",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 266,
       "serialization_id": "tile.blue_ice"
     },
     {
       "name": "minecraft:blue_orchid",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1085,
       "serialization_id": "tile.red_flower.blueOrchid"
     },
     {
       "name": "minecraft:blue_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 878,
       "serialization_id": "tile.shulkerBoxBlue"
     },
     {
       "name": "minecraft:blue_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 938,
       "serialization_id": "tile.stained_glass.blue"
     },
     {
       "name": "minecraft:blue_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 908,
       "serialization_id": "tile.stained_glass_pane.blue"
     },
     {
       "name": "minecraft:blue_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 989,
       "serialization_id": "tile.stained_hardened_clay.blue"
     },
     {
       "name": "minecraft:blue_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 818,
       "serialization_id": "tile.wool.blue"
     },
@@ -4806,8 +4770,7 @@
     },
     {
       "name": "minecraft:bookshelf",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 47,
       "serialization_id": "tile.bookshelf"
     },
@@ -4835,15 +4798,13 @@
     },
     {
       "name": "minecraft:brain_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 836,
       "serialization_id": "tile.coral.pink"
     },
     {
       "name": "minecraft:brain_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1104,
       "serialization_id": "tile.coral_block.pink"
     },
@@ -4885,8 +4846,7 @@
     },
     {
       "name": "minecraft:brick_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 45,
       "serialization_id": "tile.brick_block"
     },
@@ -4970,22 +4930,19 @@
     },
     {
       "name": "minecraft:brown_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 863,
       "serialization_id": "tile.carpet.brown"
     },
     {
       "name": "minecraft:brown_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 894,
       "serialization_id": "tile.concrete.brown"
     },
     {
       "name": "minecraft:brown_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 975,
       "serialization_id": "tile.concretePowder.brown"
     },
@@ -5001,8 +4958,7 @@
     },
     {
       "name": "minecraft:brown_mushroom",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 39,
       "serialization_id": "tile.brown_mushroom"
     },
@@ -5018,36 +4974,31 @@
     },
     {
       "name": "minecraft:brown_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 879,
       "serialization_id": "tile.shulkerBoxBrown"
     },
     {
       "name": "minecraft:brown_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 939,
       "serialization_id": "tile.stained_glass.brown"
     },
     {
       "name": "minecraft:brown_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 909,
       "serialization_id": "tile.stained_glass_pane.brown"
     },
     {
       "name": "minecraft:brown_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 990,
       "serialization_id": "tile.stained_hardened_clay.brown"
     },
     {
       "name": "minecraft:brown_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 810,
       "serialization_id": "tile.wool.brown"
     },
@@ -5063,15 +5014,13 @@
     },
     {
       "name": "minecraft:bubble_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 837,
       "serialization_id": "tile.coral.purple"
     },
     {
       "name": "minecraft:bubble_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1105,
       "serialization_id": "tile.coral_block.purple"
     },
@@ -5097,15 +5046,13 @@
     },
     {
       "name": "minecraft:budding_amethyst",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 583,
       "serialization_id": "tile.budding_amethyst"
     },
     {
       "name": "minecraft:bush",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1278,
       "serialization_id": "tile.bush"
     },
@@ -5121,8 +5068,7 @@
     },
     {
       "name": "minecraft:cactus_flower",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1285,
       "serialization_id": "tile.cactus_flower"
     },
@@ -5138,8 +5084,7 @@
     },
     {
       "name": "minecraft:calcite",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 581,
       "serialization_id": "tile.calcite"
     },
@@ -5158,8 +5103,7 @@
     },
     {
       "name": "minecraft:camera",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 242,
       "serialization_id": "tile.camera"
     },
@@ -5211,8 +5155,7 @@
     },
     {
       "name": "minecraft:cartography_table",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 455,
       "serialization_id": "tile.cartography_table"
     },
@@ -5284,8 +5227,7 @@
     },
     {
       "name": "minecraft:chemical_heat",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 192,
       "serialization_id": "tile.chemical_heat"
     },
@@ -5333,8 +5275,7 @@
     },
     {
       "name": "minecraft:cherry_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 787,
       "serialization_id": "tile.cherry_fence"
     },
@@ -5398,8 +5339,7 @@
     },
     {
       "name": "minecraft:cherry_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 792,
       "serialization_id": "tile.cherry_planks"
     },
@@ -5543,29 +5483,25 @@
     },
     {
       "name": "minecraft:chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1015,
       "serialization_id": "tile.chiseled_copper"
     },
     {
       "name": "minecraft:chiseled_deepslate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 650,
       "serialization_id": "tile.chiseled_deepslate"
     },
     {
       "name": "minecraft:chiseled_nether_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 557,
       "serialization_id": "tile.chiseled_nether_bricks"
     },
     {
       "name": "minecraft:chiseled_polished_blackstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 534,
       "serialization_id": "tile.chiseled_polished_blackstone"
     },
@@ -5581,43 +5517,37 @@
     },
     {
       "name": "minecraft:chiseled_red_sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1211,
       "serialization_id": "tile.red_sandstone.chiseled"
     },
     {
       "name": "minecraft:chiseled_resin_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1275,
       "serialization_id": "tile.chiseled_resin_bricks"
     },
     {
       "name": "minecraft:chiseled_sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1199,
       "serialization_id": "tile.sandstone.chiseled"
     },
     {
       "name": "minecraft:chiseled_stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1125,
       "serialization_id": "tile.stonebrick.chiseled"
     },
     {
       "name": "minecraft:chiseled_tuff",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1008,
       "serialization_id": "tile.chiseled_tuff"
     },
     {
       "name": "minecraft:chiseled_tuff_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1014,
       "serialization_id": "tile.chiseled_tuff_bricks"
     },
@@ -5633,50 +5563,43 @@
     },
     {
       "name": "minecraft:chorus_plant",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 240,
       "serialization_id": "tile.chorus_plant"
     },
     {
       "name": "minecraft:clay",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 82,
       "serialization_id": "tile.clay"
     },
     {
       "name": "minecraft:closed_eyeblossom",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1274,
       "serialization_id": "tile.closed_eyeblossom"
     },
     {
       "name": "minecraft:coal_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 173,
       "serialization_id": "tile.coal_block"
     },
     {
       "name": "minecraft:coal_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 16,
       "serialization_id": "tile.coal_ore"
     },
     {
       "name": "minecraft:coarse_dirt",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1217,
       "serialization_id": "tile.dirt.coarse"
     },
     {
       "name": "minecraft:cobbled_deepslate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 634,
       "serialization_id": "tile.cobbled_deepslate"
     },
@@ -5737,8 +5660,7 @@
     },
     {
       "name": "minecraft:cobblestone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 4,
       "serialization_id": "tile.cobblestone"
     },
@@ -5872,22 +5794,19 @@
     },
     {
       "name": "minecraft:conduit",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 412,
       "serialization_id": "tile.conduit"
     },
     {
       "name": "minecraft:copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1321,
       "serialization_id": "tile.copper_bars"
     },
     {
       "name": "minecraft:copper_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 595,
       "serialization_id": "tile.copper_block"
     },
@@ -5955,8 +5874,7 @@
     },
     {
       "name": "minecraft:copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1023,
       "serialization_id": "tile.copper_grate"
     },
@@ -5972,8 +5890,7 @@
     },
     {
       "name": "minecraft:copper_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 566,
       "serialization_id": "tile.copper_ore"
     },
@@ -6005,43 +5922,37 @@
     },
     {
       "name": "minecraft:cornflower",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1093,
       "serialization_id": "tile.red_flower.cornflower"
     },
     {
       "name": "minecraft:cracked_deepslate_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 665,
       "serialization_id": "tile.cracked_deepslate_bricks"
     },
     {
       "name": "minecraft:cracked_deepslate_tiles",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 664,
       "serialization_id": "tile.cracked_deepslate_tiles"
     },
     {
       "name": "minecraft:cracked_nether_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 558,
       "serialization_id": "tile.cracked_nether_bricks"
     },
     {
       "name": "minecraft:cracked_polished_blackstone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 535,
       "serialization_id": "tile.cracked_polished_blackstone_bricks"
     },
     {
       "name": "minecraft:cracked_stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1124,
       "serialization_id": "tile.stonebrick.cracked"
     },
@@ -6063,8 +5974,7 @@
     },
     {
       "name": "minecraft:crafting_table",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 58,
       "serialization_id": "tile.crafting_table"
     },
@@ -6138,8 +6048,7 @@
     },
     {
       "name": "minecraft:crimson_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 511,
       "serialization_id": "tile.crimson_fence"
     },
@@ -6161,8 +6070,7 @@
     },
     {
       "name": "minecraft:crimson_fungus",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 483,
       "serialization_id": "tile.crimson_fungus"
     },
@@ -6197,15 +6105,13 @@
     },
     {
       "name": "minecraft:crimson_nylium",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 487,
       "serialization_id": "tile.crimson_nylium"
     },
     {
       "name": "minecraft:crimson_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 497,
       "serialization_id": "tile.crimson_planks"
     },
@@ -6221,8 +6127,7 @@
     },
     {
       "name": "minecraft:crimson_roots",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 478,
       "serialization_id": "tile.crimson_roots.crimsonRoots"
     },
@@ -6313,15 +6218,13 @@
     },
     {
       "name": "minecraft:crying_obsidian",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 544,
       "serialization_id": "tile.crying_obsidian"
     },
     {
       "name": "minecraft:cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 602,
       "serialization_id": "tile.cut_copper"
     },
@@ -6350,8 +6253,7 @@
     },
     {
       "name": "minecraft:cut_red_sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1212,
       "serialization_id": "tile.red_sandstone.cut"
     },
@@ -6377,8 +6279,7 @@
     },
     {
       "name": "minecraft:cut_sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1200,
       "serialization_id": "tile.sandstone.cut"
     },
@@ -6427,22 +6328,19 @@
     },
     {
       "name": "minecraft:cyan_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 860,
       "serialization_id": "tile.carpet.cyan"
     },
     {
       "name": "minecraft:cyan_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 891,
       "serialization_id": "tile.concrete.cyan"
     },
     {
       "name": "minecraft:cyan_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 972,
       "serialization_id": "tile.concretePowder.cyan"
     },
@@ -6458,36 +6356,31 @@
     },
     {
       "name": "minecraft:cyan_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 876,
       "serialization_id": "tile.shulkerBoxCyan"
     },
     {
       "name": "minecraft:cyan_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 936,
       "serialization_id": "tile.stained_glass.cyan"
     },
     {
       "name": "minecraft:cyan_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 906,
       "serialization_id": "tile.stained_glass_pane.cyan"
     },
     {
       "name": "minecraft:cyan_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 987,
       "serialization_id": "tile.stained_hardened_clay.cyan"
     },
     {
       "name": "minecraft:cyan_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 816,
       "serialization_id": "tile.wool.cyan"
     },
@@ -6503,8 +6396,7 @@
     },
     {
       "name": "minecraft:dandelion",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 37,
       "serialization_id": "tile.yellow_flower.dandelion"
     },
@@ -6552,8 +6444,7 @@
     },
     {
       "name": "minecraft:dark_oak_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 832,
       "serialization_id": "tile.dark_oak_fence"
     },
@@ -6617,8 +6508,7 @@
     },
     {
       "name": "minecraft:dark_oak_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 998,
       "serialization_id": "tile.dark_oak_planks"
     },
@@ -6709,8 +6599,7 @@
     },
     {
       "name": "minecraft:dark_prismarine",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1202,
       "serialization_id": "tile.prismarine.dark"
     },
@@ -6789,15 +6678,13 @@
     },
     {
       "name": "minecraft:dead_brain_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 841,
       "serialization_id": "tile.coral.pink_dead"
     },
     {
       "name": "minecraft:dead_brain_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1109,
       "serialization_id": "tile.coral_block.pink_dead"
     },
@@ -6823,15 +6710,13 @@
     },
     {
       "name": "minecraft:dead_bubble_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 842,
       "serialization_id": "tile.coral.purple_dead"
     },
     {
       "name": "minecraft:dead_bubble_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1110,
       "serialization_id": "tile.coral_block.purple_dead"
     },
@@ -6857,15 +6742,13 @@
     },
     {
       "name": "minecraft:dead_fire_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 843,
       "serialization_id": "tile.coral.red_dead"
     },
     {
       "name": "minecraft:dead_fire_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1111,
       "serialization_id": "tile.coral_block.red_dead"
     },
@@ -6891,15 +6774,13 @@
     },
     {
       "name": "minecraft:dead_horn_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 844,
       "serialization_id": "tile.coral.yellow_dead"
     },
     {
       "name": "minecraft:dead_horn_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1112,
       "serialization_id": "tile.coral_block.yellow_dead"
     },
@@ -6925,15 +6806,13 @@
     },
     {
       "name": "minecraft:dead_tube_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 840,
       "serialization_id": "tile.coral.blue_dead"
     },
     {
       "name": "minecraft:dead_tube_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1108,
       "serialization_id": "tile.coral_block.blue_dead"
     },
@@ -6959,8 +6838,7 @@
     },
     {
       "name": "minecraft:deadbush",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 32,
       "serialization_id": "tile.deadbush"
     },
@@ -7041,64 +6919,55 @@
     },
     {
       "name": "minecraft:deepslate_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 646,
       "serialization_id": "tile.deepslate_bricks"
     },
     {
       "name": "minecraft:deepslate_coal_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 661,
       "serialization_id": "tile.deepslate_coal_ore"
     },
     {
       "name": "minecraft:deepslate_copper_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 663,
       "serialization_id": "tile.deepslate_copper_ore"
     },
     {
       "name": "minecraft:deepslate_diamond_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 660,
       "serialization_id": "tile.deepslate_diamond_ore"
     },
     {
       "name": "minecraft:deepslate_emerald_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 662,
       "serialization_id": "tile.deepslate_emerald_ore"
     },
     {
       "name": "minecraft:deepslate_gold_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 657,
       "serialization_id": "tile.deepslate_gold_ore"
     },
     {
       "name": "minecraft:deepslate_iron_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 656,
       "serialization_id": "tile.deepslate_iron_ore"
     },
     {
       "name": "minecraft:deepslate_lapis_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 655,
       "serialization_id": "tile.deepslate_lapis_ore"
     },
     {
       "name": "minecraft:deepslate_redstone_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 658,
       "serialization_id": "tile.deepslate_redstone_ore"
     },
@@ -7159,15 +7028,13 @@
     },
     {
       "name": "minecraft:deepslate_tiles",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 642,
       "serialization_id": "tile.deepslate_tiles"
     },
     {
       "name": "minecraft:deny",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 211,
       "serialization_id": "tile.deny"
     },
@@ -7186,22 +7053,19 @@
     },
     {
       "name": "minecraft:diamond_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 57,
       "serialization_id": "tile.diamond_block"
     },
     {
       "name": "minecraft:diamond_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 56,
       "serialization_id": "tile.diamond_ore"
     },
     {
       "name": "minecraft:diorite",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 847,
       "serialization_id": "tile.stone.diorite"
     },
@@ -7262,15 +7126,13 @@
     },
     {
       "name": "minecraft:dirt",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 3,
       "serialization_id": "tile.dirt.default"
     },
     {
       "name": "minecraft:dirt_with_roots",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 573,
       "serialization_id": "tile.dirt_with_roots"
     },
@@ -7299,8 +7161,7 @@
     },
     {
       "name": "minecraft:dragon_egg",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 122,
       "serialization_id": "tile.dragon_egg"
     },
@@ -7329,15 +7190,13 @@
     },
     {
       "name": "minecraft:dried_kelp_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 394,
       "serialization_id": "tile.dried_kelp_block"
     },
     {
       "name": "minecraft:dripstone_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 572,
       "serialization_id": "tile.dripstone_block"
     },
@@ -7356,834 +7215,715 @@
     },
     {
       "name": "minecraft:element_0",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 36,
       "serialization_id": "tile.element_0"
     },
     {
       "name": "minecraft:element_1",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 267,
       "serialization_id": "tile.element_1"
     },
     {
       "name": "minecraft:element_10",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 276,
       "serialization_id": "tile.element_10"
     },
     {
       "name": "minecraft:element_100",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 366,
       "serialization_id": "tile.element_100"
     },
     {
       "name": "minecraft:element_101",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 367,
       "serialization_id": "tile.element_101"
     },
     {
       "name": "minecraft:element_102",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 368,
       "serialization_id": "tile.element_102"
     },
     {
       "name": "minecraft:element_103",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 369,
       "serialization_id": "tile.element_103"
     },
     {
       "name": "minecraft:element_104",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 370,
       "serialization_id": "tile.element_104"
     },
     {
       "name": "minecraft:element_105",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 371,
       "serialization_id": "tile.element_105"
     },
     {
       "name": "minecraft:element_106",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 372,
       "serialization_id": "tile.element_106"
     },
     {
       "name": "minecraft:element_107",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 373,
       "serialization_id": "tile.element_107"
     },
     {
       "name": "minecraft:element_108",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 374,
       "serialization_id": "tile.element_108"
     },
     {
       "name": "minecraft:element_109",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 375,
       "serialization_id": "tile.element_109"
     },
     {
       "name": "minecraft:element_11",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 277,
       "serialization_id": "tile.element_11"
     },
     {
       "name": "minecraft:element_110",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 376,
       "serialization_id": "tile.element_110"
     },
     {
       "name": "minecraft:element_111",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 377,
       "serialization_id": "tile.element_111"
     },
     {
       "name": "minecraft:element_112",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 378,
       "serialization_id": "tile.element_112"
     },
     {
       "name": "minecraft:element_113",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 379,
       "serialization_id": "tile.element_113"
     },
     {
       "name": "minecraft:element_114",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 380,
       "serialization_id": "tile.element_114"
     },
     {
       "name": "minecraft:element_115",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 381,
       "serialization_id": "tile.element_115"
     },
     {
       "name": "minecraft:element_116",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 382,
       "serialization_id": "tile.element_116"
     },
     {
       "name": "minecraft:element_117",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 383,
       "serialization_id": "tile.element_117"
     },
     {
       "name": "minecraft:element_118",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 384,
       "serialization_id": "tile.element_118"
     },
     {
       "name": "minecraft:element_12",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 278,
       "serialization_id": "tile.element_12"
     },
     {
       "name": "minecraft:element_13",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 279,
       "serialization_id": "tile.element_13"
     },
     {
       "name": "minecraft:element_14",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 280,
       "serialization_id": "tile.element_14"
     },
     {
       "name": "minecraft:element_15",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 281,
       "serialization_id": "tile.element_15"
     },
     {
       "name": "minecraft:element_16",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 282,
       "serialization_id": "tile.element_16"
     },
     {
       "name": "minecraft:element_17",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 283,
       "serialization_id": "tile.element_17"
     },
     {
       "name": "minecraft:element_18",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 284,
       "serialization_id": "tile.element_18"
     },
     {
       "name": "minecraft:element_19",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 285,
       "serialization_id": "tile.element_19"
     },
     {
       "name": "minecraft:element_2",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 268,
       "serialization_id": "tile.element_2"
     },
     {
       "name": "minecraft:element_20",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 286,
       "serialization_id": "tile.element_20"
     },
     {
       "name": "minecraft:element_21",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 287,
       "serialization_id": "tile.element_21"
     },
     {
       "name": "minecraft:element_22",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 288,
       "serialization_id": "tile.element_22"
     },
     {
       "name": "minecraft:element_23",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 289,
       "serialization_id": "tile.element_23"
     },
     {
       "name": "minecraft:element_24",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 290,
       "serialization_id": "tile.element_24"
     },
     {
       "name": "minecraft:element_25",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 291,
       "serialization_id": "tile.element_25"
     },
     {
       "name": "minecraft:element_26",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 292,
       "serialization_id": "tile.element_26"
     },
     {
       "name": "minecraft:element_27",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 293,
       "serialization_id": "tile.element_27"
     },
     {
       "name": "minecraft:element_28",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 294,
       "serialization_id": "tile.element_28"
     },
     {
       "name": "minecraft:element_29",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 295,
       "serialization_id": "tile.element_29"
     },
     {
       "name": "minecraft:element_3",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 269,
       "serialization_id": "tile.element_3"
     },
     {
       "name": "minecraft:element_30",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 296,
       "serialization_id": "tile.element_30"
     },
     {
       "name": "minecraft:element_31",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 297,
       "serialization_id": "tile.element_31"
     },
     {
       "name": "minecraft:element_32",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 298,
       "serialization_id": "tile.element_32"
     },
     {
       "name": "minecraft:element_33",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 299,
       "serialization_id": "tile.element_33"
     },
     {
       "name": "minecraft:element_34",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 300,
       "serialization_id": "tile.element_34"
     },
     {
       "name": "minecraft:element_35",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 301,
       "serialization_id": "tile.element_35"
     },
     {
       "name": "minecraft:element_36",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 302,
       "serialization_id": "tile.element_36"
     },
     {
       "name": "minecraft:element_37",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 303,
       "serialization_id": "tile.element_37"
     },
     {
       "name": "minecraft:element_38",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 304,
       "serialization_id": "tile.element_38"
     },
     {
       "name": "minecraft:element_39",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 305,
       "serialization_id": "tile.element_39"
     },
     {
       "name": "minecraft:element_4",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 270,
       "serialization_id": "tile.element_4"
     },
     {
       "name": "minecraft:element_40",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 306,
       "serialization_id": "tile.element_40"
     },
     {
       "name": "minecraft:element_41",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 307,
       "serialization_id": "tile.element_41"
     },
     {
       "name": "minecraft:element_42",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 308,
       "serialization_id": "tile.element_42"
     },
     {
       "name": "minecraft:element_43",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 309,
       "serialization_id": "tile.element_43"
     },
     {
       "name": "minecraft:element_44",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 310,
       "serialization_id": "tile.element_44"
     },
     {
       "name": "minecraft:element_45",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 311,
       "serialization_id": "tile.element_45"
     },
     {
       "name": "minecraft:element_46",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 312,
       "serialization_id": "tile.element_46"
     },
     {
       "name": "minecraft:element_47",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 313,
       "serialization_id": "tile.element_47"
     },
     {
       "name": "minecraft:element_48",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 314,
       "serialization_id": "tile.element_48"
     },
     {
       "name": "minecraft:element_49",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 315,
       "serialization_id": "tile.element_49"
     },
     {
       "name": "minecraft:element_5",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 271,
       "serialization_id": "tile.element_5"
     },
     {
       "name": "minecraft:element_50",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 316,
       "serialization_id": "tile.element_50"
     },
     {
       "name": "minecraft:element_51",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 317,
       "serialization_id": "tile.element_51"
     },
     {
       "name": "minecraft:element_52",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 318,
       "serialization_id": "tile.element_52"
     },
     {
       "name": "minecraft:element_53",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 319,
       "serialization_id": "tile.element_53"
     },
     {
       "name": "minecraft:element_54",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 320,
       "serialization_id": "tile.element_54"
     },
     {
       "name": "minecraft:element_55",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 321,
       "serialization_id": "tile.element_55"
     },
     {
       "name": "minecraft:element_56",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 322,
       "serialization_id": "tile.element_56"
     },
     {
       "name": "minecraft:element_57",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 323,
       "serialization_id": "tile.element_57"
     },
     {
       "name": "minecraft:element_58",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 324,
       "serialization_id": "tile.element_58"
     },
     {
       "name": "minecraft:element_59",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 325,
       "serialization_id": "tile.element_59"
     },
     {
       "name": "minecraft:element_6",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 272,
       "serialization_id": "tile.element_6"
     },
     {
       "name": "minecraft:element_60",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 326,
       "serialization_id": "tile.element_60"
     },
     {
       "name": "minecraft:element_61",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 327,
       "serialization_id": "tile.element_61"
     },
     {
       "name": "minecraft:element_62",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 328,
       "serialization_id": "tile.element_62"
     },
     {
       "name": "minecraft:element_63",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 329,
       "serialization_id": "tile.element_63"
     },
     {
       "name": "minecraft:element_64",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 330,
       "serialization_id": "tile.element_64"
     },
     {
       "name": "minecraft:element_65",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 331,
       "serialization_id": "tile.element_65"
     },
     {
       "name": "minecraft:element_66",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 332,
       "serialization_id": "tile.element_66"
     },
     {
       "name": "minecraft:element_67",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 333,
       "serialization_id": "tile.element_67"
     },
     {
       "name": "minecraft:element_68",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 334,
       "serialization_id": "tile.element_68"
     },
     {
       "name": "minecraft:element_69",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 335,
       "serialization_id": "tile.element_69"
     },
     {
       "name": "minecraft:element_7",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 273,
       "serialization_id": "tile.element_7"
     },
     {
       "name": "minecraft:element_70",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 336,
       "serialization_id": "tile.element_70"
     },
     {
       "name": "minecraft:element_71",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 337,
       "serialization_id": "tile.element_71"
     },
     {
       "name": "minecraft:element_72",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 338,
       "serialization_id": "tile.element_72"
     },
     {
       "name": "minecraft:element_73",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 339,
       "serialization_id": "tile.element_73"
     },
     {
       "name": "minecraft:element_74",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 340,
       "serialization_id": "tile.element_74"
     },
     {
       "name": "minecraft:element_75",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 341,
       "serialization_id": "tile.element_75"
     },
     {
       "name": "minecraft:element_76",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 342,
       "serialization_id": "tile.element_76"
     },
     {
       "name": "minecraft:element_77",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 343,
       "serialization_id": "tile.element_77"
     },
     {
       "name": "minecraft:element_78",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 344,
       "serialization_id": "tile.element_78"
     },
     {
       "name": "minecraft:element_79",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 345,
       "serialization_id": "tile.element_79"
     },
     {
       "name": "minecraft:element_8",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 274,
       "serialization_id": "tile.element_8"
     },
     {
       "name": "minecraft:element_80",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 346,
       "serialization_id": "tile.element_80"
     },
     {
       "name": "minecraft:element_81",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 347,
       "serialization_id": "tile.element_81"
     },
     {
       "name": "minecraft:element_82",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 348,
       "serialization_id": "tile.element_82"
     },
     {
       "name": "minecraft:element_83",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 349,
       "serialization_id": "tile.element_83"
     },
     {
       "name": "minecraft:element_84",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 350,
       "serialization_id": "tile.element_84"
     },
     {
       "name": "minecraft:element_85",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 351,
       "serialization_id": "tile.element_85"
     },
     {
       "name": "minecraft:element_86",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 352,
       "serialization_id": "tile.element_86"
     },
     {
       "name": "minecraft:element_87",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 353,
       "serialization_id": "tile.element_87"
     },
     {
       "name": "minecraft:element_88",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 354,
       "serialization_id": "tile.element_88"
     },
     {
       "name": "minecraft:element_89",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 355,
       "serialization_id": "tile.element_89"
     },
     {
       "name": "minecraft:element_9",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 275,
       "serialization_id": "tile.element_9"
     },
     {
       "name": "minecraft:element_90",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 356,
       "serialization_id": "tile.element_90"
     },
     {
       "name": "minecraft:element_91",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 357,
       "serialization_id": "tile.element_91"
     },
     {
       "name": "minecraft:element_92",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 358,
       "serialization_id": "tile.element_92"
     },
     {
       "name": "minecraft:element_93",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 359,
       "serialization_id": "tile.element_93"
     },
     {
       "name": "minecraft:element_94",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 360,
       "serialization_id": "tile.element_94"
     },
     {
       "name": "minecraft:element_95",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 361,
       "serialization_id": "tile.element_95"
     },
     {
       "name": "minecraft:element_96",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 362,
       "serialization_id": "tile.element_96"
     },
     {
       "name": "minecraft:element_97",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 363,
       "serialization_id": "tile.element_97"
     },
     {
       "name": "minecraft:element_98",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 364,
       "serialization_id": "tile.element_98"
     },
     {
       "name": "minecraft:element_99",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 365,
       "serialization_id": "tile.element_99"
     },
@@ -8199,22 +7939,19 @@
     },
     {
       "name": "minecraft:emerald_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 133,
       "serialization_id": "tile.emerald_block"
     },
     {
       "name": "minecraft:emerald_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 129,
       "serialization_id": "tile.emerald_ore"
     },
     {
       "name": "minecraft:enchanting_table",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 116,
       "serialization_id": "tile.enchanting_table"
     },
@@ -8233,15 +7970,13 @@
     },
     {
       "name": "minecraft:end_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 206,
       "serialization_id": "tile.end_bricks"
     },
     {
       "name": "minecraft:end_portal",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 119,
       "serialization_id": "tile.end_portal"
     },
@@ -8270,8 +8005,7 @@
     },
     {
       "name": "minecraft:end_stone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 121,
       "serialization_id": "tile.end_stone"
     },
@@ -8329,22 +8063,19 @@
     },
     {
       "name": "minecraft:exposed_chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1016,
       "serialization_id": "tile.exposed_chiseled_copper"
     },
     {
       "name": "minecraft:exposed_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 596,
       "serialization_id": "tile.exposed_copper"
     },
     {
       "name": "minecraft:exposed_copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1322,
       "serialization_id": "tile.exposed_copper_bars"
     },
@@ -8412,8 +8143,7 @@
     },
     {
       "name": "minecraft:exposed_copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1024,
       "serialization_id": "tile.exposed_copper_grate"
     },
@@ -8445,8 +8175,7 @@
     },
     {
       "name": "minecraft:exposed_cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 603,
       "serialization_id": "tile.exposed_cut_copper"
     },
@@ -8524,8 +8253,7 @@
     },
     {
       "name": "minecraft:fern",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1103,
       "serialization_id": "tile.tallgrass.fern"
     },
@@ -8541,15 +8269,13 @@
     },
     {
       "name": "minecraft:fire_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 838,
       "serialization_id": "tile.coral.red"
     },
     {
       "name": "minecraft:fire_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1106,
       "serialization_id": "tile.coral_block.red"
     },
@@ -8575,15 +8301,13 @@
     },
     {
       "name": "minecraft:firefly_bush",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1280,
       "serialization_id": "tile.firefly_bush"
     },
     {
       "name": "minecraft:fletching_table",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 456,
       "serialization_id": "tile.fletching_table"
     },
@@ -8599,8 +8323,7 @@
     },
     {
       "name": "minecraft:flowering_azalea",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 593,
       "serialization_id": "tile.flowering_azalea"
     },
@@ -8642,8 +8365,7 @@
     },
     {
       "name": "minecraft:frog_spawn",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 723,
       "serialization_id": "tile.frog_spawn"
     },
@@ -8669,22 +8391,19 @@
     },
     {
       "name": "minecraft:gilded_blackstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 536,
       "serialization_id": "tile.gilded_blackstone"
     },
     {
       "name": "minecraft:glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 20,
       "serialization_id": "tile.glass"
     },
     {
       "name": "minecraft:glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 102,
       "serialization_id": "tile.glass_pane"
     },
@@ -8716,22 +8435,19 @@
     },
     {
       "name": "minecraft:glowstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 89,
       "serialization_id": "tile.glowstone"
     },
     {
       "name": "minecraft:gold_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 41,
       "serialization_id": "tile.gold_block"
     },
     {
       "name": "minecraft:gold_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 14,
       "serialization_id": "tile.gold_ore"
     },
@@ -8750,8 +8466,7 @@
     },
     {
       "name": "minecraft:granite",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 845,
       "serialization_id": "tile.stone.granite"
     },
@@ -8812,22 +8527,19 @@
     },
     {
       "name": "minecraft:grass_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 2,
       "serialization_id": "tile.grass"
     },
     {
       "name": "minecraft:grass_path",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 198,
       "serialization_id": "tile.grass_path"
     },
     {
       "name": "minecraft:gravel",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 13,
       "serialization_id": "tile.gravel"
     },
@@ -8856,22 +8568,19 @@
     },
     {
       "name": "minecraft:gray_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 858,
       "serialization_id": "tile.carpet.gray"
     },
     {
       "name": "minecraft:gray_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 889,
       "serialization_id": "tile.concrete.gray"
     },
     {
       "name": "minecraft:gray_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 970,
       "serialization_id": "tile.concretePowder.gray"
     },
@@ -8887,36 +8596,31 @@
     },
     {
       "name": "minecraft:gray_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 874,
       "serialization_id": "tile.shulkerBoxGray"
     },
     {
       "name": "minecraft:gray_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 934,
       "serialization_id": "tile.stained_glass.gray"
     },
     {
       "name": "minecraft:gray_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 904,
       "serialization_id": "tile.stained_glass_pane.gray"
     },
     {
       "name": "minecraft:gray_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 985,
       "serialization_id": "tile.stained_hardened_clay.gray"
     },
     {
       "name": "minecraft:gray_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 808,
       "serialization_id": "tile.wool.gray"
     },
@@ -8945,22 +8649,19 @@
     },
     {
       "name": "minecraft:green_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 864,
       "serialization_id": "tile.carpet.green"
     },
     {
       "name": "minecraft:green_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 895,
       "serialization_id": "tile.concrete.green"
     },
     {
       "name": "minecraft:green_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 976,
       "serialization_id": "tile.concretePowder.green"
     },
@@ -8976,36 +8677,31 @@
     },
     {
       "name": "minecraft:green_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 880,
       "serialization_id": "tile.shulkerBoxGreen"
     },
     {
       "name": "minecraft:green_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 940,
       "serialization_id": "tile.stained_glass.green"
     },
     {
       "name": "minecraft:green_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 910,
       "serialization_id": "tile.stained_glass_pane.green"
     },
     {
       "name": "minecraft:green_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 991,
       "serialization_id": "tile.stained_hardened_clay.green"
     },
     {
       "name": "minecraft:green_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 815,
       "serialization_id": "tile.wool.green"
     },
@@ -9024,253 +8720,217 @@
     },
     {
       "name": "minecraft:hanging_roots",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 574,
       "serialization_id": "tile.hanging_roots"
     },
     {
       "name": "minecraft:hard_black_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 957,
       "serialization_id": "tile.hard_stained_glass.black"
     },
     {
       "name": "minecraft:hard_black_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 927,
       "serialization_id": "tile.hard_stained_glass_pane.black"
     },
     {
       "name": "minecraft:hard_blue_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 953,
       "serialization_id": "tile.hard_stained_glass.blue"
     },
     {
       "name": "minecraft:hard_blue_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 923,
       "serialization_id": "tile.hard_stained_glass_pane.blue"
     },
     {
       "name": "minecraft:hard_brown_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 954,
       "serialization_id": "tile.hard_stained_glass.brown"
     },
     {
       "name": "minecraft:hard_brown_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 924,
       "serialization_id": "tile.hard_stained_glass_pane.brown"
     },
     {
       "name": "minecraft:hard_cyan_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 951,
       "serialization_id": "tile.hard_stained_glass.cyan"
     },
     {
       "name": "minecraft:hard_cyan_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 921,
       "serialization_id": "tile.hard_stained_glass_pane.cyan"
     },
     {
       "name": "minecraft:hard_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 253,
       "serialization_id": "tile.hard_glass"
     },
     {
       "name": "minecraft:hard_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 190,
       "serialization_id": "tile.hard_glass_pane"
     },
     {
       "name": "minecraft:hard_gray_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 949,
       "serialization_id": "tile.hard_stained_glass.gray"
     },
     {
       "name": "minecraft:hard_gray_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 919,
       "serialization_id": "tile.hard_stained_glass_pane.gray"
     },
     {
       "name": "minecraft:hard_green_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 955,
       "serialization_id": "tile.hard_stained_glass.green"
     },
     {
       "name": "minecraft:hard_green_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 925,
       "serialization_id": "tile.hard_stained_glass_pane.green"
     },
     {
       "name": "minecraft:hard_light_blue_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 945,
       "serialization_id": "tile.hard_stained_glass.light_blue"
     },
     {
       "name": "minecraft:hard_light_blue_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 915,
       "serialization_id": "tile.hard_stained_glass_pane.light_blue"
     },
     {
       "name": "minecraft:hard_light_gray_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 950,
       "serialization_id": "tile.hard_stained_glass.silver"
     },
     {
       "name": "minecraft:hard_light_gray_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 920,
       "serialization_id": "tile.hard_stained_glass_pane.silver"
     },
     {
       "name": "minecraft:hard_lime_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 947,
       "serialization_id": "tile.hard_stained_glass.lime"
     },
     {
       "name": "minecraft:hard_lime_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 917,
       "serialization_id": "tile.hard_stained_glass_pane.lime"
     },
     {
       "name": "minecraft:hard_magenta_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 944,
       "serialization_id": "tile.hard_stained_glass.magenta"
     },
     {
       "name": "minecraft:hard_magenta_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 914,
       "serialization_id": "tile.hard_stained_glass_pane.magenta"
     },
     {
       "name": "minecraft:hard_orange_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 943,
       "serialization_id": "tile.hard_stained_glass.orange"
     },
     {
       "name": "minecraft:hard_orange_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 913,
       "serialization_id": "tile.hard_stained_glass_pane.orange"
     },
     {
       "name": "minecraft:hard_pink_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 948,
       "serialization_id": "tile.hard_stained_glass.pink"
     },
     {
       "name": "minecraft:hard_pink_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 918,
       "serialization_id": "tile.hard_stained_glass_pane.pink"
     },
     {
       "name": "minecraft:hard_purple_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 952,
       "serialization_id": "tile.hard_stained_glass.purple"
     },
     {
       "name": "minecraft:hard_purple_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 922,
       "serialization_id": "tile.hard_stained_glass_pane.purple"
     },
     {
       "name": "minecraft:hard_red_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 956,
       "serialization_id": "tile.hard_stained_glass.red"
     },
     {
       "name": "minecraft:hard_red_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 926,
       "serialization_id": "tile.hard_stained_glass_pane.red"
     },
     {
       "name": "minecraft:hard_white_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 254,
       "serialization_id": "tile.hard_stained_glass.white"
     },
     {
       "name": "minecraft:hard_white_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 191,
       "serialization_id": "tile.hard_stained_glass_pane.white"
     },
     {
       "name": "minecraft:hard_yellow_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 946,
       "serialization_id": "tile.hard_stained_glass.yellow"
     },
     {
       "name": "minecraft:hard_yellow_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 916,
       "serialization_id": "tile.hard_stained_glass_pane.yellow"
     },
     {
       "name": "minecraft:hardened_clay",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 172,
       "serialization_id": "tile.hardened_clay"
     },
@@ -9289,8 +8949,7 @@
     },
     {
       "name": "minecraft:heavy_core",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 571,
       "serialization_id": "tile.heavy_core"
     },
@@ -9306,15 +8965,13 @@
     },
     {
       "name": "minecraft:honey_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 475,
       "serialization_id": "tile.honey_block"
     },
     {
       "name": "minecraft:honeycomb_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 476,
       "serialization_id": "tile.honeycomb_block"
     },
@@ -9333,15 +8990,13 @@
     },
     {
       "name": "minecraft:horn_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 839,
       "serialization_id": "tile.coral.yellow"
     },
     {
       "name": "minecraft:horn_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1107,
       "serialization_id": "tile.coral_block.yellow"
     },
@@ -9367,29 +9022,25 @@
     },
     {
       "name": "minecraft:ice",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 79,
       "serialization_id": "tile.ice"
     },
     {
       "name": "minecraft:infested_chiseled_stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1117,
       "serialization_id": "tile.monster_egg.chiseledbrick"
     },
     {
       "name": "minecraft:infested_cobblestone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1113,
       "serialization_id": "tile.monster_egg.cobble"
     },
     {
       "name": "minecraft:infested_cracked_stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1116,
       "serialization_id": "tile.monster_egg.crackedbrick"
     },
@@ -9405,36 +9056,31 @@
     },
     {
       "name": "minecraft:infested_mossy_stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1115,
       "serialization_id": "tile.monster_egg.mossybrick"
     },
     {
       "name": "minecraft:infested_stone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 97,
       "serialization_id": "tile.monster_egg.stone"
     },
     {
       "name": "minecraft:infested_stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1114,
       "serialization_id": "tile.monster_egg.brick"
     },
     {
       "name": "minecraft:iron_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 101,
       "serialization_id": "tile.iron_bars"
     },
     {
       "name": "minecraft:iron_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 42,
       "serialization_id": "tile.iron_block"
     },
@@ -9469,8 +9115,7 @@
     },
     {
       "name": "minecraft:iron_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 15,
       "serialization_id": "tile.iron_ore"
     },
@@ -9505,8 +9150,7 @@
     },
     {
       "name": "minecraft:jukebox",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 84,
       "serialization_id": "tile.jukebox"
     },
@@ -9554,8 +9198,7 @@
     },
     {
       "name": "minecraft:jungle_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 833,
       "serialization_id": "tile.jungle_fence"
     },
@@ -9619,8 +9262,7 @@
     },
     {
       "name": "minecraft:jungle_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 996,
       "serialization_id": "tile.jungle_planks"
     },
@@ -9771,15 +9413,13 @@
     },
     {
       "name": "minecraft:lapis_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 22,
       "serialization_id": "tile.lapis_block"
     },
     {
       "name": "minecraft:lapis_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 21,
       "serialization_id": "tile.lapis_ore"
     },
@@ -9854,113 +9494,97 @@
     },
     {
       "name": "minecraft:light_block_0",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 470,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_1",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1184,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_10",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1193,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_11",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1194,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_12",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1195,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_13",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1196,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_14",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1197,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_15",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1198,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_2",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1185,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_3",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1186,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_4",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1187,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_5",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1188,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_6",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1189,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_7",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1190,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_8",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1191,
       "serialization_id": "tile.light_block"
     },
     {
       "name": "minecraft:light_block_9",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1192,
       "serialization_id": "tile.light_block"
     },
@@ -9989,22 +9613,19 @@
     },
     {
       "name": "minecraft:light_blue_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 854,
       "serialization_id": "tile.carpet.lightBlue"
     },
     {
       "name": "minecraft:light_blue_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 885,
       "serialization_id": "tile.concrete.lightBlue"
     },
     {
       "name": "minecraft:light_blue_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 966,
       "serialization_id": "tile.concretePowder.lightBlue"
     },
@@ -10020,36 +9641,31 @@
     },
     {
       "name": "minecraft:light_blue_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 870,
       "serialization_id": "tile.shulkerBoxLightBlue"
     },
     {
       "name": "minecraft:light_blue_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 930,
       "serialization_id": "tile.stained_glass.light_blue"
     },
     {
       "name": "minecraft:light_blue_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 900,
       "serialization_id": "tile.stained_glass_pane.light_blue"
     },
     {
       "name": "minecraft:light_blue_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 981,
       "serialization_id": "tile.stained_hardened_clay.lightBlue"
     },
     {
       "name": "minecraft:light_blue_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 817,
       "serialization_id": "tile.wool.lightBlue"
     },
@@ -10078,57 +9694,49 @@
     },
     {
       "name": "minecraft:light_gray_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 859,
       "serialization_id": "tile.carpet.silver"
     },
     {
       "name": "minecraft:light_gray_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 890,
       "serialization_id": "tile.concrete.silver"
     },
     {
       "name": "minecraft:light_gray_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 971,
       "serialization_id": "tile.concretePowder.silver"
     },
     {
       "name": "minecraft:light_gray_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 875,
       "serialization_id": "tile.shulkerBoxSilver"
     },
     {
       "name": "minecraft:light_gray_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 935,
       "serialization_id": "tile.stained_glass.silver"
     },
     {
       "name": "minecraft:light_gray_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 905,
       "serialization_id": "tile.stained_glass_pane.silver"
     },
     {
       "name": "minecraft:light_gray_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 986,
       "serialization_id": "tile.stained_hardened_clay.silver"
     },
     {
       "name": "minecraft:light_gray_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 807,
       "serialization_id": "tile.wool.silver"
     },
@@ -10167,8 +9775,7 @@
     },
     {
       "name": "minecraft:lily_of_the_valley",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1094,
       "serialization_id": "tile.red_flower.lilyOfTheValley"
     },
@@ -10197,22 +9804,19 @@
     },
     {
       "name": "minecraft:lime_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 856,
       "serialization_id": "tile.carpet.lime"
     },
     {
       "name": "minecraft:lime_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 887,
       "serialization_id": "tile.concrete.lime"
     },
     {
       "name": "minecraft:lime_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 968,
       "serialization_id": "tile.concretePowder.lime"
     },
@@ -10228,36 +9832,31 @@
     },
     {
       "name": "minecraft:lime_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 872,
       "serialization_id": "tile.shulkerBoxLime"
     },
     {
       "name": "minecraft:lime_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 932,
       "serialization_id": "tile.stained_glass.lime"
     },
     {
       "name": "minecraft:lime_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 902,
       "serialization_id": "tile.stained_glass_pane.lime"
     },
     {
       "name": "minecraft:lime_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 983,
       "serialization_id": "tile.stained_hardened_clay.lime"
     },
     {
       "name": "minecraft:lime_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 814,
       "serialization_id": "tile.wool.lime"
     },
@@ -10273,8 +9872,7 @@
     },
     {
       "name": "minecraft:lit_deepslate_redstone_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 659,
       "serialization_id": "tile.lit_deepslate_redstone_ore"
     },
@@ -10300,15 +9898,13 @@
     },
     {
       "name": "minecraft:lit_redstone_lamp",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 124,
       "serialization_id": "tile.lit_redstone_lamp"
     },
     {
       "name": "minecraft:lit_redstone_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 74,
       "serialization_id": "tile.lit_redstone_ore"
     },
@@ -10324,8 +9920,7 @@
     },
     {
       "name": "minecraft:lodestone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 477,
       "serialization_id": "tile.lodestone"
     },
@@ -10364,22 +9959,19 @@
     },
     {
       "name": "minecraft:magenta_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 853,
       "serialization_id": "tile.carpet.magenta"
     },
     {
       "name": "minecraft:magenta_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 884,
       "serialization_id": "tile.concrete.magenta"
     },
     {
       "name": "minecraft:magenta_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 965,
       "serialization_id": "tile.concretePowder.magenta"
     },
@@ -10395,43 +9987,37 @@
     },
     {
       "name": "minecraft:magenta_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 869,
       "serialization_id": "tile.shulkerBoxMagenta"
     },
     {
       "name": "minecraft:magenta_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 929,
       "serialization_id": "tile.stained_glass.magenta"
     },
     {
       "name": "minecraft:magenta_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 899,
       "serialization_id": "tile.stained_glass_pane.magenta"
     },
     {
       "name": "minecraft:magenta_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 980,
       "serialization_id": "tile.stained_hardened_clay.magenta"
     },
     {
       "name": "minecraft:magenta_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 820,
       "serialization_id": "tile.wool.magenta"
     },
     {
       "name": "minecraft:magma",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 213,
       "serialization_id": "tile.magma"
     },
@@ -10479,8 +10065,7 @@
     },
     {
       "name": "minecraft:mangrove_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 746,
       "serialization_id": "tile.mangrove_fence"
     },
@@ -10544,8 +10129,7 @@
     },
     {
       "name": "minecraft:mangrove_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 741,
       "serialization_id": "tile.mangrove_planks"
     },
@@ -10574,8 +10158,7 @@
     },
     {
       "name": "minecraft:mangrove_roots",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 737,
       "serialization_id": "tile.mangrove_roots"
     },
@@ -10686,8 +10269,7 @@
     },
     {
       "name": "minecraft:melon_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 103,
       "serialization_id": "tile.melon_block"
     },
@@ -10706,29 +10288,25 @@
     },
     {
       "name": "minecraft:mob_spawner",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 52,
       "serialization_id": "tile.mob_spawner"
     },
     {
       "name": "minecraft:moss_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 575,
       "serialization_id": "tile.moss_block"
     },
     {
       "name": "minecraft:moss_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 590,
       "serialization_id": "tile.moss_carpet"
     },
     {
       "name": "minecraft:mossy_cobblestone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 48,
       "serialization_id": "tile.mossy_cobblestone"
     },
@@ -10844,15 +10422,13 @@
     },
     {
       "name": "minecraft:mossy_stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1123,
       "serialization_id": "tile.stonebrick.mossy"
     },
     {
       "name": "minecraft:mud",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 728,
       "serialization_id": "tile.mud"
     },
@@ -10913,8 +10489,7 @@
     },
     {
       "name": "minecraft:mud_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 730,
       "serialization_id": "tile.mud_bricks"
     },
@@ -10940,15 +10515,13 @@
     },
     {
       "name": "minecraft:mycelium",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 110,
       "serialization_id": "tile.mycelium"
     },
     {
       "name": "minecraft:nether_brick",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 112,
       "serialization_id": "tile.nether_brick"
     },
@@ -10964,8 +10537,7 @@
     },
     {
       "name": "minecraft:nether_brick_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 113,
       "serialization_id": "tile.nether_brick_fence"
     },
@@ -11016,15 +10588,13 @@
     },
     {
       "name": "minecraft:nether_gold_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 543,
       "serialization_id": "tile.nether_gold_ore"
     },
     {
       "name": "minecraft:nether_sprouts",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 493,
       "serialization_id": "tile.nether_sprouts"
     },
@@ -11040,22 +10610,19 @@
     },
     {
       "name": "minecraft:nether_wart_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 214,
       "serialization_id": "tile.nether_wart_block"
     },
     {
       "name": "minecraft:netherite_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 525,
       "serialization_id": "tile.netherite_block"
     },
     {
       "name": "minecraft:netherrack",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 87,
       "serialization_id": "tile.netherrack"
     },
@@ -11094,8 +10661,7 @@
     },
     {
       "name": "minecraft:noteblock",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 25,
       "serialization_id": "tile.noteblock"
     },
@@ -11111,8 +10677,7 @@
     },
     {
       "name": "minecraft:oak_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 85,
       "serialization_id": "tile.oak_fence"
     },
@@ -11160,8 +10725,7 @@
     },
     {
       "name": "minecraft:oak_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 5,
       "serialization_id": "tile.oak_planks"
     },
@@ -11239,8 +10803,7 @@
     },
     {
       "name": "minecraft:obsidian",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 49,
       "serialization_id": "tile.obsidian"
     },
@@ -11256,8 +10819,7 @@
     },
     {
       "name": "minecraft:open_eyeblossom",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1273,
       "serialization_id": "tile.open_eyeblossom"
     },
@@ -11286,22 +10848,19 @@
     },
     {
       "name": "minecraft:orange_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 852,
       "serialization_id": "tile.carpet.orange"
     },
     {
       "name": "minecraft:orange_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 883,
       "serialization_id": "tile.concrete.orange"
     },
     {
       "name": "minecraft:orange_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 964,
       "serialization_id": "tile.concretePowder.orange"
     },
@@ -11317,71 +10876,61 @@
     },
     {
       "name": "minecraft:orange_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 868,
       "serialization_id": "tile.shulkerBoxOrange"
     },
     {
       "name": "minecraft:orange_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 928,
       "serialization_id": "tile.stained_glass.orange"
     },
     {
       "name": "minecraft:orange_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 898,
       "serialization_id": "tile.stained_glass_pane.orange"
     },
     {
       "name": "minecraft:orange_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 979,
       "serialization_id": "tile.stained_hardened_clay.orange"
     },
     {
       "name": "minecraft:orange_tulip",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1089,
       "serialization_id": "tile.red_flower.tulipOrange"
     },
     {
       "name": "minecraft:orange_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 812,
       "serialization_id": "tile.wool.orange"
     },
     {
       "name": "minecraft:oxeye_daisy",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1092,
       "serialization_id": "tile.red_flower.oxeyeDaisy"
     },
     {
       "name": "minecraft:oxidized_chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1018,
       "serialization_id": "tile.oxidized_chiseled_copper"
     },
     {
       "name": "minecraft:oxidized_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 598,
       "serialization_id": "tile.oxidized_copper"
     },
     {
       "name": "minecraft:oxidized_copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1324,
       "serialization_id": "tile.oxidized_copper_bars"
     },
@@ -11449,8 +10998,7 @@
     },
     {
       "name": "minecraft:oxidized_copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1026,
       "serialization_id": "tile.oxidized_copper_grate"
     },
@@ -11482,8 +11030,7 @@
     },
     {
       "name": "minecraft:oxidized_cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 605,
       "serialization_id": "tile.oxidized_cut_copper"
     },
@@ -11535,15 +11082,13 @@
     },
     {
       "name": "minecraft:packed_ice",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 174,
       "serialization_id": "tile.packed_ice"
     },
     {
       "name": "minecraft:packed_mud",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 732,
       "serialization_id": "tile.packed_mud"
     },
@@ -11559,8 +11104,7 @@
     },
     {
       "name": "minecraft:pale_moss_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1264,
       "serialization_id": "tile.pale_moss_block"
     },
@@ -11630,8 +11174,7 @@
     },
     {
       "name": "minecraft:pale_oak_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1246,
       "serialization_id": "tile.pale_oak_fence"
     },
@@ -11695,8 +11238,7 @@
     },
     {
       "name": "minecraft:pale_oak_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1251,
       "serialization_id": "tile.pale_oak_planks"
     },
@@ -11880,22 +11422,19 @@
     },
     {
       "name": "minecraft:pink_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 857,
       "serialization_id": "tile.carpet.pink"
     },
     {
       "name": "minecraft:pink_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 888,
       "serialization_id": "tile.concrete.pink"
     },
     {
       "name": "minecraft:pink_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 969,
       "serialization_id": "tile.concretePowder.pink"
     },
@@ -11924,43 +11463,37 @@
     },
     {
       "name": "minecraft:pink_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 873,
       "serialization_id": "tile.shulkerBoxPink"
     },
     {
       "name": "minecraft:pink_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 933,
       "serialization_id": "tile.stained_glass.pink"
     },
     {
       "name": "minecraft:pink_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 903,
       "serialization_id": "tile.stained_glass_pane.pink"
     },
     {
       "name": "minecraft:pink_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 984,
       "serialization_id": "tile.stained_hardened_clay.pink"
     },
     {
       "name": "minecraft:pink_tulip",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1091,
       "serialization_id": "tile.red_flower.tulipPink"
     },
     {
       "name": "minecraft:pink_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 821,
       "serialization_id": "tile.wool.pink"
     },
@@ -12019,8 +11552,7 @@
     },
     {
       "name": "minecraft:podzol",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 243,
       "serialization_id": "tile.podzol"
     },
@@ -12039,8 +11571,7 @@
     },
     {
       "name": "minecraft:polished_andesite",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 850,
       "serialization_id": "tile.stone.andesiteSmooth"
     },
@@ -12089,8 +11620,7 @@
     },
     {
       "name": "minecraft:polished_blackstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 546,
       "serialization_id": "tile.polished_blackstone"
     },
@@ -12151,8 +11681,7 @@
     },
     {
       "name": "minecraft:polished_blackstone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 529,
       "serialization_id": "tile.polished_blackstone_bricks"
     },
@@ -12236,8 +11765,7 @@
     },
     {
       "name": "minecraft:polished_deepslate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 638,
       "serialization_id": "tile.polished_deepslate"
     },
@@ -12298,8 +11826,7 @@
     },
     {
       "name": "minecraft:polished_diorite",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 848,
       "serialization_id": "tile.stone.dioriteSmooth"
     },
@@ -12338,8 +11865,7 @@
     },
     {
       "name": "minecraft:polished_granite",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 846,
       "serialization_id": "tile.stone.graniteSmooth"
     },
@@ -12378,8 +11904,7 @@
     },
     {
       "name": "minecraft:polished_tuff",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1003,
       "serialization_id": "tile.polished_tuff"
     },
@@ -12440,8 +11965,7 @@
     },
     {
       "name": "minecraft:poppy",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 38,
       "serialization_id": "tile.red_flower.poppy"
     },
@@ -12467,8 +11991,7 @@
     },
     {
       "name": "minecraft:powder_snow",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 561,
       "serialization_id": "tile.powder_snow"
     },
@@ -12503,8 +12026,7 @@
     },
     {
       "name": "minecraft:prismarine",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 168,
       "serialization_id": "tile.prismarine.rough"
     },
@@ -12530,8 +12052,7 @@
     },
     {
       "name": "minecraft:prismarine_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1203,
       "serialization_id": "tile.prismarine.bricks"
     },
@@ -12651,22 +12172,19 @@
     },
     {
       "name": "minecraft:purple_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 861,
       "serialization_id": "tile.carpet.purple"
     },
     {
       "name": "minecraft:purple_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 892,
       "serialization_id": "tile.concrete.purple"
     },
     {
       "name": "minecraft:purple_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 973,
       "serialization_id": "tile.concretePowder.purple"
     },
@@ -12682,36 +12200,31 @@
     },
     {
       "name": "minecraft:purple_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 877,
       "serialization_id": "tile.shulkerBoxPurple"
     },
     {
       "name": "minecraft:purple_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 937,
       "serialization_id": "tile.stained_glass.purple"
     },
     {
       "name": "minecraft:purple_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 907,
       "serialization_id": "tile.stained_glass_pane.purple"
     },
     {
       "name": "minecraft:purple_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 988,
       "serialization_id": "tile.stained_hardened_clay.purple"
     },
     {
       "name": "minecraft:purple_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 819,
       "serialization_id": "tile.wool.purple"
     },
@@ -12780,8 +12293,7 @@
     },
     {
       "name": "minecraft:quartz_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 559,
       "serialization_id": "tile.quartz_bricks"
     },
@@ -12797,8 +12309,7 @@
     },
     {
       "name": "minecraft:quartz_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 153,
       "serialization_id": "tile.quartz_ore"
     },
@@ -12847,22 +12358,19 @@
     },
     {
       "name": "minecraft:raw_copper_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 707,
       "serialization_id": "tile.raw_copper_block"
     },
     {
       "name": "minecraft:raw_gold_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 708,
       "serialization_id": "tile.raw_gold_block"
     },
     {
       "name": "minecraft:raw_iron_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 706,
       "serialization_id": "tile.raw_iron_block"
     },
@@ -12891,22 +12399,19 @@
     },
     {
       "name": "minecraft:red_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 865,
       "serialization_id": "tile.carpet.red"
     },
     {
       "name": "minecraft:red_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 896,
       "serialization_id": "tile.concrete.red"
     },
     {
       "name": "minecraft:red_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 977,
       "serialization_id": "tile.concretePowder.red"
     },
@@ -12922,8 +12427,7 @@
     },
     {
       "name": "minecraft:red_mushroom",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 40,
       "serialization_id": "tile.red_mushroom"
     },
@@ -12939,8 +12443,7 @@
     },
     {
       "name": "minecraft:red_nether_brick",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 215,
       "serialization_id": "tile.red_nether_brick"
     },
@@ -13001,15 +12504,13 @@
     },
     {
       "name": "minecraft:red_sand",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1204,
       "serialization_id": "tile.sand.red"
     },
     {
       "name": "minecraft:red_sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 179,
       "serialization_id": "tile.red_sandstone"
     },
@@ -13070,64 +12571,55 @@
     },
     {
       "name": "minecraft:red_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 881,
       "serialization_id": "tile.shulkerBoxRed"
     },
     {
       "name": "minecraft:red_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 941,
       "serialization_id": "tile.stained_glass.red"
     },
     {
       "name": "minecraft:red_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 911,
       "serialization_id": "tile.stained_glass_pane.red"
     },
     {
       "name": "minecraft:red_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 992,
       "serialization_id": "tile.stained_hardened_clay.red"
     },
     {
       "name": "minecraft:red_tulip",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1088,
       "serialization_id": "tile.red_flower.tulipRed"
     },
     {
       "name": "minecraft:red_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 811,
       "serialization_id": "tile.wool.red"
     },
     {
       "name": "minecraft:redstone_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 152,
       "serialization_id": "tile.redstone_block"
     },
     {
       "name": "minecraft:redstone_lamp",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 123,
       "serialization_id": "tile.redstone_lamp"
     },
     {
       "name": "minecraft:redstone_ore",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 73,
       "serialization_id": "tile.redstone_ore"
     },
@@ -13163,8 +12655,7 @@
     },
     {
       "name": "minecraft:reinforced_deepslate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 721,
       "serialization_id": "tile.reinforced_deepslate"
     },
@@ -13183,8 +12674,7 @@
     },
     {
       "name": "minecraft:resin_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1276,
       "serialization_id": "tile.resin_block"
     },
@@ -13245,8 +12735,7 @@
     },
     {
       "name": "minecraft:resin_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1268,
       "serialization_id": "tile.resin_bricks"
     },
@@ -13282,15 +12771,13 @@
     },
     {
       "name": "minecraft:sand",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 12,
       "serialization_id": "tile.sand.default"
     },
     {
       "name": "minecraft:sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 24,
       "serialization_id": "tile.sandstone"
     },
@@ -13364,8 +12851,7 @@
     },
     {
       "name": "minecraft:sculk",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 713,
       "serialization_id": "tile.sculk"
     },
@@ -13414,8 +12900,7 @@
     },
     {
       "name": "minecraft:sea_lantern",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 169,
       "serialization_id": "tile.seaLantern"
     },
@@ -13444,22 +12929,19 @@
     },
     {
       "name": "minecraft:short_dry_grass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1283,
       "serialization_id": "tile.short_dry_grass"
     },
     {
       "name": "minecraft:short_grass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 31,
       "serialization_id": "tile.tallgrass.grass"
     },
     {
       "name": "minecraft:shroomlight",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 485,
       "serialization_id": "tile.shroomlight"
     },
@@ -13485,8 +12967,7 @@
     },
     {
       "name": "minecraft:slime",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 165,
       "serialization_id": "tile.slime"
     },
@@ -13515,8 +12996,7 @@
     },
     {
       "name": "minecraft:smithing_table",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 457,
       "serialization_id": "tile.smithing_table"
     },
@@ -13532,8 +13012,7 @@
     },
     {
       "name": "minecraft:smooth_basalt",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 632,
       "serialization_id": "tile.smooth_basalt"
     },
@@ -13582,8 +13061,7 @@
     },
     {
       "name": "minecraft:smooth_red_sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1213,
       "serialization_id": "tile.red_sandstone.smooth"
     },
@@ -13622,8 +13100,7 @@
     },
     {
       "name": "minecraft:smooth_sandstone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1201,
       "serialization_id": "tile.sandstone.smooth"
     },
@@ -13662,8 +13139,7 @@
     },
     {
       "name": "minecraft:smooth_stone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 438,
       "serialization_id": "tile.smooth_stone"
     },
@@ -13699,8 +13175,7 @@
     },
     {
       "name": "minecraft:snow",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 80,
       "serialization_id": "tile.snow"
     },
@@ -13752,15 +13227,13 @@
     },
     {
       "name": "minecraft:soul_sand",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 88,
       "serialization_id": "tile.soul_sand"
     },
     {
       "name": "minecraft:soul_soil",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 491,
       "serialization_id": "tile.soul_soil"
     },
@@ -13776,15 +13249,13 @@
     },
     {
       "name": "minecraft:sponge",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 19,
       "serialization_id": "tile.sponge.dry"
     },
     {
       "name": "minecraft:spore_blossom",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 576,
       "serialization_id": "tile.spore_blossom"
     },
@@ -13832,8 +13303,7 @@
     },
     {
       "name": "minecraft:spruce_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 834,
       "serialization_id": "tile.spruce_fence"
     },
@@ -13897,8 +13367,7 @@
     },
     {
       "name": "minecraft:spruce_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 994,
       "serialization_id": "tile.spruce_planks"
     },
@@ -14049,8 +13518,7 @@
     },
     {
       "name": "minecraft:stone",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1,
       "serialization_id": "tile.stone.stone"
     },
@@ -14111,8 +13579,7 @@
     },
     {
       "name": "minecraft:stone_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 98,
       "serialization_id": "tile.stonebrick.default"
     },
@@ -14404,8 +13871,7 @@
     },
     {
       "name": "minecraft:structure_void",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 217,
       "serialization_id": "tile.structure_void"
     },
@@ -14457,8 +13923,7 @@
     },
     {
       "name": "minecraft:tall_dry_grass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1284,
       "serialization_id": "tile.tall_dry_grass"
     },
@@ -14474,15 +13939,13 @@
     },
     {
       "name": "minecraft:target",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 494,
       "serialization_id": "tile.target"
     },
     {
       "name": "minecraft:tinted_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 589,
       "serialization_id": "tile.tinted_glass"
     },
@@ -14508,8 +13971,7 @@
     },
     {
       "name": "minecraft:torchflower",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 823,
       "serialization_id": "tile.torchflower"
     },
@@ -14599,15 +14061,13 @@
     },
     {
       "name": "minecraft:tube_coral",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 386,
       "serialization_id": "tile.coral.blue"
     },
     {
       "name": "minecraft:tube_coral_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 387,
       "serialization_id": "tile.coral_block.blue"
     },
@@ -14633,8 +14093,7 @@
     },
     {
       "name": "minecraft:tuff",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 588,
       "serialization_id": "tile.tuff"
     },
@@ -14695,8 +14154,7 @@
     },
     {
       "name": "minecraft:tuff_bricks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1009,
       "serialization_id": "tile.tuff_bricks"
     },
@@ -14800,15 +14258,13 @@
     },
     {
       "name": "minecraft:undyed_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 205,
       "serialization_id": "tile.shulkerBox"
     },
     {
       "name": "minecraft:unknown",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 560,
       "serialization_id": "tile.unknown"
     },
@@ -14951,8 +14407,7 @@
     },
     {
       "name": "minecraft:warped_fence",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 512,
       "serialization_id": "tile.warped_fence"
     },
@@ -14974,8 +14429,7 @@
     },
     {
       "name": "minecraft:warped_fungus",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 484,
       "serialization_id": "tile.warped_fungus"
     },
@@ -15010,15 +14464,13 @@
     },
     {
       "name": "minecraft:warped_nylium",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 488,
       "serialization_id": "tile.warped_nylium"
     },
     {
       "name": "minecraft:warped_planks",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 498,
       "serialization_id": "tile.warped_planks"
     },
@@ -15034,8 +14486,7 @@
     },
     {
       "name": "minecraft:warped_roots",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 479,
       "serialization_id": "tile.warped_roots.warpedRoots"
     },
@@ -15126,8 +14577,7 @@
     },
     {
       "name": "minecraft:warped_wart_block",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 482,
       "serialization_id": "tile.warped_wart_block"
     },
@@ -15143,29 +14593,25 @@
     },
     {
       "name": "minecraft:waterlily",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 111,
       "serialization_id": "tile.waterlily"
     },
     {
       "name": "minecraft:waxed_chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1019,
       "serialization_id": "tile.waxed_chiseled_copper"
     },
     {
       "name": "minecraft:waxed_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 599,
       "serialization_id": "tile.waxed_copper"
     },
     {
       "name": "minecraft:waxed_copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1325,
       "serialization_id": "tile.waxed_copper_bars"
     },
@@ -15233,8 +14679,7 @@
     },
     {
       "name": "minecraft:waxed_copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1027,
       "serialization_id": "tile.waxed_copper_grate"
     },
@@ -15266,8 +14711,7 @@
     },
     {
       "name": "minecraft:waxed_cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 606,
       "serialization_id": "tile.waxed_cut_copper"
     },
@@ -15306,22 +14750,19 @@
     },
     {
       "name": "minecraft:waxed_exposed_chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1020,
       "serialization_id": "tile.waxed_exposed_chiseled_copper"
     },
     {
       "name": "minecraft:waxed_exposed_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 600,
       "serialization_id": "tile.waxed_exposed_copper"
     },
     {
       "name": "minecraft:waxed_exposed_copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1326,
       "serialization_id": "tile.waxed_exposed_copper_bars"
     },
@@ -15389,8 +14830,7 @@
     },
     {
       "name": "minecraft:waxed_exposed_copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1028,
       "serialization_id": "tile.waxed_exposed_copper_grate"
     },
@@ -15422,8 +14862,7 @@
     },
     {
       "name": "minecraft:waxed_exposed_cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 607,
       "serialization_id": "tile.waxed_exposed_cut_copper"
     },
@@ -15488,22 +14927,19 @@
     },
     {
       "name": "minecraft:waxed_oxidized_chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1021,
       "serialization_id": "tile.waxed_oxidized_chiseled_copper"
     },
     {
       "name": "minecraft:waxed_oxidized_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 701,
       "serialization_id": "tile.waxed_oxidized_copper"
     },
     {
       "name": "minecraft:waxed_oxidized_copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1328,
       "serialization_id": "tile.waxed_oxidized_copper_bars"
     },
@@ -15571,8 +15007,7 @@
     },
     {
       "name": "minecraft:waxed_oxidized_copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1030,
       "serialization_id": "tile.waxed_oxidized_copper_grate"
     },
@@ -15604,8 +15039,7 @@
     },
     {
       "name": "minecraft:waxed_oxidized_cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 702,
       "serialization_id": "tile.waxed_oxidized_cut_copper"
     },
@@ -15657,22 +15091,19 @@
     },
     {
       "name": "minecraft:waxed_weathered_chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1022,
       "serialization_id": "tile.waxed_weathered_chiseled_copper"
     },
     {
       "name": "minecraft:waxed_weathered_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 601,
       "serialization_id": "tile.waxed_weathered_copper"
     },
     {
       "name": "minecraft:waxed_weathered_copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1327,
       "serialization_id": "tile.waxed_weathered_copper_bars"
     },
@@ -15740,8 +15171,7 @@
     },
     {
       "name": "minecraft:waxed_weathered_copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1029,
       "serialization_id": "tile.waxed_weathered_copper_grate"
     },
@@ -15773,8 +15203,7 @@
     },
     {
       "name": "minecraft:waxed_weathered_cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 608,
       "serialization_id": "tile.waxed_weathered_cut_copper"
     },
@@ -15826,22 +15255,19 @@
     },
     {
       "name": "minecraft:weathered_chiseled_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1017,
       "serialization_id": "tile.weathered_chiseled_copper"
     },
     {
       "name": "minecraft:weathered_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 597,
       "serialization_id": "tile.weathered_copper"
     },
     {
       "name": "minecraft:weathered_copper_bars",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1323,
       "serialization_id": "tile.weathered_copper_bars"
     },
@@ -15909,8 +15335,7 @@
     },
     {
       "name": "minecraft:weathered_copper_grate",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1025,
       "serialization_id": "tile.weathered_copper_grate"
     },
@@ -15942,8 +15367,7 @@
     },
     {
       "name": "minecraft:weathered_cut_copper",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 604,
       "serialization_id": "tile.weathered_cut_copper"
     },
@@ -15995,8 +15419,7 @@
     },
     {
       "name": "minecraft:web",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 30,
       "serialization_id": "tile.web"
     },
@@ -16012,8 +15435,7 @@
     },
     {
       "name": "minecraft:wet_sponge",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1239,
       "serialization_id": "tile.sponge.wet"
     },
@@ -16052,22 +15474,19 @@
     },
     {
       "name": "minecraft:white_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 171,
       "serialization_id": "tile.carpet.white"
     },
     {
       "name": "minecraft:white_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 236,
       "serialization_id": "tile.concrete.white"
     },
     {
       "name": "minecraft:white_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 237,
       "serialization_id": "tile.concretePowder.white"
     },
@@ -16083,43 +15502,37 @@
     },
     {
       "name": "minecraft:white_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 218,
       "serialization_id": "tile.shulkerBoxWhite"
     },
     {
       "name": "minecraft:white_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 241,
       "serialization_id": "tile.stained_glass.white"
     },
     {
       "name": "minecraft:white_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 160,
       "serialization_id": "tile.stained_glass_pane.white"
     },
     {
       "name": "minecraft:white_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 159,
       "serialization_id": "tile.stained_hardened_clay.white"
     },
     {
       "name": "minecraft:white_tulip",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 1090,
       "serialization_id": "tile.red_flower.tulipWhite"
     },
     {
       "name": "minecraft:white_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 35,
       "serialization_id": "tile.wool.white"
     },
@@ -16138,8 +15551,7 @@
     },
     {
       "name": "minecraft:wither_rose",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 471,
       "serialization_id": "tile.wither_rose"
     },
@@ -16220,22 +15632,19 @@
     },
     {
       "name": "minecraft:yellow_carpet",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 855,
       "serialization_id": "tile.carpet.yellow"
     },
     {
       "name": "minecraft:yellow_concrete",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 886,
       "serialization_id": "tile.concrete.yellow"
     },
     {
       "name": "minecraft:yellow_concrete_powder",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 967,
       "serialization_id": "tile.concretePowder.yellow"
     },
@@ -16251,36 +15660,31 @@
     },
     {
       "name": "minecraft:yellow_shulker_box",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 871,
       "serialization_id": "tile.shulkerBoxYellow"
     },
     {
       "name": "minecraft:yellow_stained_glass",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 931,
       "serialization_id": "tile.stained_glass.yellow"
     },
     {
       "name": "minecraft:yellow_stained_glass_pane",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 901,
       "serialization_id": "tile.stained_glass_pane.yellow"
     },
     {
       "name": "minecraft:yellow_terracotta",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 982,
       "serialization_id": "tile.stained_hardened_clay.yellow"
     },
     {
       "name": "minecraft:yellow_wool",
-      "properties": [
-      ],
+      "properties": [],
       "raw_id": 813,
       "serialization_id": "tile.wool.yellow"
     },
@@ -16297,5 +15701,6 @@
   ],
   "module_type": "vanilla_data",
   "name": "mojang-block",
-  "vanilla_data_type": "block"
+  "vanilla_data_type": "block",
+  "minecraft_version": "1.20.0"
 }

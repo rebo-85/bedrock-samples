@@ -1,10 +1,8 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -109,8 +107,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -237,8 +234,7 @@
         }
       ],
       "name": "ActionFormData",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -253,10 +249,8 @@
           "name": "FormResponse"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ActionFormResponse",
       "properties": [
         {
@@ -291,15 +285,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "FormResponse",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -307,10 +297,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -442,8 +430,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -538,8 +525,7 @@
         }
       ],
       "name": "MessageFormData",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -554,10 +540,8 @@
           "name": "FormResponse"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "MessageFormResponse",
       "properties": [
         {
@@ -592,14 +576,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -1092,8 +1073,7 @@
         }
       ],
       "name": "ModalFormData",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1108,10 +1088,8 @@
           "name": "FormResponse"
         }
       ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "constants": [],
+      "functions": [],
       "name": "ModalFormResponse",
       "properties": [
         {
@@ -1168,10 +1146,8 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
+  "constants": [],
+  "dependencies": [],
   "enums": [
     {
       "constants": [
@@ -1242,14 +1218,11 @@
       }
     }
   ],
-  "functions": [
-  ],
-  "interfaces": [
-  ],
+  "functions": [],
+  "interfaces": [],
   "module_type": "script",
   "name": "@minecraft/server-ui-bindings",
-  "objects": [
-  ],
+  "objects": [],
   "peer_dependencies": [
     {
       "name": "@minecraft/common",
@@ -1270,7 +1243,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "ceded7ee-4d9d-4bcc-badf-0ecddb8e238a"
+  "type_aliases": [],
+  "uuid": "ceded7ee-4d9d-4bcc-badf-0ecddb8e238a",
+  "version": "1.0.0",
+  "minecraft_version": "1.20.0"
 }

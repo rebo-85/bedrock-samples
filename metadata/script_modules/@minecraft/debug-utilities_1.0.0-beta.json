@@ -8,8 +8,7 @@
           "name": "DebugLine"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -162,8 +161,7 @@
           "name": "DebugShape"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -255,8 +253,7 @@
           "name": "DebugShape"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -307,8 +304,7 @@
         }
       ],
       "name": "DebugCircle",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -316,10 +312,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -369,8 +363,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -413,8 +406,7 @@
         }
       ],
       "name": "DebugDrawer",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -429,8 +421,7 @@
           "name": "DebugShape"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -529,14 +520,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -859,8 +847,7 @@
           "name": "DebugShape"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -911,8 +898,7 @@
         }
       ],
       "name": "DebugSphere",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -927,8 +913,7 @@
           "name": "DebugShape"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -1017,18 +1002,13 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
-  "enums": [
-  ],
-  "errors": [
-  ],
+  "constants": [],
+  "dependencies": [],
+  "enums": [],
+  "errors": [],
   "functions": [
     {
-      "arguments": [
-      ],
+      "arguments": [],
       "call_privilege": [
         {
           "name": "restricted_execution"
@@ -1044,8 +1024,7 @@
       }
     },
     {
-      "arguments": [
-      ],
+      "arguments": [],
       "call_privilege": [
         {
           "name": "restricted_execution"
@@ -1089,8 +1068,7 @@
   ],
   "interfaces": [
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "HandleCounts",
       "properties": [
         {
@@ -1155,8 +1133,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "PluginStats",
       "properties": [
         {
@@ -1182,8 +1159,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RuntimeStats",
       "properties": [
         {
@@ -1511,7 +1487,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "1796ea86-0daf-4409-99ee-fd6467cf1203"
+  "type_aliases": [],
+  "uuid": "1796ea86-0daf-4409-99ee-fd6467cf1203",
+  "version": "1.0.0-beta",
+  "minecraft_version": "1.20.0"
 }

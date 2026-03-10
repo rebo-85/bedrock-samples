@@ -1,0 +1,7 @@
+`@minecraft/debug-utilities`
+
+== Change Log ==
+=== 1.0.0-beta ===
+- Added `@minecraft/debug-utilities` module
+
+== /Change Log ==

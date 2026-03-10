@@ -1,10 +1,8 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -165,8 +163,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -285,8 +282,7 @@
         }
       ],
       "name": "Sentry",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -294,10 +290,8 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
+  "constants": [],
+  "dependencies": [],
   "enums": [
     {
       "constants": [
@@ -363,8 +357,7 @@
   "errors": [
     {
       "name": "SentryAlreadyInitializedError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -373,8 +366,7 @@
     },
     {
       "name": "SentryUninitializedError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -382,12 +374,10 @@
       }
     }
   ],
-  "functions": [
-  ],
+  "functions": [],
   "interfaces": [
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "SentryCaptureContext",
       "properties": [
         {
@@ -484,8 +474,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "SentryOptions",
       "properties": [
         {
@@ -610,7 +599,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "b7b26c0f-2267-4713-8534-51ca98c51ee9"
+  "type_aliases": [],
+  "uuid": "b7b26c0f-2267-4713-8534-51ca98c51ee9",
+  "version": "1.0.0-beta",
+  "minecraft_version": "1.20.0"
 }

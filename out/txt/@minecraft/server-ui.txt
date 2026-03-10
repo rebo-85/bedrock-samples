@@ -1,0 +1,93 @@
+`@minecraft/server-ui`
+
+== Change Log ==
+=== 2.1.0-beta ===
+
+=== 2.0.0 ===
+- Changed class `ActionFormData`
+    - Added function `divider`
+    - Added function `header`
+    - Added function `label`
+- Changed class `MessageFormData`
+    - Changed function `show`
+      - Changed return type from `*Promise<MessageFormResponse>*` (throws exceptions) to `*Promise<MessageFormResponse>*` (throws exceptions)
+- Changed class `ModalFormData`
+    - Added function `divider`
+    - Changed function `dropdown`
+      - Added argument `items`
+      - Added argument `dropdownOptions`
+      - Removed argument `options`
+      - Removed argument `defaultValueIndex`
+    - Added function `header`
+    - Added function `label`
+    - Changed function `slider`
+      - Added argument `sliderOptions`
+      - Removed argument `valueStep`
+      - Removed argument `defaultValue`
+    - Changed function `textField`
+      - Added argument `textFieldOptions`
+      - Removed argument `defaultValue`
+    - Changed function `toggle`
+      - Added argument `toggleOptions`
+      - Removed argument `defaultValue`
+- Changed class `ModalFormResponse`
+    - Changed type for `formValues` from `*(boolean | number | string)[]*` to `*(boolean | number | string | undefined)[]*`
+- Added interface `ModalFormDataDropdownOptions`
+  ```ts
+  export interface ModalFormDataDropdownOptions {
+    defaultValueIndex?: number;
+    tooltip?: minecraftserver.RawMessage | string;
+  }
+
+  ```
+- Added interface `ModalFormDataSliderOptions`
+  ```ts
+  export interface ModalFormDataSliderOptions {
+    defaultValue?: number;
+    tooltip?: minecraftserver.RawMessage | string;
+    valueStep?: number;
+  }
+
+  ```
+- Added interface `ModalFormDataTextFieldOptions`
+  ```ts
+  export interface ModalFormDataTextFieldOptions {
+    defaultValue?: minecraftserver.RawMessage | string;
+    tooltip?: minecraftserver.RawMessage | string;
+  }
+
+  ```
+- Added interface `ModalFormDataToggleOptions`
+  ```ts
+  export interface ModalFormDataToggleOptions {
+    defaultValue?: boolean;
+    tooltip?: minecraftserver.RawMessage | string;
+  }
+
+  ```
+
+=== 1.3.0 ===
+- Added class `UIManager`
+  ```ts
+  export class UIManager {
+    private constructor();
+    closeAllForms(player: minecraftserver.Player): void;
+  }
+
+  ```
+- Added object `uiManager`
+
+=== 1.2.0 ===
+- Changed class `ModalFormData`
+    - Added function `submitButton`
+
+=== 1.1.0 ===
+- Changed class `FormResponse`
+    - Added property `cancelationReason`
+    - Added property `canceled`
+- Added enum `FormCancelationReason`
+
+=== 1.0.0 ===
+- Added `@minecraft/server-ui` module
+
+== /Change Log ==

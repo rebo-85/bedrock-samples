@@ -1,0 +1,6143 @@
+`@minecraft/server`
+
+== Change Log ==
+=== 2.6.0-beta ===
+- Added class `AimAssistCategory`
+  ```ts
+  export class AimAssistCategory {
+    private constructor();
+    readonly defaultBlockPriority: number;
+    readonly defaultEntityPriority: number;
+    readonly identifier: string;
+    getBlockPriorities(): Record<string, number>;
+    getBlockTagPriorities(): Record<string, number>;
+    getEntityPriorities(): Record<string, number>;
+    getEntityTypeFamilyPriorities(): Record<string, number>;
+  }
+
+  ```
+- Added class `AimAssistCategorySettings`
+  ```ts
+  export class AimAssistCategorySettings {
+    defaultBlockPriority: number;
+    defaultEntityPriority: number;
+    readonly identifier: string;
+    constructor(identifier: string);
+    getBlockPriorities(): Record<string, number>;
+    getBlockTagPriorities(): Record<string, number>;
+    getEntityPriorities(): Record<string, number>;
+    getEntityTypeFamilyPriorities(): Record<string, number>;
+  setBlockPriorities(blockPriorities: Record<keyof typeof minecraftvanilladata.MinecraftBlockTypes | string, number>): void;
+  setBlockTagPriorities(blockTagPriorities: Record<string, number>): void;
+  setEntityPriorities(entityPriorities: Record<keyof typeof minecraftvanilladata.MinecraftEntityTypes | string, number>): void;
+  setEntityTypeFamilyPriorities(entityTypeFamilyPriorities: Record<string, number>): void;
+  }
+
+  ```
+- Added class `AimAssistPreset`
+  ```ts
+  export class AimAssistPreset {
+    private constructor();
+    readonly defaultItemSettings?: string;
+    readonly handSettings?: string;
+    readonly identifier: string;
+    getExcludedBlockTagTargets(): string[];
+    getExcludedBlockTargets(): string[];
+    getExcludedEntityTargets(): string[];
+    getExcludedEntityTypeFamilyTargets(): string[];
+    getItemSettings(): Record<string, string>;
+    getLiquidTargetingItems(): string[];
+  }
+
+  ```
+- Added class `AimAssistPresetSettings`
+  ```ts
+  export class AimAssistPresetSettings {
+    defaultItemSettings?: string;
+    handSettings?: string;
+    readonly identifier: string;
+    constructor(identifier: string);
+    getExcludedBlockTagTargets(): string[] | undefined;
+    getExcludedBlockTargets(): string[] | undefined;
+    getExcludedEntityTargets(): string[] | undefined;
+    getExcludedEntityTypeFamilyTargets(): string[] | undefined;
+    getItemSettings(): Record<string, string>;
+    getLiquidTargetingItems(): string[] | undefined;
+  setExcludedBlockTagTargets(targets?: (string)[]): void;
+  setExcludedBlockTargets(targets?: (keyof typeof minecraftvanilladata.MinecraftBlockTypes | string)[]): void;
+  setExcludedEntityTargets(targets?: (keyof typeof minecraftvanilladata.MinecraftEntityTypes | string)[]): void;
+  setExcludedEntityTypeFamilyTargets(targets?: (string)[]): void;
+  setItemSettings(itemSettings: Record<keyof typeof minecraftvanilladata.MinecraftItemTypes | string, string>): void;
+  setLiquidTargetingItems(items?: (keyof typeof minecraftvanilladata.MinecraftItemTypes | string)[]): void;
+  }
+
+  ```
+- Added class `AimAssistRegistry`
+  ```ts
+  export class AimAssistRegistry {
+    private constructor();
+    static readonly DefaultCategoryId = "minecraft:default";
+    static readonly DefaultPresetId = "minecraft:aim_assist_default";
+    addCategory(category: AimAssistCategorySettings): AimAssistCategory;
+    addPreset(preset: AimAssistPresetSettings): AimAssistPreset;
+    getCategories(): AimAssistCategory[];
+    getCategory(categoryId: string): AimAssistCategory | undefined;
+    getPreset(presetId: string): AimAssistPreset | undefined;
+    getPresets(): AimAssistPreset[];
+  }
+
+  ```
+- Changed class `BiomeType`
+    - Added function `getTags`
+    - Added function `hasTags`
+- Added class `BiomeTypes`
+  ```ts
+  export class BiomeTypes {
+    private constructor();
+    static get(typeName: string): BiomeType | undefined;
+    static getAll(): BiomeType[];
+  }
+
+  ```
+- Changed class `Block`
+    - Added property `isSolid`
+    - Added function `canPlace`
+    - Added function `getComponents`
+    - Added function `getMapColor`
+    - Added function `hasComponent`
+    - Added function `trySetPermutation`
+- Added class `BlockBoundingBoxUtils`
+  ```ts
+  export class BlockBoundingBoxUtils {
+    private constructor();
+    static createValid(min: Vector3, max: Vector3): BlockBoundingBox;
+    static dilate(box: BlockBoundingBox, size: Vector3): BlockBoundingBox;
+    static equals(box: BlockBoundingBox, other: BlockBoundingBox): boolean;
+    static expand(box: BlockBoundingBox, other: BlockBoundingBox): BlockBoundingBox;
+    static getCenter(box: BlockBoundingBox): Vector3;
+    static getIntersection(box: BlockBoundingBox, other: BlockBoundingBox): BlockBoundingBox | undefined;
+    static getSpan(box: BlockBoundingBox): Vector3;
+    static intersects(box: BlockBoundingBox, other: BlockBoundingBox): boolean;
+    static isInside(box: BlockBoundingBox, pos: Vector3): boolean;
+    static isValid(box: BlockBoundingBox): boolean;
+    static translate(box: BlockBoundingBox, delta: Vector3): BlockBoundingBox;
+  }
+
+  ```
+- Added class `BlockComponentEntityEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentEntityEvent extends BlockEvent {
+    private constructor();
+    readonly blockPermutation: BlockPermutation;
+    readonly entitySource?: Entity;
+    readonly name: string;
+  }
+
+  ```
+- Changed class `BlockComponentRedstoneUpdateEvent`
+    - Added property `previousPowerLevel`
+- Changed class `BlockLocationIterator`
+    - Added function `isValid`
+- Changed class `BlockPermutation`
+    - Added property `localizationKey`
+- Changed class `BlockType`
+    - Added property `localizationKey`
+- Changed class `BlockVolumeBase`
+    - Added function `getBoundingBox`
+- Changed class `Camera`
+    - Added function `attachToEntity`
+    - Added function `playAnimation`
+    - Added function `setCameraWithEase`
+- Added class `CatmullRomSpline`
+  ```ts
+  export class CatmullRomSpline {
+    controlPoints: Vector3[];
+  }
+
+  ```
+- Added class `ChatSendAfterEvent`
+  ```ts
+  export class ChatSendAfterEvent {
+    private constructor();
+    readonly message: string;
+    readonly sender: Player;
+    readonly targets?: Player[];
+  }
+
+  ```
+- Added class `ChatSendAfterEventSignal`
+  ```ts
+  export class ChatSendAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ChatSendAfterEvent) => void): (arg0: ChatSendAfterEvent) => void;
+    unsubscribe(callback: (arg0: ChatSendAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ChatSendBeforeEvent`
+  ```ts
+  export class ChatSendBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    readonly message: string;
+    readonly sender: Player;
+    readonly targets?: Player[];
+  }
+
+  ```
+- Added class `ChatSendBeforeEventSignal`
+  ```ts
+  export class ChatSendBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ChatSendBeforeEvent) => void): (arg0: ChatSendBeforeEvent) => void;
+    unsubscribe(callback: (arg0: ChatSendBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `CompoundBlockVolume`
+  ```ts
+  export class CompoundBlockVolume {
+    readonly capacity: number;
+    readonly items: CompoundBlockVolumeItem[];
+    readonly itemsAbsolute: CompoundBlockVolumeItem[];
+    readonly volumeCount: number;
+    constructor(origin?: Vector3);
+    clear(): void;
+    getBlockLocationIterator(): BlockLocationIterator;
+    getBoundingBox(): BlockBoundingBox;
+    getMax(): Vector3;
+    getMin(): Vector3;
+    getOrigin(): Vector3;
+    isEmpty(): boolean;
+    isInside(worldLocation: Vector3): boolean;
+    peekLastVolume(forceRelativity?: CompoundBlockVolumePositionRelativity): CompoundBlockVolumeItem | undefined;
+    popVolume(): boolean;
+    pushVolume(item: CompoundBlockVolumeItem): void;
+    replaceOrAddLastVolume(item: CompoundBlockVolumeItem): boolean;
+    setOrigin(position: Vector3, preserveExistingVolumes?: boolean): void;
+    translateOrigin(delta: Vector3, preserveExistingVolumes?: boolean): void;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `containsBiomes`
+    - Added function `findClosestBiome`
+    - Added function `getGeneratedStructures`
+    - Added function `getWeather`
+    - Changed function `spawnEntity`
+      - Changed return type from `*Entity*` (throws exceptions) to `*Entity*` (throws exceptions)
+      - Changed argument `identifier` type from `*EntityType | string*` to `*EntityIdentifierType<NoInfer<T>>*`
+      - Changed argument `location` type from `*Vector3*` to `*Vector3*`
+      - Changed argument `options` type from `*SpawnEntityOptions*` to `*SpawnEntityOptions*`
+    - Added function `stopAllSounds`
+    - Added function `stopSound`
+- Changed class `Entity`
+    - Added property `target`
+- Changed class `EntityBreathableComponent`
+    - Added property `airSupply`
+    - Added property `canBreathe`
+- Changed class `EntityDefinitionFeedItem`
+    - Added property `resultItem`
+- Added class `EntityHealAfterEvent`
+  ```ts
+  export class EntityHealAfterEvent {
+    private constructor();
+    readonly healedEntity: Entity;
+    readonly healing: number;
+    readonly healSource: EntityHealSource;
+  }
+
+  ```
+- Added class `EntityHealAfterEventSignal`
+  ```ts
+  export class EntityHealAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityHealAfterEvent) => void, options?: EntityHealEventOptions): (arg0: EntityHealAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityHealAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityHealBeforeEvent`
+  ```ts
+  export class EntityHealBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    readonly healedEntity: Entity;
+    healing: number;
+    readonly healSource: EntityHealSource;
+  }
+
+  ```
+- Added class `EntityHealBeforeEventSignal`
+  ```ts
+  export class EntityHealBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityHealBeforeEvent) => void, options?: EntityHealEventOptions): (arg0: EntityHealBeforeEvent) => void;
+    unsubscribe(callback: (arg0: EntityHealBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityHealSource`
+  ```ts
+  export class EntityHealSource {
+    private constructor();
+    readonly cause: EntityHealCause;
+  }
+
+  ```
+- Changed class `EntityHurtAfterEventSignal`
+    - Changed function `subscribe`
+      - Changed argument `options` type from `*EntityEventOptions*` to `*EntityHurtAfterEventOptions*`
+- Added class `EntityHurtBeforeEvent`
+  ```ts
+  export class EntityHurtBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    damage: number;
+    readonly damageSource: EntityDamageSource;
+    readonly hurtEntity: Entity;
+  }
+
+  ```
+- Added class `EntityHurtBeforeEventSignal`
+  ```ts
+  export class EntityHurtBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityHurtBeforeEvent) => void, options?: EntityHurtBeforeEventOptions): (arg0: EntityHurtBeforeEvent) => void;
+    unsubscribe(callback: (arg0: EntityHurtBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityItemDropAfterEvent`
+  ```ts
+  export class EntityItemDropAfterEvent {
+    private constructor();
+    readonly entity: Entity;
+    readonly items: Entity[];
+  }
+
+  ```
+- Added class `EntityItemDropAfterEventSignal`
+  ```ts
+  export class EntityItemDropAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityItemDropAfterEvent) => void, options?: EntityItemDropEventOptions): (arg0: EntityItemDropAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityItemDropAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityItemPickupAfterEvent`
+  ```ts
+  export class EntityItemPickupAfterEvent {
+    private constructor();
+    readonly entity: Entity;
+    readonly items: ItemStack[];
+  }
+
+  ```
+- Added class `EntityItemPickupAfterEventSignal`
+  ```ts
+  export class EntityItemPickupAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityItemPickupAfterEvent) => void, options?: EntityItemPickupEventOptions): (arg0: EntityItemPickupAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityItemPickupAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityItemPickupBeforeEvent`
+  ```ts
+  export class EntityItemPickupBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    readonly entity: Entity;
+    readonly item: Entity;
+  }
+
+  ```
+- Added class `EntityItemPickupBeforeEventSignal`
+  ```ts
+  export class EntityItemPickupBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityItemPickupBeforeEvent) => void, options?: EntityItemPickupEventOptions): (arg0: EntityItemPickupBeforeEvent) => void;
+    unsubscribe(callback: (arg0: EntityItemPickupBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityNpcComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNpcComponent extends EntityComponent {
+    private constructor();
+    defaultScene: string;
+    name: string;
+    skinIndex: number;
+    static readonly componentId = "minecraft:npc";
+  }
+
+  ```
+- Changed class `EntityType`
+    - Added property `localizationKey`
+- Changed class `EntityTypes`
+    - Changed function `get`
+      - Changed return type from `*EntityType*` to `*EntityType | undefined*`
+      - Changed argument `identifier` type from `*string*` to `*EntityIdentifierType<NoInfer<T>>*`
+- Changed class `FeedItem`
+    - Added property `resultItem`
+- Changed class `GameRules`
+    - Added property `locatorBar`
+- Changed class `ItemDurabilityComponent`
+    - Added property `unbreakable`
+- Changed class `ItemType`
+    - Added property `localizationKey`
+- Added class `LinearSpline`
+  ```ts
+  export class LinearSpline {
+    controlPoints: Vector3[];
+  }
+
+  ```
+- Added class `MessageReceiveAfterEvent`
+  ```ts
+  export class MessageReceiveAfterEvent {
+    private constructor();
+    readonly id: string;
+    readonly message: string;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PackSettingChangeAfterEvent`
+  ```ts
+  export class PackSettingChangeAfterEvent {
+    private constructor();
+    readonly settingName: string;
+    readonly settingValue: boolean | number | string;
+  }
+
+  ```
+- Added class `PackSettingChangeAfterEventSignal`
+  ```ts
+  export class PackSettingChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PackSettingChangeAfterEvent) => void): (arg0: PackSettingChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PackSettingChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `Player`
+    - Added function `eatItem`
+    - Added function `getAimAssist`
+    - Added function `postClientMessage`
+    - Added function `stopAllSounds`
+    - Added function `stopSound`
+- Added class `PlayerAimAssist`
+  ```ts
+  export class PlayerAimAssist {
+    private constructor();
+    readonly settings?: PlayerAimAssistSettings;
+    set(settings?: PlayerAimAssistSettings): void;
+  }
+
+  ```
+- Added class `PlayerPlaceBlockBeforeEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerPlaceBlockBeforeEvent extends BlockEvent {
+    private constructor();
+    cancel: boolean;
+    readonly face: Direction;
+    readonly faceLocation: Vector3;
+    readonly permutationToPlace: BlockPermutation;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerPlaceBlockBeforeEventSignal`
+  ```ts
+  export class PlayerPlaceBlockBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void, options?: BlockEventOptions): (arg0: PlayerPlaceBlockBeforeEvent) => void;
+    unsubscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerUseNameTagAfterEvent`
+  ```ts
+  export class PlayerUseNameTagAfterEvent {
+    private constructor();
+    entityNamed: Entity;
+    newName: string;
+    player: Player;
+    previousName?: string;
+  }
+
+  ```
+- Added class `PlayerUseNameTagAfterEventSignal`
+  ```ts
+  export class PlayerUseNameTagAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerUseNameTagAfterEvent) => void): (arg0: PlayerUseNameTagAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerUseNameTagAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `Potions`
+    - Changed function `resolve`
+      - Changed return type from `*ItemStack*` (throws exceptions) to `*ItemStack*` (throws exceptions)
+      - Changed argument `potionEffectType` type from `*PotionEffectType | string*` to `*PotionEffectType | T*`
+      - Changed argument `potionDeliveryType` type from `*PotionDeliveryType | string*` to `*PotionDeliveryType | U*`
+- Added class `ServerMessageAfterEventSignal`
+  ```ts
+  export class ServerMessageAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: MessageReceiveAfterEvent) => void): (arg0: MessageReceiveAfterEvent) => void;
+    unsubscribe(callback: (arg0: MessageReceiveAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `SystemBeforeEvents`
+    - Added property `watchdogTerminate`
+- Added class `TickingAreaManager`
+  ```ts
+  export class TickingAreaManager {
+    private constructor();
+    readonly chunkCount: number;
+    readonly maxChunkCount: number;
+    createTickingArea(identifier: string, options: TickingAreaOptions): Promise<TickingArea>;
+    getAllTickingAreas(): TickingArea[];
+    getTickingArea(identifier: string | TickingArea): TickingArea | undefined;
+    hasCapacity(options: TickingAreaOptions): boolean;
+    hasTickingArea(identifier: string): boolean;
+    removeAllTickingAreas(): void;
+    removeTickingArea(identifier: string | TickingArea): void;
+  }
+
+  ```
+- Added class `WatchdogTerminateBeforeEvent`
+  ```ts
+  export class WatchdogTerminateBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    readonly terminateReason: WatchdogTerminateReason;
+  }
+
+  ```
+- Added class `WatchdogTerminateBeforeEventSignal`
+  ```ts
+  export class WatchdogTerminateBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: WatchdogTerminateBeforeEvent) => void): (arg0: WatchdogTerminateBeforeEvent) => void;
+    unsubscribe(callback: (arg0: WatchdogTerminateBeforeEvent) => void): void;
+  }
+
+  ```
+- Changed class `World`
+    - Added property `seed`
+    - Added property `tickingAreaManager`
+    - Added function `broadcastClientMessage`
+    - Added function `getAimAssist`
+    - Added function `getPackSettings`
+- Changed class `WorldAfterEvents`
+    - Added property `chatSend`
+    - Added property `entityHeal`
+    - Added property `entityItemDrop`
+    - Added property `entityItemPickup`
+    - Added property `messageReceive`
+    - Added property `packSettingChange`
+    - Added property `playerUseNameTag`
+- Changed class `WorldBeforeEvents`
+    - Added property `chatSend`
+    - Added property `entityHeal`
+    - Added property `entityHurt`
+    - Added property `entityItemPickup`
+    - Added property `playerPlaceBlock`
+- Added interface `AnimationOptions`
+  ```ts
+  export interface AnimationOptions {
+    animation: SplineAnimation;
+    totalTimeSeconds: number;
+  }
+
+  ```
+- Added interface `BiomeFilter`
+  ```ts
+  export interface BiomeFilter {
+    excludeBiomes?: string[];
+    excludeTags?: string[];
+    includeBiomes?: string[];
+    includeTags?: string[];
+    superset: boolean;
+  }
+
+  ```
+- Added interface `BiomeSearchOptions`
+  ```ts
+  export interface BiomeSearchOptions {
+    boundingSize?: Vector3;
+  }
+
+  ```
+- Changed interface `BlockCustomComponent`
+    - Added property `onEntity`
+      ```ts
+      onEntity?: (arg0: BlockComponentEntityEvent, arg1: CustomComponentParameters) => void
+      ```
+- Added interface `CameraAttachOptions`
+  ```ts
+  export interface CameraAttachOptions {
+    entity: Entity;
+    locator: EntityAttachPoint;
+  }
+
+  ```
+- Added interface `CompoundBlockVolumeItem`
+  ```ts
+  export interface CompoundBlockVolumeItem {
+    action?: CompoundBlockVolumeAction;
+    locationRelativity?: CompoundBlockVolumePositionRelativity;
+    volume: BlockVolume;
+  }
+
+  ```
+- Changed interface `CustomCommandParameter`
+    - Added property `enumName`
+      ```ts
+      enumName?: string
+      ```
+- Changed interface `DefinitionModifier`
+    - Added property `triggers`
+      ```ts
+      triggers: Trigger[]
+      ```
+- Added interface `EntityHealEventOptions`
+  ```ts
+  export interface EntityHealEventOptions {
+    allowedHealCauses?: EntityHealCause[];
+    entityFilter?: EntityFilter;
+  }
+
+  ```
+- Added interface `EntityHurtAfterEventOptions`
+  ```ts
+  export interface EntityHurtAfterEventOptions {
+    allowedDamageCauses?: EntityDamageCause[];
+    entities?: Entity[];
+    entityFilter?: EntityFilter;
+    entityTypes?: string[];
+  }
+
+  ```
+- Added interface `EntityHurtBeforeEventOptions`
+  ```ts
+  export interface EntityHurtBeforeEventOptions {
+    allowedDamageCauses?: EntityDamageCause[];
+    entityFilter?: EntityFilter;
+  }
+
+  ```
+- Added interface `EntityItemDropEventOptions`
+  ```ts
+  export interface EntityItemDropEventOptions {
+    entityFilter?: EntityFilter;
+    itemFilter?: ItemFilter;
+  }
+
+  ```
+- Added interface `EntityItemPickupEventOptions`
+  ```ts
+  export interface EntityItemPickupEventOptions {
+    entityFilter?: EntityFilter;
+    itemFilter?: ItemFilter;
+  }
+
+  ```
+- Added interface `ItemFilter`
+  ```ts
+  export interface ItemFilter {
+    includeTypes?: (ItemType | string)[];
+  }
+
+  ```
+- Added interface `PlayerAimAssistSettings`
+  ```ts
+  export interface PlayerAimAssistSettings {
+    distance?: number;
+    presetId: string;
+    targetMode?: AimAssistTargetMode;
+    viewAngle?: Vector2;
+  }
+
+  ```
+- Added interface `ProgressKeyFrame`
+  ```ts
+  export interface ProgressKeyFrame {
+    alpha: number;
+    easingFunc?: EasingType;
+    timeSeconds: number;
+  }
+
+  ```
+- Added interface `RotationKeyFrame`
+  ```ts
+  export interface RotationKeyFrame {
+    easingFunc?: EasingType;
+    rotation: Vector3;
+    timeSeconds: number;
+  }
+
+  ```
+- Added interface `SplineAnimation`
+  ```ts
+  export interface SplineAnimation {
+    progressKeyFrames: ProgressKeyFrame[];
+    rotationKeyFrames: RotationKeyFrame[];
+  }
+
+  ```
+- Added interface `TickingArea`
+  ```ts
+  export interface TickingArea {
+    boundingBox: BlockBoundingBox;
+    chunkCount: number;
+    dimension: Dimension;
+    identifier: string;
+    isFullyLoaded: boolean;
+  }
+
+  ```
+- Added interface `TickingAreaOptions`
+  ```ts
+  export interface TickingAreaOptions {
+    dimension: Dimension;
+    from: Vector3;
+    to: Vector3;
+  }
+
+  ```
+- Added enum `AimAssistTargetMode`
+- Added enum `CompoundBlockVolumeAction`
+- Added enum `CompoundBlockVolumePositionRelativity`
+- Added enum `EntityAttachPoint`
+- Added enum `EntityHealCause`
+- Added enum `TickingAreaErrorReason`
+- Added enum `WatchdogTerminateReason`
+- Changed type map `EntityComponentTypeMap`
+  - Added mapping `'minecraft:npc': 'EntityNpcComponent'`
+  - Added mapping `'npc': 'EntityNpcComponent'`
+- Added type alias `EntityIdentifierType`
+  ```ts
+  export type EntityIdentifierType<T> = [T] extends [never] ? VanillaEntityIdentifier : T extends string ? VanillaEntityIdentifier | T : never;
+  ```
+- Added type alias `VanillaEntityIdentifier`
+  ```ts
+  export type VanillaEntityIdentifier = EntityType | minecraftvanilladata.MinecraftEntityTypes | `${minecraftvanilladata.MinecraftEntityTypes}` | `${minecraftvanilladata.MinecraftEntityTypes}<${string}>`;
+  ```
+
+=== 2.5.0 ===
+- Added class `PlayerSwingStartAfterEvent`
+  ```ts
+  export class PlayerSwingStartAfterEvent {
+    private constructor();
+    readonly heldItemStack?: ItemStack;
+    readonly player: Player;
+    readonly swingSource: EntitySwingSource;
+  }
+
+  ```
+- Added class `PlayerSwingStartAfterEventSignal`
+  ```ts
+  export class PlayerSwingStartAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerSwingStartAfterEvent) => void, options?: PlayerSwingEventOptions): (arg0: PlayerSwingStartAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerSwingStartAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `WorldAfterEvents`
+    - Added property `playerSwingStart`
+- Added interface `PlayerSwingEventOptions`
+  ```ts
+  export interface PlayerSwingEventOptions {
+    heldItemOption?: HeldItemOption;
+    swingSource?: EntitySwingSource;
+  }
+
+  ```
+- Added enum `EntitySwingSource`
+- Added enum `HeldItemOption`
+
+=== 2.4.0 ===
+- Added class `BlockComponentBlockBreakEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentBlockBreakEvent extends BlockEvent {
+    private constructor();
+    readonly blockDestructionSource?: Block;
+    readonly brokenBlockPermutation: BlockPermutation;
+    readonly entitySource?: Entity;
+  }
+
+  ```
+- Added class `BlockPrecipitationInteractionsComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockPrecipitationInteractionsComponent extends BlockComponent {
+    private constructor();
+    static readonly componentId = "minecraft:precipitation_interactions";
+    accumulatesSnow(): boolean;
+    obstructsRain(): boolean;
+  }
+
+  ```
+- Added class `BlockRedstoneProducerComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockRedstoneProducerComponent extends BlockComponent {
+    private constructor();
+    readonly power: number;
+    static readonly componentId = "minecraft:redstone_producer";
+    getConnectedFaces(): Direction[];
+    getStronglyPoweredFace(): Direction | undefined;
+  }
+
+  ```
+- Added class `DamagedByEntityCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class DamagedByEntityCondition extends LootItemCondition {
+    private constructor();
+    readonly entityType: string;
+  }
+
+  ```
+- Added class `EmptyLootItem`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EmptyLootItem extends LootPoolEntry {
+    private constructor();
+  }
+
+  ```
+- Added class `EnchantInfo`
+  ```ts
+  export class EnchantInfo {
+    private constructor();
+    readonly enchantment: string;
+    readonly range: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `EnchantRandomEquipmentFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EnchantRandomEquipmentFunction extends LootItemFunction {
+    private constructor();
+    readonly chance: number;
+  }
+
+  ```
+- Added class `EnchantRandomlyFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EnchantRandomlyFunction extends LootItemFunction {
+    private constructor();
+    readonly treasure: boolean;
+  }
+
+  ```
+- Added class `EnchantWithLevelsFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EnchantWithLevelsFunction extends LootItemFunction {
+    private constructor();
+    readonly levels: minecraftcommon.NumberRange;
+    readonly treasure: boolean;
+  }
+
+  ```
+- Changed class `Entity`
+    - Added function `getAABB`
+    - Added function `getAllBlocksStandingOn`
+    - Added function `getBlockStandingOn`
+- Added class `EntityHasMarkVariantCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityHasMarkVariantCondition extends LootItemCondition {
+    private constructor();
+    readonly value: number;
+  }
+
+  ```
+- Added class `EntityHasVariantCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityHasVariantCondition extends LootItemCondition {
+    private constructor();
+    readonly value: number;
+  }
+
+  ```
+- Added class `EntityKilledCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityKilledCondition extends LootItemCondition {
+    private constructor();
+    readonly entityType: string;
+  }
+
+  ```
+- Added class `ExplorationMapFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ExplorationMapFunction extends LootItemFunction {
+    private constructor();
+    readonly destination: string;
+  }
+
+  ```
+- Added class `ExplosionDecayFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ExplosionDecayFunction extends LootItemFunction {
+    private constructor();
+  }
+
+  ```
+- Added class `FillContainerFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class FillContainerFunction extends LootItemFunction {
+    private constructor();
+    readonly lootTable: string;
+  }
+
+  ```
+- Added class `IsBabyCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class IsBabyCondition extends LootItemCondition {
+    private constructor();
+  }
+
+  ```
+- Added class `ItemPotionComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemPotionComponent extends ItemComponent {
+    private constructor();
+    readonly potionDeliveryType: PotionDeliveryType;
+    readonly potionEffectType: PotionEffectType;
+    static readonly componentId = "minecraft:potion";
+  }
+
+  ```
+- Added class `KilledByEntityCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class KilledByEntityCondition extends LootItemCondition {
+    private constructor();
+    readonly entityType: string;
+  }
+
+  ```
+- Added class `KilledByPlayerCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class KilledByPlayerCondition extends LootItemCondition {
+    private constructor();
+  }
+
+  ```
+- Added class `KilledByPlayerOrPetsCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class KilledByPlayerOrPetsCondition extends LootItemCondition {
+    private constructor();
+  }
+
+  ```
+- Added class `LootingEnchantFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class LootingEnchantFunction extends LootItemFunction {
+    private constructor();
+    readonly count: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `LootItem`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class LootItem extends LootPoolEntry {
+    private constructor();
+    readonly functions: LootItemFunction[];
+    readonly name?: ItemType;
+  }
+
+  ```
+- Added class `LootItemCondition`
+  ```ts
+  export class LootItemCondition {
+    private constructor();
+  }
+
+  ```
+- Added class `LootItemFunction`
+  ```ts
+  export class LootItemFunction {
+    private constructor();
+    readonly conditions: LootItemCondition[];
+  }
+
+  ```
+- Added class `LootPool`
+  ```ts
+  export class LootPool {
+    private constructor();
+    readonly bonusRolls: minecraftcommon.NumberRange;
+    readonly conditions: LootItemCondition[];
+    readonly entries: LootPoolEntry[];
+    readonly rolls: minecraftcommon.NumberRange;
+    readonly tiers?: LootPoolTiers;
+  }
+
+  ```
+- Added class `LootPoolEntry`
+  ```ts
+  export class LootPoolEntry {
+    private constructor();
+    readonly quality: number;
+    readonly subTable?: LootPoolEntry;
+    readonly weight: number;
+  }
+
+  ```
+- Added class `LootPoolTiers`
+  ```ts
+  export class LootPoolTiers {
+    private constructor();
+    readonly bonusChance: number;
+    readonly bonusRolls: number;
+    readonly initialRange: number;
+  }
+
+  ```
+- Added class `LootTable`
+  ```ts
+  export class LootTable {
+    private constructor();
+    readonly path: string;
+    readonly pools: LootPool[];
+  }
+
+  ```
+- Added class `LootTableEntry`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class LootTableEntry extends LootPoolEntry {
+    private constructor();
+    readonly lootTable: LootTable;
+  }
+
+  ```
+- Changed class `LootTableManager`
+    - Added function `generateLootFromTable`
+    - Added function `getLootTable`
+- Added class `LootTableReference`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class LootTableReference extends LootPoolEntry {
+    private constructor();
+    readonly path: string;
+  }
+
+  ```
+- Added class `MatchToolCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class MatchToolCondition extends LootItemCondition {
+    private constructor();
+    readonly count: minecraftcommon.NumberRange;
+    readonly durability: minecraftcommon.NumberRange;
+    readonly enchantments: EnchantInfo[];
+    readonly itemName: string;
+    readonly itemTagsAll: string[];
+    readonly itemTagsAny: string[];
+    readonly itemTagsNone: string[];
+  }
+
+  ```
+- Added class `PassengerOfEntityCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PassengerOfEntityCondition extends LootItemCondition {
+    private constructor();
+    readonly entityType: string;
+  }
+
+  ```
+- Changed class `Player`
+    - Added function `getControlScheme`
+    - Added function `setControlScheme`
+- Added class `PotionDeliveryType`
+  ```ts
+  export class PotionDeliveryType {
+    private constructor();
+    readonly id: string;
+  }
+
+  ```
+- Added class `PotionEffectType`
+  ```ts
+  export class PotionEffectType {
+    private constructor();
+    readonly durationTicks?: number;
+    readonly id: string;
+  }
+
+  ```
+- Added class `Potions`
+  ```ts
+  export class Potions {
+    private constructor();
+    static getAllDeliveryTypes(): PotionDeliveryType[];
+    static getAllEffectTypes(): PotionEffectType[];
+    static getDeliveryType(potionDeliveryId: string): PotionDeliveryType | undefined;
+    static getEffectType(potionEffectId: string): PotionEffectType | undefined;
+    static resolve(potionEffectType: PotionEffectType | string, potionDeliveryType: PotionDeliveryType | string): ItemStack;
+  }
+
+  ```
+- Added class `RandomAuxValueFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class RandomAuxValueFunction extends LootItemFunction {
+    private constructor();
+    readonly values: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `RandomBlockStateFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class RandomBlockStateFunction extends LootItemFunction {
+    private constructor();
+    readonly blockState: string;
+    readonly values: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `RandomChanceCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class RandomChanceCondition extends LootItemCondition {
+    private constructor();
+    readonly chance: number;
+  }
+
+  ```
+- Added class `RandomChanceWithLootingCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class RandomChanceWithLootingCondition extends LootItemCondition {
+    private constructor();
+    readonly chance: number;
+    readonly lootingMultiplier: number;
+  }
+
+  ```
+- Added class `RandomDifficultyChanceCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class RandomDifficultyChanceCondition extends LootItemCondition {
+    private constructor();
+    readonly chances: number[];
+  }
+
+  ```
+- Added class `RandomDyeFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class RandomDyeFunction extends LootItemFunction {
+    private constructor();
+  }
+
+  ```
+- Added class `RandomRegionalDifficultyChanceCondition`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class RandomRegionalDifficultyChanceCondition extends LootItemCondition {
+    private constructor();
+    readonly maxChance: number;
+  }
+
+  ```
+- Added class `SetArmorTrimFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetArmorTrimFunction extends LootItemFunction {
+    private constructor();
+    readonly material: string;
+    readonly pattern: string;
+  }
+
+  ```
+- Added class `SetBannerDetailsFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetBannerDetailsFunction extends LootItemFunction {
+    private constructor();
+    readonly type: number;
+  }
+
+  ```
+- Added class `SetBookContentsFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetBookContentsFunction extends LootItemFunction {
+    private constructor();
+    readonly author: string;
+    readonly pages: string[];
+    readonly title: string;
+  }
+
+  ```
+- Added class `SetDataFromColorIndexFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetDataFromColorIndexFunction extends LootItemFunction {
+    private constructor();
+  }
+
+  ```
+- Added class `SetItemCountFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetItemCountFunction extends LootItemFunction {
+    private constructor();
+    readonly count: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `SetItemDamageFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetItemDamageFunction extends LootItemFunction {
+    private constructor();
+    readonly damage: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `SetItemDataFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetItemDataFunction extends LootItemFunction {
+    private constructor();
+    readonly data: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `SetItemLoreFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetItemLoreFunction extends LootItemFunction {
+    private constructor();
+    readonly lore: string[];
+  }
+
+  ```
+- Added class `SetItemNameFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetItemNameFunction extends LootItemFunction {
+    private constructor();
+    readonly name: string;
+  }
+
+  ```
+- Added class `SetOminousBottleFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetOminousBottleFunction extends LootItemFunction {
+    private constructor();
+    readonly amplifier: minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `SetPotionFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetPotionFunction extends LootItemFunction {
+    private constructor();
+    readonly id: string;
+  }
+
+  ```
+- Added class `SetSpawnEggFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetSpawnEggFunction extends LootItemFunction {
+    private constructor();
+    readonly id: string;
+  }
+
+  ```
+- Added class `SetStewEffectFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SetStewEffectFunction extends LootItemFunction {
+    private constructor();
+    readonly effects: number[];
+  }
+
+  ```
+- Added class `SmeltItemFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SmeltItemFunction extends LootItemFunction {
+    private constructor();
+  }
+
+  ```
+- Added class `SpecificEnchantFunction`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class SpecificEnchantFunction extends LootItemFunction {
+    private constructor();
+    readonly enchantments: EnchantInfo[];
+  }
+
+  ```
+- Added interface `AABB`
+  ```ts
+  export interface AABB {
+    center: Vector3;
+    extent: Vector3;
+  }
+
+  ```
+- Changed interface `BlockCustomComponent`
+    - Added property `onBreak`
+      ```ts
+      onBreak?: (arg0: BlockComponentBlockBreakEvent, arg1: CustomComponentParameters) => void
+      ```
+- Added interface `GetBlocksStandingOnOptions`
+  ```ts
+  export interface GetBlocksStandingOnOptions {
+    blockFilter?: BlockFilter;
+    ignoreThinBlocks?: boolean;
+  }
+
+  ```
+- Changed interface `JigsawPlaceOptions`
+    - Added property `liquidSettings`
+      ```ts
+      liquidSettings?: LiquidSettings
+      ```
+- Changed interface `JigsawStructurePlaceOptions`
+    - Added property `liquidSettings`
+      ```ts
+      liquidSettings?: LiquidSettings
+      ```
+- Added enum `ControlScheme`
+- Added enum `LiquidSettings`
+- Changed type map `BlockComponentTypeMap`
+  - Added mapping `'minecraft:precipitation_interactions': 'BlockPrecipitationInteractionsComponent'`
+  - Added mapping `'minecraft:redstone_producer': 'BlockRedstoneProducerComponent'`
+  - Added mapping `'precipitation_interactions': 'BlockPrecipitationInteractionsComponent'`
+  - Added mapping `'redstone_producer': 'BlockRedstoneProducerComponent'`
+- Changed type map `ItemComponentTypeMap`
+  - Added mapping `'minecraft:potion': 'ItemPotionComponent'`
+  - Added mapping `'potion': 'ItemPotionComponent'`
+
+=== 2.3.0 ===
+- Added class `BiomeType`
+  ```ts
+  export class BiomeType {
+    private constructor();
+    readonly id: string;
+  }
+
+  ```
+- Changed class `Block`
+    - Added function `getLightLevel`
+    - Added function `getSkyLightLevel`
+- Changed class `Container`
+    - Added property `containerRules`
+    - Added property `weight`
+- Changed class `ContainerSlot`
+    - Added function `setDynamicProperties`
+- Changed class `Dimension`
+    - Added function `getBiome`
+    - Added function `getLightLevel`
+    - Added function `getSkyLightLevel`
+    - Added function `isChunkLoaded`
+- Changed class `Entity`
+    - Added function `setDynamicProperties`
+- Added class `ItemInventoryComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemInventoryComponent extends ItemComponent {
+    private constructor();
+    readonly container: Container;
+    static readonly componentId = "minecraft:inventory";
+  }
+
+  ```
+- Changed class `ItemStack`
+    - Added property `weight`
+    - Added function `setDynamicProperties`
+- Changed class `World`
+    - Added function `setDynamicProperties`
+- Added interface `ContainerRules`
+  ```ts
+  export interface ContainerRules {
+    allowedItems: string[];
+    allowNestedStorageItems: boolean;
+    bannedItems: string[];
+    weightLimit?: number;
+  }
+
+  ```
+- Changed interface `SpawnEntityOptions`
+    - Added property `initialPersistence`
+      ```ts
+      initialPersistence?: boolean
+      ```
+    - Added property `initialRotation`
+      ```ts
+      initialRotation?: number
+      ```
+- Added enum `ContainerRulesErrorReason`
+- Changed type map `ItemComponentTypeMap`
+  - Added mapping `'inventory': 'ItemInventoryComponent'`
+  - Added mapping `'minecraft:inventory': 'ItemInventoryComponent'`
+
+=== 2.2.0 ===
+- Changed class `Camera`
+    - Added function `setFov`
+- Changed class `ContainerSlot`
+    - Added function `getRawLore`
+- Added class `ItemBookComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemBookComponent extends ItemComponent {
+    private constructor();
+    readonly author?: string;
+    readonly contents: (string | undefined)[];
+    readonly isSigned: boolean;
+    readonly pageCount: number;
+    readonly rawContents: (RawMessage | undefined)[];
+    readonly title?: string;
+    static readonly componentId = "minecraft:book";
+    getPageContent(pageIndex: number): string | undefined;
+    getRawPageContent(pageIndex: number): RawMessage | undefined;
+    insertPage(pageIndex: number, content: (RawMessage | string)[] | RawMessage | string): void;
+    removePage(pageIndex: number): void;
+    setContents(contents: ((RawMessage | string)[] | RawMessage | string)[]): void;
+    setPageContent(pageIndex: number, content: (RawMessage | string)[] | RawMessage | string): void;
+    signBook(title: string, author: string): void;
+  }
+
+  ```
+- Changed class `ItemStack`
+    - Added function `getRawLore`
+- Added class `LootTableManager`
+  ```ts
+  export class LootTableManager {
+    private constructor();
+    generateLootFromBlock(block: Block, tool?: ItemStack): ItemStack[] | undefined;
+    generateLootFromBlockPermutation(blockPermutation: BlockPermutation, tool?: ItemStack): ItemStack[] | undefined;
+    generateLootFromBlockType(scriptBlockType: BlockType, tool?: ItemStack): ItemStack[] | undefined;
+    generateLootFromEntity(entity: Entity, tool?: ItemStack): ItemStack[] | undefined;
+    generateLootFromEntityType(entityType: EntityType, tool?: ItemStack): ItemStack[] | undefined;
+  }
+
+  ```
+- Changed class `World`
+    - Added function `getLootTableManager`
+- Added interface `CameraFovOptions`
+  ```ts
+  export interface CameraFovOptions {
+    easeOptions?: EaseOptions;
+    fov?: number;
+  }
+
+  ```
+- Added enum `BookErrorReason`
+- Changed type map `ItemComponentTypeMap`
+  - Added mapping `'book': 'ItemBookComponent'`
+  - Added mapping `'minecraft:book': 'ItemBookComponent'`
+
+=== 2.1.0 ===
+- Changed class `Block`
+    - Added property `localizationKey`
+- Changed class `Container`
+    - Added function `contains`
+    - Added function `find`
+    - Added function `findLast`
+    - Added function `firstEmptySlot`
+    - Added function `firstItem`
+- Added class `CustomCommandOrigin`
+  ```ts
+  export class CustomCommandOrigin {
+    private constructor();
+    readonly initiator?: Entity;
+    readonly sourceBlock?: Block;
+    readonly sourceEntity?: Entity;
+    readonly sourceType: CustomCommandSource;
+  }
+
+  ```
+- Added class `CustomCommandRegistry`
+  ```ts
+  export class CustomCommandRegistry {
+    private constructor();
+  registerCommand(customCommand: CustomCommand, callback: (origin: CustomCommandOrigin, ...args: any[]) => CustomCommandResult | undefined): void;
+    registerEnum(name: string, values: string[]): void;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added property `localizationKey`
+- Changed class `Entity`
+    - Added property `localizationKey`
+- Changed class `EntityEquippableComponent`
+    - Added property `totalArmor`
+    - Added property `totalToughness`
+- Added class `EntityExhaustionComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityExhaustionComponent extends EntityAttributeComponent {
+    private constructor();
+    static readonly componentId = "minecraft:player.exhaustion";
+  }
+
+  ```
+- Added class `EntityHungerComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityHungerComponent extends EntityAttributeComponent {
+    private constructor();
+    static readonly componentId = "minecraft:player.hunger";
+  }
+
+  ```
+- Added class `EntitySaturationComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntitySaturationComponent extends EntityAttributeComponent {
+    private constructor();
+    static readonly componentId = "minecraft:player.saturation";
+  }
+
+  ```
+- Changed class `ItemStack`
+    - Added property `localizationKey`
+- Changed class `Player`
+    - Added property `commandPermissionLevel`
+    - Added property `playerPermissionLevel`
+- Added class `PlayerHotbarSelectedSlotChangeAfterEvent`
+  ```ts
+  export class PlayerHotbarSelectedSlotChangeAfterEvent {
+    private constructor();
+    readonly itemStack?: ItemStack;
+    readonly newSlotSelected: number;
+    readonly player: Player;
+    readonly previousSlotSelected: number;
+  }
+
+  ```
+- Added class `PlayerHotbarSelectedSlotChangeAfterEventSignal`
+  ```ts
+  export class PlayerHotbarSelectedSlotChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerHotbarSelectedSlotChangeAfterEvent) => void, options?: HotbarEventOptions): (arg0: PlayerHotbarSelectedSlotChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerHotbarSelectedSlotChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerInventoryItemChangeAfterEvent`
+  ```ts
+  export class PlayerInventoryItemChangeAfterEvent {
+    private constructor();
+    readonly beforeItemStack?: ItemStack;
+    readonly inventoryType: PlayerInventoryType;
+    readonly itemStack?: ItemStack;
+    readonly player: Player;
+    readonly slot: number;
+  }
+
+  ```
+- Added class `PlayerInventoryItemChangeAfterEventSignal`
+  ```ts
+  export class PlayerInventoryItemChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerInventoryItemChangeAfterEvent) => void, options?: InventoryItemEventOptions): (arg0: PlayerInventoryItemChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerInventoryItemChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `StartupEvent`
+    - Added property `customCommandRegistry`
+- Changed class `WorldAfterEvents`
+    - Added property `playerHotbarSelectedSlotChange`
+    - Added property `playerInventoryItemChange`
+- Added interface `CustomCommand`
+  ```ts
+  export interface CustomCommand {
+    cheatsRequired?: boolean;
+    description: string;
+    mandatoryParameters?: CustomCommandParameter[];
+    name: string;
+    optionalParameters?: CustomCommandParameter[];
+    permissionLevel: CommandPermissionLevel;
+  }
+
+  ```
+- Added interface `CustomCommandParameter`
+  ```ts
+  export interface CustomCommandParameter {
+    name: string;
+    type: CustomCommandParamType;
+  }
+
+  ```
+- Added interface `CustomCommandResult`
+  ```ts
+  export interface CustomCommandResult {
+    message?: string;
+    status: CustomCommandStatus;
+  }
+
+  ```
+- Added interface `HotbarEventOptions`
+  ```ts
+  export interface HotbarEventOptions {
+    allowedSlots?: number[];
+  }
+
+  ```
+- Added interface `InventoryItemEventOptions`
+  ```ts
+  export interface InventoryItemEventOptions {
+    allowedSlots?: number[];
+    excludeItems?: string[];
+    excludeTags?: string[];
+    ignoreQuantityChange?: boolean;
+    includeItems?: string[];
+    includeTags?: string[];
+    inventoryType?: PlayerInventoryType;
+  }
+
+  ```
+- Added enum `CommandPermissionLevel`
+- Added enum `CustomCommandErrorReason`
+- Added enum `CustomCommandParamType`
+- Added enum `CustomCommandSource`
+- Added enum `CustomCommandStatus`
+- Added enum `PlayerInventoryType`
+- Added enum `PlayerPermissionLevel`
+- Changed type map `EntityComponentTypeMap`
+  - Added mapping `'minecraft:player.exhaustion': 'EntityExhaustionComponent'`
+  - Added mapping `'minecraft:player.hunger': 'EntityHungerComponent'`
+  - Added mapping `'minecraft:player.saturation': 'EntitySaturationComponent'`
+  - Added mapping `'player.exhaustion': 'EntityExhaustionComponent'`
+  - Added mapping `'player.hunger': 'EntityHungerComponent'`
+  - Added mapping `'player.saturation': 'EntitySaturationComponent'`
+
+=== 2.0.0 ===
+- Changed class `Block`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Added class `BlockComponentPlayerBreakEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentPlayerBreakEvent extends BlockEvent {
+    private constructor();
+    readonly brokenBlockPermutation: BlockPermutation;
+    readonly player?: Player;
+  }
+
+  ```
+- Removed class `BlockComponentPlayerDestroyEvent`
+- Added class `BlockComponentRedstoneUpdateEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentRedstoneUpdateEvent extends BlockEvent {
+    private constructor();
+    readonly powerLevel: number;
+  }
+
+  ```
+- Changed class `BlockComponentRegistry`
+    - Changed function `registerCustomComponent`
+      - Changed return type from `*void*` (throws exceptions) to `*void*` (throws exceptions)
+- Added class `BlockCustomComponentInstance`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockCustomComponentInstance extends BlockComponent {
+    private constructor();
+    readonly customComponentParameters: CustomComponentParameters;
+  }
+
+  ```
+- Changed class `BlockFluidContainerComponent`
+    - Changed constant `componentId` value from `minecraft:fluidContainer` to `minecraft:fluid_container` 
+- Added class `BlockMapColorComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockMapColorComponent extends BlockComponent {
+    private constructor();
+    readonly color: RGBA;
+    readonly tintedColor: RGBA;
+    readonly tintMethod: TintMethod;
+    static readonly componentId = "minecraft:map_color";
+  }
+
+  ```
+- Added class `BlockMovableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockMovableComponent extends BlockComponent {
+    private constructor();
+    readonly movementType: MovementType;
+    readonly stickyType: StickyType;
+    static readonly componentId = "minecraft:movable";
+  }
+
+  ```
+- Changed class `ButtonPushAfterEventSignal`
+    - Removed base class `*IButtonPushAfterEventSignal*`
+    - Added function `subscribe`
+    - Added function `unsubscribe`
+- Changed class `Camera`
+    - Added property `isValid`
+    - Changed function `setCamera`
+      - Changed argument `setOptions` type from `*CameraDefaultOptions | CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions*` to `*CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions*`
+    - Added function `setDefaultCamera`
+- Changed class `Component`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Changed class `Container`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Changed class `ContainerSlot`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Added class `CustomComponentParameters`
+  ```ts
+  export class CustomComponentParameters {
+    private constructor();
+    readonly params: unknown;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `getBlockAbove`
+    - Added function `getBlockBelow`
+    - Removed function `runCommandAsync`
+    - Changed function `spawnEntity`
+      - Changed argument `identifier` type from `*string*` to `*EntityType | string*`
+      - Added argument `options`
+- Changed class `Effect`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Changed class `Entity`
+    - Added property `isValid`
+    - Changed function `applyKnockback`
+      - Added argument `horizontalForce`
+      - Removed argument `directionX`
+      - Removed argument `directionZ`
+      - Removed argument `horizontalStrength`
+    - Changed function `getComponent`
+      - Changed return type from `*EntityComponentReturnType<T> | undefined*` to `*EntityComponentReturnType<T> | undefined*` (throws exceptions)
+    - Changed function `getComponents`
+      - Changed return type from `*EntityComponent[]*` to `*EntityComponent[]*` (throws exceptions)
+    - Changed function `hasComponent`
+      - Changed return type from `*boolean*` to `*boolean*` (throws exceptions)
+    - Removed function `isValid`
+    - Added function `lookAt`
+    - Removed function `runCommandAsync`
+- Changed class `EntityAttributeComponent`
+    - Changed function `setCurrentValue`
+      - Changed return type from `*boolean*` (throws exceptions) to `*boolean*` (throws exceptions)
+- Changed class `EntityComponent`
+    - Changed type for `entity` from `*Entity*` to `*Entity*` (throws exceptions)
+- Changed class `EntityFrictionModifierComponent`
+    - Changed read-only flag for `value` from `false` to `true`
+    - Changed type for `value` from `*number*` to `*number*` (throws exceptions)
+- Removed class `EntityGroundOffsetComponent`
+- Changed class `EntityInventoryComponent`
+    - Changed type for `container` from `*Container*` to `*Container*` (throws exceptions)
+- Changed class `EntityMarkVariantComponent`
+    - Changed read-only flag for `value` from `false` to `true`
+    - Changed type for `value` from `*number*` to `*number*` (throws exceptions)
+- Changed class `EntityPushThroughComponent`
+    - Changed read-only flag for `value` from `false` to `true`
+    - Changed type for `value` from `*number*` to `*number*` (throws exceptions)
+- Changed class `EntityScaleComponent`
+    - Changed read-only flag for `value` from `false` to `true`
+    - Changed type for `value` from `*number*` to `*number*` (throws exceptions)
+- Changed class `EntitySkinIdComponent`
+    - Changed read-only flag for `value` from `false` to `true`
+    - Changed type for `value` from `*number*` to `*number*` (throws exceptions)
+- Removed class `IButtonPushAfterEventSignal`
+- Removed class `ILeverActionAfterEventSignal`
+- Removed class `IPlayerJoinAfterEventSignal`
+- Removed class `IPlayerLeaveAfterEventSignal`
+- Removed class `IPlayerSpawnAfterEventSignal`
+- Changed class `ItemComponentRegistry`
+    - Changed function `registerCustomComponent`
+      - Changed return type from `*void*` (throws exceptions) to `*void*` (throws exceptions)
+- Added class `ItemCustomComponentInstance`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemCustomComponentInstance extends ItemComponent {
+    private constructor();
+    readonly customComponentParameters: CustomComponentParameters;
+  }
+
+  ```
+- Added class `ItemDyeableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemDyeableComponent extends ItemComponent {
+    private constructor();
+    color?: RGB;
+    readonly defaultColor?: RGB;
+    static readonly componentId = "minecraft:dyeable";
+  }
+
+  ```
+- Removed class `ItemUseOnAfterEvent`
+- Removed class `ItemUseOnAfterEventSignal`
+- Removed class `ItemUseOnBeforeEvent`
+- Removed class `ItemUseOnBeforeEventSignal`
+- Changed class `LeverActionAfterEventSignal`
+    - Removed base class `*ILeverActionAfterEventSignal*`
+    - Added function `subscribe`
+    - Added function `unsubscribe`
+- Removed class `MinecraftDimensionTypes`
+- Changed class `Player`
+    - Added property `graphicsMode`
+- Changed class `PlayerInputPermissions`
+    - Removed property `cameraEnabled`
+    - Removed property `movementEnabled`
+- Changed class `PlayerJoinAfterEventSignal`
+    - Removed base class `*IPlayerJoinAfterEventSignal*`
+    - Added function `subscribe`
+    - Added function `unsubscribe`
+- Changed class `PlayerLeaveAfterEventSignal`
+    - Removed base class `*IPlayerLeaveAfterEventSignal*`
+    - Added function `subscribe`
+    - Added function `unsubscribe`
+- Changed class `PlayerSpawnAfterEventSignal`
+    - Removed base class `*IPlayerSpawnAfterEventSignal*`
+    - Added function `subscribe`
+    - Added function `unsubscribe`
+- Changed class `ScoreboardIdentity`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Changed class `ScoreboardObjective`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Changed class `ScreenDisplay`
+    - Added property `isValid`
+    - Removed function `isValid`
+    - Removed function `resetHudElements`
+    - Added function `resetHudElementsVisibility`
+- Added class `ShutdownBeforeEventSignal`
+  ```ts
+  export class ShutdownBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ShutdownEvent) => void): (arg0: ShutdownEvent) => void;
+    unsubscribe(callback: (arg0: ShutdownEvent) => void): void;
+  }
+
+  ```
+- Added class `ShutdownEvent`
+  ```ts
+  export class ShutdownEvent {
+    private constructor();
+  }
+
+  ```
+- Added class `StartupBeforeEventSignal`
+  ```ts
+  export class StartupBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: StartupEvent) => void): (arg0: StartupEvent) => void;
+    unsubscribe(callback: (arg0: StartupEvent) => void): void;
+  }
+
+  ```
+- Added class `StartupEvent`
+  ```ts
+  export class StartupEvent {
+    private constructor();
+    readonly blockComponentRegistry: BlockComponentRegistry;
+    readonly itemComponentRegistry: ItemComponentRegistry;
+  }
+
+  ```
+- Changed class `Structure`
+    - Added property `isValid`
+    - Removed function `isValid`
+- Changed class `System`
+    - Added property `beforeEvents`
+    - Added property `isEditorWorld`
+    - Changed function `waitTicks`
+- Added class `SystemBeforeEvents`
+  ```ts
+  export class SystemBeforeEvents {
+    private constructor();
+    readonly shutdown: ShutdownBeforeEventSignal;
+    readonly startup: StartupBeforeEventSignal;
+  }
+
+  ```
+- Changed class `World`
+    - Removed function `playSound`
+- Changed class `WorldAfterEvents`
+    - Removed property `itemUseOn`
+    - Removed property `worldInitialize`
+    - Added property `worldLoad`
+- Changed class `WorldBeforeEvents`
+    - Removed property `itemUseOn`
+    - Removed property `worldInitialize`
+- Removed class `WorldInitializeAfterEvent`
+- Removed class `WorldInitializeAfterEventSignal`
+- Removed class `WorldInitializeBeforeEvent`
+- Removed class `WorldInitializeBeforeEventSignal`
+- Added class `WorldLoadAfterEvent`
+  ```ts
+  export class WorldLoadAfterEvent {
+    private constructor();
+  }
+
+  ```
+- Added class `WorldLoadAfterEventSignal`
+  ```ts
+  export class WorldLoadAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: WorldLoadAfterEvent) => void): (arg0: WorldLoadAfterEvent) => void;
+    unsubscribe(callback: (arg0: WorldLoadAfterEvent) => void): void;
+  }
+
+  ```
+- Changed interface `BlockCustomComponent`
+    - Changed type for `beforeOnPlayerPlace` from `` to ``
+      - New Signature: `beforeOnPlayerPlace?: (arg0: BlockComponentPlayerPlaceBeforeEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `beforeOnPlayerPlace?: (arg0: BlockComponentPlayerPlaceBeforeEvent) => void`
+    - Changed type for `onEntityFallOn` from `` to ``
+      - New Signature: `onEntityFallOn?: (arg0: BlockComponentEntityFallOnEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onEntityFallOn?: (arg0: BlockComponentEntityFallOnEvent) => void`
+    - Changed type for `onPlace` from `` to ``
+      - New Signature: `onPlace?: (arg0: BlockComponentOnPlaceEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onPlace?: (arg0: BlockComponentOnPlaceEvent) => void`
+    - Added property `onPlayerBreak`
+      ```ts
+      onPlayerBreak?: (arg0: BlockComponentPlayerBreakEvent, arg1: CustomComponentParameters) => void
+      ```
+    - Removed property `onPlayerDestroy`
+    - Changed type for `onPlayerInteract` from `` to ``
+      - New Signature: `onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent) => void`
+    - Changed type for `onRandomTick` from `` to ``
+      - New Signature: `onRandomTick?: (arg0: BlockComponentRandomTickEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onRandomTick?: (arg0: BlockComponentRandomTickEvent) => void`
+    - Added property `onRedstoneUpdate`
+      ```ts
+      onRedstoneUpdate?: (arg0: BlockComponentRedstoneUpdateEvent, arg1: CustomComponentParameters) => void
+      ```
+    - Changed type for `onStepOff` from `` to ``
+      - New Signature: `onStepOff?: (arg0: BlockComponentStepOffEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onStepOff?: (arg0: BlockComponentStepOffEvent) => void`
+    - Changed type for `onStepOn` from `` to ``
+      - New Signature: `onStepOn?: (arg0: BlockComponentStepOnEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onStepOn?: (arg0: BlockComponentStepOnEvent) => void`
+    - Changed type for `onTick` from `` to ``
+      - New Signature: `onTick?: (arg0: BlockComponentTickEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onTick?: (arg0: BlockComponentTickEvent) => void`
+- Removed interface `CameraDefaultOptions`
+- Removed interface `CameraEaseOptions`
+- Changed interface `CameraSetFacingOptions`
+    - Changed type for `easeOptions` from `` to ``
+      - New Signature: `easeOptions?: EaseOptions`
+      - Old Signature: `easeOptions?: CameraEaseOptions`
+- Changed interface `CameraSetLocationOptions`
+    - Changed type for `easeOptions` from `` to ``
+      - New Signature: `easeOptions?: EaseOptions`
+      - Old Signature: `easeOptions?: CameraEaseOptions`
+- Changed interface `CameraSetPosOptions`
+    - Changed type for `easeOptions` from `` to ``
+      - New Signature: `easeOptions?: EaseOptions`
+      - Old Signature: `easeOptions?: CameraEaseOptions`
+- Changed interface `CameraSetRotOptions`
+    - Changed type for `easeOptions` from `` to ``
+      - New Signature: `easeOptions?: EaseOptions`
+      - Old Signature: `easeOptions?: CameraEaseOptions`
+- Added interface `EaseOptions`
+  ```ts
+  export interface EaseOptions {
+    easeTime?: number;
+    easeType?: EasingType;
+  }
+
+  ```
+- Changed interface `ItemCustomComponent`
+    - Changed type for `onBeforeDurabilityDamage` from `` to ``
+      - New Signature: `onBeforeDurabilityDamage?: (arg0: ItemComponentBeforeDurabilityDamageEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onBeforeDurabilityDamage?: (arg0: ItemComponentBeforeDurabilityDamageEvent) => void`
+    - Changed type for `onCompleteUse` from `` to ``
+      - New Signature: `onCompleteUse?: (arg0: ItemComponentCompleteUseEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onCompleteUse?: (arg0: ItemComponentCompleteUseEvent) => void`
+    - Changed type for `onConsume` from `` to ``
+      - New Signature: `onConsume?: (arg0: ItemComponentConsumeEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onConsume?: (arg0: ItemComponentConsumeEvent) => void`
+    - Changed type for `onHitEntity` from `` to ``
+      - New Signature: `onHitEntity?: (arg0: ItemComponentHitEntityEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onHitEntity?: (arg0: ItemComponentHitEntityEvent) => void`
+    - Changed type for `onMineBlock` from `` to ``
+      - New Signature: `onMineBlock?: (arg0: ItemComponentMineBlockEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onMineBlock?: (arg0: ItemComponentMineBlockEvent) => void`
+    - Changed type for `onUse` from `` to ``
+      - New Signature: `onUse?: (arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onUse?: (arg0: ItemComponentUseEvent) => void`
+    - Changed type for `onUseOn` from `` to ``
+      - New Signature: `onUseOn?: (arg0: ItemComponentUseOnEvent, arg1: CustomComponentParameters) => void`
+      - Old Signature: `onUseOn?: (arg0: ItemComponentUseOnEvent) => void`
+- Changed interface `PlayAnimationOptions`
+    - Changed type for `players` from `` to ``
+      - New Signature: `players?: Player[]`
+      - Old Signature: `players?: string[]`
+- Added interface `SpawnEntityOptions`
+  ```ts
+  export interface SpawnEntityOptions {
+    spawnEvent?: string;
+  }
+
+  ```
+- Added enum `GraphicsMode`
+- Added enum `MovementType`
+- Added enum `StickyType`
+- Added enum `TintMethod`
+- Added constant `TicksPerDay`
+- Changed type alias `BlockComponentReturnType` from:
+  ```ts
+  T extends keyof BlockComponentTypeMap ? BlockComponentTypeMap[T] : BlockComponent
+  ```
+  to: 
+  ```ts
+  T extends keyof BlockComponentTypeMap ? BlockComponentTypeMap[T] : BlockCustomComponentInstance
+  ```
+- Changed type map `BlockComponentTypeMap`
+  - Added mapping `'fluid_container': 'BlockFluidContainerComponent'`
+  - Removed mapping `'fluidContainer': 'BlockFluidContainerComponent'`
+  - Added mapping `'map_color': 'BlockMapColorComponent'`
+  - Added mapping `'minecraft:fluid_container': 'BlockFluidContainerComponent'`
+  - Removed mapping `'minecraft:fluidContainer': 'BlockFluidContainerComponent'`
+  - Added mapping `'minecraft:map_color': 'BlockMapColorComponent'`
+  - Added mapping `'minecraft:movable': 'BlockMovableComponent'`
+  - Added mapping `'movable': 'BlockMovableComponent'`
+- Changed type map `EntityComponentTypeMap`
+  - Removed mapping `'ground_offset': 'EntityGroundOffsetComponent'`
+  - Removed mapping `'minecraft:ground_offset': 'EntityGroundOffsetComponent'`
+- Changed type alias `ItemComponentReturnType` from:
+  ```ts
+  T extends keyof ItemComponentTypeMap ? ItemComponentTypeMap[T] : ItemComponent
+  ```
+  to: 
+  ```ts
+  T extends keyof ItemComponentTypeMap ? ItemComponentTypeMap[T] : ItemCustomComponentInstance
+  ```
+- Changed type map `ItemComponentTypeMap`
+  - Added mapping `'dyeable': 'ItemDyeableComponent'`
+  - Added mapping `'minecraft:dyeable': 'ItemDyeableComponent'`
+
+=== 1.19.0 ===
+- Changed class `Dimension`
+    - Added function `placeFeature`
+    - Added function `placeFeatureRule`
+- Changed class `Player`
+    - Added function `clearPropertyOverridesForEntity`
+    - Added function `removePropertyOverrideForEntity`
+    - Added function `setPropertyOverrideForEntity`
+- Changed class `StructureManager`
+    - Added function `placeJigsaw`
+    - Added function `placeJigsawStructure`
+- Changed class `World`
+    - Added function `getDifficulty`
+    - Added function `setDifficulty`
+- Added interface `BlockBoundingBox`
+  ```ts
+  export interface BlockBoundingBox {
+    max: Vector3;
+    min: Vector3;
+  }
+
+  ```
+- Added interface `JigsawPlaceOptions`
+  ```ts
+  export interface JigsawPlaceOptions {
+    includeEntities?: boolean;
+    keepJigsaws?: boolean;
+  }
+
+  ```
+- Added interface `JigsawStructurePlaceOptions`
+  ```ts
+  export interface JigsawStructurePlaceOptions {
+    ignoreStartHeight?: boolean;
+    includeEntities?: boolean;
+    keepJigsaws?: boolean;
+  }
+
+  ```
+- Added enum `Difficulty`
+
+=== 1.18.0 ===
+- Changed class `Block`
+    - Added function `canBeDestroyedByLiquidSpread`
+    - Added function `canContainLiquid`
+    - Changed function `getComponent`
+      - Changed return type from `*BlockComponent*` (throws exceptions) to `*BlockComponentReturnType<T> | undefined*` (throws exceptions)
+      - Changed argument `componentId` type from `*string*` to `*T*`
+    - Added function `isLiquidBlocking`
+    - Added function `liquidCanFlowFromDirection`
+    - Added function `liquidSpreadCausesSpawn`
+- Changed class `BlockPermutation`
+    - Added function `canBeDestroyedByLiquidSpread`
+    - Added function `canContainLiquid`
+    - Changed function `getState`
+      - Changed return type from `*boolean | number | string*` to `*minecraftvanilladata.BlockStateSuperset[T] | undefined*`
+      - Changed argument `stateName` type from `*string*` to `*T*`
+    - Added function `isLiquidBlocking`
+    - Added function `liquidSpreadCausesSpawn`
+    - Changed function `matches`
+      - Changed argument `blockName` type from `*string*` to `*T*`
+      - Changed argument `states` type from `*Record<string, boolean | number | string>*` to `*BlockStateArg<T>*`
+    - Changed function `resolve`
+      - Changed return type from `*BlockPermutation*` (throws exceptions) to `*BlockPermutation*` (throws exceptions)
+      - Changed argument `blockName` type from `*string*` to `*T*`
+      - Changed argument `states` type from `*Record<string, boolean | number | string>*` to `*BlockStateArg<T>*`
+    - Changed function `withState`
+      - Changed return type from `*BlockPermutation*` (throws exceptions) to `*BlockPermutation*` (throws exceptions)
+      - Changed argument `name` type from `*string*` to `*T*`
+      - Changed argument `value` type from `*boolean | number | string*` to `*minecraftvanilladata.BlockStateSuperset[T]*`
+- Changed class `Entity`
+    - Changed function `getComponent`
+      - Changed return type from `*EntityComponent*` to `*EntityComponentReturnType<T> | undefined*`
+      - Changed argument `componentId` type from `*string*` to `*T*`
+- Changed class `InputInfo`
+    - Added function `getButtonState`
+    - Added function `getMovementVector`
+- Changed class `ItemStack`
+    - Changed function `getComponent`
+      - Changed return type from `*ItemComponent*` to `*ItemComponentReturnType<T> | undefined*`
+      - Changed argument `componentId` type from `*string*` to `*T*`
+- Changed class `Player`
+    - Added function `spawnParticle`
+- Added class `PlayerButtonInputAfterEvent`
+  ```ts
+  export class PlayerButtonInputAfterEvent {
+    private constructor();
+    readonly button: InputButton;
+    readonly newButtonState: ButtonState;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerButtonInputAfterEventSignal`
+  ```ts
+  export class PlayerButtonInputAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerButtonInputAfterEvent) => void, options?: InputEventOptions): (arg0: PlayerButtonInputAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerButtonInputAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `System`
+    - Added function `sendScriptEvent`
+- Changed class `WorldAfterEvents`
+    - Added property `playerButtonInput`
+- Added interface `InputEventOptions`
+  ```ts
+  export interface InputEventOptions {
+    buttons?: InputButton[];
+    state?: ButtonState;
+  }
+
+  ```
+- Added enum `ButtonState`
+- Added enum `InputButton`
+- Added enum `LiquidType`
+- Added enum `NamespaceNameErrorReason`
+- Added type alias `BlockComponentReturnType`
+  ```ts
+  export type BlockComponentReturnType<T extends string> = T extends keyof BlockComponentTypeMap ? BlockComponentTypeMap[T] : BlockComponent;
+  ```
+- Added type map `BlockComponentTypeMap`
+  ```ts
+  export type BlockComponentTypeMap = {
+    'fluidContainer': BlockFluidContainerComponent;
+    'inventory': BlockInventoryComponent;
+    'minecraft:fluidContainer': BlockFluidContainerComponent;
+    'minecraft:inventory': BlockInventoryComponent;
+    'minecraft:piston': BlockPistonComponent;
+    'minecraft:record_player': BlockRecordPlayerComponent;
+    'minecraft:sign': BlockSignComponent;
+    'piston': BlockPistonComponent;
+    'record_player': BlockRecordPlayerComponent;
+    'sign': BlockSignComponent;
+  };
+  ```
+- Added type alias `BlockStateArg`
+  ```ts
+  export type BlockStateArg<T> = T extends `${minecraftvanilladata.MinecraftBlockTypes}` ? T extends keyof minecraftvanilladata.BlockStateMapping ? minecraftvanilladata.BlockStateMapping[T] : never : Record<string, boolean | number | string>;
+  ```
+- Added type alias `EntityComponentReturnType`
+  ```ts
+  export type EntityComponentReturnType<T extends string> = T extends keyof EntityComponentTypeMap ? EntityComponentTypeMap[T] : EntityComponent;
+  ```
+- Added type map `EntityComponentTypeMap`
+  ```ts
+  export type EntityComponentTypeMap = {
+    'addrider': EntityAddRiderComponent;
+    'ageable': EntityAgeableComponent;
+    'breathable': EntityBreathableComponent;
+    'can_climb': EntityCanClimbComponent;
+    'can_fly': EntityCanFlyComponent;
+    'can_power_jump': EntityCanPowerJumpComponent;
+    'color': EntityColorComponent;
+    'color2': EntityColor2Component;
+    'cursor_inventory': PlayerCursorInventoryComponent;
+    'equippable': EntityEquippableComponent;
+    'fire_immune': EntityFireImmuneComponent;
+    'floats_in_liquid': EntityFloatsInLiquidComponent;
+    'flying_speed': EntityFlyingSpeedComponent;
+    'friction_modifier': EntityFrictionModifierComponent;
+    'ground_offset': EntityGroundOffsetComponent;
+    'healable': EntityHealableComponent;
+    'health': EntityHealthComponent;
+    'inventory': EntityInventoryComponent;
+    'is_baby': EntityIsBabyComponent;
+    'is_charged': EntityIsChargedComponent;
+    'is_chested': EntityIsChestedComponent;
+    'is_dyeable': EntityIsDyeableComponent;
+    'is_hidden_when_invisible': EntityIsHiddenWhenInvisibleComponent;
+    'is_ignited': EntityIsIgnitedComponent;
+    'is_illager_captain': EntityIsIllagerCaptainComponent;
+    'is_saddled': EntityIsSaddledComponent;
+    'is_shaking': EntityIsShakingComponent;
+    'is_sheared': EntityIsShearedComponent;
+    'is_stackable': EntityIsStackableComponent;
+    'is_stunned': EntityIsStunnedComponent;
+    'is_tamed': EntityIsTamedComponent;
+    'item': EntityItemComponent;
+    'lava_movement': EntityLavaMovementComponent;
+    'leashable': EntityLeashableComponent;
+    'mark_variant': EntityMarkVariantComponent;
+    'minecraft:addrider': EntityAddRiderComponent;
+    'minecraft:ageable': EntityAgeableComponent;
+    'minecraft:breathable': EntityBreathableComponent;
+    'minecraft:can_climb': EntityCanClimbComponent;
+    'minecraft:can_fly': EntityCanFlyComponent;
+    'minecraft:can_power_jump': EntityCanPowerJumpComponent;
+    'minecraft:color': EntityColorComponent;
+    'minecraft:color2': EntityColor2Component;
+    'minecraft:cursor_inventory': PlayerCursorInventoryComponent;
+    'minecraft:equippable': EntityEquippableComponent;
+    'minecraft:fire_immune': EntityFireImmuneComponent;
+    'minecraft:floats_in_liquid': EntityFloatsInLiquidComponent;
+    'minecraft:flying_speed': EntityFlyingSpeedComponent;
+    'minecraft:friction_modifier': EntityFrictionModifierComponent;
+    'minecraft:ground_offset': EntityGroundOffsetComponent;
+    'minecraft:healable': EntityHealableComponent;
+    'minecraft:health': EntityHealthComponent;
+    'minecraft:inventory': EntityInventoryComponent;
+    'minecraft:is_baby': EntityIsBabyComponent;
+    'minecraft:is_charged': EntityIsChargedComponent;
+    'minecraft:is_chested': EntityIsChestedComponent;
+    'minecraft:is_dyeable': EntityIsDyeableComponent;
+    'minecraft:is_hidden_when_invisible': EntityIsHiddenWhenInvisibleComponent;
+    'minecraft:is_ignited': EntityIsIgnitedComponent;
+    'minecraft:is_illager_captain': EntityIsIllagerCaptainComponent;
+    'minecraft:is_saddled': EntityIsSaddledComponent;
+    'minecraft:is_shaking': EntityIsShakingComponent;
+    'minecraft:is_sheared': EntityIsShearedComponent;
+    'minecraft:is_stackable': EntityIsStackableComponent;
+    'minecraft:is_stunned': EntityIsStunnedComponent;
+    'minecraft:is_tamed': EntityIsTamedComponent;
+    'minecraft:item': EntityItemComponent;
+    'minecraft:lava_movement': EntityLavaMovementComponent;
+    'minecraft:leashable': EntityLeashableComponent;
+    'minecraft:mark_variant': EntityMarkVariantComponent;
+    'minecraft:movement': EntityMovementComponent;
+    'minecraft:movement.amphibious': EntityMovementAmphibiousComponent;
+    'minecraft:movement.basic': EntityMovementBasicComponent;
+    'minecraft:movement.fly': EntityMovementFlyComponent;
+    'minecraft:movement.generic': EntityMovementGenericComponent;
+    'minecraft:movement.glide': EntityMovementGlideComponent;
+    'minecraft:movement.hover': EntityMovementHoverComponent;
+    'minecraft:movement.jump': EntityMovementJumpComponent;
+    'minecraft:movement.skip': EntityMovementSkipComponent;
+    'minecraft:movement.sway': EntityMovementSwayComponent;
+    'minecraft:navigation.climb': EntityNavigationClimbComponent;
+    'minecraft:navigation.float': EntityNavigationFloatComponent;
+    'minecraft:navigation.fly': EntityNavigationFlyComponent;
+    'minecraft:navigation.generic': EntityNavigationGenericComponent;
+    'minecraft:navigation.hover': EntityNavigationHoverComponent;
+    'minecraft:navigation.walk': EntityNavigationWalkComponent;
+    'minecraft:onfire': EntityOnFireComponent;
+    'minecraft:projectile': EntityProjectileComponent;
+    'minecraft:push_through': EntityPushThroughComponent;
+    'minecraft:rideable': EntityRideableComponent;
+    'minecraft:riding': EntityRidingComponent;
+    'minecraft:scale': EntityScaleComponent;
+    'minecraft:skin_id': EntitySkinIdComponent;
+    'minecraft:strength': EntityStrengthComponent;
+    'minecraft:tameable': EntityTameableComponent;
+    'minecraft:tamemount': EntityTameMountComponent;
+    'minecraft:type_family': EntityTypeFamilyComponent;
+    'minecraft:underwater_movement': EntityUnderwaterMovementComponent;
+    'minecraft:variant': EntityVariantComponent;
+    'minecraft:wants_jockey': EntityWantsJockeyComponent;
+    'movement': EntityMovementComponent;
+    'movement.amphibious': EntityMovementAmphibiousComponent;
+    'movement.basic': EntityMovementBasicComponent;
+    'movement.fly': EntityMovementFlyComponent;
+    'movement.generic': EntityMovementGenericComponent;
+    'movement.glide': EntityMovementGlideComponent;
+    'movement.hover': EntityMovementHoverComponent;
+    'movement.jump': EntityMovementJumpComponent;
+    'movement.skip': EntityMovementSkipComponent;
+    'movement.sway': EntityMovementSwayComponent;
+    'navigation.climb': EntityNavigationClimbComponent;
+    'navigation.float': EntityNavigationFloatComponent;
+    'navigation.fly': EntityNavigationFlyComponent;
+    'navigation.generic': EntityNavigationGenericComponent;
+    'navigation.hover': EntityNavigationHoverComponent;
+    'navigation.walk': EntityNavigationWalkComponent;
+    'onfire': EntityOnFireComponent;
+    'projectile': EntityProjectileComponent;
+    'push_through': EntityPushThroughComponent;
+    'rideable': EntityRideableComponent;
+    'riding': EntityRidingComponent;
+    'scale': EntityScaleComponent;
+    'skin_id': EntitySkinIdComponent;
+    'strength': EntityStrengthComponent;
+    'tameable': EntityTameableComponent;
+    'tamemount': EntityTameMountComponent;
+    'type_family': EntityTypeFamilyComponent;
+    'underwater_movement': EntityUnderwaterMovementComponent;
+    'variant': EntityVariantComponent;
+    'wants_jockey': EntityWantsJockeyComponent;
+  };
+  ```
+- Added type alias `ItemComponentReturnType`
+  ```ts
+  export type ItemComponentReturnType<T extends string> = T extends keyof ItemComponentTypeMap ? ItemComponentTypeMap[T] : ItemComponent;
+  ```
+- Added type map `ItemComponentTypeMap`
+  ```ts
+  export type ItemComponentTypeMap = {
+    'compostable': ItemCompostableComponent;
+    'cooldown': ItemCooldownComponent;
+    'durability': ItemDurabilityComponent;
+    'enchantable': ItemEnchantableComponent;
+    'food': ItemFoodComponent;
+    'minecraft:compostable': ItemCompostableComponent;
+    'minecraft:cooldown': ItemCooldownComponent;
+    'minecraft:durability': ItemDurabilityComponent;
+    'minecraft:enchantable': ItemEnchantableComponent;
+    'minecraft:food': ItemFoodComponent;
+  };
+  ```
+
+=== 1.17.0 ===
+- Changed class `Block`
+    - Added property `isWaterlogged`
+    - Added function `setWaterlogged`
+- Added class `InputInfo`
+  ```ts
+  export class InputInfo {
+    private constructor();
+    readonly lastInputModeUsed: InputMode;
+    readonly touchOnlyAffectsHotbar: boolean;
+  }
+
+  ```
+- Added class `ItemCompostableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemCompostableComponent extends ItemComponent {
+    private constructor();
+    readonly compostingChance: number;
+    static readonly componentId = "minecraft:compostable";
+  }
+
+  ```
+- Changed class `Player`
+    - Added property `inputInfo`
+- Added class `PlayerInputModeChangeAfterEvent`
+  ```ts
+  export class PlayerInputModeChangeAfterEvent {
+    private constructor();
+    readonly newInputModeUsed: InputMode;
+    readonly player: Player;
+    readonly previousInputModeUsed: InputMode;
+  }
+
+  ```
+- Added class `PlayerInputModeChangeAfterEventSignal`
+  ```ts
+  export class PlayerInputModeChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerInputModeChangeAfterEvent) => void): (arg0: PlayerInputModeChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerInputModeChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `PlayerInputPermissions`
+    - Added function `isPermissionCategoryEnabled`
+    - Added function `setPermissionCategory`
+- Changed class `WorldAfterEvents`
+    - Added property `playerInputModeChange`
+- Added enum `InputMode`
+
+=== 1.16.0 ===
+- Added class `BlockFluidContainerComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockFluidContainerComponent extends BlockComponent {
+    private constructor();
+    fillLevel: number;
+    fluidColor: RGBA;
+    static readonly componentId = "minecraft:fluidContainer";
+    addDye(dye: ItemType): void;
+    getFluidType(): FluidType;
+    setFluidType(fluidType: FluidType): void;
+    setPotion(itemStack: ItemStack): void;
+  }
+
+  ```
+- Added class `ClientSystemInfo`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ClientSystemInfo extends SystemInfo {
+    private constructor();
+    readonly maxRenderDistance: number;
+    readonly platformType: PlatformType;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `containsBlock`
+    - Added function `fillBlocks`
+    - Added function `getBlocks`
+- Added class `FluidContainer`
+  ```ts
+  export class FluidContainer {
+    private constructor();
+    static readonly maxFillLevel = 6;
+    static readonly minFillLevel = 0;
+  }
+
+  ```
+- Changed class `ItemUseOnAfterEvent`
+    - Added property `isFirstEvent`
+- Changed class `Player`
+    - Added property `clientSystemInfo`
+- Changed class `System`
+    - Added property `serverSystemInfo`
+- Added class `SystemInfo`
+  ```ts
+  export class SystemInfo {
+    private constructor();
+    readonly memoryTier: MemoryTier;
+  }
+
+  ```
+- Added interface `BlockFillOptions`
+  ```ts
+  export interface BlockFillOptions {
+    blockFilter?: BlockFilter;
+    ignoreChunkBoundErrors?: boolean;
+  }
+
+  ```
+- Added enum `MemoryTier`
+- Added enum `PlatformType`
+
+=== 1.15.0 ===
+- Changed class `Block`
+    - Added function `getRedstonePower`
+- Added class `BlockLocationIterator`
+  ```ts
+  export class BlockLocationIterator implements Iterable<Vector3> {
+    private constructor();
+  }
+
+  ```
+- Added class `BlockVolume`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockVolume extends BlockVolumeBase {
+    from: Vector3;
+    to: Vector3;
+    constructor(from: Vector3, to: Vector3);
+    doesLocationTouchFaces(pos: Vector3): boolean;
+    doesVolumeTouchFaces(other: BlockVolume): boolean;
+    intersects(other: BlockVolume): BlockVolumeIntersection;
+  }
+
+  ```
+- Changed class `BlockVolumeBase`
+    - Added function `getBlockLocationIterator`
+- Added class `EntityBreathableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityBreathableComponent extends EntityComponent {
+    private constructor();
+    readonly breathesAir: boolean;
+    readonly breathesLava: boolean;
+    readonly breathesSolids: boolean;
+    readonly breathesWater: boolean;
+    readonly generatesBubbles: boolean;
+    readonly inhaleTime: number;
+    readonly suffocateTime: number;
+    readonly totalSupply: number;
+    static readonly componentId = "minecraft:breathable";
+    getBreatheBlocks(): BlockPermutation[];
+    getNonBreatheBlocks(): BlockPermutation[];
+  }
+
+  ```
+- Changed class `PlayerInteractWithBlockAfterEvent`
+    - Added property `beforeItemStack`
+    - Added property `isFirstEvent`
+- Changed class `PlayerInteractWithBlockBeforeEvent`
+    - Added property `isFirstEvent`
+- Changed class `PlayerInteractWithEntityAfterEvent`
+    - Added property `beforeItemStack`
+- Changed class `World`
+    - Added property `isHardcore`
+- Changed class `WorldAfterEvents`
+    - Added property `playerInteractWithBlock`
+    - Added property `playerInteractWithEntity`
+- Changed class `WorldBeforeEvents`
+    - Added property `playerInteractWithBlock`
+    - Added property `playerInteractWithEntity`
+- Added enum `BlockVolumeIntersection`
+
+=== 1.14.0 ===
+- Added class `BlockRecordPlayerComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockRecordPlayerComponent extends BlockComponent {
+    private constructor();
+    static readonly componentId = "minecraft:record_player";
+    ejectRecord(): void;
+    getRecord(): ItemStack | undefined;
+    isPlaying(): boolean;
+    pauseRecord(): void;
+    playRecord(): void;
+    setRecord(recordItemType?: ItemType | string, startPlaying: boolean): void;
+  }
+
+  ```
+- Added class `PlayerCursorInventoryComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerCursorInventoryComponent extends EntityComponent {
+    private constructor();
+    readonly item?: ItemStack;
+    static readonly componentId = "minecraft:cursor_inventory";
+    clear(): void;
+  }
+
+  ```
+- Added class `PlayerEmoteAfterEvent`
+  ```ts
+  export class PlayerEmoteAfterEvent {
+    private constructor();
+    readonly personaPieceId: string;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerEmoteAfterEventSignal`
+  ```ts
+  export class PlayerEmoteAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerEmoteAfterEvent) => void): (arg0: PlayerEmoteAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerEmoteAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `WorldAfterEvents`
+    - Added property `playerEmote`
+- Changed interface `EntityFilter`
+    - Added property `propertyOptions`
+      ```ts
+      propertyOptions?: EntityQueryPropertyOptions[]
+      ```
+- Added interface `EntityQueryPropertyOptions`
+  ```ts
+  export interface EntityQueryPropertyOptions {
+    exclude?: boolean;
+    propertyId: string;
+    value?: boolean | string | EqualsComparison | GreaterThanComparison | GreaterThanOrEqualsComparison | LessThanComparison | LessThanOrEqualsComparison | NotEqualsComparison | RangeComparison;
+  }
+
+  ```
+- Added interface `EqualsComparison`
+  ```ts
+  export interface EqualsComparison {
+    equals: boolean | number | string;
+  }
+
+  ```
+- Added interface `GreaterThanComparison`
+  ```ts
+  export interface GreaterThanComparison {
+    greaterThan: number;
+  }
+
+  ```
+- Added interface `GreaterThanOrEqualsComparison`
+  ```ts
+  export interface GreaterThanOrEqualsComparison {
+    greaterThanOrEquals: number;
+  }
+
+  ```
+- Added interface `LessThanComparison`
+  ```ts
+  export interface LessThanComparison {
+    lessThan: number;
+  }
+
+  ```
+- Added interface `LessThanOrEqualsComparison`
+  ```ts
+  export interface LessThanOrEqualsComparison {
+    lessThanOrEquals: number;
+  }
+
+  ```
+- Added interface `NotEqualsComparison`
+  ```ts
+  export interface NotEqualsComparison {
+    notEquals: boolean | number | string;
+  }
+
+  ```
+- Added interface `RangeComparison`
+  ```ts
+  export interface RangeComparison {
+    lowerBound: number;
+    upperBound: number;
+  }
+
+  ```
+
+=== 1.13.0 ===
+- Changed class `Dimension`
+    - Added function `getTopmostBlock`
+- Added class `EntityLeashableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityLeashableComponent extends EntityComponent {
+    private constructor();
+    readonly canBeStolen: boolean;
+    readonly hardDistance: number;
+    readonly isLeashed: boolean;
+    readonly leashHolder?: Entity;
+    readonly leashHolderEntityId?: string;
+    readonly maxDistance: number;
+    readonly softDistance: number;
+    static readonly componentId = "minecraft:leashable";
+    leashTo(leashHolder: Entity): void;
+    unleash(): void;
+  }
+
+  ```
+- Added class `EntityStrengthComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityStrengthComponent extends EntityComponent {
+    private constructor();
+    readonly max: number;
+    readonly value: number;
+    static readonly componentId = "minecraft:strength";
+  }
+
+  ```
+- Added interface `VectorXZ`
+  ```ts
+  export interface VectorXZ {
+    x: number;
+    z: number;
+  }
+
+  ```
+
+=== 1.12.0 ===
+- Added class `BlockComponentEntityFallOnEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentEntityFallOnEvent extends BlockEvent {
+    private constructor();
+    readonly entity?: Entity;
+    readonly fallDistance: number;
+  }
+
+  ```
+- Added class `BlockComponentOnPlaceEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentOnPlaceEvent extends BlockEvent {
+    private constructor();
+    readonly previousBlock: BlockPermutation;
+  }
+
+  ```
+- Added class `BlockComponentPlayerDestroyEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentPlayerDestroyEvent extends BlockEvent {
+    private constructor();
+    readonly destroyedBlockPermutation: BlockPermutation;
+    readonly player?: Player;
+  }
+
+  ```
+- Added class `BlockComponentPlayerInteractEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentPlayerInteractEvent extends BlockEvent {
+    private constructor();
+    readonly face: Direction;
+    readonly faceLocation?: Vector3;
+    readonly player?: Player;
+  }
+
+  ```
+- Added class `BlockComponentPlayerPlaceBeforeEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentPlayerPlaceBeforeEvent extends BlockEvent {
+    private constructor();
+    cancel: boolean;
+    readonly face: Direction;
+    permutationToPlace: BlockPermutation;
+    readonly player?: Player;
+  }
+
+  ```
+- Added class `BlockComponentRandomTickEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentRandomTickEvent extends BlockEvent {
+    private constructor();
+  }
+
+  ```
+- Added class `BlockComponentRegistry`
+  ```ts
+  export class BlockComponentRegistry {
+    private constructor();
+    registerCustomComponent(name: string, customComponent: BlockCustomComponent): void;
+  }
+
+  ```
+- Added class `BlockComponentStepOffEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentStepOffEvent extends BlockEvent {
+    private constructor();
+    readonly entity?: Entity;
+  }
+
+  ```
+- Added class `BlockComponentStepOnEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentStepOnEvent extends BlockEvent {
+    private constructor();
+    readonly entity?: Entity;
+  }
+
+  ```
+- Added class `BlockComponentTickEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentTickEvent extends BlockEvent {
+    private constructor();
+  }
+
+  ```
+- Added class `BlockExplodeAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockExplodeAfterEvent extends BlockEvent {
+    private constructor();
+    readonly explodedBlockPermutation: BlockPermutation;
+    readonly source?: Entity;
+  }
+
+  ```
+- Added class `BlockExplodeAfterEventSignal`
+  ```ts
+  export class BlockExplodeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: BlockExplodeAfterEvent) => void): (arg0: BlockExplodeAfterEvent) => void;
+    unsubscribe(callback: (arg0: BlockExplodeAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `BlockPermutation`
+    - Added function `getTags`
+    - Added function `hasTag`
+- Changed class `Dimension`
+    - Added function `setBlockPermutation`
+    - Added function `setBlockType`
+- Changed class `EnchantmentTypes`
+    - Added function `getAll`
+- Added class `EntityAgeableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityAgeableComponent extends EntityComponent {
+    private constructor();
+    readonly duration: number;
+    readonly growUp: Trigger;
+    readonly transformToItem: string;
+    static readonly componentId = "minecraft:ageable";
+    getDropItems(): string[];
+    getFeedItems(): EntityDefinitionFeedItem[];
+  }
+
+  ```
+- Added class `EntityDefinitionFeedItem`
+  ```ts
+  export class EntityDefinitionFeedItem {
+    private constructor();
+    readonly growth: number;
+    readonly item: string;
+  }
+
+  ```
+- Changed class `EntityHitBlockAfterEvent`
+    - Added property `hitBlockPermutation`
+- Added class `EntityLavaMovementComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityLavaMovementComponent extends EntityAttributeComponent {
+    private constructor();
+    static readonly componentId = "minecraft:lava_movement";
+  }
+
+  ```
+- Added class `EntityMovementComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementComponent extends EntityAttributeComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement";
+  }
+
+  ```
+- Added class `EntityMovementGlideComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementGlideComponent extends EntityBaseMovementComponent {
+    private constructor();
+    readonly speedWhenTurning: number;
+    readonly startSpeed: number;
+    static readonly componentId = "minecraft:movement.glide";
+  }
+
+  ```
+- Added class `EntityMovementSwayComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementSwayComponent extends EntityBaseMovementComponent {
+    private constructor();
+    readonly swayAmplitude: number;
+    readonly swayFrequency: number;
+    static readonly componentId = "minecraft:movement.sway";
+  }
+
+  ```
+- Added class `EntityTameableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityTameableComponent extends EntityComponent {
+    private constructor();
+    readonly getTameItems: ItemStack[];
+    readonly isTamed: boolean;
+    readonly probability: number;
+    readonly tamedToPlayer?: Player;
+    readonly tamedToPlayerId?: string;
+    static readonly componentId = "minecraft:tameable";
+    tame(player: Player): boolean;
+  }
+
+  ```
+- Changed class `EntityTameMountComponent`
+    - Added property `isTamed`
+    - Added property `isTamedToPlayer`
+    - Added property `tamedToPlayer`
+    - Added property `tamedToPlayerId`
+    - Added function `tameToPlayer`
+- Added class `EntityUnderwaterMovementComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityUnderwaterMovementComponent extends EntityAttributeComponent {
+    private constructor();
+    static readonly componentId = "minecraft:underwater_movement";
+  }
+
+  ```
+- Changed class `GameRules`
+    - Added property `showDaysPlayed`
+- Added class `ItemCompleteUseEvent`
+  ```ts
+  export class ItemCompleteUseEvent {
+    private constructor();
+    readonly itemStack: ItemStack;
+    readonly source: Player;
+  }
+
+  ```
+- Added class `ItemComponentBeforeDurabilityDamageEvent`
+  ```ts
+  export class ItemComponentBeforeDurabilityDamageEvent {
+    private constructor();
+    readonly attackingEntity: Entity;
+    durabilityDamage: number;
+    readonly hitEntity: Entity;
+    itemStack?: ItemStack;
+  }
+
+  ```
+- Added class `ItemComponentCompleteUseEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemComponentCompleteUseEvent extends ItemCompleteUseEvent {
+    private constructor();
+  }
+
+  ```
+- Added class `ItemComponentConsumeEvent`
+  ```ts
+  export class ItemComponentConsumeEvent {
+    private constructor();
+    readonly itemStack: ItemStack;
+    readonly source: Entity;
+  }
+
+  ```
+- Added class `ItemComponentHitEntityEvent`
+  ```ts
+  export class ItemComponentHitEntityEvent {
+    private constructor();
+    readonly attackingEntity: Entity;
+    readonly hadEffect: boolean;
+    readonly hitEntity: Entity;
+    readonly itemStack?: ItemStack;
+  }
+
+  ```
+- Added class `ItemComponentMineBlockEvent`
+  ```ts
+  export class ItemComponentMineBlockEvent {
+    private constructor();
+    readonly block: Block;
+    readonly itemStack?: ItemStack;
+    readonly minedBlockPermutation: BlockPermutation;
+    readonly source: Entity;
+  }
+
+  ```
+- Added class `ItemComponentRegistry`
+  ```ts
+  export class ItemComponentRegistry {
+    private constructor();
+    registerCustomComponent(name: string, itemCustomComponent: ItemCustomComponent): void;
+  }
+
+  ```
+- Added class `ItemComponentUseEvent`
+  ```ts
+  export class ItemComponentUseEvent {
+    private constructor();
+    readonly itemStack?: ItemStack;
+    readonly source: Player;
+  }
+
+  ```
+- Added class `ItemComponentUseOnEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemComponentUseOnEvent extends ItemUseOnEvent {
+    private constructor();
+    readonly source: Entity;
+    readonly usedOnBlockPermutation: BlockPermutation;
+  }
+
+  ```
+- Added class `ItemTypes`
+  ```ts
+  export class ItemTypes {
+    private constructor();
+    static get(itemId: string): ItemType | undefined;
+    static getAll(): ItemType[];
+  }
+
+  ```
+- Added class `ItemUseOnEvent`
+  ```ts
+  export class ItemUseOnEvent {
+    private constructor();
+    readonly block: Block;
+    readonly blockFace: Direction;
+    readonly faceLocation: Vector3;
+    readonly itemStack: ItemStack;
+  }
+
+  ```
+- Changed class `Player`
+    - Added property `inputPermissions`
+- Added class `PlayerInputPermissionCategoryChangeAfterEvent`
+  ```ts
+  export class PlayerInputPermissionCategoryChangeAfterEvent {
+    private constructor();
+    readonly category: InputPermissionCategory;
+    readonly enabled: boolean;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerInputPermissionCategoryChangeAfterEventSignal`
+  ```ts
+  export class PlayerInputPermissionCategoryChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerInputPermissionCategoryChangeAfterEvent) => void): (arg0: PlayerInputPermissionCategoryChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerInputPermissionCategoryChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerInputPermissions`
+  ```ts
+  export class PlayerInputPermissions {
+    private constructor();
+    cameraEnabled: boolean;
+    movementEnabled: boolean;
+  }
+
+  ```
+- Changed class `System`
+    - Added function `clearJob`
+    - Added function `runJob`
+    - Added function `waitTicks`
+- Added class `Trigger`
+  ```ts
+  export class Trigger {
+    eventName: string;
+    constructor(eventName: string);
+  }
+
+  ```
+- Changed class `WorldAfterEvents`
+    - Added property `blockExplode`
+    - Added property `playerInputPermissionCategoryChange`
+- Changed class `WorldBeforeEvents`
+    - Added property `worldInitialize`
+- Added class `WorldInitializeBeforeEvent`
+  ```ts
+  export class WorldInitializeBeforeEvent {
+    private constructor();
+    readonly blockComponentRegistry: BlockComponentRegistry;
+    readonly itemComponentRegistry: ItemComponentRegistry;
+  }
+
+  ```
+- Added class `WorldInitializeBeforeEventSignal`
+  ```ts
+  export class WorldInitializeBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: WorldInitializeBeforeEvent) => void): (arg0: WorldInitializeBeforeEvent) => void;
+    unsubscribe(callback: (arg0: WorldInitializeBeforeEvent) => void): void;
+  }
+
+  ```
+- Added interface `BlockCustomComponent`
+  ```ts
+  export interface BlockCustomComponent {
+    beforeOnPlayerPlace?: (arg0: BlockComponentPlayerPlaceBeforeEvent) => void;
+    onEntityFallOn?: (arg0: BlockComponentEntityFallOnEvent) => void;
+    onPlace?: (arg0: BlockComponentOnPlaceEvent) => void;
+    onPlayerDestroy?: (arg0: BlockComponentPlayerDestroyEvent) => void;
+    onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent) => void;
+    onRandomTick?: (arg0: BlockComponentRandomTickEvent) => void;
+    onStepOff?: (arg0: BlockComponentStepOffEvent) => void;
+    onStepOn?: (arg0: BlockComponentStepOnEvent) => void;
+    onTick?: (arg0: BlockComponentTickEvent) => void;
+  }
+
+  ```
+- Changed interface `EntityRaycastOptions`
+    - Added property `ignoreBlockCollision`
+      ```ts
+      ignoreBlockCollision?: boolean
+      ```
+    - Added property `includeLiquidBlocks`
+      ```ts
+      includeLiquidBlocks?: boolean
+      ```
+    - Added property `includePassableBlocks`
+      ```ts
+      includePassableBlocks?: boolean
+      ```
+- Added interface `ItemCustomComponent`
+  ```ts
+  export interface ItemCustomComponent {
+    onBeforeDurabilityDamage?: (arg0: ItemComponentBeforeDurabilityDamageEvent) => void;
+    onCompleteUse?: (arg0: ItemComponentCompleteUseEvent) => void;
+    onConsume?: (arg0: ItemComponentConsumeEvent) => void;
+    onHitEntity?: (arg0: ItemComponentHitEntityEvent) => void;
+    onMineBlock?: (arg0: ItemComponentMineBlockEvent) => void;
+    onUse?: (arg0: ItemComponentUseEvent) => void;
+    onUseOn?: (arg0: ItemComponentUseOnEvent) => void;
+  }
+
+  ```
+- Added enum `CustomComponentNameErrorReason`
+- Added enum `InputPermissionCategory`
+
+=== 1.11.0 ===
+- Changed class `Block`
+    - Added property `type`
+    - Added property `typeId`
+    - Added function `matches`
+    - Added function `setType`
+- Changed class `BlockPermutation`
+    - Added property `type`
+- Changed class `BlockType`
+    - Added property `id`
+- Added class `BlockTypes`
+  ```ts
+  export class BlockTypes {
+    private constructor();
+    static get(typeName: string): BlockType | undefined;
+    static getAll(): BlockType[];
+  }
+
+  ```
+- Added class `BlockVolumeBase`
+  ```ts
+  export class BlockVolumeBase {
+    private constructor();
+    getCapacity(): number;
+    getMax(): Vector3;
+    getMin(): Vector3;
+    getSpan(): Vector3;
+    isInside(location: Vector3): boolean;
+    translate(delta: Vector3): void;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `playSound`
+- Added class `EnchantmentType`
+  ```ts
+  export class EnchantmentType {
+    readonly id: string;
+    readonly maxLevel: number;
+    constructor(enchantmentType: string);
+  }
+
+  ```
+- Added class `EnchantmentTypes`
+  ```ts
+  export class EnchantmentTypes {
+    private constructor();
+    static get(enchantmentId: string): EnchantmentType | undefined;
+  }
+
+  ```
+- Added class `EntityAddRiderComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityAddRiderComponent extends EntityComponent {
+    private constructor();
+    readonly entityType: string;
+    readonly spawnEvent: string;
+    static readonly componentId = "minecraft:addrider";
+  }
+
+  ```
+- Added class `EntityColor2Component`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityColor2Component extends EntityComponent {
+    private constructor();
+    readonly value: PaletteColor;
+    static readonly componentId = "minecraft:color2";
+  }
+
+  ```
+- Changed class `EntityComponent`
+    - Added property `entity`
+- Added class `EntityNavigationClimbComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNavigationClimbComponent extends EntityNavigationComponent {
+    private constructor();
+    static readonly componentId = "minecraft:navigation.climb";
+  }
+
+  ```
+- Added class `EntityNavigationComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNavigationComponent extends EntityComponent {
+    private constructor();
+    readonly avoidDamageBlocks: boolean;
+    readonly avoidPortals: boolean;
+    readonly avoidSun: boolean;
+    readonly avoidWater: boolean;
+    readonly canBreach: boolean;
+    readonly canBreakDoors: boolean;
+    readonly canFloat: boolean;
+    readonly canJump: boolean;
+    readonly canOpenDoors: boolean;
+    readonly canOpenIronDoors: boolean;
+    readonly canPassDoors: boolean;
+    readonly canPathFromAir: boolean;
+    readonly canPathOverLava: boolean;
+    readonly canPathOverWater: boolean;
+    readonly canSink: boolean;
+    readonly canSwim: boolean;
+    readonly canWalk: boolean;
+    readonly canWalkInLava: boolean;
+    readonly isAmphibious: boolean;
+  }
+
+  ```
+- Added class `EntityNavigationFloatComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNavigationFloatComponent extends EntityNavigationComponent {
+    private constructor();
+    static readonly componentId = "minecraft:navigation.float";
+  }
+
+  ```
+- Added class `EntityNavigationFlyComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNavigationFlyComponent extends EntityNavigationComponent {
+    private constructor();
+    static readonly componentId = "minecraft:navigation.fly";
+  }
+
+  ```
+- Added class `EntityNavigationGenericComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNavigationGenericComponent extends EntityNavigationComponent {
+    private constructor();
+    static readonly componentId = "minecraft:navigation.generic";
+  }
+
+  ```
+- Added class `EntityNavigationHoverComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNavigationHoverComponent extends EntityNavigationComponent {
+    private constructor();
+    static readonly componentId = "minecraft:navigation.hover";
+  }
+
+  ```
+- Added class `EntityNavigationWalkComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNavigationWalkComponent extends EntityNavigationComponent {
+    private constructor();
+    static readonly componentId = "minecraft:navigation.walk";
+  }
+
+  ```
+- Added class `EntityRideableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityRideableComponent extends EntityComponent {
+    private constructor();
+    readonly controllingSeat: number;
+    readonly crouchingSkipInteract: boolean;
+    readonly interactText: string;
+    readonly passengerMaxWidth: number;
+    readonly pullInEntities: boolean;
+    readonly riderCanInteract: boolean;
+    readonly seatCount: number;
+    static readonly componentId = "minecraft:rideable";
+    addRider(rider: Entity): boolean;
+    ejectRider(rider: Entity): void;
+    ejectRiders(): void;
+    getFamilyTypes(): string[];
+    getRiders(): Entity[];
+    getSeats(): Seat[];
+  }
+
+  ```
+- Added class `EntityRidingComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityRidingComponent extends EntityComponent {
+    private constructor();
+    readonly entityRidingOn: Entity;
+    static readonly componentId = "minecraft:riding";
+  }
+
+  ```
+- Added class `EntityTameMountComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityTameMountComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:tamemount";
+    tame(showParticles: boolean): void;
+  }
+
+  ```
+- Added class `GameRuleChangeAfterEvent`
+  ```ts
+  export class GameRuleChangeAfterEvent {
+    private constructor();
+    readonly rule: GameRule;
+    readonly value: boolean | number;
+  }
+
+  ```
+- Added class `GameRuleChangeAfterEventSignal`
+  ```ts
+  export class GameRuleChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: GameRuleChangeAfterEvent) => void): (arg0: GameRuleChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: GameRuleChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `GameRules`
+  ```ts
+  export class GameRules {
+    private constructor();
+    commandBlockOutput: boolean;
+    commandBlocksEnabled: boolean;
+    doDayLightCycle: boolean;
+    doEntityDrops: boolean;
+    doFireTick: boolean;
+    doImmediateRespawn: boolean;
+    doInsomnia: boolean;
+    doLimitedCrafting: boolean;
+    doMobLoot: boolean;
+    doMobSpawning: boolean;
+    doTileDrops: boolean;
+    doWeatherCycle: boolean;
+    drowningDamage: boolean;
+    fallDamage: boolean;
+    fireDamage: boolean;
+    freezeDamage: boolean;
+    functionCommandLimit: number;
+    keepInventory: boolean;
+    maxCommandChainLength: number;
+    mobGriefing: boolean;
+    naturalRegeneration: boolean;
+    playersSleepingPercentage: number;
+    projectilesCanBreakBlocks: boolean;
+    pvp: boolean;
+    randomTickSpeed: number;
+    recipesUnlock: boolean;
+    respawnBlocksExplode: boolean;
+    sendCommandFeedback: boolean;
+    showBorderEffect: boolean;
+    showCoordinates: boolean;
+    showDeathMessages: boolean;
+    showRecipeMessages: boolean;
+    showTags: boolean;
+    spawnRadius: number;
+    tntExplodes: boolean;
+    tntExplosionDropDecay: boolean;
+  }
+
+  ```
+- Added class `ItemEnchantableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemEnchantableComponent extends ItemComponent {
+    private constructor();
+    readonly slots: EnchantmentSlot[];
+    static readonly componentId = "minecraft:enchantable";
+    addEnchantment(enchantment: Enchantment): void;
+    addEnchantments(enchantments: Enchantment[]): void;
+    canAddEnchantment(enchantment: Enchantment): boolean;
+    getEnchantment(enchantmentType: EnchantmentType | string): Enchantment | undefined;
+    getEnchantments(): Enchantment[];
+    hasEnchantment(enchantmentType: EnchantmentType | string): boolean;
+    removeAllEnchantments(): void;
+    removeEnchantment(enchantmentType: EnchantmentType | string): void;
+  }
+
+  ```
+- Changed class `ItemStack`
+    - Added function `matches`
+- Added class `ListBlockVolume`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ListBlockVolume extends BlockVolumeBase {
+    constructor(locations: Vector3[]);
+    add(locations: Vector3[]): void;
+    remove(locations: Vector3[]): void;
+  }
+
+  ```
+- Changed class `Player`
+    - Added property `selectedSlotIndex`
+    - Added function `getGameMode`
+    - Added function `getItemCooldown`
+    - Added function `setGameMode`
+    - Added function `startItemCooldown`
+- Added class `PlayerGameModeChangeAfterEvent`
+  ```ts
+  export class PlayerGameModeChangeAfterEvent {
+    private constructor();
+    readonly fromGameMode: GameMode;
+    readonly player: Player;
+    readonly toGameMode: GameMode;
+  }
+
+  ```
+- Added class `PlayerGameModeChangeAfterEventSignal`
+  ```ts
+  export class PlayerGameModeChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerGameModeChangeAfterEvent) => void): (arg0: PlayerGameModeChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerGameModeChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerGameModeChangeBeforeEvent`
+  ```ts
+  export class PlayerGameModeChangeBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    readonly fromGameMode: GameMode;
+    readonly player: Player;
+    toGameMode: GameMode;
+  }
+
+  ```
+- Added class `PlayerGameModeChangeBeforeEventSignal`
+  ```ts
+  export class PlayerGameModeChangeBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerGameModeChangeBeforeEvent) => void): (arg0: PlayerGameModeChangeBeforeEvent) => void;
+    unsubscribe(callback: (arg0: PlayerGameModeChangeBeforeEvent) => void): void;
+  }
+
+  ```
+- Changed class `ScreenDisplay`
+    - Added function `getHiddenHudElements`
+    - Added function `hideAllExcept`
+    - Added function `isForcedHidden`
+    - Added function `resetHudElements`
+    - Added function `setHudVisibility`
+- Added class `Seat`
+  ```ts
+  export class Seat {
+    private constructor();
+    readonly lockRiderRotation: number;
+    readonly maxRiderCount: number;
+    readonly minRiderCount: number;
+    readonly position: Vector3;
+    readonly seatRotation: number;
+  }
+
+  ```
+- Changed class `Structure`
+    - Added function `saveAs`
+    - Added function `saveToWorld`
+    - Added function `setBlockPermutation`
+- Changed class `StructureManager`
+    - Added function `createFromWorld`
+    - Added function `getWorldStructureIds`
+- Added class `WeatherChangeBeforeEvent`
+  ```ts
+  export class WeatherChangeBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    duration: number;
+    newWeather: WeatherType;
+    readonly previousWeather: WeatherType;
+  }
+
+  ```
+- Added class `WeatherChangeBeforeEventSignal`
+  ```ts
+  export class WeatherChangeBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: WeatherChangeBeforeEvent) => void): (arg0: WeatherChangeBeforeEvent) => void;
+    unsubscribe(callback: (arg0: WeatherChangeBeforeEvent) => void): void;
+  }
+
+  ```
+- Changed class `World`
+    - Added property `gameRules`
+- Changed class `WorldAfterEvents`
+    - Added property `gameRuleChange`
+    - Added property `playerGameModeChange`
+- Changed class `WorldBeforeEvents`
+    - Added property `playerGameModeChange`
+    - Added property `weatherChange`
+- Added interface `Enchantment`
+  ```ts
+  export interface Enchantment {
+    level: number;
+    type: EnchantmentType;
+  }
+
+  ```
+- Changed interface `EntityQueryOptions`
+    - Added property `volume`
+      ```ts
+      volume?: Vector3
+      ```
+- Added enum `EnchantmentSlot`
+- Added enum `GameRule`
+- Added enum `HudElement`
+- Added enum `HudVisibility`
+- Added enum `PaletteColor`
+- Added constant `HudElementsCount`
+- Added constant `HudVisibilityCount`
+
+=== 1.10.0 ===
+- Changed class `Block`
+    - Added function `getItemStack`
+- Changed class `BlockPermutation`
+    - Added function `getItemStack`
+- Added class `EntityProjectileComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityProjectileComponent extends EntityComponent {
+    private constructor();
+    airInertia: number;
+    catchFireOnHurt: boolean;
+    critParticlesOnProjectileHurt: boolean;
+    destroyOnProjectileHurt: boolean;
+    gravity: number;
+    hitEntitySound?: string;
+    hitGroundSound?: string;
+    hitParticle?: string;
+    lightningStrikeOnHit: boolean;
+    liquidInertia: number;
+    onFireTime: number;
+    owner?: Entity;
+    shouldBounceOnHit: boolean;
+    stopOnHit: boolean;
+    static readonly componentId = "minecraft:projectile";
+    shoot(velocity: Vector3, options?: ProjectileShootOptions): void;
+  }
+
+  ```
+- Added class `EntityType`
+  ```ts
+  export class EntityType {
+    private constructor();
+    readonly id: string;
+  }
+
+  ```
+- Added class `EntityTypeFamilyComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityTypeFamilyComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:type_family";
+    getTypeFamilies(): string[];
+    hasTypeFamily(typeFamily: string): boolean;
+  }
+
+  ```
+- Added class `EntityTypes`
+  ```ts
+  export class EntityTypes {
+    private constructor();
+    static get(identifier: string): EntityType | undefined;
+    static getAll(): EntityType[];
+  }
+
+  ```
+- Added class `ItemCooldownComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemCooldownComponent extends ItemComponent {
+    private constructor();
+    readonly cooldownCategory: string;
+    readonly cooldownTicks: number;
+    static readonly componentId = "minecraft:cooldown";
+    getCooldownTicksRemaining(player: Player): number;
+    isCooldownCategory(cooldownCategory: string): boolean;
+    startCooldown(player: Player): void;
+  }
+
+  ```
+- Changed class `Player`
+    - Added function `playMusic`
+    - Added function `queueMusic`
+    - Added function `stopMusic`
+- Added class `Structure`
+  ```ts
+  export class Structure {
+    private constructor();
+    readonly id: string;
+    readonly size: Vector3;
+    getBlockPermutation(location: Vector3): BlockPermutation | undefined;
+    getIsWaterlogged(location: Vector3): boolean;
+    isValid(): boolean;
+  }
+
+  ```
+- Added class `StructureManager`
+  ```ts
+  export class StructureManager {
+    private constructor();
+    createEmpty(identifier: string, size: Vector3, saveMode: StructureSaveMode): Structure;
+    delete(structure: string | Structure): boolean;
+    get(identifier: string): Structure | undefined;
+    place(structure: string | Structure, dimension: Dimension, location: Vector3, options?: StructurePlaceOptions): void;
+  }
+
+  ```
+- Changed class `World`
+    - Added property `structureManager`
+- Changed class `WorldAfterEvents`
+    - Added property `worldInitialize`
+- Added class `WorldInitializeAfterEvent`
+  ```ts
+  export class WorldInitializeAfterEvent {
+    private constructor();
+  }
+
+  ```
+- Added class `WorldInitializeAfterEventSignal`
+  ```ts
+  export class WorldInitializeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: WorldInitializeAfterEvent) => void): (arg0: WorldInitializeAfterEvent) => void;
+    unsubscribe(callback: (arg0: WorldInitializeAfterEvent) => void): void;
+  }
+
+  ```
+- Added interface `ProjectileShootOptions`
+  ```ts
+  export interface ProjectileShootOptions {
+    uncertainty?: number;
+  }
+
+  ```
+- Added interface `StructureCreateOptions`
+  ```ts
+  export interface StructureCreateOptions {
+    includeBlocks?: boolean;
+    includeEntities?: boolean;
+    saveMode?: StructureSaveMode;
+  }
+
+  ```
+- Added interface `StructurePlaceOptions`
+  ```ts
+  export interface StructurePlaceOptions {
+    animationMode?: StructureAnimationMode;
+    animationSeconds?: number;
+    includeBlocks?: boolean;
+    includeEntities?: boolean;
+    integrity?: number;
+    integritySeed?: string;
+    mirror?: StructureMirrorAxis;
+    rotation?: StructureRotation;
+    waterlogged?: boolean;
+  }
+
+  ```
+- Added enum `BlockComponentTypes`
+- Added enum `EntityComponentTypes`
+- Added enum `ItemComponentTypes`
+- Added enum `StructureAnimationMode`
+- Added enum `StructureMirrorAxis`
+- Added enum `StructureRotation`
+- Added enum `StructureSaveMode`
+
+=== 1.9.0 ===
+- Changed class `BlockPermutation`
+    - Added function `getAllStates`
+- Added class `BlockPistonComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockPistonComponent extends BlockComponent {
+    private constructor();
+    readonly isMoving: boolean;
+    readonly state: BlockPistonState;
+    static readonly componentId = "minecraft:piston";
+    getAttachedBlocks(): Block[];
+    getAttachedBlocksLocations(): Vector3[];
+  }
+
+  ```
+- Added class `BlockSignComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockSignComponent extends BlockComponent {
+    private constructor();
+    readonly isWaxed: boolean;
+    static readonly componentId = "minecraft:sign";
+    getRawText(side: SignSide): RawText | undefined;
+    getText(side: SignSide): string | undefined;
+    getTextDyeColor(side: SignSide): DyeColor | undefined;
+    setText(message: RawMessage | string, side: SignSide): void;
+    setTextDyeColor(color?: DyeColor, side: SignSide): void;
+    setWaxed(waxed: boolean): void;
+  }
+
+  ```
+- Added class `BlockStates`
+  ```ts
+  export class BlockStates {
+    private constructor();
+    static get(stateName: string): BlockStateType | undefined;
+    static getAll(): BlockStateType[];
+  }
+
+  ```
+- Added class `BlockStateType`
+  ```ts
+  export class BlockStateType {
+    private constructor();
+    readonly id: string;
+    readonly validValues: (boolean | number | string)[];
+  }
+
+  ```
+- Changed class `Container`
+    - Added function `getSlot`
+- Added class `ContainerSlot`
+  ```ts
+  export class ContainerSlot {
+    private constructor();
+    amount: number;
+    readonly isStackable: boolean;
+    keepOnDeath: boolean;
+    lockMode: ItemLockMode;
+    readonly maxAmount: number;
+    nameTag?: string;
+    readonly type: ItemType;
+    readonly typeId: string;
+    clearDynamicProperties(): void;
+    getCanDestroy(): string[];
+    getCanPlaceOn(): string[];
+    getDynamicProperty(identifier: string): boolean | number | string | Vector3 | undefined;
+    getDynamicPropertyIds(): string[];
+    getDynamicPropertyTotalByteCount(): number;
+    getItem(): ItemStack | undefined;
+    getLore(): string[];
+    getTags(): string[];
+    hasItem(): boolean;
+    hasTag(tag: string): boolean;
+    isStackableWith(itemStack: ItemStack): boolean;
+    isValid(): boolean;
+    setCanDestroy(blockIdentifiers?: string[]): void;
+    setCanPlaceOn(blockIdentifiers?: string[]): void;
+    setDynamicProperty(identifier: string, value?: boolean | number | string | Vector3): void;
+    setItem(itemStack?: ItemStack): void;
+    setLore(loreList?: (RawMessage | string)[]): void;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `createExplosion`
+- Added class `DimensionType`
+  ```ts
+  export class DimensionType {
+    private constructor();
+    readonly typeId: string;
+  }
+
+  ```
+- Added class `DimensionTypes`
+  ```ts
+  export class DimensionTypes {
+    private constructor();
+    static get(dimensionTypeId: string): DimensionType | undefined;
+    static getAll(): DimensionType[];
+  }
+
+  ```
+- Added class `EffectTypes`
+  ```ts
+  export class EffectTypes {
+    private constructor();
+    static get(identifier: string): EffectType | undefined;
+    static getAll(): EffectType[];
+  }
+
+  ```
+- Changed class `Entity`
+    - Added function `extinguishFire`
+    - Added function `playAnimation`
+    - Added function `setOnFire`
+- Changed class `EntityEquippableComponent`
+    - Added function `getEquipmentSlot`
+- Added class `EntityOnFireComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityOnFireComponent extends EntityComponent {
+    private constructor();
+    readonly onFireTicksRemaining: number;
+    static readonly componentId = "minecraft:onfire";
+  }
+
+  ```
+- Added class `ItemDurabilityComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemDurabilityComponent extends ItemComponent {
+    private constructor();
+    damage: number;
+    readonly maxDurability: number;
+    static readonly componentId = "minecraft:durability";
+    getDamageChance(unbreakingEnchantmentLevel: number): number;
+    getDamageChanceRange(): minecraftcommon.NumberRange;
+  }
+
+  ```
+- Added class `ItemFoodComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemFoodComponent extends ItemComponent {
+    private constructor();
+    readonly canAlwaysEat: boolean;
+    readonly nutrition: number;
+    readonly saturationModifier: number;
+    readonly usingConvertsTo: string;
+    static readonly componentId = "minecraft:food";
+  }
+
+  ```
+- Changed class `ItemStack`
+    - Added function `clearDynamicProperties`
+    - Added function `getDynamicProperty`
+    - Added function `getDynamicPropertyIds`
+    - Added function `getDynamicPropertyTotalByteCount`
+    - Added function `setDynamicProperty`
+- Added class `PistonActivateAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PistonActivateAfterEvent extends BlockEvent {
+    private constructor();
+    readonly isExpanding: boolean;
+    readonly piston: BlockPistonComponent;
+  }
+
+  ```
+- Added class `PistonActivateAfterEventSignal`
+  ```ts
+  export class PistonActivateAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PistonActivateAfterEvent) => void): (arg0: PistonActivateAfterEvent) => void;
+    unsubscribe(callback: (arg0: PistonActivateAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `WeatherChangeAfterEvent`
+  ```ts
+  export class WeatherChangeAfterEvent {
+    private constructor();
+    readonly dimension: string;
+    readonly newWeather: WeatherType;
+    readonly previousWeather: WeatherType;
+  }
+
+  ```
+- Added class `WeatherChangeAfterEventSignal`
+  ```ts
+  export class WeatherChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: WeatherChangeAfterEvent) => void): (arg0: WeatherChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: WeatherChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `WorldAfterEvents`
+    - Added property `effectAdd`
+    - Added property `explosion`
+    - Added property `pistonActivate`
+    - Added property `weatherChange`
+- Changed class `WorldBeforeEvents`
+    - Added property `effectAdd`
+    - Added property `explosion`
+- Added interface `ExplosionOptions`
+  ```ts
+  export interface ExplosionOptions {
+    allowUnderwater?: boolean;
+    breaksBlocks?: boolean;
+    causesFire?: boolean;
+    source?: Entity;
+  }
+
+  ```
+- Added interface `PlayAnimationOptions`
+  ```ts
+  export interface PlayAnimationOptions {
+    blendOutTime?: number;
+    controller?: string;
+    nextState?: string;
+    players?: string[];
+    stopExpression?: string;
+  }
+
+  ```
+- Added interface `RawText`
+  ```ts
+  export interface RawText {
+    rawtext?: RawMessage[];
+  }
+
+  ```
+- Added enum `BlockPistonState`
+- Added enum `DyeColor`
+- Added enum `SignSide`
+
+=== 1.8.0 ===
+- Changed class `Block`
+    - Added function `getTags`
+    - Added function `hasTag`
+- Changed class `BlockPermutation`
+    - Added function `getState`
+    - Added function `withState`
+- Added class `BlockType`
+  ```ts
+  export class BlockType {
+    private constructor();
+  }
+
+  ```
+- Added class `DataDrivenEntityTriggerAfterEvent`
+  ```ts
+  export class DataDrivenEntityTriggerAfterEvent {
+    private constructor();
+    readonly entity: Entity;
+    readonly eventId: string;
+    getModifiers(): DefinitionModifier[];
+  }
+
+  ```
+- Added class `DataDrivenEntityTriggerAfterEventSignal`
+  ```ts
+  export class DataDrivenEntityTriggerAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: DataDrivenEntityTriggerAfterEvent) => void, options?: EntityDataDrivenTriggerEventOptions): (arg0: DataDrivenEntityTriggerAfterEvent) => void;
+    unsubscribe(callback: (arg0: DataDrivenEntityTriggerAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EffectAddAfterEvent`
+  ```ts
+  export class EffectAddAfterEvent {
+    private constructor();
+    readonly effect: Effect;
+    readonly entity: Entity;
+  }
+
+  ```
+- Added class `EffectAddAfterEventSignal`
+  ```ts
+  export class EffectAddAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EffectAddAfterEvent) => void, options?: EntityEventOptions): (arg0: EffectAddAfterEvent) => void;
+    unsubscribe(callback: (arg0: EffectAddAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EffectAddBeforeEvent`
+  ```ts
+  export class EffectAddBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    duration: number;
+    readonly effectType: string;
+    readonly entity: Entity;
+  }
+
+  ```
+- Added class `EffectAddBeforeEventSignal`
+  ```ts
+  export class EffectAddBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EffectAddBeforeEvent) => void): (arg0: EffectAddBeforeEvent) => void;
+    unsubscribe(callback: (arg0: EffectAddBeforeEvent) => void): void;
+  }
+
+  ```
+- Changed class `WorldAfterEvents`
+    - Added property `dataDrivenEntityTrigger`
+- Added interface `DefinitionModifier`
+  ```ts
+  export interface DefinitionModifier {
+    addedComponentGroups: string[];
+    removedComponentGroups: string[];
+  }
+
+  ```
+- Added interface `EntityDataDrivenTriggerEventOptions`
+  ```ts
+  export interface EntityDataDrivenTriggerEventOptions {
+    entities?: Entity[];
+    entityTypes?: string[];
+    eventTypes?: string[];
+  }
+
+  ```
+- Added enum `FluidType`
+
+=== 1.7.0 ===
+- Changed class `Block`
+    - Added function `above`
+    - Added function `below`
+    - Added function `bottomCenter`
+    - Added function `center`
+    - Added function `east`
+    - Added function `north`
+    - Added function `offset`
+    - Added function `south`
+    - Added function `west`
+- Changed class `Dimension`
+    - Added property `heightRange`
+- Changed class `Entity`
+    - Added function `clearDynamicProperties`
+    - Added function `getDynamicProperty`
+    - Added function `getDynamicPropertyIds`
+    - Added function `getDynamicPropertyTotalByteCount`
+    - Added function `matches`
+    - Added function `remove`
+    - Added function `setDynamicProperty`
+- Added class `ExplosionAfterEvent`
+  ```ts
+  export class ExplosionAfterEvent {
+    private constructor();
+    readonly dimension: Dimension;
+    readonly source?: Entity;
+    getImpactedBlocks(): Block[];
+  }
+
+  ```
+- Added class `ExplosionAfterEventSignal`
+  ```ts
+  export class ExplosionAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ExplosionAfterEvent) => void): (arg0: ExplosionAfterEvent) => void;
+    unsubscribe(callback: (arg0: ExplosionAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ExplosionBeforeEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ExplosionBeforeEvent extends ExplosionAfterEvent {
+    private constructor();
+    cancel: boolean;
+    setImpactedBlocks(blocks: Block[]): void;
+  }
+
+  ```
+- Added class `ExplosionBeforeEventSignal`
+  ```ts
+  export class ExplosionBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ExplosionBeforeEvent) => void): (arg0: ExplosionBeforeEvent) => void;
+    unsubscribe(callback: (arg0: ExplosionBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerInteractWithBlockAfterEvent`
+  ```ts
+  export class PlayerInteractWithBlockAfterEvent {
+    private constructor();
+    readonly block: Block;
+    readonly blockFace: Direction;
+    readonly faceLocation: Vector3;
+    readonly itemStack?: ItemStack;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerInteractWithBlockAfterEventSignal`
+  ```ts
+  export class PlayerInteractWithBlockAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerInteractWithBlockAfterEvent) => void): (arg0: PlayerInteractWithBlockAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerInteractWithBlockAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerInteractWithBlockBeforeEvent`
+  ```ts
+  export class PlayerInteractWithBlockBeforeEvent {
+    private constructor();
+    readonly block: Block;
+    readonly blockFace: Direction;
+    cancel: boolean;
+    readonly faceLocation: Vector3;
+    readonly itemStack?: ItemStack;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerInteractWithBlockBeforeEventSignal`
+  ```ts
+  export class PlayerInteractWithBlockBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerInteractWithBlockBeforeEvent) => void): (arg0: PlayerInteractWithBlockBeforeEvent) => void;
+    unsubscribe(callback: (arg0: PlayerInteractWithBlockBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerInteractWithEntityAfterEvent`
+  ```ts
+  export class PlayerInteractWithEntityAfterEvent {
+    private constructor();
+    readonly itemStack?: ItemStack;
+    readonly player: Player;
+    readonly target: Entity;
+  }
+
+  ```
+- Added class `PlayerInteractWithEntityAfterEventSignal`
+  ```ts
+  export class PlayerInteractWithEntityAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerInteractWithEntityAfterEvent) => void): (arg0: PlayerInteractWithEntityAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerInteractWithEntityAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerInteractWithEntityBeforeEvent`
+  ```ts
+  export class PlayerInteractWithEntityBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    readonly itemStack?: ItemStack;
+    readonly player: Player;
+    readonly target: Entity;
+  }
+
+  ```
+- Added class `PlayerInteractWithEntityBeforeEventSignal`
+  ```ts
+  export class PlayerInteractWithEntityBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerInteractWithEntityBeforeEvent) => void): (arg0: PlayerInteractWithEntityBeforeEvent) => void;
+    unsubscribe(callback: (arg0: PlayerInteractWithEntityBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerLeaveBeforeEvent`
+  ```ts
+  export class PlayerLeaveBeforeEvent {
+    private constructor();
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerLeaveBeforeEventSignal`
+  ```ts
+  export class PlayerLeaveBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerLeaveBeforeEvent) => void): (arg0: PlayerLeaveBeforeEvent) => void;
+    unsubscribe(callback: (arg0: PlayerLeaveBeforeEvent) => void): void;
+  }
+
+  ```
+- Changed class `World`
+    - Added function `clearDynamicProperties`
+    - Added function `getDynamicProperty`
+    - Added function `getDynamicPropertyIds`
+    - Added function `getDynamicPropertyTotalByteCount`
+    - Added function `getEntity`
+    - Added function `setDynamicProperty`
+- Changed class `WorldBeforeEvents`
+    - Added property `playerLeave`
+- Added constant `TicksPerSecond`
+
+=== 1.6.0 ===
+- Changed class `Block`
+    - Added property `isAir`
+    - Added property `isLiquid`
+- Added class `Camera`
+  ```ts
+  export class Camera {
+    private constructor();
+    clear(): void;
+    fade(fadeCameraOptions?: CameraFadeOptions): void;
+    setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions): void;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `setWeather`
+- Changed class `Entity`
+    - Added property `isClimbing`
+    - Added property `isFalling`
+    - Added property `isInWater`
+    - Added property `isOnGround`
+    - Added property `isSleeping`
+    - Added property `isSneaking`
+    - Added property `isSprinting`
+    - Added property `isSwimming`
+    - Added function `getProperty`
+    - Added function `getRotation`
+    - Added function `resetProperty`
+    - Added function `setProperty`
+    - Added function `setRotation`
+- Added class `EntityLoadAfterEvent`
+  ```ts
+  export class EntityLoadAfterEvent {
+    private constructor();
+    entity: Entity;
+  }
+
+  ```
+- Added class `EntityLoadAfterEventSignal`
+  ```ts
+  export class EntityLoadAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityLoadAfterEvent) => void): (arg0: EntityLoadAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityLoadAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityRemoveAfterEvent`
+  ```ts
+  export class EntityRemoveAfterEvent {
+    private constructor();
+    readonly removedEntityId: string;
+    readonly typeId: string;
+  }
+
+  ```
+- Added class `EntityRemoveAfterEventSignal`
+  ```ts
+  export class EntityRemoveAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityRemoveAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityRemoveAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityRemoveAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityRemoveBeforeEvent`
+  ```ts
+  export class EntityRemoveBeforeEvent {
+    private constructor();
+    readonly removedEntity: Entity;
+  }
+
+  ```
+- Added class `EntityRemoveBeforeEventSignal`
+  ```ts
+  export class EntityRemoveBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityRemoveBeforeEvent) => void): (arg0: EntityRemoveBeforeEvent) => void;
+    unsubscribe(callback: (arg0: EntityRemoveBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `EntitySpawnAfterEvent`
+  ```ts
+  export class EntitySpawnAfterEvent {
+    private constructor();
+    readonly cause: EntityInitializationCause;
+    entity: Entity;
+  }
+
+  ```
+- Added class `EntitySpawnAfterEventSignal`
+  ```ts
+  export class EntitySpawnAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntitySpawnAfterEvent) => void): (arg0: EntitySpawnAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntitySpawnAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `ItemStack`
+    - Changed read-only flag for `amount` from `true` to `false`
+    - Changed read-only flag for `keepOnDeath` from `true` to `false`
+    - Changed read-only flag for `lockMode` from `true` to `false`
+    - Changed read-only flag for `nameTag` from `true` to `false`
+    - Added function `clone`
+    - Added function `getCanDestroy`
+    - Added function `getCanPlaceOn`
+    - Added function `getTags`
+    - Added function `hasTag`
+    - Added function `setCanDestroy`
+    - Added function `setCanPlaceOn`
+- Changed class `Player`
+    - Added property `camera`
+    - Added property `isEmoting`
+    - Added property `isFlying`
+    - Added property `isGliding`
+    - Added property `isJumping`
+    - Added property `level`
+    - Added property `totalXpNeededForNextLevel`
+    - Added property `xpEarnedAtCurrentLevel`
+    - Added function `addExperience`
+    - Added function `addLevels`
+    - Added function `getTotalXp`
+    - Added function `resetLevel`
+- Added class `PlayerBreakBlockAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerBreakBlockAfterEvent extends BlockEvent {
+    private constructor();
+    readonly brokenBlockPermutation: BlockPermutation;
+    readonly itemStackAfterBreak?: ItemStack;
+    readonly itemStackBeforeBreak?: ItemStack;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerBreakBlockAfterEventSignal`
+  ```ts
+  export class PlayerBreakBlockAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerBreakBlockAfterEvent) => void, options?: BlockEventOptions): (arg0: PlayerBreakBlockAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerBreakBlockAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerBreakBlockBeforeEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerBreakBlockBeforeEvent extends BlockEvent {
+    private constructor();
+    cancel: boolean;
+    itemStack?: ItemStack;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerBreakBlockBeforeEventSignal`
+  ```ts
+  export class PlayerBreakBlockBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerBreakBlockBeforeEvent) => void, options?: BlockEventOptions): (arg0: PlayerBreakBlockBeforeEvent) => void;
+    unsubscribe(callback: (arg0: PlayerBreakBlockBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerDimensionChangeAfterEvent`
+  ```ts
+  export class PlayerDimensionChangeAfterEvent {
+    private constructor();
+    readonly fromDimension: Dimension;
+    readonly fromLocation: Vector3;
+    readonly player: Player;
+    readonly toDimension: Dimension;
+    readonly toLocation: Vector3;
+  }
+
+  ```
+- Added class `PlayerDimensionChangeAfterEventSignal`
+  ```ts
+  export class PlayerDimensionChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerDimensionChangeAfterEvent) => void): (arg0: PlayerDimensionChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerDimensionChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerPlaceBlockAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerPlaceBlockAfterEvent extends BlockEvent {
+    private constructor();
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerPlaceBlockAfterEventSignal`
+  ```ts
+  export class PlayerPlaceBlockAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerPlaceBlockAfterEvent) => void, options?: BlockEventOptions): (arg0: PlayerPlaceBlockAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerPlaceBlockAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `World`
+    - Added function `getMoonPhase`
+- Changed class `WorldAfterEvents`
+    - Added property `entityLoad`
+    - Added property `entityRemove`
+    - Added property `entitySpawn`
+    - Added property `playerBreakBlock`
+    - Added property `playerDimensionChange`
+    - Added property `playerPlaceBlock`
+- Changed class `WorldBeforeEvents`
+    - Added property `entityRemove`
+    - Added property `playerBreakBlock`
+- Added interface `BlockEventOptions`
+  ```ts
+  export interface BlockEventOptions {
+    blockTypes?: string[];
+    permutations?: BlockPermutation[];
+  }
+
+  ```
+- Added interface `CameraDefaultOptions`
+  ```ts
+  export interface CameraDefaultOptions {
+    easeOptions: CameraEaseOptions;
+  }
+
+  ```
+- Added interface `CameraEaseOptions`
+  ```ts
+  export interface CameraEaseOptions {
+    easeTime?: number;
+    easeType?: EasingType;
+  }
+
+  ```
+- Added interface `CameraFadeOptions`
+  ```ts
+  export interface CameraFadeOptions {
+    fadeColor?: RGB;
+    fadeTime?: CameraFadeTimeOptions;
+  }
+
+  ```
+- Added interface `CameraFadeTimeOptions`
+  ```ts
+  export interface CameraFadeTimeOptions {
+    fadeInTime: number;
+    fadeOutTime: number;
+    holdTime: number;
+  }
+
+  ```
+- Added interface `CameraFixedBoomOptions`
+  ```ts
+  export interface CameraFixedBoomOptions {
+    entityOffset?: Vector3;
+    viewOffset?: Vector2;
+  }
+
+  ```
+- Added interface `CameraSetFacingOptions`
+  ```ts
+  export interface CameraSetFacingOptions {
+    easeOptions?: CameraEaseOptions;
+    facingEntity: Entity;
+    location?: Vector3;
+  }
+
+  ```
+- Added interface `CameraSetLocationOptions`
+  ```ts
+  export interface CameraSetLocationOptions {
+    easeOptions?: CameraEaseOptions;
+    location: Vector3;
+  }
+
+  ```
+- Added interface `CameraSetPosOptions`
+  ```ts
+  export interface CameraSetPosOptions {
+    easeOptions?: CameraEaseOptions;
+    facingLocation: Vector3;
+    location?: Vector3;
+  }
+
+  ```
+- Added interface `CameraSetRotOptions`
+  ```ts
+  export interface CameraSetRotOptions {
+    easeOptions?: CameraEaseOptions;
+    location?: Vector3;
+    rotation: Vector2;
+  }
+
+  ```
+- Added interface `CameraTargetOptions`
+  ```ts
+  export interface CameraTargetOptions {
+    offsetFromTargetCenter?: Vector3;
+    targetEntity: Entity;
+  }
+
+  ```
+- Added enum `EasingType`
+- Added enum `EntityInitializationCause`
+- Added enum `MoonPhase`
+- Added enum `WeatherType`
+- Added constant `MoonPhaseCount`
+
+=== 1.5.0 ===
+- Changed class `Dimension`
+    - Added function `spawnParticle`
+- Changed class `Entity`
+    - Added function `triggerEvent`
+- Added class `EntityEquippableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityEquippableComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:equippable";
+    getEquipment(equipmentSlot: EquipmentSlot): ItemStack | undefined;
+    setEquipment(equipmentSlot: EquipmentSlot, itemStack?: ItemStack): boolean;
+  }
+
+  ```
+- Added class `MolangVariableMap`
+  ```ts
+  export class MolangVariableMap {
+    setColorRGB(variableName: string, color: RGB): void;
+    setColorRGBA(variableName: string, color: RGBA): void;
+    setFloat(variableName: string, number: number): void;
+    setSpeedAndDirection(variableName: string, speed: number, direction: Vector3): void;
+    setVector3(variableName: string, vector: Vector3): void;
+  }
+
+  ```
+- Added class `ProjectileHitBlockAfterEvent`
+  ```ts
+  export class ProjectileHitBlockAfterEvent {
+    private constructor();
+    readonly dimension: Dimension;
+    readonly hitVector: Vector3;
+    readonly location: Vector3;
+    readonly projectile: Entity;
+    readonly source?: Entity;
+    getBlockHit(): BlockHitInformation;
+  }
+
+  ```
+- Added class `ProjectileHitBlockAfterEventSignal`
+  ```ts
+  export class ProjectileHitBlockAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ProjectileHitBlockAfterEvent) => void): (arg0: ProjectileHitBlockAfterEvent) => void;
+    unsubscribe(callback: (arg0: ProjectileHitBlockAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ProjectileHitEntityAfterEvent`
+  ```ts
+  export class ProjectileHitEntityAfterEvent {
+    private constructor();
+    readonly dimension: Dimension;
+    readonly hitVector: Vector3;
+    readonly location: Vector3;
+    readonly projectile: Entity;
+    readonly source?: Entity;
+    getEntityHit(): EntityHitInformation;
+  }
+
+  ```
+- Added class `ProjectileHitEntityAfterEventSignal`
+  ```ts
+  export class ProjectileHitEntityAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ProjectileHitEntityAfterEvent) => void): (arg0: ProjectileHitEntityAfterEvent) => void;
+    unsubscribe(callback: (arg0: ProjectileHitEntityAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `WorldAfterEvents`
+    - Added property `projectileHitBlock`
+    - Added property `projectileHitEntity`
+- Added interface `BlockHitInformation`
+  ```ts
+  export interface BlockHitInformation {
+    block: Block;
+    face: Direction;
+    faceLocation: Vector3;
+  }
+
+  ```
+- Added interface `EntityHitInformation`
+  ```ts
+  export interface EntityHitInformation {
+    entity?: Entity;
+  }
+
+  ```
+- Added interface `RGB`
+  ```ts
+  export interface RGB {
+    blue: number;
+    green: number;
+    red: number;
+  }
+
+  ```
+- Added interface `RGBA`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export interface RGBA extends RGB {
+    alpha: number;
+  }
+
+  ```
+- Added enum `EquipmentSlot`
+
+=== 1.4.0 ===
+- Changed class `Block`
+    - Added function `isValid`
+- Changed class `Component`
+    - Added function `isValid`
+- Changed class `Container`
+    - Added function `isValid`
+- Changed class `Dimension`
+    - Added function `getBlockFromRay`
+    - Added function `getEntitiesFromRay`
+- Changed class `Entity`
+    - Added property `scoreboardIdentity`
+    - Added function `getBlockFromViewDirection`
+    - Added function `getEntitiesFromViewDirection`
+    - Added function `isValid`
+- Added class `EntityDieAfterEvent`
+  ```ts
+  export class EntityDieAfterEvent {
+    private constructor();
+    readonly damageSource: EntityDamageSource;
+    readonly deadEntity: Entity;
+  }
+
+  ```
+- Added class `EntityDieAfterEventSignal`
+  ```ts
+  export class EntityDieAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityDieAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityDieAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityDieAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityHealthChangedAfterEvent`
+  ```ts
+  export class EntityHealthChangedAfterEvent {
+    private constructor();
+    readonly entity: Entity;
+    readonly newValue: number;
+    readonly oldValue: number;
+  }
+
+  ```
+- Added class `EntityHealthChangedAfterEventSignal`
+  ```ts
+  export class EntityHealthChangedAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityHealthChangedAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityHealthChangedAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityHealthChangedAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityHitBlockAfterEvent`
+  ```ts
+  export class EntityHitBlockAfterEvent {
+    private constructor();
+    readonly blockFace: Direction;
+    readonly damagingEntity: Entity;
+    readonly hitBlock: Block;
+  }
+
+  ```
+- Added class `EntityHitBlockAfterEventSignal`
+  ```ts
+  export class EntityHitBlockAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityHitBlockAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityHitBlockAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityHitBlockAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityHitEntityAfterEvent`
+  ```ts
+  export class EntityHitEntityAfterEvent {
+    private constructor();
+    readonly damagingEntity: Entity;
+    readonly hitEntity: Entity;
+  }
+
+  ```
+- Added class `EntityHitEntityAfterEventSignal`
+  ```ts
+  export class EntityHitEntityAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityHitEntityAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityHitEntityAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityHitEntityAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `EntityHurtAfterEvent`
+  ```ts
+  export class EntityHurtAfterEvent {
+    private constructor();
+    readonly damage: number;
+    readonly damageSource: EntityDamageSource;
+    readonly hurtEntity: Entity;
+  }
+
+  ```
+- Added class `EntityHurtAfterEventSignal`
+  ```ts
+  export class EntityHurtAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: EntityHurtAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityHurtAfterEvent) => void;
+    unsubscribe(callback: (arg0: EntityHurtAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemCompleteUseAfterEvent`
+  ```ts
+  export class ItemCompleteUseAfterEvent {
+    private constructor();
+    readonly itemStack: ItemStack;
+    readonly source: Player;
+    readonly useDuration: number;
+  }
+
+  ```
+- Added class `ItemCompleteUseAfterEventSignal`
+  ```ts
+  export class ItemCompleteUseAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemCompleteUseAfterEvent) => void): (arg0: ItemCompleteUseAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemCompleteUseAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemReleaseUseAfterEvent`
+  ```ts
+  export class ItemReleaseUseAfterEvent {
+    private constructor();
+    readonly itemStack?: ItemStack;
+    readonly source: Player;
+    readonly useDuration: number;
+  }
+
+  ```
+- Added class `ItemReleaseUseAfterEventSignal`
+  ```ts
+  export class ItemReleaseUseAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemReleaseUseAfterEvent) => void): (arg0: ItemReleaseUseAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemReleaseUseAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `ItemStack`
+    - Added function `getLore`
+    - Added function `setLore`
+- Added class `ItemStartUseAfterEvent`
+  ```ts
+  export class ItemStartUseAfterEvent {
+    private constructor();
+    readonly itemStack: ItemStack;
+    readonly source: Player;
+    readonly useDuration: number;
+  }
+
+  ```
+- Added class `ItemStartUseAfterEventSignal`
+  ```ts
+  export class ItemStartUseAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemStartUseAfterEvent) => void): (arg0: ItemStartUseAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemStartUseAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemStartUseOnAfterEvent`
+  ```ts
+  export class ItemStartUseOnAfterEvent {
+    private constructor();
+    readonly block: Block;
+    readonly blockFace: Direction;
+    readonly itemStack?: ItemStack;
+    readonly source: Player;
+  }
+
+  ```
+- Added class `ItemStartUseOnAfterEventSignal`
+  ```ts
+  export class ItemStartUseOnAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemStartUseOnAfterEvent) => void): (arg0: ItemStartUseOnAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemStartUseOnAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemStopUseAfterEvent`
+  ```ts
+  export class ItemStopUseAfterEvent {
+    private constructor();
+    readonly itemStack?: ItemStack;
+    readonly source: Player;
+    readonly useDuration: number;
+  }
+
+  ```
+- Added class `ItemStopUseAfterEventSignal`
+  ```ts
+  export class ItemStopUseAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemStopUseAfterEvent) => void): (arg0: ItemStopUseAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemStopUseAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemStopUseOnAfterEvent`
+  ```ts
+  export class ItemStopUseOnAfterEvent {
+    private constructor();
+    readonly block: Block;
+    readonly itemStack?: ItemStack;
+    readonly source: Player;
+  }
+
+  ```
+- Added class `ItemStopUseOnAfterEventSignal`
+  ```ts
+  export class ItemStopUseOnAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemStopUseOnAfterEvent) => void): (arg0: ItemStopUseOnAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemStopUseOnAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemUseAfterEvent`
+  ```ts
+  export class ItemUseAfterEvent {
+    private constructor();
+    itemStack: ItemStack;
+    readonly source: Player;
+  }
+
+  ```
+- Added class `ItemUseAfterEventSignal`
+  ```ts
+  export class ItemUseAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemUseAfterEvent) => void): (arg0: ItemUseAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemUseAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemUseBeforeEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemUseBeforeEvent extends ItemUseAfterEvent {
+    private constructor();
+    cancel: boolean;
+  }
+
+  ```
+- Added class `ItemUseBeforeEventSignal`
+  ```ts
+  export class ItemUseBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemUseBeforeEvent) => void): (arg0: ItemUseBeforeEvent) => void;
+    unsubscribe(callback: (arg0: ItemUseBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemUseOnAfterEvent`
+  ```ts
+  export class ItemUseOnAfterEvent {
+    private constructor();
+    readonly block: Block;
+    readonly blockFace: Direction;
+    readonly faceLocation: Vector3;
+    readonly itemStack: ItemStack;
+    readonly source: Player;
+  }
+
+  ```
+- Added class `ItemUseOnAfterEventSignal`
+  ```ts
+  export class ItemUseOnAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemUseOnAfterEvent) => void): (arg0: ItemUseOnAfterEvent) => void;
+    unsubscribe(callback: (arg0: ItemUseOnAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ItemUseOnBeforeEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemUseOnBeforeEvent extends ItemUseOnAfterEvent {
+    private constructor();
+    cancel: boolean;
+  }
+
+  ```
+- Added class `ItemUseOnBeforeEventSignal`
+  ```ts
+  export class ItemUseOnBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ItemUseOnBeforeEvent) => void): (arg0: ItemUseOnBeforeEvent) => void;
+    unsubscribe(callback: (arg0: ItemUseOnBeforeEvent) => void): void;
+  }
+
+  ```
+- Changed class `Player`
+    - Added property `onScreenDisplay`
+    - Added function `getSpawnPoint`
+    - Added function `setSpawnPoint`
+- Added class `PressurePlatePopAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PressurePlatePopAfterEvent extends BlockEvent {
+    private constructor();
+    readonly previousRedstonePower: number;
+    readonly redstonePower: number;
+  }
+
+  ```
+- Added class `PressurePlatePopAfterEventSignal`
+  ```ts
+  export class PressurePlatePopAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PressurePlatePopAfterEvent) => void): (arg0: PressurePlatePopAfterEvent) => void;
+    unsubscribe(callback: (arg0: PressurePlatePopAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `PressurePlatePushAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PressurePlatePushAfterEvent extends BlockEvent {
+    private constructor();
+    readonly previousRedstonePower: number;
+    readonly redstonePower: number;
+    readonly source: Entity;
+  }
+
+  ```
+- Added class `PressurePlatePushAfterEventSignal`
+  ```ts
+  export class PressurePlatePushAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PressurePlatePushAfterEvent) => void): (arg0: PressurePlatePushAfterEvent) => void;
+    unsubscribe(callback: (arg0: PressurePlatePushAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `Scoreboard`
+  ```ts
+  export class Scoreboard {
+    private constructor();
+    addObjective(objectiveId: string, displayName?: string): ScoreboardObjective;
+    clearObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjective | undefined;
+    getObjective(objectiveId: string): ScoreboardObjective | undefined;
+    getObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjectiveDisplayOptions | undefined;
+    getObjectives(): ScoreboardObjective[];
+    getParticipants(): ScoreboardIdentity[];
+    removeObjective(objectiveId: ScoreboardObjective | string): boolean;
+    setObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId, objectiveDisplaySetting: ScoreboardObjectiveDisplayOptions): ScoreboardObjective | undefined;
+  }
+
+  ```
+- Added class `ScoreboardIdentity`
+  ```ts
+  export class ScoreboardIdentity {
+    private constructor();
+    readonly displayName: string;
+    readonly id: number;
+    readonly type: ScoreboardIdentityType;
+    getEntity(): Entity | undefined;
+    isValid(): boolean;
+  }
+
+  ```
+- Added class `ScoreboardObjective`
+  ```ts
+  export class ScoreboardObjective {
+    private constructor();
+    readonly displayName: string;
+    readonly id: string;
+    addScore(participant: Entity | ScoreboardIdentity | string, scoreToAdd: number): number;
+    getParticipants(): ScoreboardIdentity[];
+    getScore(participant: Entity | ScoreboardIdentity | string): number | undefined;
+    getScores(): ScoreboardScoreInfo[];
+    hasParticipant(participant: Entity | ScoreboardIdentity | string): boolean;
+    isValid(): boolean;
+    removeParticipant(participant: Entity | ScoreboardIdentity | string): boolean;
+    setScore(participant: Entity | ScoreboardIdentity | string, score: number): void;
+  }
+
+  ```
+- Added class `ScoreboardScoreInfo`
+  ```ts
+  export class ScoreboardScoreInfo {
+    private constructor();
+    readonly participant: ScoreboardIdentity;
+    readonly score: number;
+  }
+
+  ```
+- Added class `ScreenDisplay`
+  ```ts
+  export class ScreenDisplay {
+    private constructor();
+    isValid(): boolean;
+    setActionBar(text: (RawMessage | string)[] | RawMessage | string): void;
+    setTitle(title: (RawMessage | string)[] | RawMessage | string, options?: TitleDisplayOptions): void;
+    updateSubtitle(subtitle: (RawMessage | string)[] | RawMessage | string): void;
+  }
+
+  ```
+- Added class `ScriptEventCommandMessageAfterEvent`
+  ```ts
+  export class ScriptEventCommandMessageAfterEvent {
+    private constructor();
+    readonly id: string;
+    readonly initiator?: Entity;
+    readonly message: string;
+    readonly sourceBlock?: Block;
+    readonly sourceEntity?: Entity;
+    readonly sourceType: ScriptEventSource;
+  }
+
+  ```
+- Added class `ScriptEventCommandMessageAfterEventSignal`
+  ```ts
+  export class ScriptEventCommandMessageAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ScriptEventCommandMessageAfterEvent) => void, options?: ScriptEventMessageFilterOptions): (arg0: ScriptEventCommandMessageAfterEvent) => void;
+    unsubscribe(callback: (arg0: ScriptEventCommandMessageAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `System`
+    - Added property `afterEvents`
+- Added class `SystemAfterEvents`
+  ```ts
+  export class SystemAfterEvents {
+    private constructor();
+    readonly scriptEventReceive: ScriptEventCommandMessageAfterEventSignal;
+  }
+
+  ```
+- Added class `TargetBlockHitAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class TargetBlockHitAfterEvent extends BlockEvent {
+    private constructor();
+    readonly hitVector: Vector3;
+    readonly previousRedstonePower: number;
+    readonly redstonePower: number;
+    readonly source: Entity;
+  }
+
+  ```
+- Added class `TargetBlockHitAfterEventSignal`
+  ```ts
+  export class TargetBlockHitAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: TargetBlockHitAfterEvent) => void): (arg0: TargetBlockHitAfterEvent) => void;
+    unsubscribe(callback: (arg0: TargetBlockHitAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `TripWireTripAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class TripWireTripAfterEvent extends BlockEvent {
+    private constructor();
+    readonly isPowered: boolean;
+    readonly sources: Entity[];
+  }
+
+  ```
+- Added class `TripWireTripAfterEventSignal`
+  ```ts
+  export class TripWireTripAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: TripWireTripAfterEvent) => void): (arg0: TripWireTripAfterEvent) => void;
+    unsubscribe(callback: (arg0: TripWireTripAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `World`
+    - Added property `afterEvents`
+    - Added property `beforeEvents`
+    - Added property `scoreboard`
+    - Added function `getAbsoluteTime`
+    - Added function `getDay`
+    - Added function `getDefaultSpawnLocation`
+    - Added function `getTimeOfDay`
+    - Added function `setAbsoluteTime`
+    - Added function `setDefaultSpawnLocation`
+    - Added function `setTimeOfDay`
+- Changed class `WorldAfterEvents`
+    - Added property `entityDie`
+    - Added property `entityHealthChanged`
+    - Added property `entityHitBlock`
+    - Added property `entityHitEntity`
+    - Added property `entityHurt`
+    - Added property `itemCompleteUse`
+    - Added property `itemReleaseUse`
+    - Added property `itemStartUse`
+    - Added property `itemStartUseOn`
+    - Added property `itemStopUse`
+    - Added property `itemStopUseOn`
+    - Added property `itemUse`
+    - Added property `itemUseOn`
+    - Added property `pressurePlatePop`
+    - Added property `pressurePlatePush`
+    - Added property `targetBlockHit`
+    - Added property `tripWireTrip`
+- Added class `WorldBeforeEvents`
+  ```ts
+  export class WorldBeforeEvents {
+    private constructor();
+    readonly itemUse: ItemUseBeforeEventSignal;
+    readonly itemUseOn: ItemUseOnBeforeEventSignal;
+  }
+
+  ```
+- Added interface `BlockFilter`
+  ```ts
+  export interface BlockFilter {
+    excludePermutations?: BlockPermutation[];
+    excludeTags?: string[];
+    excludeTypes?: string[];
+    includePermutations?: BlockPermutation[];
+    includeTags?: string[];
+    includeTypes?: string[];
+  }
+
+  ```
+- Added interface `BlockRaycastHit`
+  ```ts
+  export interface BlockRaycastHit {
+    block: Block;
+    face: Direction;
+    faceLocation: Vector3;
+  }
+
+  ```
+- Added interface `BlockRaycastOptions`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export interface BlockRaycastOptions extends BlockFilter {
+    includeLiquidBlocks?: boolean;
+    includePassableBlocks?: boolean;
+    maxDistance?: number;
+  }
+
+  ```
+- Added interface `DimensionLocation`
+  ```ts
+  export interface DimensionLocation {
+    dimension: Dimension;
+    x: number;
+    y: number;
+    z: number;
+  }
+
+  ```
+- Added interface `EntityDamageSource`
+  ```ts
+  export interface EntityDamageSource {
+    cause: EntityDamageCause;
+    damagingEntity?: Entity;
+    damagingProjectile?: Entity;
+  }
+
+  ```
+- Added interface `EntityEventOptions`
+  ```ts
+  export interface EntityEventOptions {
+    entities?: Entity[];
+    entityTypes?: string[];
+  }
+
+  ```
+- Added interface `EntityRaycastHit`
+  ```ts
+  export interface EntityRaycastHit {
+    distance: number;
+    entity: Entity;
+  }
+
+  ```
+- Added interface `EntityRaycastOptions`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export interface EntityRaycastOptions extends EntityFilter {
+    maxDistance?: number;
+  }
+
+  ```
+- Added interface `ScoreboardObjectiveDisplayOptions`
+  ```ts
+  export interface ScoreboardObjectiveDisplayOptions {
+    objective: ScoreboardObjective;
+    sortOrder?: ObjectiveSortOrder;
+  }
+
+  ```
+- Added interface `ScriptEventMessageFilterOptions`
+  ```ts
+  export interface ScriptEventMessageFilterOptions {
+    namespaces: string[];
+  }
+
+  ```
+- Added interface `TitleDisplayOptions`
+  ```ts
+  export interface TitleDisplayOptions {
+    fadeInDuration: number;
+    fadeOutDuration: number;
+    stayDuration: number;
+    subtitle?: (RawMessage | string)[] | RawMessage | string;
+  }
+
+  ```
+- Added enum `Direction`
+- Added enum `DisplaySlotId`
+- Added enum `ObjectiveSortOrder`
+- Added enum `ScoreboardIdentityType`
+- Added enum `ScriptEventSource`
+- Added enum `TimeOfDay`
+
+=== 1.3.0 ===
+- Changed class `Block`
+    - Added function `getComponent`
+- Changed class `BlockComponent`
+    - Added property `block`
+- Added class `BlockEvent`
+  ```ts
+  export class BlockEvent {
+    private constructor();
+    readonly block: Block;
+    readonly dimension: Dimension;
+  }
+
+  ```
+- Added class `ButtonPushAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ButtonPushAfterEvent extends BlockEvent {
+    private constructor();
+    readonly source: Entity;
+  }
+
+  ```
+- Added class `ButtonPushAfterEventSignal`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ButtonPushAfterEventSignal extends IButtonPushAfterEventSignal {
+    private constructor();
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `spawnEntity`
+    - Added function `spawnItem`
+- Added class `Effect`
+  ```ts
+  export class Effect {
+    private constructor();
+    readonly amplifier: number;
+    readonly displayName: string;
+    readonly duration: number;
+    readonly typeId: string;
+    isValid(): boolean;
+  }
+
+  ```
+- Added class `EffectType`
+  ```ts
+  export class EffectType {
+    private constructor();
+    getName(): string;
+  }
+
+  ```
+- Changed class `Entity`
+    - Added function `addEffect`
+    - Added function `getEffect`
+    - Added function `getEffects`
+    - Added function `removeEffect`
+    - Added function `teleport`
+    - Added function `tryTeleport`
+- Added class `EntityAttributeComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityAttributeComponent extends EntityComponent {
+    private constructor();
+    readonly currentValue: number;
+    readonly defaultValue: number;
+    readonly effectiveMax: number;
+    readonly effectiveMin: number;
+    resetToDefaultValue(): void;
+    resetToMaxValue(): void;
+    resetToMinValue(): void;
+    setCurrentValue(value: number): boolean;
+  }
+
+  ```
+- Added class `EntityHealableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityHealableComponent extends EntityComponent {
+    private constructor();
+    readonly forceUse: boolean;
+    static readonly componentId = "minecraft:healable";
+    getFeedItems(): FeedItem[];
+  }
+
+  ```
+- Added class `EntityHealthComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityHealthComponent extends EntityAttributeComponent {
+    private constructor();
+    static readonly componentId = "minecraft:health";
+  }
+
+  ```
+- Added class `FeedItem`
+  ```ts
+  export class FeedItem {
+    private constructor();
+    readonly healAmount: number;
+    readonly item: string;
+    getEffects(): FeedItemEffect[];
+  }
+
+  ```
+- Added class `FeedItemEffect`
+  ```ts
+  export class FeedItemEffect {
+    private constructor();
+    readonly amplifier: number;
+    readonly chance: number;
+    readonly duration: number;
+    readonly name: string;
+  }
+
+  ```
+- Added class `IButtonPushAfterEventSignal`
+  ```ts
+  export class IButtonPushAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: ButtonPushAfterEvent) => void): (arg0: ButtonPushAfterEvent) => void;
+    unsubscribe(callback: (arg0: ButtonPushAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `ILeverActionAfterEventSignal`
+  ```ts
+  export class ILeverActionAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: LeverActionAfterEvent) => void): (arg0: LeverActionAfterEvent) => void;
+    unsubscribe(callback: (arg0: LeverActionAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `IPlayerJoinAfterEventSignal`
+  ```ts
+  export class IPlayerJoinAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerJoinAfterEvent) => void): (arg0: PlayerJoinAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerJoinAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `IPlayerLeaveAfterEventSignal`
+  ```ts
+  export class IPlayerLeaveAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerLeaveAfterEvent) => void): (arg0: PlayerLeaveAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerLeaveAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `IPlayerSpawnAfterEventSignal`
+  ```ts
+  export class IPlayerSpawnAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerSpawnAfterEvent) => void): (arg0: PlayerSpawnAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerSpawnAfterEvent) => void): void;
+  }
+
+  ```
+- Added class `LeverActionAfterEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class LeverActionAfterEvent extends BlockEvent {
+    private constructor();
+    readonly isPowered: boolean;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `LeverActionAfterEventSignal`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class LeverActionAfterEventSignal extends ILeverActionAfterEventSignal {
+    private constructor();
+  }
+
+  ```
+- Added class `PlayerJoinAfterEvent`
+  ```ts
+  export class PlayerJoinAfterEvent {
+    private constructor();
+    readonly playerId: string;
+    readonly playerName: string;
+  }
+
+  ```
+- Added class `PlayerJoinAfterEventSignal`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerJoinAfterEventSignal extends IPlayerJoinAfterEventSignal {
+    private constructor();
+  }
+
+  ```
+- Added class `PlayerLeaveAfterEvent`
+  ```ts
+  export class PlayerLeaveAfterEvent {
+    private constructor();
+    readonly playerId: string;
+    readonly playerName: string;
+  }
+
+  ```
+- Added class `PlayerLeaveAfterEventSignal`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerLeaveAfterEventSignal extends IPlayerLeaveAfterEventSignal {
+    private constructor();
+  }
+
+  ```
+- Added class `PlayerSpawnAfterEvent`
+  ```ts
+  export class PlayerSpawnAfterEvent {
+    private constructor();
+    initialSpawn: boolean;
+    player: Player;
+  }
+
+  ```
+- Added class `PlayerSpawnAfterEventSignal`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerSpawnAfterEventSignal extends IPlayerSpawnAfterEventSignal {
+    private constructor();
+  }
+
+  ```
+- Added class `WorldAfterEvents`
+  ```ts
+  export class WorldAfterEvents {
+    private constructor();
+    readonly buttonPush: ButtonPushAfterEventSignal;
+    readonly leverAction: LeverActionAfterEventSignal;
+    readonly playerJoin: PlayerJoinAfterEventSignal;
+    readonly playerLeave: PlayerLeaveAfterEventSignal;
+    readonly playerSpawn: PlayerSpawnAfterEventSignal;
+  }
+
+  ```
+- Added interface `EntityEffectOptions`
+  ```ts
+  export interface EntityEffectOptions {
+    amplifier?: number;
+    showParticles?: boolean;
+  }
+
+  ```
+- Added interface `TeleportOptions`
+  ```ts
+  export interface TeleportOptions {
+    checkForBlocks?: boolean;
+    dimension?: Dimension;
+    facingLocation?: Vector3;
+    keepVelocity?: boolean;
+    rotation?: Vector2;
+  }
+
+  ```
+- Added interface `Vector2`
+  ```ts
+  export interface Vector2 {
+    x: number;
+    y: number;
+  }
+
+  ```
+
+=== 1.2.0 ===
+- Added class `BlockComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponent extends Component {
+    private constructor();
+  }
+
+  ```
+- Added class `BlockInventoryComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockInventoryComponent extends BlockComponent {
+    private constructor();
+    readonly container?: Container;
+    static readonly componentId = "minecraft:inventory";
+  }
+
+  ```
+- Added class `Component`
+  ```ts
+  export class Component {
+    private constructor();
+    readonly typeId: string;
+  }
+
+  ```
+- Added class `Container`
+  ```ts
+  export class Container {
+    private constructor();
+    readonly emptySlotsCount: number;
+    readonly size: number;
+    addItem(itemStack: ItemStack): ItemStack | undefined;
+    clearAll(): void;
+    getItem(slot: number): ItemStack | undefined;
+    moveItem(fromSlot: number, toSlot: number, toContainer: Container): void;
+    setItem(slot: number, itemStack?: ItemStack): void;
+    swapItems(slot: number, otherSlot: number, otherContainer: Container): void;
+    transferItem(fromSlot: number, toContainer: Container): ItemStack | undefined;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `runCommand`
+- Changed class `Entity`
+    - Added function `addTag`
+    - Added function `applyDamage`
+    - Added function `applyImpulse`
+    - Added function `applyKnockback`
+    - Added function `clearVelocity`
+    - Added function `getComponent`
+    - Added function `getComponents`
+    - Added function `getTags`
+    - Added function `hasComponent`
+    - Added function `hasTag`
+    - Added function `kill`
+    - Added function `removeTag`
+    - Added function `runCommand`
+- Added class `EntityBaseMovementComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityBaseMovementComponent extends EntityComponent {
+    private constructor();
+    readonly maxTurn: number;
+  }
+
+  ```
+- Added class `EntityCanClimbComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityCanClimbComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:can_climb";
+  }
+
+  ```
+- Added class `EntityCanFlyComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityCanFlyComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:can_fly";
+  }
+
+  ```
+- Added class `EntityCanPowerJumpComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityCanPowerJumpComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:can_power_jump";
+  }
+
+  ```
+- Added class `EntityColorComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityColorComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:color";
+  }
+
+  ```
+- Added class `EntityComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityComponent extends Component {
+    private constructor();
+  }
+
+  ```
+- Added class `EntityFireImmuneComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityFireImmuneComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:fire_immune";
+  }
+
+  ```
+- Added class `EntityFloatsInLiquidComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityFloatsInLiquidComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:floats_in_liquid";
+  }
+
+  ```
+- Added class `EntityFlyingSpeedComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityFlyingSpeedComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:flying_speed";
+  }
+
+  ```
+- Added class `EntityFrictionModifierComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityFrictionModifierComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:friction_modifier";
+  }
+
+  ```
+- Added class `EntityGroundOffsetComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityGroundOffsetComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:ground_offset";
+  }
+
+  ```
+- Added class `EntityInventoryComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityInventoryComponent extends EntityComponent {
+    private constructor();
+    readonly additionalSlotsPerStrength: number;
+    readonly canBeSiphonedFrom: boolean;
+    readonly container?: Container;
+    readonly containerType: string;
+    readonly inventorySize: number;
+    readonly private: boolean;
+    readonly restrictToOwner: boolean;
+    static readonly componentId = "minecraft:inventory";
+  }
+
+  ```
+- Added class `EntityIsBabyComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsBabyComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_baby";
+  }
+
+  ```
+- Added class `EntityIsChargedComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsChargedComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_charged";
+  }
+
+  ```
+- Added class `EntityIsChestedComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsChestedComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_chested";
+  }
+
+  ```
+- Added class `EntityIsDyeableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsDyeableComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_dyeable";
+  }
+
+  ```
+- Added class `EntityIsHiddenWhenInvisibleComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsHiddenWhenInvisibleComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_hidden_when_invisible";
+  }
+
+  ```
+- Added class `EntityIsIgnitedComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsIgnitedComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_ignited";
+  }
+
+  ```
+- Added class `EntityIsIllagerCaptainComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsIllagerCaptainComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_illager_captain";
+  }
+
+  ```
+- Added class `EntityIsSaddledComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsSaddledComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_saddled";
+  }
+
+  ```
+- Added class `EntityIsShakingComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsShakingComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_shaking";
+  }
+
+  ```
+- Added class `EntityIsShearedComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsShearedComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_sheared";
+  }
+
+  ```
+- Added class `EntityIsStackableComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsStackableComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_stackable";
+  }
+
+  ```
+- Added class `EntityIsStunnedComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsStunnedComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_stunned";
+  }
+
+  ```
+- Added class `EntityIsTamedComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityIsTamedComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:is_tamed";
+  }
+
+  ```
+- Added class `EntityItemComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityItemComponent extends EntityComponent {
+    private constructor();
+    readonly itemStack: ItemStack;
+    static readonly componentId = "minecraft:item";
+  }
+
+  ```
+- Added class `EntityMarkVariantComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMarkVariantComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:mark_variant";
+  }
+
+  ```
+- Added class `EntityMovementAmphibiousComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementAmphibiousComponent extends EntityBaseMovementComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement.amphibious";
+  }
+
+  ```
+- Added class `EntityMovementBasicComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementBasicComponent extends EntityBaseMovementComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement.basic";
+  }
+
+  ```
+- Added class `EntityMovementFlyComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementFlyComponent extends EntityBaseMovementComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement.fly";
+  }
+
+  ```
+- Added class `EntityMovementGenericComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementGenericComponent extends EntityBaseMovementComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement.generic";
+  }
+
+  ```
+- Added class `EntityMovementHoverComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementHoverComponent extends EntityBaseMovementComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement.hover";
+  }
+
+  ```
+- Added class `EntityMovementJumpComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementJumpComponent extends EntityBaseMovementComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement.jump";
+  }
+
+  ```
+- Added class `EntityMovementSkipComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityMovementSkipComponent extends EntityBaseMovementComponent {
+    private constructor();
+    static readonly componentId = "minecraft:movement.skip";
+  }
+
+  ```
+- Added class `EntityPushThroughComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityPushThroughComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:push_through";
+  }
+
+  ```
+- Added class `EntityScaleComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityScaleComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:scale";
+  }
+
+  ```
+- Added class `EntitySkinIdComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntitySkinIdComponent extends EntityComponent {
+    private constructor();
+    value: number;
+    static readonly componentId = "minecraft:skin_id";
+  }
+
+  ```
+- Added class `EntityVariantComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityVariantComponent extends EntityComponent {
+    private constructor();
+    readonly value: number;
+    static readonly componentId = "minecraft:variant";
+  }
+
+  ```
+- Added class `EntityWantsJockeyComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityWantsJockeyComponent extends EntityComponent {
+    private constructor();
+    static readonly componentId = "minecraft:wants_jockey";
+  }
+
+  ```
+- Added class `ItemComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class ItemComponent extends Component {
+    private constructor();
+  }
+
+  ```
+- Added class `ItemStack`
+  ```ts
+  export class ItemStack {
+    readonly amount: number;
+    readonly isStackable: boolean;
+    readonly keepOnDeath: boolean;
+    readonly lockMode: ItemLockMode;
+    readonly maxAmount: number;
+    readonly nameTag?: string;
+    readonly type: ItemType;
+    readonly typeId: string;
+    constructor(itemType: ItemType | string, amount: number);
+    getComponent(componentId: string): ItemComponent | undefined;
+    getComponents(): ItemComponent[];
+    hasComponent(componentId: string): boolean;
+    isStackableWith(itemStack: ItemStack): boolean;
+  }
+
+  ```
+- Added class `ItemType`
+  ```ts
+  export class ItemType {
+    private constructor();
+    readonly id: string;
+  }
+
+  ```
+- Changed class `Player`
+    - Added function `playSound`
+- Changed class `World`
+    - Added function `playMusic`
+    - Added function `playSound`
+    - Added function `queueMusic`
+    - Added function `stopMusic`
+- Added interface `EntityApplyDamageByProjectileOptions`
+  ```ts
+  export interface EntityApplyDamageByProjectileOptions {
+    damagingEntity?: Entity;
+    damagingProjectile: Entity;
+  }
+
+  ```
+- Added interface `EntityApplyDamageOptions`
+  ```ts
+  export interface EntityApplyDamageOptions {
+    cause: EntityDamageCause;
+    damagingEntity?: Entity;
+  }
+
+  ```
+- Added interface `MusicOptions`
+  ```ts
+  export interface MusicOptions {
+    fade?: number;
+    loop?: boolean;
+    volume?: number;
+  }
+
+  ```
+- Added interface `PlayerSoundOptions`
+  ```ts
+  export interface PlayerSoundOptions {
+    location?: Vector3;
+    pitch?: number;
+    volume?: number;
+  }
+
+  ```
+- Added interface `WorldSoundOptions`
+  ```ts
+  export interface WorldSoundOptions {
+    pitch?: number;
+    volume?: number;
+  }
+
+  ```
+- Added enum `EntityDamageCause`
+- Added enum `ItemLockMode`
+
+=== 1.1.0 ===
+- Added class `Block`
+  ```ts
+  export class Block {
+    private constructor();
+    readonly dimension: Dimension;
+    readonly location: Vector3;
+    readonly permutation: BlockPermutation;
+    readonly x: number;
+    readonly y: number;
+    readonly z: number;
+    setPermutation(permutation: BlockPermutation): void;
+  }
+
+  ```
+- Added class `BlockPermutation`
+  ```ts
+  export class BlockPermutation {
+    private constructor();
+    matches(blockName: string, states?: Record<string, boolean | number | string>): boolean;
+    static resolve(blockName: string, states?: Record<string, boolean | number | string>): BlockPermutation;
+  }
+
+  ```
+- Changed class `Dimension`
+    - Added function `getBlock`
+    - Added function `getEntities`
+    - Added function `getEntitiesAtBlockLocation`
+    - Added function `getPlayers`
+- Changed class `Entity`
+    - Added property `dimension`
+    - Added property `location`
+    - Added property `nameTag`
+    - Added function `getHeadLocation`
+    - Added function `getVelocity`
+    - Added function `getViewDirection`
+- Changed class `Player`
+    - Added function `sendMessage`
+- Changed class `System`
+    - Added property `currentTick`
+    - Added function `clearRun`
+    - Added function `runInterval`
+    - Added function `runTimeout`
+- Changed class `World`
+    - Added function `getPlayers`
+    - Added function `sendMessage`
+- Added interface `EntityFilter`
+  ```ts
+  export interface EntityFilter {
+    excludeFamilies?: string[];
+    excludeGameModes?: GameMode[];
+    excludeNames?: string[];
+    excludeTags?: string[];
+    excludeTypes?: string[];
+    families?: string[];
+    gameMode?: GameMode;
+    maxHorizontalRotation?: number;
+    maxLevel?: number;
+    maxVerticalRotation?: number;
+    minHorizontalRotation?: number;
+    minLevel?: number;
+    minVerticalRotation?: number;
+    name?: string;
+    scoreOptions?: EntityQueryScoreOptions[];
+    tags?: string[];
+    type?: string;
+  }
+
+  ```
+- Added interface `EntityQueryOptions`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export interface EntityQueryOptions extends EntityFilter {
+    closest?: number;
+    farthest?: number;
+    location?: Vector3;
+    maxDistance?: number;
+    minDistance?: number;
+  }
+
+  ```
+- Added interface `EntityQueryScoreOptions`
+  ```ts
+  export interface EntityQueryScoreOptions {
+    exclude?: boolean;
+    maxScore?: number;
+    minScore?: number;
+    objective?: string;
+  }
+
+  ```
+- Added interface `RawMessage`
+  ```ts
+  export interface RawMessage {
+    rawtext?: RawMessage[];
+    score?: RawMessageScore;
+    text?: string;
+    translate?: string;
+    with?: string[] | RawMessage;
+  }
+
+  ```
+- Added interface `RawMessageScore`
+  ```ts
+  export interface RawMessageScore {
+    name?: string;
+    objective?: string;
+  }
+
+  ```
+- Added interface `Vector3`
+  ```ts
+  export interface Vector3 {
+    x: number;
+    y: number;
+    z: number;
+  }
+
+  ```
+- Added enum `GameMode`
+
+=== 1.0.0 ===
+- Added `@minecraft/server` module
+
+== /Change Log ==

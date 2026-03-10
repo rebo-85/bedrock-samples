@@ -1,0 +1,7 @@
+`@minecraft/diagnostics`
+
+== Change Log ==
+=== 1.0.0-beta ===
+- Added `@minecraft/diagnostics` module
+
+== /Change Log ==

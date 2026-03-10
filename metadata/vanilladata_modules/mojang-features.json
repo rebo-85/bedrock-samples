@@ -54,5 +54,6 @@
   ],
   "module_type": "vanilla_data",
   "name": "mojang-feature",
-  "vanilla_data_type": "feature"
+  "vanilla_data_type": "feature",
+  "minecraft_version": "1.20.0"
 }

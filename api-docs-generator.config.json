@@ -1,0 +1,5 @@
+{
+  "inputDirectory": "metadata",
+  "outputDirectory": "out",
+  "docsDirectory": "metadata/doc_modules"
+}

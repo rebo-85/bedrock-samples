@@ -1,12 +1,9 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "FenceConnectivity",
       "properties": [
         {
@@ -77,10 +74,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -89,8 +84,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -143,8 +137,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -197,8 +190,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -288,8 +280,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -311,8 +302,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -365,8 +355,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -398,8 +387,7 @@
         }
       ],
       "name": "GameTestSequence",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -407,14 +395,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -465,10 +450,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -853,8 +836,7 @@
         }
       ],
       "name": "RegistrationBuilder",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -862,10 +844,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -953,8 +933,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -974,8 +953,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -1036,12 +1014,10 @@
           "name": "Player"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -1178,8 +1154,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -1195,8 +1170,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -1212,8 +1186,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -1271,8 +1244,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -1288,8 +1260,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -1422,8 +1393,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2100,8 +2070,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2313,8 +2282,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2330,8 +2298,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2347,8 +2314,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2364,8 +2330,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2381,8 +2346,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2398,8 +2362,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2415,8 +2378,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2432,8 +2394,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2459,8 +2420,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -2790,8 +2750,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "constants": [
         {
           "is_read_only": true,
@@ -2849,11 +2808,9 @@
           "value": "suite:nextupdate"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "Tags",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -2861,10 +2818,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -4206,8 +4161,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -4286,8 +4240,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4411,8 +4364,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -4485,8 +4437,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -4502,8 +4453,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -4519,8 +4469,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -5037,8 +4986,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -5091,8 +5039,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -5129,8 +5076,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -5846,8 +5792,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -5870,8 +5815,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "default"
@@ -5893,8 +5837,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -5980,8 +5923,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -6018,8 +5960,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -6265,8 +6206,7 @@
             },
             {
               "details": {
-                "default_value": [
-                ]
+                "default_value": []
               },
               "name": "eventParameters",
               "type": {
@@ -6318,8 +6258,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -6607,8 +6546,7 @@
         }
       ],
       "name": "Test",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -6616,10 +6554,8 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
+  "constants": [],
+  "dependencies": [],
   "enums": [
     {
       "constants": [
@@ -7410,8 +7346,7 @@
           "name": "batchCallback",
           "type": {
             "closure_type": {
-              "argument_types": [
-              ],
+              "argument_types": [],
               "call_privilege": {
                 "name": "default"
               },
@@ -7464,8 +7399,7 @@
           "name": "batchCallback",
           "type": {
             "closure_type": {
-              "argument_types": [
-              ],
+              "argument_types": [],
               "call_privilege": {
                 "name": "default"
               },
@@ -7573,8 +7507,7 @@
   ],
   "interfaces": [
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "GameTestErrorContext",
       "properties": [
         {
@@ -7629,8 +7562,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "MoveToOptions",
       "properties": [
         {
@@ -7675,8 +7607,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "PlayerPersonaPiece",
       "properties": [
         {
@@ -7742,8 +7673,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "PlayerSkinData",
       "properties": [
         {
@@ -7811,8 +7741,7 @@
   ],
   "module_type": "script",
   "name": "@minecraft/server-gametest",
-  "objects": [
-  ],
+  "objects": [],
   "peer_dependencies": [
     {
       "name": "@minecraft/common",
@@ -7839,7 +7768,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616"
+  "type_aliases": [],
+  "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+  "version": "1.0.0-beta",
+  "minecraft_version": "1.20.0"
 }

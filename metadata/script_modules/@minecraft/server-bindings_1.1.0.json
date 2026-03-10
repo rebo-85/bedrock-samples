@@ -1,10 +1,8 @@
 {
   "classes": [
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -169,10 +167,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -322,8 +318,7 @@
         }
       ],
       "name": "BlockPermutation",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -331,12 +326,9 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
-      "functions": [
-      ],
+      "base_types": [],
+      "constants": [],
+      "functions": [],
       "name": "CommandResult",
       "properties": [
         {
@@ -366,10 +358,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -612,14 +602,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -642,8 +629,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -666,8 +652,7 @@
           }
         },
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -847,8 +832,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "constants": [
         {
           "is_read_only": true,
@@ -884,11 +868,9 @@
           "value": "minecraft:the_end"
         }
       ],
-      "functions": [
-      ],
+      "functions": [],
       "name": "MinecraftDimensionTypes",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -903,8 +885,7 @@
           "name": "Entity"
         }
       ],
-      "constants": [
-      ],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -1004,10 +985,8 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
           "arguments": [
@@ -1052,8 +1031,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -1097,8 +1075,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -1162,8 +1139,7 @@
               "name": "callback",
               "type": {
                 "closure_type": {
-                  "argument_types": [
-                  ],
+                  "argument_types": [],
                   "call_privilege": {
                     "name": "default"
                   },
@@ -1253,14 +1229,11 @@
       }
     },
     {
-      "base_types": [
-      ],
-      "constants": [
-      ],
+      "base_types": [],
+      "constants": [],
       "functions": [
         {
-          "arguments": [
-          ],
+          "arguments": [],
           "call_privilege": [
             {
               "name": "restricted_execution"
@@ -1440,8 +1413,7 @@
         }
       ],
       "name": "World",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1449,10 +1421,8 @@
       }
     }
   ],
-  "constants": [
-  ],
-  "dependencies": [
-  ],
+  "constants": [],
+  "dependencies": [],
   "enums": [
     {
       "constants": [
@@ -1507,8 +1477,7 @@
   "errors": [
     {
       "name": "CommandError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1563,8 +1532,7 @@
     },
     {
       "name": "LocationInUnloadedChunkError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1573,8 +1541,7 @@
     },
     {
       "name": "LocationOutOfWorldBoundariesError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1583,8 +1550,7 @@
     },
     {
       "name": "RawMessageError",
-      "properties": [
-      ],
+      "properties": [],
       "type": {
         "is_bind_type": true,
         "is_errorable": false,
@@ -1592,12 +1558,10 @@
       }
     }
   ],
-  "functions": [
-  ],
+  "functions": [],
   "interfaces": [
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityFilter",
       "properties": [
         {
@@ -2035,8 +1999,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "EntityQueryScoreOptions",
       "properties": [
         {
@@ -2115,8 +2078,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RawMessage",
       "properties": [
         {
@@ -2224,8 +2186,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "RawMessageScore",
       "properties": [
         {
@@ -2266,8 +2227,7 @@
       }
     },
     {
-      "base_types": [
-      ],
+      "base_types": [],
       "name": "Vector3",
       "properties": [
         {
@@ -2355,7 +2315,8 @@
       ]
     }
   ],
-  "type_aliases": [
-  ],
-  "uuid": "0196a2fa-8fb5-79a7-b29e-ce3cbc644f82"
+  "type_aliases": [],
+  "uuid": "0196a2fa-8fb5-79a7-b29e-ce3cbc644f82",
+  "version": "1.1.0",
+  "minecraft_version": "1.20.0"
 }

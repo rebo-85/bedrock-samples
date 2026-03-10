@@ -19026,8 +19026,7 @@
     },
     {
       "name": "ScoreboardObjectives",
-      "values": [
-      ]
+      "values": []
     },
     {
       "name": "ScoreRangeMode",
@@ -19263,8 +19262,7 @@
     },
     {
       "name": "GameTestName",
-      "values": [
-      ]
+      "values": []
     },
     {
       "name": "GameTestModeRunSet",
@@ -19276,8 +19274,7 @@
     },
     {
       "name": "GameTestTag",
-      "values": [
-      ]
+      "values": []
     },
     {
       "name": "GameTestModeRunSetUntilFail",
@@ -36851,8 +36848,7 @@
     },
     {
       "name": "TagValues",
-      "values": [
-      ]
+      "values": []
     },
     {
       "name": "TagListAction",
@@ -37091,8 +37087,7 @@
   ],
   "commands": [
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Enable Aim Assist",
       "name": "aimassist",
       "overloads": [
@@ -37206,8 +37201,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Issues a camera instruction",
       "name": "camera",
       "overloads": [
@@ -39528,8 +39522,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Applies shaking to the players' camera with a specified intensity and duration.",
       "name": "camerashake",
       "overloads": [
@@ -39597,8 +39590,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Changes a setting on the dedicated server while it's running.",
       "name": "changesetting",
       "overloads": [
@@ -39664,8 +39656,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Clears items from player inventory.",
       "name": "clear",
       "overloads": [
@@ -39707,8 +39698,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Removes the spawn point for a player.",
       "name": "clearspawnpoint",
       "overloads": [
@@ -39729,8 +39719,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Clones blocks from one region to another.",
       "name": "clone",
       "overloads": [
@@ -39833,8 +39822,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets or clears control scheme.",
       "name": "controlscheme",
       "overloads": [
@@ -39888,8 +39876,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Apply damage to the specified entities.",
       "name": "damage",
       "overloads": [
@@ -39989,8 +39976,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Revokes operator status from a player.",
       "name": "deop",
       "overloads": [
@@ -40011,8 +39997,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Opens NPC dialogue for a player.",
       "name": "dialogue",
       "overloads": [
@@ -40087,8 +40072,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets the difficulty level.",
       "name": "difficulty",
       "overloads": [
@@ -40121,8 +40105,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Add or remove status effects.",
       "name": "effect",
       "overloads": [
@@ -40237,8 +40220,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Adds an enchantment to a player's selected item.",
       "name": "enchant",
       "overloads": [
@@ -40299,8 +40281,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Triggers an event for the specified object(s)",
       "name": "event",
       "overloads": [
@@ -40335,8 +40316,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Executes a command on behalf of one or more entities.",
       "name": "execute",
       "overloads": [
@@ -40974,8 +40954,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Fills all or parts of a region with a specific block.",
       "name": "fill",
       "overloads": [
@@ -41158,8 +41137,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Add or remove fog settings file",
       "name": "fog",
       "overloads": [
@@ -41227,8 +41205,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Runs commands found in the corresponding function file.",
       "name": "function",
       "overloads": [
@@ -41249,8 +41226,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets a player's game mode.",
       "name": "gamemode",
       "overloads": [
@@ -41297,15 +41273,13 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets or queries a game rule value.",
       "name": "gamerule",
       "overloads": [
         {
           "name": "1",
-          "params": [
-          ]
+          "params": []
         },
         {
           "name": "2",
@@ -41350,8 +41324,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Interacts with gametest.",
       "name": "gametest",
       "overloads": [
@@ -41578,8 +41551,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Gives an item to a player.",
       "name": "give",
       "overloads": [
@@ -41665,8 +41637,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Changes the visibility of hud elements.",
       "name": "hud",
       "overloads": [
@@ -41701,8 +41672,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets whether or not a player's input can affect their character.",
       "name": "inputpermission",
       "overloads": [
@@ -41777,8 +41747,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Kicks a player from the server.",
       "name": "kick",
       "overloads": [
@@ -41806,8 +41775,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Kills entities (players, mobs, etc.).",
       "name": "kill",
       "overloads": [
@@ -41828,23 +41796,20 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Lists players on the server.",
       "name": "list",
       "overloads": [
         {
           "name": "1",
-          "params": [
-          ]
+          "params": []
         }
       ],
       "permission_level": 0,
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Displays the coordinates for the closest structure or biome of a given type.",
       "name": "locate",
       "overloads": [
@@ -41898,8 +41863,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Drops the given loot table into the specified inventory or into the world.",
       "name": "loot",
       "overloads": [
@@ -43042,8 +43006,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Displays a message about yourself.",
       "name": "me",
       "overloads": [
@@ -43064,8 +43027,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Controls what mob events are allowed to run.",
       "name": "mobevent",
       "overloads": [
@@ -43093,8 +43055,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Allows you to control playing music tracks.",
       "name": "music",
       "overloads": [
@@ -43221,8 +43182,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Grants operator status to a player.",
       "name": "op",
       "overloads": [
@@ -43243,8 +43203,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Prints client or server pack stack to chat",
       "name": "packstack",
       "overloads": [
@@ -43279,8 +43238,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Creates a particle emitter",
       "name": "particle",
       "overloads": [
@@ -43333,8 +43291,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Places a jigsaw structure, feature, or feature rule in the world.",
       "name": "place",
       "overloads": [
@@ -43510,8 +43467,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Makes one or more entities play a one-off animation. Assumes all variables are setup correctly.",
       "name": "playanimation",
       "overloads": [
@@ -43567,8 +43523,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Plays a sound.",
       "name": "playsound",
       "overloads": [
@@ -43624,8 +43579,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Manipulate the currently loaded project",
       "name": "project",
       "overloads": [
@@ -43653,8 +43607,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Unlocks recipe in the recipe book for a player.",
       "name": "recipe",
       "overloads": [
@@ -43715,8 +43668,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Reloads all function and script files from all behavior packs, or optionally reloads the world and all resource and behavior packs.",
       "name": "reload",
       "overloads": [
@@ -43737,38 +43689,33 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Reloads configuration files relating to variables, secrets, permissions, etc.",
       "name": "reloadconfig",
       "overloads": [
         {
           "name": "1",
-          "params": [
-          ]
+          "params": []
         }
       ],
       "permission_level": 4,
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Reload packet limit config from file",
       "name": "reloadpacketlimitconfig",
       "overloads": [
         {
           "name": "1",
-          "params": [
-          ]
+          "params": []
         }
       ],
       "permission_level": 4,
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Replaces items in inventories.",
       "name": "replaceitem",
       "overloads": [
@@ -44035,8 +43982,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders.",
       "name": "ride",
       "overloads": [
@@ -44210,8 +44156,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Control or check how the game saves data to disk.",
       "name": "save",
       "overloads": [
@@ -44232,8 +44177,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sends a message in the chat to other players.",
       "name": "say",
       "overloads": [
@@ -44254,8 +44198,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Schedules an action to be executed once an area is loaded, or after a certain amount of time.",
       "name": "schedule",
       "overloads": [
@@ -44669,8 +44612,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Tracks and displays scores for various objectives.",
       "name": "scoreboard",
       "overloads": [
@@ -45084,8 +45026,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Script debugger commands.",
       "name": "script",
       "overloads": [
@@ -45248,8 +45189,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Triggers a script event with an ID and message.",
       "name": "scriptevent",
       "overloads": [
@@ -45277,8 +45217,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sends a request to show a store offer to the target player.",
       "name": "sendshowstoreoffer",
       "overloads": [
@@ -45332,8 +45271,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Changes a block to another block.",
       "name": "setblock",
       "overloads": [
@@ -45401,8 +45339,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets the maximum number of players for this game session.",
       "name": "setmaxplayers",
       "overloads": [
@@ -45423,8 +45360,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets the world spawn.",
       "name": "setworldspawn",
       "overloads": [
@@ -45445,8 +45381,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets the spawn point for a player.",
       "name": "spawnpoint",
       "overloads": [
@@ -45474,8 +45409,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Teleports entities to random locations.",
       "name": "spreadplayers",
       "overloads": [
@@ -45531,23 +45465,20 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Stops the server.",
       "name": "stop",
       "overloads": [
         {
           "name": "1",
-          "params": [
-          ]
+          "params": []
         }
       ],
       "permission_level": 4,
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Stops a sound.",
       "name": "stopsound",
       "overloads": [
@@ -45575,8 +45506,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Saves or loads a structure in the world.",
       "name": "structure",
       "overloads": [
@@ -45815,8 +45745,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Summons an entity.",
       "name": "summon",
       "overloads": [
@@ -45992,8 +45921,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Manages tags stored in entities.",
       "name": "tag",
       "overloads": [
@@ -46397,8 +46325,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sends a JSON message to players.",
       "name": "tellraw",
       "overloads": [
@@ -46426,8 +46353,7 @@
       "requires_cheats": false
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Counts entities (players, mobs, items, etc.) matching specified conditions.",
       "name": "testfor",
       "overloads": [
@@ -46448,8 +46374,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Tests whether a certain block is in a specific location.",
       "name": "testforblock",
       "overloads": [
@@ -46484,8 +46409,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Tests whether the blocks in two regions match.",
       "name": "testforblocks",
       "overloads": [
@@ -46527,8 +46451,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Add, remove, or list ticking areas.",
       "name": "tickingarea",
       "overloads": [
@@ -46745,8 +46668,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Changes or queries the world's game time.",
       "name": "time",
       "overloads": [
@@ -46831,8 +46753,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Controls screen titles.",
       "name": "title",
       "overloads": [
@@ -46945,8 +46866,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Controls screen titles with JSON messages.",
       "name": "titleraw",
       "overloads": [
@@ -47059,23 +46979,20 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Toggles the weather.",
       "name": "toggledownfall",
       "overloads": [
         {
           "name": "1",
-          "params": [
-          ]
+          "params": []
         }
       ],
       "permission_level": 1,
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Transfers a player to another server.",
       "name": "transfer",
       "overloads": [
@@ -47110,8 +47027,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Sets the weather.",
       "name": "weather",
       "overloads": [
@@ -47176,8 +47092,7 @@
       "requires_cheats": true
     },
     {
-      "aliases": [
-      ],
+      "aliases": [],
       "description": "Adds or removes player experience.",
       "name": "xp",
       "overloads": [
@@ -47225,5 +47140,6 @@
     }
   ],
   "module_type": "commands",
-  "name": "mojang-commands"
+  "name": "mojang-commands",
+  "minecraft_version": "1.20.0"
 }
