@@ -98,16 +98,12 @@ export class GameTestSequence {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param delayTicks
-     * Bounds: [-2147483648, 2147483647]
      */
     thenExecuteAfter(delayTicks: number, callback: () => void): GameTestSequence;
     /**
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param tickCount
-     * Bounds: [-2147483648, 2147483647]
      */
     thenExecuteFor(tickCount: number, callback: () => void): GameTestSequence;
     /**
@@ -120,8 +116,6 @@ export class GameTestSequence {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param delayTicks
-     * Bounds: [-2147483648, 2147483647]
      */
     thenIdle(delayTicks: number): GameTestSequence;
     /**
@@ -140,8 +134,6 @@ export class GameTestSequence {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param delayTicks
-     * Bounds: [-2147483648, 2147483647]
      */
     thenWaitAfter(delayTicks: number, callback: () => void): GameTestSequence;
 }
@@ -168,8 +160,6 @@ export class RegistrationBuilder {
      *
      * This function can be called in early-execution mode.
      *
-     * @param attemptCount
-     * Bounds: [-2147483648, 2147483647]
      */
     maxAttempts(attemptCount: number): RegistrationBuilder;
     /**
@@ -178,8 +168,6 @@ export class RegistrationBuilder {
      *
      * This function can be called in early-execution mode.
      *
-     * @param tickCount
-     * Bounds: [-2147483648, 2147483647]
      */
     maxTicks(tickCount: number): RegistrationBuilder;
     /**
@@ -188,8 +176,6 @@ export class RegistrationBuilder {
      *
      * This function can be called in early-execution mode.
      *
-     * @param paddingBlocks
-     * Bounds: [-2147483648, 2147483647]
      */
     padding(paddingBlocks: number): RegistrationBuilder;
     /**
@@ -206,8 +192,6 @@ export class RegistrationBuilder {
      *
      * This function can be called in early-execution mode.
      *
-     * @param attemptCount
-     * Bounds: [-2147483648, 2147483647]
      */
     requiredSuccessfulAttempts(attemptCount: number): RegistrationBuilder;
     /**
@@ -224,8 +208,6 @@ export class RegistrationBuilder {
      *
      * This function can be called in early-execution mode.
      *
-     * @param tickCount
-     * Bounds: [-2147483648, 2147483647]
      */
     setupTicks(tickCount: number): RegistrationBuilder;
     /**
@@ -272,16 +254,12 @@ export class SculkSpreader {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param charge
-     * Bounds: [-2147483648, 2147483647]
      */
     addCursorsWithOffset(offset: minecraftserver.Vector3, charge: number): void;
     /**
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param index
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     getCursorPosition(index: number): minecraftserver.Vector3;
@@ -458,10 +436,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param westEast
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
-     * @param northSouth
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @param speed
      * Defaults to: 1
      * Bounds: [0, 1]
@@ -472,10 +446,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param leftRight
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
-     * @param backwardForward
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @param speed
      * Defaults to: 1
      * Bounds: [0, 1]
@@ -569,8 +539,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param angleInDegrees
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      */
     rotateBody(angleInDegrees: number): void;
@@ -578,8 +546,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param angleInDegrees
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      */
     setBodyRotation(angleInDegrees: number): void;
@@ -587,8 +553,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param slot
-     * Bounds: [-2147483648, 2147483647]
      * @param selectSlot
      * Defaults to: false
      * @throws This function can throw errors.
@@ -609,7 +573,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      *
      * @param slot
      * Defaults to: 0
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     startBuild(slot?: number): void;
@@ -687,8 +650,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param slot
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     useItemInSlot(slot: number): boolean;
@@ -696,8 +657,6 @@ export class SimulatedPlayer extends minecraftserver.Player {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param slot
-     * Bounds: [-2147483648, 2147483647]
      * @param direction
      * Defaults to: 1
      * @throws This function can throw errors.
@@ -804,10 +763,6 @@ export class Test {
      */
     assertContainerEmpty(blockLocation: minecraftserver.Vector3): void;
     /**
-     * @param armorSlot
-     * Bounds: [-2147483648, 2147483647]
-     * @param armorData
-     * Bounds: [-2147483648, 2147483647]
      * @param hasArmor
      * Defaults to: true
      * @throws This function can throw errors.
@@ -866,7 +821,6 @@ export class Test {
     /**
      * @param searchDistance
      * Defaults to: 0
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @param isPresent
      * Defaults to: true
      * @throws This function can throw errors.
@@ -924,10 +878,6 @@ export class Test {
      */
     assertIsWaterlogged(blockLocation: minecraftserver.Vector3, isWaterlogged?: boolean): void;
     /**
-     * @param searchDistance
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
-     * @param count
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}
@@ -943,7 +893,6 @@ export class Test {
     /**
      * @param searchDistance
      * Defaults to: 0
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @param isPresent
      * Defaults to: true
      * @throws This function can throw errors.
@@ -959,8 +908,6 @@ export class Test {
         isPresent?: boolean
     ): void;
     /**
-     * @param power
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}
@@ -1040,8 +987,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param tickDelay
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}
@@ -1074,8 +1019,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param jumpAmount
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}
@@ -1120,8 +1063,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param duration
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}
@@ -1183,8 +1124,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param delayTicks
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     runAfterDelay(delayTicks: number, callback: () => void): void;
@@ -1192,8 +1131,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param tick
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     runAtTickTime(tick: number, callback: () => void): void;
@@ -1245,8 +1182,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param fuseLength
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}
@@ -1373,8 +1308,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param tick
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     succeedOnTick(tick: number): void;
@@ -1382,8 +1315,6 @@ export class Test {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param tick
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     succeedOnTickWhen(tick: number, callback: () => void): void;
@@ -1464,7 +1395,6 @@ export class Test {
      *
      * @param speedModifier
      * Defaults to: 1
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}
@@ -1478,7 +1408,6 @@ export class Test {
      *
      * @param speedModifier
      * Defaults to: 1
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      *
      * {@link GameTestCompletedError}

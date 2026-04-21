@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.6.0-beta](#260-beta)
+- [2.7.0-beta](#270-beta)
+- [2.6.0](#260)
 - [2.5.0](#250)
 - [2.4.0](#240)
 - [2.3.0](#230)
@@ -38,7 +39,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.6.0-beta
+## 2.7.0-beta
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 #### Added *[`AimAssistPreset`](AimAssistPreset.md)*
@@ -50,35 +51,70 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
+- Changed function *[`above`](Block.md#above)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
+- Changed function *[`below`](Block.md#below)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
 - Added function *[`canPlace`](Block.md#canplace)*
-- Added function *[`getComponents`](Block.md#getcomponents)*
+- Changed function *[`east`](Block.md#east)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
-- Added function *[`hasComponent`](Block.md#hascomponent)*
+- Changed function *[`north`](Block.md#north)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
+- Changed function *[`south`](Block.md#south)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
+- Changed function *[`west`](Block.md#west)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
-#### Added *[`BlockComponentEntityEvent`](BlockComponentEntityEvent.md)*
-#### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
-- Added property *[`previousPowerLevel`](BlockComponentRedstoneUpdateEvent.md#previouspowerlevel)*
+#### Changed *[`BlockComponentEntityEvent`](BlockComponentEntityEvent.md)*
+- Changed type for *[`entitySource`](BlockComponentEntityEvent.md#entitysource)* from [*Entity*](Entity.md) to [*Entity*](Entity.md)
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
-#### Changed *[`BlockPermutation`](BlockPermutation.md)*
-- Added property *[`localizationKey`](BlockPermutation.md#localizationkey)*
-#### Changed *[`BlockType`](BlockType.md)*
-- Added property *[`localizationKey`](BlockType.md#localizationkey)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`Camera`](Camera.md)*
-- Added function *[`attachToEntity`](Camera.md#attachtoentity)*
-- Added function *[`playAnimation`](Camera.md#playanimation)*
 - Added function *[`setCameraWithEase`](Camera.md#setcamerawithease)*
-#### Added *[`CatmullRomSpline`](CatmullRomSpline.md)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
+#### Changed *[`Container`](Container.md)*
+- Changed function *[`getItem`](Container.md#getitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
+- Changed function *[`getSlot`](Container.md#getslot)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
+- Changed function *[`moveItem`](Container.md#moveitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `fromSlot`
+  - Added maximum bound of `2147483647` to argument `fromSlot`
+  - Changed minimum bound from `0` to `-2147483648` for argument `toSlot`
+  - Added maximum bound of `2147483647` to argument `toSlot`
+- Changed function *[`setItem`](Container.md#setitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
+- Changed function *[`swapItems`](Container.md#swapitems)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
+  - Changed minimum bound from `0` to `-2147483648` for argument `otherSlot`
+  - Added maximum bound of `2147483647` to argument `otherSlot`
+- Changed function *[`transferItem`](Container.md#transferitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `fromSlot`
+  - Added maximum bound of `2147483647` to argument `fromSlot`
+#### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Removed minimum bound for property *[`amount`](ContainerSlot.md#amount)*
+- Removed maximum bound for *[`amount`](ContainerSlot.md#amount)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Added function *[`containsBiomes`](Dimension.md#containsbiomes)*
+- Changed function *[`containsBiomes`](Dimension.md#containsbiomes)*
+  - Removed argument `isSuperset`
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
@@ -91,44 +127,56 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`target`](Entity.md#target)*
+- Changed function *[`applyDamage`](Entity.md#applydamage)*
+  - Added minimum bound of `-3.402823466385289e+38` to argument `amount`
+  - Added maximum bound of `3.402823466385289e+38` to argument `amount`
+- Changed function *[`applyKnockback`](Entity.md#applyknockback)*
+  - Added minimum bound of `-3.402823466385289e+38` to argument `verticalStrength`
+  - Added maximum bound of `3.402823466385289e+38` to argument `verticalStrength`
+- Changed function *[`setOnFire`](Entity.md#setonfire)*
+  - Added minimum bound of `-2147483648` to argument `seconds`
+  - Added maximum bound of `2147483647` to argument `seconds`
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
 #### Changed *[`EntityDefinitionFeedItem`](EntityDefinitionFeedItem.md)*
-- Added property *[`resultItem`](EntityDefinitionFeedItem.md#resultitem)*
-#### Added *[`EntityHealAfterEvent`](EntityHealAfterEvent.md)*
-#### Added *[`EntityHealAfterEventSignal`](EntityHealAfterEventSignal.md)*
-#### Added *[`EntityHealBeforeEvent`](EntityHealBeforeEvent.md)*
-#### Added *[`EntityHealBeforeEventSignal`](EntityHealBeforeEventSignal.md)*
-#### Added *[`EntityHealSource`](EntityHealSource.md)*
-#### Changed *[`EntityHurtAfterEventSignal`](EntityHurtAfterEventSignal.md)*
-- Changed function *[`subscribe`](EntityHurtAfterEventSignal.md#subscribe)*
-  - Changed argument `options` type from [*EntityEventOptions*](EntityEventOptions.md) to [*EntityHurtAfterEventOptions*](EntityHurtAfterEventOptions.md)
-#### Added *[`EntityHurtBeforeEvent`](EntityHurtBeforeEvent.md)*
-#### Added *[`EntityHurtBeforeEventSignal`](EntityHurtBeforeEventSignal.md)*
-#### Added *[`EntityItemDropAfterEvent`](EntityItemDropAfterEvent.md)*
-#### Added *[`EntityItemDropAfterEventSignal`](EntityItemDropAfterEventSignal.md)*
-#### Added *[`EntityItemPickupAfterEvent`](EntityItemPickupAfterEvent.md)*
-#### Added *[`EntityItemPickupAfterEventSignal`](EntityItemPickupAfterEventSignal.md)*
-#### Added *[`EntityItemPickupBeforeEvent`](EntityItemPickupBeforeEvent.md)*
-#### Added *[`EntityItemPickupBeforeEventSignal`](EntityItemPickupBeforeEventSignal.md)*
+- Changed type for *[`resultItem`](EntityDefinitionFeedItem.md#resultitem)* from *string* to *string*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
-#### Changed *[`EntityType`](EntityType.md)*
-- Added property *[`localizationKey`](EntityType.md#localizationkey)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
 #### Changed *[`FeedItem`](FeedItem.md)*
-- Added property *[`resultItem`](FeedItem.md#resultitem)*
+- Changed type for *[`resultItem`](FeedItem.md#resultitem)* from *string* to *string*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`locatorBar`](GameRules.md#locatorbar)*
-#### Changed *[`ItemDurabilityComponent`](ItemDurabilityComponent.md)*
-- Added property *[`unbreakable`](ItemDurabilityComponent.md#unbreakable)*
-#### Changed *[`ItemType`](ItemType.md)*
-- Added property *[`localizationKey`](ItemType.md#localizationkey)*
-#### Added *[`LinearSpline`](LinearSpline.md)*
+#### Changed *[`ItemBookComponent`](ItemBookComponent.md)*
+- Changed function *[`getPageContent`](ItemBookComponent.md#getpagecontent)*
+  - Added minimum bound of `-2147483648` to argument `pageIndex`
+  - Added maximum bound of `2147483647` to argument `pageIndex`
+- Changed function *[`getRawPageContent`](ItemBookComponent.md#getrawpagecontent)*
+  - Added minimum bound of `-2147483648` to argument `pageIndex`
+  - Added maximum bound of `2147483647` to argument `pageIndex`
+- Changed function *[`insertPage`](ItemBookComponent.md#insertpage)*
+  - Added minimum bound of `-2147483648` to argument `pageIndex`
+  - Added maximum bound of `2147483647` to argument `pageIndex`
+- Changed function *[`removePage`](ItemBookComponent.md#removepage)*
+  - Added minimum bound of `-2147483648` to argument `pageIndex`
+  - Added maximum bound of `2147483647` to argument `pageIndex`
+- Changed function *[`setPageContent`](ItemBookComponent.md#setpagecontent)*
+  - Added minimum bound of `-2147483648` to argument `pageIndex`
+  - Added maximum bound of `2147483647` to argument `pageIndex`
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Removed minimum bound for property *[`amount`](ItemStack.md#amount)*
+- Removed maximum bound for *[`amount`](ItemStack.md#amount)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
+#### Changed *[`MolangVariableMap`](MolangVariableMap.md)*
+- Changed function *[`setFloat`](MolangVariableMap.md#setfloat)*
+  - Added minimum bound of `-3.402823466385289e+38` to argument `number`
+  - Added maximum bound of `3.402823466385289e+38` to argument `number`
+- Changed function *[`setSpeedAndDirection`](MolangVariableMap.md#setspeedanddirection)*
+  - Added minimum bound of `-3.402823466385289e+38` to argument `speed`
+  - Added maximum bound of `3.402823466385289e+38` to argument `speed`
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
 #### Changed *[`Player`](Player.md)*
@@ -147,47 +195,217 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
   - Changed argument `potionEffectType` type from [*PotionEffectType*](PotionEffectType.md) | *string* to *PotionEffectType* | *T*
   - Changed argument `potionDeliveryType` type from [*PotionDeliveryType*](PotionDeliveryType.md) | *string* to *PotionDeliveryType* | *U*
+#### Changed *[`ScoreboardObjective`](ScoreboardObjective.md)*
+- Changed function *[`addScore`](ScoreboardObjective.md#addscore)*
+  - Added minimum bound of `-2147483648` to argument `scoreToAdd`
+  - Added maximum bound of `2147483647` to argument `scoreToAdd`
+- Changed function *[`setScore`](ScoreboardObjective.md#setscore)*
+  - Added minimum bound of `-2147483648` to argument `score`
+  - Added maximum bound of `2147483647` to argument `score`
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Changed *[`System`](System.md)*
+- Changed function *[`clearJob`](System.md#clearjob)*
+  - Added minimum bound of `0` to argument `jobId`
+  - Added maximum bound of `4294967295` to argument `jobId`
+- Changed function *[`clearRun`](System.md#clearrun)*
+  - Added minimum bound of `0` to argument `runId`
+  - Added maximum bound of `4294967295` to argument `runId`
+- Changed function *[`waitTicks`](System.md#waitticks)*
+  - Added minimum bound of `0` to argument `ticks`
+  - Added maximum bound of `4294967295` to argument `ticks`
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
-#### Added *[`TickingAreaManager`](TickingAreaManager.md)*
+#### Changed *[`TickingAreaManager`](TickingAreaManager.md)*
+- Changed function *[`createTickingArea`](TickingAreaManager.md#createtickingarea)*
+  - Changed return type from Promise&lt;*void*&gt; (throws exceptions) to Promise&lt;[*TickingArea*](TickingArea.md)&gt; (throws exceptions)
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
-- Added property *[`seed`](World.md#seed)*
-- Added property *[`tickingAreaManager`](World.md#tickingareamanager)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
 - Added function *[`getPackSettings`](World.md#getpacksettings)*
+- Changed function *[`setAbsoluteTime`](World.md#setabsolutetime)*
+  - Added minimum bound of `-2147483648` to argument `absoluteTime`
+  - Added maximum bound of `2147483647` to argument `absoluteTime`
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
-- Added property *[`entityHeal`](WorldAfterEvents.md#entityheal)*
-- Added property *[`entityItemDrop`](WorldAfterEvents.md#entityitemdrop)*
-- Added property *[`entityItemPickup`](WorldAfterEvents.md#entityitempickup)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
-- Added property *[`entityHeal`](WorldBeforeEvents.md#entityheal)*
-- Added property *[`entityHurt`](WorldBeforeEvents.md#entityhurt)*
-- Added property *[`entityItemPickup`](WorldBeforeEvents.md#entityitempickup)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 - Added value `UnexpectedEnumName`
-#### Added enum [`EntityAttachPoint`](EntityAttachPoint.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `Npc`
-#### Added enum [`EntityHealCause`](EntityHealCause.md)
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `LocatorBar`
-#### Added enum [`TickingAreaErrorReason`](TickingAreaErrorReason.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+## 2.6.0
+#### Changed *[`Block`](Block.md)*
+- Changed function *[`above`](Block.md#above)*
+  - Removed minimum bound of `-2147483648` from argument `steps`
+  - Removed maximum bound of `2147483647` from argument `steps`           
+- Changed function *[`below`](Block.md#below)*
+  - Removed minimum bound of `-2147483648` from argument `steps`
+  - Removed maximum bound of `2147483647` from argument `steps`           
+- Changed function *[`east`](Block.md#east)*
+  - Removed minimum bound of `-2147483648` from argument `steps`
+  - Removed maximum bound of `2147483647` from argument `steps`           
+- Added function *[`getComponents`](Block.md#getcomponents)*
+- Added function *[`hasComponent`](Block.md#hascomponent)*
+- Changed function *[`north`](Block.md#north)*
+  - Removed minimum bound of `-2147483648` from argument `steps`
+  - Removed maximum bound of `2147483647` from argument `steps`           
+- Changed function *[`south`](Block.md#south)*
+  - Removed minimum bound of `-2147483648` from argument `steps`
+  - Removed maximum bound of `2147483647` from argument `steps`           
+- Changed function *[`west`](Block.md#west)*
+  - Removed minimum bound of `-2147483648` from argument `steps`
+  - Removed maximum bound of `2147483647` from argument `steps`           
+#### Added *[`BlockComponentEntityEvent`](BlockComponentEntityEvent.md)*
+#### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
+- Added property *[`previousPowerLevel`](BlockComponentRedstoneUpdateEvent.md#previouspowerlevel)*
+#### Changed *[`BlockPermutation`](BlockPermutation.md)*
+- Added property *[`localizationKey`](BlockPermutation.md#localizationkey)*
+#### Changed *[`BlockType`](BlockType.md)*
+- Added property *[`localizationKey`](BlockType.md#localizationkey)*
+#### Changed *[`Camera`](Camera.md)*
+- Added function *[`attachToEntity`](Camera.md#attachtoentity)*
+- Added function *[`playAnimation`](Camera.md#playanimation)*
+#### Added *[`CatmullRomSpline`](CatmullRomSpline.md)*
+#### Changed *[`Container`](Container.md)*
+- Changed function *[`getItem`](Container.md#getitem)*
+  - Changed minimum bound from `-2147483648` to `0` for argument `slot`
+  - Removed maximum bound of `2147483647` from argument `slot`           
+- Changed function *[`getSlot`](Container.md#getslot)*
+  - Changed minimum bound from `-2147483648` to `0` for argument `slot`
+  - Removed maximum bound of `2147483647` from argument `slot`           
+- Changed function *[`moveItem`](Container.md#moveitem)*
+  - Changed minimum bound from `-2147483648` to `0` for argument `fromSlot`
+  - Removed maximum bound of `2147483647` from argument `fromSlot`           
+  - Changed minimum bound from `-2147483648` to `0` for argument `toSlot`
+  - Removed maximum bound of `2147483647` from argument `toSlot`           
+- Changed function *[`setItem`](Container.md#setitem)*
+  - Changed minimum bound from `-2147483648` to `0` for argument `slot`
+  - Removed maximum bound of `2147483647` from argument `slot`           
+- Changed function *[`swapItems`](Container.md#swapitems)*
+  - Changed minimum bound from `-2147483648` to `0` for argument `slot`
+  - Removed maximum bound of `2147483647` from argument `slot`           
+  - Changed minimum bound from `-2147483648` to `0` for argument `otherSlot`
+  - Removed maximum bound of `2147483647` from argument `otherSlot`           
+- Changed function *[`transferItem`](Container.md#transferitem)*
+  - Changed minimum bound from `-2147483648` to `0` for argument `fromSlot`
+  - Removed maximum bound of `2147483647` from argument `fromSlot`           
+#### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Added minimum bound of `1` for property *[`amount`](ContainerSlot.md#amount)* 
+- Added maximum bound of `255` for property *[`amount`](ContainerSlot.md#amount)* 
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`containsBiomes`](Dimension.md#containsbiomes)*
+#### Changed *[`Entity`](Entity.md)*
+- Changed function *[`applyDamage`](Entity.md#applydamage)*
+  - Removed minimum bound of `-3.402823466385289e+38` from argument `amount`
+  - Removed maximum bound of `3.402823466385289e+38` from argument `amount`           
+- Changed function *[`applyKnockback`](Entity.md#applyknockback)*
+  - Removed minimum bound of `-3.402823466385289e+38` from argument `verticalStrength`
+  - Removed maximum bound of `3.402823466385289e+38` from argument `verticalStrength`           
+- Changed function *[`setOnFire`](Entity.md#setonfire)*
+  - Removed minimum bound of `-2147483648` from argument `seconds`
+  - Removed maximum bound of `2147483647` from argument `seconds`           
+#### Changed *[`EntityDefinitionFeedItem`](EntityDefinitionFeedItem.md)*
+- Added property *[`resultItem`](EntityDefinitionFeedItem.md#resultitem)*
+#### Added *[`EntityHealAfterEvent`](EntityHealAfterEvent.md)*
+#### Added *[`EntityHealAfterEventSignal`](EntityHealAfterEventSignal.md)*
+#### Added *[`EntityHealBeforeEvent`](EntityHealBeforeEvent.md)*
+#### Added *[`EntityHealBeforeEventSignal`](EntityHealBeforeEventSignal.md)*
+#### Added *[`EntityHealSource`](EntityHealSource.md)*
+#### Changed *[`EntityHurtAfterEventSignal`](EntityHurtAfterEventSignal.md)*
+- Changed function *[`subscribe`](EntityHurtAfterEventSignal.md#subscribe)*
+  - Changed argument `options` type from [*EntityEventOptions*](EntityEventOptions.md) to [*EntityHurtAfterEventOptions*](EntityHurtAfterEventOptions.md)
+#### Added *[`EntityHurtBeforeEvent`](EntityHurtBeforeEvent.md)*
+#### Added *[`EntityHurtBeforeEventSignal`](EntityHurtBeforeEventSignal.md)*
+#### Added *[`EntityItemDropAfterEvent`](EntityItemDropAfterEvent.md)*
+#### Added *[`EntityItemDropAfterEventSignal`](EntityItemDropAfterEventSignal.md)*
+#### Added *[`EntityItemPickupAfterEvent`](EntityItemPickupAfterEvent.md)*
+#### Added *[`EntityItemPickupAfterEventSignal`](EntityItemPickupAfterEventSignal.md)*
+#### Added *[`EntityItemPickupBeforeEvent`](EntityItemPickupBeforeEvent.md)*
+#### Added *[`EntityItemPickupBeforeEventSignal`](EntityItemPickupBeforeEventSignal.md)*
+#### Changed *[`EntityType`](EntityType.md)*
+- Added property *[`localizationKey`](EntityType.md#localizationkey)*
+#### Changed *[`FeedItem`](FeedItem.md)*
+- Added property *[`resultItem`](FeedItem.md#resultitem)*
+#### Changed *[`ItemBookComponent`](ItemBookComponent.md)*
+- Changed function *[`getPageContent`](ItemBookComponent.md#getpagecontent)*
+  - Removed minimum bound of `-2147483648` from argument `pageIndex`
+  - Removed maximum bound of `2147483647` from argument `pageIndex`           
+- Changed function *[`getRawPageContent`](ItemBookComponent.md#getrawpagecontent)*
+  - Removed minimum bound of `-2147483648` from argument `pageIndex`
+  - Removed maximum bound of `2147483647` from argument `pageIndex`           
+- Changed function *[`insertPage`](ItemBookComponent.md#insertpage)*
+  - Removed minimum bound of `-2147483648` from argument `pageIndex`
+  - Removed maximum bound of `2147483647` from argument `pageIndex`           
+- Changed function *[`removePage`](ItemBookComponent.md#removepage)*
+  - Removed minimum bound of `-2147483648` from argument `pageIndex`
+  - Removed maximum bound of `2147483647` from argument `pageIndex`           
+- Changed function *[`setPageContent`](ItemBookComponent.md#setpagecontent)*
+  - Removed minimum bound of `-2147483648` from argument `pageIndex`
+  - Removed maximum bound of `2147483647` from argument `pageIndex`           
+#### Changed *[`ItemDurabilityComponent`](ItemDurabilityComponent.md)*
+- Added property *[`unbreakable`](ItemDurabilityComponent.md#unbreakable)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Added minimum bound of `1` for property *[`amount`](ItemStack.md#amount)* 
+- Added maximum bound of `255` for property *[`amount`](ItemStack.md#amount)* 
+#### Changed *[`ItemType`](ItemType.md)*
+- Added property *[`localizationKey`](ItemType.md#localizationkey)*
+#### Added *[`LinearSpline`](LinearSpline.md)*
+#### Changed *[`MolangVariableMap`](MolangVariableMap.md)*
+- Changed function *[`setFloat`](MolangVariableMap.md#setfloat)*
+  - Removed minimum bound of `-3.402823466385289e+38` from argument `number`
+  - Removed maximum bound of `3.402823466385289e+38` from argument `number`           
+- Changed function *[`setSpeedAndDirection`](MolangVariableMap.md#setspeedanddirection)*
+  - Removed minimum bound of `-3.402823466385289e+38` from argument `speed`
+  - Removed maximum bound of `3.402823466385289e+38` from argument `speed`           
+#### Changed *[`ScoreboardObjective`](ScoreboardObjective.md)*
+- Changed function *[`addScore`](ScoreboardObjective.md#addscore)*
+  - Removed minimum bound of `-2147483648` from argument `scoreToAdd`
+  - Removed maximum bound of `2147483647` from argument `scoreToAdd`           
+- Changed function *[`setScore`](ScoreboardObjective.md#setscore)*
+  - Removed minimum bound of `-2147483648` from argument `score`
+  - Removed maximum bound of `2147483647` from argument `score`           
+#### Changed *[`System`](System.md)*
+- Changed function *[`clearJob`](System.md#clearjob)*
+  - Removed minimum bound of `0` from argument `jobId`
+  - Removed maximum bound of `4294967295` from argument `jobId`           
+- Changed function *[`clearRun`](System.md#clearrun)*
+  - Removed minimum bound of `0` from argument `runId`
+  - Removed maximum bound of `4294967295` from argument `runId`           
+- Changed function *[`waitTicks`](System.md#waitticks)*
+  - Removed minimum bound of `0` from argument `ticks`
+  - Removed maximum bound of `4294967295` from argument `ticks`           
+#### Added *[`TickingAreaManager`](TickingAreaManager.md)*
+#### Changed *[`World`](World.md)*
+- Added property *[`seed`](World.md#seed)*
+- Added property *[`tickingAreaManager`](World.md#tickingareamanager)*
+- Changed function *[`setAbsoluteTime`](World.md#setabsolutetime)*
+  - Removed minimum bound of `-2147483648` from argument `absoluteTime`
+  - Removed maximum bound of `2147483647` from argument `absoluteTime`           
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`entityHeal`](WorldAfterEvents.md#entityheal)*
+- Added property *[`entityItemDrop`](WorldAfterEvents.md#entityitemdrop)*
+- Added property *[`entityItemPickup`](WorldAfterEvents.md#entityitempickup)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`entityHeal`](WorldBeforeEvents.md#entityheal)*
+- Added property *[`entityHurt`](WorldBeforeEvents.md#entityhurt)*
+- Added property *[`entityItemPickup`](WorldBeforeEvents.md#entityitempickup)*
+#### Added enum [`EntityAttachPoint`](EntityAttachPoint.md)
+#### Added enum [`EntityHealCause`](EntityHealCause.md)
+#### Added enum [`TickingAreaErrorReason`](TickingAreaErrorReason.md)
 ## 2.5.0
 #### Added *[`PlayerSwingStartAfterEvent`](PlayerSwingStartAfterEvent.md)*
 #### Added *[`PlayerSwingStartAfterEventSignal`](PlayerSwingStartAfterEventSignal.md)*
@@ -361,7 +579,25 @@ description: Changelog of the `@minecraft/server` module
 ## 2.0.0
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isValid`](Block.md#isvalid)*
+- Changed function *[`above`](Block.md#above)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
+- Changed function *[`below`](Block.md#below)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
+- Changed function *[`east`](Block.md#east)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
 - Removed function *isValid*
+- Changed function *[`north`](Block.md#north)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
+- Changed function *[`south`](Block.md#south)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
+- Changed function *[`west`](Block.md#west)*
+  - Added minimum bound of `-2147483648` to argument `steps`
+  - Added maximum bound of `2147483647` to argument `steps`
 #### Added *[`BlockComponentPlayerBreakEvent`](BlockComponentPlayerBreakEvent.md)*
 #### Removed *BlockComponentPlayerDestroyEvent*
 #### Added *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
@@ -387,8 +623,32 @@ description: Changelog of the `@minecraft/server` module
 - Removed function *isValid*
 #### Changed *[`Container`](Container.md)*
 - Added property *[`isValid`](Container.md#isvalid)*
+- Changed function *[`getItem`](Container.md#getitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
+- Changed function *[`getSlot`](Container.md#getslot)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
 - Removed function *isValid*
+- Changed function *[`moveItem`](Container.md#moveitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `fromSlot`
+  - Added maximum bound of `2147483647` to argument `fromSlot`
+  - Changed minimum bound from `0` to `-2147483648` for argument `toSlot`
+  - Added maximum bound of `2147483647` to argument `toSlot`
+- Changed function *[`setItem`](Container.md#setitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
+- Changed function *[`swapItems`](Container.md#swapitems)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `slot`
+  - Added maximum bound of `2147483647` to argument `slot`
+  - Changed minimum bound from `0` to `-2147483648` for argument `otherSlot`
+  - Added maximum bound of `2147483647` to argument `otherSlot`
+- Changed function *[`transferItem`](Container.md#transferitem)*
+  - Changed minimum bound from `0` to `-2147483648` for argument `fromSlot`
+  - Added maximum bound of `2147483647` to argument `fromSlot`
 #### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Removed minimum bound for property *[`amount`](ContainerSlot.md#amount)*
+- Removed maximum bound for *[`amount`](ContainerSlot.md#amount)*
 - Added property *[`isValid`](ContainerSlot.md#isvalid)*
 - Removed function *isValid*
 #### Added *[`CustomComponentParameters`](CustomComponentParameters.md)*
@@ -404,8 +664,13 @@ description: Changelog of the `@minecraft/server` module
 - Removed function *isValid*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`isValid`](Entity.md#isvalid)*
+- Changed function *[`applyDamage`](Entity.md#applydamage)*
+  - Added minimum bound of `-3.402823466385289e+38` to argument `amount`
+  - Added maximum bound of `3.402823466385289e+38` to argument `amount`
 - Changed function *[`applyKnockback`](Entity.md#applyknockback)*
   - Added argument `horizontalForce`
+  - Added minimum bound of `-3.402823466385289e+38` to argument `verticalStrength`
+  - Added maximum bound of `3.402823466385289e+38` to argument `verticalStrength`
   - Removed argument `directionX`
   - Removed argument `directionZ`
   - Removed argument `horizontalStrength`
@@ -418,6 +683,9 @@ description: Changelog of the `@minecraft/server` module
 - Removed function *isValid*
 - Added function *[`lookAt`](Entity.md#lookat)*
 - Removed function *runCommandAsync*
+- Changed function *[`setOnFire`](Entity.md#setonfire)*
+  - Added minimum bound of `-2147483648` to argument `seconds`
+  - Added maximum bound of `2147483647` to argument `seconds`
 #### Changed *[`EntityAttributeComponent`](EntityAttributeComponent.md)*
 - Changed function *[`setCurrentValue`](EntityAttributeComponent.md#setcurrentvalue)*
   - Changed return type from *boolean* (throws exceptions) to *boolean* (throws exceptions)
@@ -451,6 +719,9 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
 #### Added *[`ItemCustomComponentInstance`](ItemCustomComponentInstance.md)*
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Removed minimum bound for property *[`amount`](ItemStack.md#amount)*
+- Removed maximum bound for *[`amount`](ItemStack.md#amount)*
 #### Removed *ItemUseOnAfterEvent*
 #### Removed *ItemUseOnAfterEventSignal*
 #### Removed *ItemUseOnBeforeEvent*
@@ -460,6 +731,13 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`subscribe`](LeverActionAfterEventSignal.md#subscribe)*
 - Added function *[`unsubscribe`](LeverActionAfterEventSignal.md#unsubscribe)*
 #### Removed *MinecraftDimensionTypes*
+#### Changed *[`MolangVariableMap`](MolangVariableMap.md)*
+- Changed function *[`setFloat`](MolangVariableMap.md#setfloat)*
+  - Added minimum bound of `-3.402823466385289e+38` to argument `number`
+  - Added maximum bound of `3.402823466385289e+38` to argument `number`
+- Changed function *[`setSpeedAndDirection`](MolangVariableMap.md#setspeedanddirection)*
+  - Added minimum bound of `-3.402823466385289e+38` to argument `speed`
+  - Added maximum bound of `3.402823466385289e+38` to argument `speed`
 #### Changed *[`Player`](Player.md)*
 - Added property *[`graphicsMode`](Player.md#graphicsmode)*
 #### Changed *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
@@ -482,7 +760,13 @@ description: Changelog of the `@minecraft/server` module
 - Removed function *isValid*
 #### Changed *[`ScoreboardObjective`](ScoreboardObjective.md)*
 - Added property *[`isValid`](ScoreboardObjective.md#isvalid)*
+- Changed function *[`addScore`](ScoreboardObjective.md#addscore)*
+  - Added minimum bound of `-2147483648` to argument `scoreToAdd`
+  - Added maximum bound of `2147483647` to argument `scoreToAdd`
 - Removed function *isValid*
+- Changed function *[`setScore`](ScoreboardObjective.md#setscore)*
+  - Added minimum bound of `-2147483648` to argument `score`
+  - Added maximum bound of `2147483647` to argument `score`
 #### Changed *[`ScreenDisplay`](ScreenDisplay.md)*
 - Added property *[`isValid`](ScreenDisplay.md#isvalid)*
 - Removed function *isValid*
@@ -498,11 +782,21 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
 - Added property *[`isEditorWorld`](System.md#iseditorworld)*
+- Changed function *[`clearJob`](System.md#clearjob)*
+  - Added minimum bound of `0` to argument `jobId`
+  - Added maximum bound of `4294967295` to argument `jobId`
+- Changed function *[`clearRun`](System.md#clearrun)*
+  - Added minimum bound of `0` to argument `runId`
+  - Added maximum bound of `4294967295` to argument `runId`
 - Changed function *[`waitTicks`](System.md#waitticks)*
   - Changed minimum bound from `1` to `0` for argument `ticks`
+  - Added maximum bound of `4294967295` to argument `ticks`
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Changed *[`World`](World.md)*
 - Removed function *playSound*
+- Changed function *[`setAbsoluteTime`](World.md#setabsolutetime)*
+  - Added minimum bound of `-2147483648` to argument `absoluteTime`
+  - Added maximum bound of `2147483647` to argument `absoluteTime`
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Removed property *itemUseOn*
 - Removed property *worldInitialize*
@@ -1036,6 +1330,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntitySpawnAfterEventSignal`](EntitySpawnAfterEventSignal.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
 - Changed read-only flag for *[`amount`](ItemStack.md#amount)* from `true` to `false`
+- Added minimum bound of `1` for property *[`amount`](ItemStack.md#amount)* 
+- Added maximum bound of `255` for property *[`amount`](ItemStack.md#amount)* 
 - Changed read-only flag for *[`keepOnDeath`](ItemStack.md#keepondeath)* from `true` to `false`
 - Changed read-only flag for *[`lockMode`](ItemStack.md#lockmode)* from `true` to `false`
 - Changed read-only flag for *[`nameTag`](ItemStack.md#nametag)* from `true` to `false`

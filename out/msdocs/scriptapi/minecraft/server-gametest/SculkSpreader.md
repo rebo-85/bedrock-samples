@@ -33,7 +33,6 @@ addCursorsWithOffset(offset: minecraftserver.Vector3, charge: number): void
 #### **Parameters**
 - **offset**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **charge**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -45,7 +44,6 @@ getCursorPosition(index: number): minecraftserver.Vector3
 
 #### **Parameters**
 - **index**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   

@@ -21,15 +21,10 @@ Type: *number*
 
 Type: *string*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **resultItem**
 `read-only resultItem: string;`
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 - [getEffects](#geteffects)

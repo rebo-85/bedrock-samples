@@ -20,6 +20,7 @@ description: Contents of the @minecraft/server.ContainerSlot class (Version 1.x.
 Type: *number*
 
 Notes:
+  - This property has a bounds of [`1`, `255`]
   - This property can't be edited in restricted-execution mode.
 
 ### **isStackable**

@@ -64,18 +64,13 @@ Type: [*EntityDieAfterEventSignal*](EntityDieAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityHeal**
 `read-only entityHeal: EntityHealAfterEventSignal;`
 
 Type: [*EntityHealAfterEventSignal*](EntityHealAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **entityHealthChanged**
 `read-only entityHealthChanged: EntityHealthChangedAfterEventSignal;`
@@ -109,31 +104,21 @@ Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityItemDrop**
 `read-only entityItemDrop: EntityItemDropAfterEventSignal;`
 
 Type: [*EntityItemDropAfterEventSignal*](EntityItemDropAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityItemPickup**
 `read-only entityItemPickup: EntityItemPickupAfterEventSignal;`
 
 Type: [*EntityItemPickupAfterEventSignal*](EntityItemPickupAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **entityLoad**
 `read-only entityLoad: EntityLoadAfterEventSignal;`

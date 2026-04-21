@@ -1,7 +1,7 @@
 `@minecraft/server`
 
 == Change Log ==
-=== 2.6.0-beta ===
+=== 2.7.0-beta ===
 - Added class `AimAssistCategory`
   ```ts
   export class AimAssistCategory {
@@ -101,11 +101,15 @@
   ```
 - Changed class `Block`
     - Added property `isSolid`
+    - Changed function `above`
+    - Changed function `below`
     - Added function `canPlace`
-    - Added function `getComponents`
+    - Changed function `east`
     - Added function `getMapColor`
-    - Added function `hasComponent`
+    - Changed function `north`
+    - Changed function `south`
     - Added function `trySetPermutation`
+    - Changed function `west`
 - Added class `BlockBoundingBoxUtils`
   ```ts
   export class BlockBoundingBoxUtils {
@@ -124,38 +128,14 @@
   }
 
   ```
-- Added class `BlockComponentEntityEvent`
-  ```ts
-  // @ts-ignore Class inheritance allowed for native defined classes
-  export class BlockComponentEntityEvent extends BlockEvent {
-    private constructor();
-    readonly blockPermutation: BlockPermutation;
-    readonly entitySource?: Entity;
-    readonly name: string;
-  }
-
-  ```
-- Changed class `BlockComponentRedstoneUpdateEvent`
-    - Added property `previousPowerLevel`
+- Changed class `BlockComponentEntityEvent`
+    - Changed type for `entitySource` from `*Entity*` to `*Entity*`
 - Changed class `BlockLocationIterator`
     - Added function `isValid`
-- Changed class `BlockPermutation`
-    - Added property `localizationKey`
-- Changed class `BlockType`
-    - Added property `localizationKey`
 - Changed class `BlockVolumeBase`
     - Added function `getBoundingBox`
 - Changed class `Camera`
-    - Added function `attachToEntity`
-    - Added function `playAnimation`
     - Added function `setCameraWithEase`
-- Added class `CatmullRomSpline`
-  ```ts
-  export class CatmullRomSpline {
-    controlPoints: Vector3[];
-  }
-
-  ```
 - Added class `ChatSendAfterEvent`
   ```ts
   export class ChatSendAfterEvent {
@@ -220,8 +200,17 @@
   }
 
   ```
+- Changed class `Container`
+    - Changed function `getItem`
+    - Changed function `getSlot`
+    - Changed function `moveItem`
+    - Changed function `setItem`
+    - Changed function `swapItems`
+    - Changed function `transferItem`
+- Changed class `ContainerSlot`
 - Changed class `Dimension`
-    - Added function `containsBiomes`
+    - Changed function `containsBiomes`
+      - Removed argument `isSuperset`
     - Added function `findClosestBiome`
     - Added function `getGeneratedStructures`
     - Added function `getWeather`
@@ -234,9 +223,294 @@
     - Added function `stopSound`
 - Changed class `Entity`
     - Added property `target`
+    - Changed function `applyDamage`
+    - Changed function `applyKnockback`
+    - Changed function `setOnFire`
 - Changed class `EntityBreathableComponent`
     - Added property `airSupply`
     - Added property `canBreathe`
+- Changed class `EntityDefinitionFeedItem`
+    - Changed type for `resultItem` from `*string*` to `*string*`
+- Added class `EntityNpcComponent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class EntityNpcComponent extends EntityComponent {
+    private constructor();
+    defaultScene: string;
+    name: string;
+    skinIndex: number;
+    static readonly componentId = "minecraft:npc";
+  }
+
+  ```
+- Changed class `EntityTypes`
+    - Changed function `get`
+      - Changed return type from `*EntityType*` to `*EntityType | undefined*`
+      - Changed argument `identifier` type from `*string*` to `*EntityIdentifierType<NoInfer<T>>*`
+- Changed class `FeedItem`
+    - Changed type for `resultItem` from `*string*` to `*string*`
+- Changed class `GameRules`
+    - Added property `locatorBar`
+- Changed class `ItemBookComponent`
+    - Changed function `getPageContent`
+    - Changed function `getRawPageContent`
+    - Changed function `insertPage`
+    - Changed function `removePage`
+    - Changed function `setPageContent`
+- Changed class `ItemStack`
+- Added class `MessageReceiveAfterEvent`
+  ```ts
+  export class MessageReceiveAfterEvent {
+    private constructor();
+    readonly id: string;
+    readonly message: string;
+    readonly player: Player;
+  }
+
+  ```
+- Changed class `MolangVariableMap`
+    - Changed function `setFloat`
+    - Changed function `setSpeedAndDirection`
+- Added class `PackSettingChangeAfterEvent`
+  ```ts
+  export class PackSettingChangeAfterEvent {
+    private constructor();
+    readonly settingName: string;
+    readonly settingValue: boolean | number | string;
+  }
+
+  ```
+- Added class `PackSettingChangeAfterEventSignal`
+  ```ts
+  export class PackSettingChangeAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PackSettingChangeAfterEvent) => void): (arg0: PackSettingChangeAfterEvent) => void;
+    unsubscribe(callback: (arg0: PackSettingChangeAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `Player`
+    - Added function `eatItem`
+    - Added function `getAimAssist`
+    - Added function `postClientMessage`
+    - Added function `stopAllSounds`
+    - Added function `stopSound`
+- Added class `PlayerAimAssist`
+  ```ts
+  export class PlayerAimAssist {
+    private constructor();
+    readonly settings?: PlayerAimAssistSettings;
+    set(settings?: PlayerAimAssistSettings): void;
+  }
+
+  ```
+- Added class `PlayerPlaceBlockBeforeEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class PlayerPlaceBlockBeforeEvent extends BlockEvent {
+    private constructor();
+    cancel: boolean;
+    readonly face: Direction;
+    readonly faceLocation: Vector3;
+    readonly permutationToPlace: BlockPermutation;
+    readonly player: Player;
+  }
+
+  ```
+- Added class `PlayerPlaceBlockBeforeEventSignal`
+  ```ts
+  export class PlayerPlaceBlockBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void, options?: BlockEventOptions): (arg0: PlayerPlaceBlockBeforeEvent) => void;
+    unsubscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void): void;
+  }
+
+  ```
+- Added class `PlayerUseNameTagAfterEvent`
+  ```ts
+  export class PlayerUseNameTagAfterEvent {
+    private constructor();
+    entityNamed: Entity;
+    newName: string;
+    player: Player;
+    previousName?: string;
+  }
+
+  ```
+- Added class `PlayerUseNameTagAfterEventSignal`
+  ```ts
+  export class PlayerUseNameTagAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: PlayerUseNameTagAfterEvent) => void): (arg0: PlayerUseNameTagAfterEvent) => void;
+    unsubscribe(callback: (arg0: PlayerUseNameTagAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `Potions`
+    - Changed function `resolve`
+      - Changed return type from `*ItemStack*` (throws exceptions) to `*ItemStack*` (throws exceptions)
+      - Changed argument `potionEffectType` type from `*PotionEffectType | string*` to `*PotionEffectType | T*`
+      - Changed argument `potionDeliveryType` type from `*PotionDeliveryType | string*` to `*PotionDeliveryType | U*`
+- Changed class `ScoreboardObjective`
+    - Changed function `addScore`
+    - Changed function `setScore`
+- Added class `ServerMessageAfterEventSignal`
+  ```ts
+  export class ServerMessageAfterEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: MessageReceiveAfterEvent) => void): (arg0: MessageReceiveAfterEvent) => void;
+    unsubscribe(callback: (arg0: MessageReceiveAfterEvent) => void): void;
+  }
+
+  ```
+- Changed class `System`
+    - Changed function `clearJob`
+    - Changed function `clearRun`
+    - Changed function `waitTicks`
+- Changed class `SystemBeforeEvents`
+    - Added property `watchdogTerminate`
+- Changed class `TickingAreaManager`
+    - Changed function `createTickingArea`
+      - Changed return type from `*Promise<void>*` (throws exceptions) to `*Promise<TickingArea>*` (throws exceptions)
+- Added class `WatchdogTerminateBeforeEvent`
+  ```ts
+  export class WatchdogTerminateBeforeEvent {
+    private constructor();
+    cancel: boolean;
+    readonly terminateReason: WatchdogTerminateReason;
+  }
+
+  ```
+- Added class `WatchdogTerminateBeforeEventSignal`
+  ```ts
+  export class WatchdogTerminateBeforeEventSignal {
+    private constructor();
+    subscribe(callback: (arg0: WatchdogTerminateBeforeEvent) => void): (arg0: WatchdogTerminateBeforeEvent) => void;
+    unsubscribe(callback: (arg0: WatchdogTerminateBeforeEvent) => void): void;
+  }
+
+  ```
+- Changed class `World`
+    - Added function `broadcastClientMessage`
+    - Added function `getAimAssist`
+    - Added function `getPackSettings`
+    - Changed function `setAbsoluteTime`
+- Changed class `WorldAfterEvents`
+    - Added property `chatSend`
+    - Added property `messageReceive`
+    - Added property `packSettingChange`
+    - Added property `playerUseNameTag`
+- Changed class `WorldBeforeEvents`
+    - Added property `chatSend`
+    - Added property `playerPlaceBlock`
+- Changed interface `BiomeFilter`
+    - Added property `superset`
+      ```ts
+      superset: boolean
+      ```
+- Added interface `BiomeSearchOptions`
+  ```ts
+  export interface BiomeSearchOptions {
+    boundingSize?: Vector3;
+  }
+
+  ```
+- Added interface `CompoundBlockVolumeItem`
+  ```ts
+  export interface CompoundBlockVolumeItem {
+    action?: CompoundBlockVolumeAction;
+    locationRelativity?: CompoundBlockVolumePositionRelativity;
+    volume: BlockVolume;
+  }
+
+  ```
+- Changed interface `CustomCommandParameter`
+    - Added property `enumName`
+      ```ts
+      enumName?: string
+      ```
+- Changed interface `DefinitionModifier`
+    - Added property `triggers`
+      ```ts
+      triggers: Trigger[]
+      ```
+- Added interface `PlayerAimAssistSettings`
+  ```ts
+  export interface PlayerAimAssistSettings {
+    distance?: number;
+    presetId: string;
+    targetMode?: AimAssistTargetMode;
+    viewAngle?: Vector2;
+  }
+
+  ```
+- Added enum `AimAssistTargetMode`
+- Added enum `CompoundBlockVolumeAction`
+- Added enum `CompoundBlockVolumePositionRelativity`
+- Added enum `WatchdogTerminateReason`
+- Changed type map `EntityComponentTypeMap`
+  - Added mapping `'minecraft:npc': 'EntityNpcComponent'`
+  - Added mapping `'npc': 'EntityNpcComponent'`
+- Added type alias `EntityIdentifierType`
+  ```ts
+  export type EntityIdentifierType<T> = [T] extends [never] ? VanillaEntityIdentifier : T extends string ? VanillaEntityIdentifier | T : never;
+  ```
+- Added type alias `VanillaEntityIdentifier`
+  ```ts
+  export type VanillaEntityIdentifier = EntityType | minecraftvanilladata.MinecraftEntityTypes | `${minecraftvanilladata.MinecraftEntityTypes}` | `${minecraftvanilladata.MinecraftEntityTypes}<${string}>`;
+  ```
+
+=== 2.6.0 ===
+- Changed class `Block`
+    - Changed function `above`
+    - Changed function `below`
+    - Changed function `east`
+    - Added function `getComponents`
+    - Added function `hasComponent`
+    - Changed function `north`
+    - Changed function `south`
+    - Changed function `west`
+- Added class `BlockComponentEntityEvent`
+  ```ts
+  // @ts-ignore Class inheritance allowed for native defined classes
+  export class BlockComponentEntityEvent extends BlockEvent {
+    private constructor();
+    readonly blockPermutation: BlockPermutation;
+    readonly entitySource: Entity;
+    readonly name: string;
+  }
+
+  ```
+- Changed class `BlockComponentRedstoneUpdateEvent`
+    - Added property `previousPowerLevel`
+- Changed class `BlockPermutation`
+    - Added property `localizationKey`
+- Changed class `BlockType`
+    - Added property `localizationKey`
+- Changed class `Camera`
+    - Added function `attachToEntity`
+    - Added function `playAnimation`
+- Added class `CatmullRomSpline`
+  ```ts
+  export class CatmullRomSpline {
+    controlPoints: Vector3[];
+  }
+
+  ```
+- Changed class `Container`
+    - Changed function `getItem`
+    - Changed function `getSlot`
+    - Changed function `moveItem`
+    - Changed function `setItem`
+    - Changed function `swapItems`
+    - Changed function `transferItem`
+- Changed class `ContainerSlot`
+- Changed class `Dimension`
+    - Added function `containsBiomes`
+- Changed class `Entity`
+    - Changed function `applyDamage`
+    - Changed function `applyKnockback`
+    - Changed function `setOnFire`
 - Changed class `EntityDefinitionFeedItem`
     - Added property `resultItem`
 - Added class `EntityHealAfterEvent`
@@ -364,30 +638,19 @@
   }
 
   ```
-- Added class `EntityNpcComponent`
-  ```ts
-  // @ts-ignore Class inheritance allowed for native defined classes
-  export class EntityNpcComponent extends EntityComponent {
-    private constructor();
-    defaultScene: string;
-    name: string;
-    skinIndex: number;
-    static readonly componentId = "minecraft:npc";
-  }
-
-  ```
 - Changed class `EntityType`
     - Added property `localizationKey`
-- Changed class `EntityTypes`
-    - Changed function `get`
-      - Changed return type from `*EntityType*` to `*EntityType | undefined*`
-      - Changed argument `identifier` type from `*string*` to `*EntityIdentifierType<NoInfer<T>>*`
 - Changed class `FeedItem`
     - Added property `resultItem`
-- Changed class `GameRules`
-    - Added property `locatorBar`
+- Changed class `ItemBookComponent`
+    - Changed function `getPageContent`
+    - Changed function `getRawPageContent`
+    - Changed function `insertPage`
+    - Changed function `removePage`
+    - Changed function `setPageContent`
 - Changed class `ItemDurabilityComponent`
     - Added property `unbreakable`
+- Changed class `ItemStack`
 - Changed class `ItemType`
     - Added property `localizationKey`
 - Added class `LinearSpline`
@@ -397,114 +660,23 @@
   }
 
   ```
-- Added class `MessageReceiveAfterEvent`
-  ```ts
-  export class MessageReceiveAfterEvent {
-    private constructor();
-    readonly id: string;
-    readonly message: string;
-    readonly player: Player;
-  }
-
-  ```
-- Added class `PackSettingChangeAfterEvent`
-  ```ts
-  export class PackSettingChangeAfterEvent {
-    private constructor();
-    readonly settingName: string;
-    readonly settingValue: boolean | number | string;
-  }
-
-  ```
-- Added class `PackSettingChangeAfterEventSignal`
-  ```ts
-  export class PackSettingChangeAfterEventSignal {
-    private constructor();
-    subscribe(callback: (arg0: PackSettingChangeAfterEvent) => void): (arg0: PackSettingChangeAfterEvent) => void;
-    unsubscribe(callback: (arg0: PackSettingChangeAfterEvent) => void): void;
-  }
-
-  ```
-- Changed class `Player`
-    - Added function `eatItem`
-    - Added function `getAimAssist`
-    - Added function `postClientMessage`
-    - Added function `stopAllSounds`
-    - Added function `stopSound`
-- Added class `PlayerAimAssist`
-  ```ts
-  export class PlayerAimAssist {
-    private constructor();
-    readonly settings?: PlayerAimAssistSettings;
-    set(settings?: PlayerAimAssistSettings): void;
-  }
-
-  ```
-- Added class `PlayerPlaceBlockBeforeEvent`
-  ```ts
-  // @ts-ignore Class inheritance allowed for native defined classes
-  export class PlayerPlaceBlockBeforeEvent extends BlockEvent {
-    private constructor();
-    cancel: boolean;
-    readonly face: Direction;
-    readonly faceLocation: Vector3;
-    readonly permutationToPlace: BlockPermutation;
-    readonly player: Player;
-  }
-
-  ```
-- Added class `PlayerPlaceBlockBeforeEventSignal`
-  ```ts
-  export class PlayerPlaceBlockBeforeEventSignal {
-    private constructor();
-    subscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void, options?: BlockEventOptions): (arg0: PlayerPlaceBlockBeforeEvent) => void;
-    unsubscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void): void;
-  }
-
-  ```
-- Added class `PlayerUseNameTagAfterEvent`
-  ```ts
-  export class PlayerUseNameTagAfterEvent {
-    private constructor();
-    entityNamed: Entity;
-    newName: string;
-    player: Player;
-    previousName?: string;
-  }
-
-  ```
-- Added class `PlayerUseNameTagAfterEventSignal`
-  ```ts
-  export class PlayerUseNameTagAfterEventSignal {
-    private constructor();
-    subscribe(callback: (arg0: PlayerUseNameTagAfterEvent) => void): (arg0: PlayerUseNameTagAfterEvent) => void;
-    unsubscribe(callback: (arg0: PlayerUseNameTagAfterEvent) => void): void;
-  }
-
-  ```
-- Changed class `Potions`
-    - Changed function `resolve`
-      - Changed return type from `*ItemStack*` (throws exceptions) to `*ItemStack*` (throws exceptions)
-      - Changed argument `potionEffectType` type from `*PotionEffectType | string*` to `*PotionEffectType | T*`
-      - Changed argument `potionDeliveryType` type from `*PotionDeliveryType | string*` to `*PotionDeliveryType | U*`
-- Added class `ServerMessageAfterEventSignal`
-  ```ts
-  export class ServerMessageAfterEventSignal {
-    private constructor();
-    subscribe(callback: (arg0: MessageReceiveAfterEvent) => void): (arg0: MessageReceiveAfterEvent) => void;
-    unsubscribe(callback: (arg0: MessageReceiveAfterEvent) => void): void;
-  }
-
-  ```
-- Changed class `SystemBeforeEvents`
-    - Added property `watchdogTerminate`
+- Changed class `MolangVariableMap`
+    - Changed function `setFloat`
+    - Changed function `setSpeedAndDirection`
+- Changed class `ScoreboardObjective`
+    - Changed function `addScore`
+    - Changed function `setScore`
+- Changed class `System`
+    - Changed function `clearJob`
+    - Changed function `clearRun`
+    - Changed function `waitTicks`
 - Added class `TickingAreaManager`
   ```ts
   export class TickingAreaManager {
     private constructor();
     readonly chunkCount: number;
     readonly maxChunkCount: number;
-    createTickingArea(identifier: string, options: TickingAreaOptions): Promise<TickingArea>;
+    createTickingArea(identifier: string, options: TickingAreaOptions): Promise<void>;
     getAllTickingAreas(): TickingArea[];
     getTickingArea(identifier: string | TickingArea): TickingArea | undefined;
     hasCapacity(options: TickingAreaOptions): boolean;
@@ -514,44 +686,18 @@
   }
 
   ```
-- Added class `WatchdogTerminateBeforeEvent`
-  ```ts
-  export class WatchdogTerminateBeforeEvent {
-    private constructor();
-    cancel: boolean;
-    readonly terminateReason: WatchdogTerminateReason;
-  }
-
-  ```
-- Added class `WatchdogTerminateBeforeEventSignal`
-  ```ts
-  export class WatchdogTerminateBeforeEventSignal {
-    private constructor();
-    subscribe(callback: (arg0: WatchdogTerminateBeforeEvent) => void): (arg0: WatchdogTerminateBeforeEvent) => void;
-    unsubscribe(callback: (arg0: WatchdogTerminateBeforeEvent) => void): void;
-  }
-
-  ```
 - Changed class `World`
     - Added property `seed`
     - Added property `tickingAreaManager`
-    - Added function `broadcastClientMessage`
-    - Added function `getAimAssist`
-    - Added function `getPackSettings`
+    - Changed function `setAbsoluteTime`
 - Changed class `WorldAfterEvents`
-    - Added property `chatSend`
     - Added property `entityHeal`
     - Added property `entityItemDrop`
     - Added property `entityItemPickup`
-    - Added property `messageReceive`
-    - Added property `packSettingChange`
-    - Added property `playerUseNameTag`
 - Changed class `WorldBeforeEvents`
-    - Added property `chatSend`
     - Added property `entityHeal`
     - Added property `entityHurt`
     - Added property `entityItemPickup`
-    - Added property `playerPlaceBlock`
 - Added interface `AnimationOptions`
   ```ts
   export interface AnimationOptions {
@@ -567,14 +713,6 @@
     excludeTags?: string[];
     includeBiomes?: string[];
     includeTags?: string[];
-    superset: boolean;
-  }
-
-  ```
-- Added interface `BiomeSearchOptions`
-  ```ts
-  export interface BiomeSearchOptions {
-    boundingSize?: Vector3;
   }
 
   ```
@@ -591,25 +729,6 @@
   }
 
   ```
-- Added interface `CompoundBlockVolumeItem`
-  ```ts
-  export interface CompoundBlockVolumeItem {
-    action?: CompoundBlockVolumeAction;
-    locationRelativity?: CompoundBlockVolumePositionRelativity;
-    volume: BlockVolume;
-  }
-
-  ```
-- Changed interface `CustomCommandParameter`
-    - Added property `enumName`
-      ```ts
-      enumName?: string
-      ```
-- Changed interface `DefinitionModifier`
-    - Added property `triggers`
-      ```ts
-      triggers: Trigger[]
-      ```
 - Added interface `EntityHealEventOptions`
   ```ts
   export interface EntityHealEventOptions {
@@ -659,16 +778,6 @@
   }
 
   ```
-- Added interface `PlayerAimAssistSettings`
-  ```ts
-  export interface PlayerAimAssistSettings {
-    distance?: number;
-    presetId: string;
-    targetMode?: AimAssistTargetMode;
-    viewAngle?: Vector2;
-  }
-
-  ```
 - Added interface `ProgressKeyFrame`
   ```ts
   export interface ProgressKeyFrame {
@@ -715,24 +824,9 @@
   }
 
   ```
-- Added enum `AimAssistTargetMode`
-- Added enum `CompoundBlockVolumeAction`
-- Added enum `CompoundBlockVolumePositionRelativity`
 - Added enum `EntityAttachPoint`
 - Added enum `EntityHealCause`
 - Added enum `TickingAreaErrorReason`
-- Added enum `WatchdogTerminateReason`
-- Changed type map `EntityComponentTypeMap`
-  - Added mapping `'minecraft:npc': 'EntityNpcComponent'`
-  - Added mapping `'npc': 'EntityNpcComponent'`
-- Added type alias `EntityIdentifierType`
-  ```ts
-  export type EntityIdentifierType<T> = [T] extends [never] ? VanillaEntityIdentifier : T extends string ? VanillaEntityIdentifier | T : never;
-  ```
-- Added type alias `VanillaEntityIdentifier`
-  ```ts
-  export type VanillaEntityIdentifier = EntityType | minecraftvanilladata.MinecraftEntityTypes | `${minecraftvanilladata.MinecraftEntityTypes}` | `${minecraftvanilladata.MinecraftEntityTypes}<${string}>`;
-  ```
 
 === 2.5.0 ===
 - Added class `PlayerSwingStartAfterEvent`
@@ -1650,7 +1744,13 @@
 === 2.0.0 ===
 - Changed class `Block`
     - Added property `isValid`
+    - Changed function `above`
+    - Changed function `below`
+    - Changed function `east`
     - Removed function `isValid`
+    - Changed function `north`
+    - Changed function `south`
+    - Changed function `west`
 - Added class `BlockComponentPlayerBreakEvent`
   ```ts
   // @ts-ignore Class inheritance allowed for native defined classes
@@ -1722,7 +1822,13 @@
     - Removed function `isValid`
 - Changed class `Container`
     - Added property `isValid`
+    - Changed function `getItem`
+    - Changed function `getSlot`
     - Removed function `isValid`
+    - Changed function `moveItem`
+    - Changed function `setItem`
+    - Changed function `swapItems`
+    - Changed function `transferItem`
 - Changed class `ContainerSlot`
     - Added property `isValid`
     - Removed function `isValid`
@@ -1746,6 +1852,7 @@
     - Removed function `isValid`
 - Changed class `Entity`
     - Added property `isValid`
+    - Changed function `applyDamage`
     - Changed function `applyKnockback`
       - Added argument `horizontalForce`
       - Removed argument `directionX`
@@ -1760,6 +1867,7 @@
     - Removed function `isValid`
     - Added function `lookAt`
     - Removed function `runCommandAsync`
+    - Changed function `setOnFire`
 - Changed class `EntityAttributeComponent`
     - Changed function `setCurrentValue`
       - Changed return type from `*boolean*` (throws exceptions) to `*boolean*` (throws exceptions)
@@ -1811,6 +1919,7 @@
   }
 
   ```
+- Changed class `ItemStack`
 - Removed class `ItemUseOnAfterEvent`
 - Removed class `ItemUseOnAfterEventSignal`
 - Removed class `ItemUseOnBeforeEvent`
@@ -1820,6 +1929,9 @@
     - Added function `subscribe`
     - Added function `unsubscribe`
 - Removed class `MinecraftDimensionTypes`
+- Changed class `MolangVariableMap`
+    - Changed function `setFloat`
+    - Changed function `setSpeedAndDirection`
 - Changed class `Player`
     - Added property `graphicsMode`
 - Changed class `PlayerInputPermissions`
@@ -1842,7 +1954,9 @@
     - Removed function `isValid`
 - Changed class `ScoreboardObjective`
     - Added property `isValid`
+    - Changed function `addScore`
     - Removed function `isValid`
+    - Changed function `setScore`
 - Changed class `ScreenDisplay`
     - Added property `isValid`
     - Removed function `isValid`
@@ -1888,6 +2002,8 @@
 - Changed class `System`
     - Added property `beforeEvents`
     - Added property `isEditorWorld`
+    - Changed function `clearJob`
+    - Changed function `clearRun`
     - Changed function `waitTicks`
 - Added class `SystemBeforeEvents`
   ```ts
@@ -1900,6 +2016,7 @@
   ```
 - Changed class `World`
     - Removed function `playSound`
+    - Changed function `setAbsoluteTime`
 - Changed class `WorldAfterEvents`
     - Removed property `itemUseOn`
     - Removed property `worldInitialize`

@@ -213,7 +213,6 @@ applyDamage(amount: number, options?: EntityApplyDamageByProjectileOptions | Ent
 
 #### **Parameters**
 - **amount**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **options**?: [*EntityApplyDamageByProjectileOptions*](EntityApplyDamageByProjectileOptions.md) | [*EntityApplyDamageOptions*](EntityApplyDamageOptions.md) = `null`
 
 **Returns** *boolean*
@@ -243,13 +242,9 @@ applyKnockback(directionX: number, directionZ: number, horizontalStrength: numbe
 
 #### **Parameters**
 - **directionX**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **directionZ**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **horizontalStrength**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **verticalStrength**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -646,7 +641,6 @@ setOnFire(seconds: number, useEffects?: boolean): boolean
 
 #### **Parameters**
 - **seconds**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **useEffects**?: *boolean* = `true`
 
 **Returns** *boolean*

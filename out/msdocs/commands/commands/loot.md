@@ -1511,6 +1511,7 @@ Drops the given loot table into the specified inventory or into the world.
 - `minecraft:element_7`
 - `minecraft:element_8`
 - `minecraft:element_12`
+- `minecraft:golden_dandelion`
 - `minecraft:element_14`
 - `minecraft:pale_oak_standing_sign`
 - `minecraft:client_request_placeholder_block`

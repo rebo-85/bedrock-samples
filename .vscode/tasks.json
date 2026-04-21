@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generate Minecraft API docs",
+      "type": "shell",
+      "command": "minecraft-api-docs-generator",
+      "args": ["-i", "metadata", "-o", "out"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Generate Minecraft API docs (npx)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["@minecraft/api-docs-generator", "-i", "metadata", "-o", "out"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

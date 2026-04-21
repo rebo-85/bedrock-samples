@@ -78,12 +78,14 @@ description: Contents of the @minecraft/server-net.PacketId enumeration.
 `ChangeMobPropertyPacket = "ChangeMobPropertyPacket"`
 ### **ChunkRadiusUpdatedPacket**
 `ChunkRadiusUpdatedPacket = "ChunkRadiusUpdatedPacket"`
+### **ClientboundAttributeLayerSyncPacket**
+`ClientboundAttributeLayerSyncPacket = "ClientboundAttributeLayerSyncPacket"`
 ### **ClientboundCloseFormPacket**
 `ClientboundCloseFormPacket = "ClientboundCloseFormPacket"`
 ### **ClientboundControlSchemeSetPacket**
 `ClientboundControlSchemeSetPacket = "ClientboundControlSchemeSetPacket"`
-### **ClientboundDataDrivenUICloseAllScreensPacket**
-`ClientboundDataDrivenUICloseAllScreensPacket = "ClientboundDataDrivenUICloseAllScreensPacket"`
+### **ClientboundDataDrivenUICloseScreenPacket**
+`ClientboundDataDrivenUICloseScreenPacket = "ClientboundDataDrivenUICloseScreenPacket"`
 ### **ClientboundDataDrivenUIReloadPacket**
 `ClientboundDataDrivenUIReloadPacket = "ClientboundDataDrivenUIReloadPacket"`
 ### **ClientboundDataDrivenUIShowScreenPacket**
@@ -204,6 +206,8 @@ description: Contents of the @minecraft/server-net.PacketId enumeration.
 `LevelEventPacket = "LevelEventPacket"`
 ### **LevelSoundEventPacket**
 `LevelSoundEventPacket = "LevelSoundEventPacket"`
+### **LocatorBarPacket**
+`LocatorBarPacket = "LocatorBarPacket"`
 ### **LoginPacket**
 `LoginPacket = "LoginPacket"`
 ### **MapCreateLockedCopyPacket**
@@ -248,6 +252,8 @@ description: Contents of the @minecraft/server-net.PacketId enumeration.
 `OpenSignPacket = "OpenSignPacket"`
 ### **PacketViolationWarningPacket**
 `PacketViolationWarningPacket = "PacketViolationWarningPacket"`
+### **PartyChangedPacket**
+`PartyChangedPacket = "PartyChangedPacket"`
 ### **PhotoTransferPacket**
 `PhotoTransferPacket = "PhotoTransferPacket"`
 ### **PlayerActionPacket**
@@ -310,12 +316,16 @@ description: Contents of the @minecraft/server-net.PacketId enumeration.
 `ResourcePackDataInfoPacket = "ResourcePackDataInfoPacket"`
 ### **ResourcePacksInfoPacket**
 `ResourcePacksInfoPacket = "ResourcePacksInfoPacket"`
+### **ResourcePacksReadyForValidationPacket**
+`ResourcePacksReadyForValidationPacket = "ResourcePacksReadyForValidationPacket"`
 ### **ResourcePackStackPacket**
 `ResourcePackStackPacket = "ResourcePackStackPacket"`
 ### **RespawnPacket**
 `RespawnPacket = "RespawnPacket"`
 ### **ScriptMessagePacket**
 `ScriptMessagePacket = "ScriptMessagePacket"`
+### **ServerboundDataDrivenScreenClosedPacket**
+`ServerboundDataDrivenScreenClosedPacket = "ServerboundDataDrivenScreenClosedPacket"`
 ### **ServerboundDataStorePacket**
 `ServerboundDataStorePacket = "ServerboundDataStorePacket"`
 ### **ServerboundDiagnosticsPacket**
@@ -404,6 +414,8 @@ description: Contents of the @minecraft/server-net.PacketId enumeration.
 `SubClientLoginPacket = "SubClientLoginPacket"`
 ### **SyncActorPropertyPacket**
 `SyncActorPropertyPacket = "SyncActorPropertyPacket"`
+### **SyncWorldClocksPacket**
+`SyncWorldClocksPacket = "SyncWorldClocksPacket"`
 ### **TakeItemActorPacket**
 `TakeItemActorPacket = "TakeItemActorPacket"`
 ### **TextPacket**

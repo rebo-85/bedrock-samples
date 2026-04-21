@@ -16,6 +16,8 @@ description: Contents of the @minecraft/server-net.HttpRequestMethod enumeration
 `Get = "Get"`
 ### **Head**
 `Head = "Head"`
+### **Patch**
+`Patch = "Patch"`
 ### **Post**
 `Post = "Post"`
 ### **Put**

@@ -15,13 +15,14 @@ description: Contents of the @minecraft/server module
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.5.0"
+    "version": "2.6.0"
 }
 ```
 This is version 2.x.x of this module, which is the latest as of version 1.20.0 of Minecraft.
 
 ## Available Versions
-- `2.6.0-beta`
+- `2.7.0-beta`
+- `2.6.0`
 - `2.5.0`
 - `2.4.0`
 - `2.3.0`

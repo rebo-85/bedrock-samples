@@ -235,6 +235,8 @@ description: Description and values of the Block enum
 - `weathered_chiseled_copper`
 - `minecraft:small_amethyst_bud`
 - `small_amethyst_bud`
+- `minecraft:golden_dandelion`
+- `golden_dandelion`
 - `minecraft:activator_rail`
 - `activator_rail`
 - `minecraft:iron_trapdoor`

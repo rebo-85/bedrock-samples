@@ -558,7 +558,6 @@ export class Block {
     /**
      * @param steps
      * Defaults to: 1
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link LocationInUnloadedChunkError}
@@ -569,7 +568,6 @@ export class Block {
     /**
      * @param steps
      * Defaults to: 1
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link LocationInUnloadedChunkError}
@@ -582,7 +580,6 @@ export class Block {
     /**
      * @param steps
      * Defaults to: 1
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link LocationInUnloadedChunkError}
@@ -650,7 +647,6 @@ export class Block {
     /**
      * @param steps
      * Defaults to: 1
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link LocationInUnloadedChunkError}
@@ -706,7 +702,6 @@ export class Block {
     /**
      * @param steps
      * Defaults to: 1
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link LocationInUnloadedChunkError}
@@ -717,7 +712,6 @@ export class Block {
     /**
      * @param steps
      * Defaults to: 1
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      *
      * {@link LocationInUnloadedChunkError}
@@ -1212,13 +1206,13 @@ export class Container {
     clearAll(): void;
     /**
      * @param slot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @throws This function can throw errors.
      */
     getItem(slot: number): ItemStack | undefined;
     /**
      * @param slot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @throws This function can throw errors.
      */
     getSlot(slot: number): ContainerSlot;
@@ -1231,9 +1225,9 @@ export class Container {
      * This function can't be called in restricted-execution mode.
      *
      * @param fromSlot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @param toSlot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @throws This function can throw errors.
      *
      * {@link ContainerRulesError}
@@ -1246,7 +1240,7 @@ export class Container {
      * This function can't be called in restricted-execution mode.
      *
      * @param slot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @throws This function can throw errors.
      *
      * {@link ContainerRulesError}
@@ -1259,9 +1253,9 @@ export class Container {
      * This function can't be called in restricted-execution mode.
      *
      * @param slot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @param otherSlot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @throws This function can throw errors.
      *
      * {@link ContainerRulesError}
@@ -1274,7 +1268,7 @@ export class Container {
      * This function can't be called in restricted-execution mode.
      *
      * @param fromSlot
-     * Bounds: [-2147483648, 2147483647]
+     * Minimum value: 0
      * @throws This function can throw errors.
      *
      * {@link ContainerRulesError}
@@ -1290,6 +1284,7 @@ export class ContainerSlot {
      * @remarks
      * This property can't be edited in restricted-execution mode.
      *
+     * Bounds: [1, 255]
      */
     amount: number;
     /**
@@ -1946,8 +1941,6 @@ export class Entity {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param amount
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      *
      * {@link minecraftcommon.EngineError}
@@ -1972,14 +1965,6 @@ export class Entity {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param directionX
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
-     * @param directionZ
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
-     * @param horizontalStrength
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
-     * @param verticalStrength
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      *
      * {@link InvalidEntityError}
@@ -2216,8 +2201,6 @@ export class Entity {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param seconds
-     * Bounds: [-2147483648, 2147483647]
      * @param useEffects
      * Defaults to: true
      * @throws This function can throw errors.
@@ -4355,6 +4338,7 @@ export class ItemStack {
      * @remarks
      * This property can't be edited in restricted-execution mode.
      *
+     * Bounds: [1, 255]
      */
     amount: number;
     readonly isStackable: boolean;
@@ -4753,14 +4737,10 @@ export class MolangVariableMap {
      */
     setColorRGBA(variableName: string, color: RGBA): void;
     /**
-     * @param number
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      */
     setFloat(variableName: string, number: number): void;
     /**
-     * @param speed
-     * Bounds: [-3.402823466385289e+38, 3.402823466385289e+38]
      * @throws This function can throw errors.
      */
     setSpeedAndDirection(variableName: string, speed: number, direction: Vector3): void;
@@ -5681,8 +5661,6 @@ export class ScoreboardObjective {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param scoreToAdd
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     addScore(participant: Entity | ScoreboardIdentity | string, scoreToAdd: number): number;
@@ -5717,8 +5695,6 @@ export class ScoreboardObjective {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param score
-     * Bounds: [-2147483648, 2147483647]
      * @throws This function can throw errors.
      */
     setScore(participant: Entity | ScoreboardIdentity | string, score: number): void;
@@ -6025,16 +6001,12 @@ export class System {
      * @remarks
      * This function can be called in early-execution mode.
      *
-     * @param jobId
-     * Bounds: [0, 4294967295]
      */
     clearJob(jobId: number): void;
     /**
      * @remarks
      * This function can be called in early-execution mode.
      *
-     * @param runId
-     * Bounds: [0, 4294967295]
      */
     clearRun(runId: number): void;
     /**
@@ -6066,7 +6038,7 @@ export class System {
      * This function can be called in early-execution mode.
      *
      * @param ticks
-     * Bounds: [1, 4294967295]
+     * Minimum value: 1
      * @throws This function can throw errors.
      *
      * {@link minecraftcommon.EngineError}
@@ -6299,8 +6271,6 @@ export class World {
      * @remarks
      * This function can't be called in restricted-execution mode.
      *
-     * @param absoluteTime
-     * Bounds: [-2147483648, 2147483647]
      */
     setAbsoluteTime(absoluteTime: number): void;
     /**

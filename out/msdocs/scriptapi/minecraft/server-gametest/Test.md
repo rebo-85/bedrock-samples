@@ -167,10 +167,8 @@ assertEntityHasArmor(entityTypeIdentifier: string, armorSlot: number, armorName:
 #### **Parameters**
 - **entityTypeIdentifier**: *string*
 - **armorSlot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **armorName**: *string*
 - **armorData**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **hasArmor**?: *boolean* = `true`
   
@@ -229,7 +227,6 @@ assertEntityPresent(entityTypeIdentifier: string, blockLocation: minecraftserver
 - **entityTypeIdentifier**: *string*
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **searchDistance**?: *number* = `0`
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **isPresent**?: *boolean* = `true`
   
 Notes:
@@ -299,9 +296,7 @@ assertItemEntityCountIs(itemType: minecraftserver.ItemType | string, blockLocati
 - **itemType**: [*@minecraft/server.ItemType*](../../../scriptapi/minecraft/server/ItemType.md) | *string*
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **searchDistance**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **count**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can throw errors.
@@ -316,7 +311,6 @@ assertItemEntityPresent(itemType: minecraftserver.ItemType | string, blockLocati
 - **itemType**: [*@minecraft/server.ItemType*](../../../scriptapi/minecraft/server/ItemType.md) | *string*
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **searchDistance**?: *number* = `0`
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **isPresent**?: *boolean* = `true`
   
 Notes:
@@ -331,7 +325,6 @@ assertRedstonePower(blockLocation: minecraftserver.Vector3, power: number): void
 #### **Parameters**
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **power**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can throw errors.
@@ -447,7 +440,6 @@ idle(tickDelay: number): Promise<void>
 
 #### **Parameters**
 - **tickDelay**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** Promise&lt;*void*&gt;
   
@@ -494,7 +486,6 @@ onPlayerJump(mob: minecraftserver.Entity, jumpAmount: number): void
 #### **Parameters**
 - **mob**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **jumpAmount**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -548,7 +539,6 @@ pulseRedstone(blockLocation: minecraftserver.Vector3, duration: number): void
 #### **Parameters**
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **duration**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -634,7 +624,6 @@ runAfterDelay(delayTicks: number, callback: () => void): void
 
 #### **Parameters**
 - **delayTicks**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **callback**: () => *void*
   
 Notes:
@@ -648,7 +637,6 @@ runAtTickTime(tick: number, callback: () => void): void
 
 #### **Parameters**
 - **tick**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **callback**: () => *void*
   
 Notes:
@@ -718,7 +706,6 @@ setTntFuse(entity: minecraftserver.Entity, fuseLength: number): void
 #### **Parameters**
 - **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **fuseLength**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -877,7 +864,6 @@ succeedOnTick(tick: number): void
 
 #### **Parameters**
 - **tick**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -890,7 +876,6 @@ succeedOnTickWhen(tick: number, callback: () => void): void
 
 #### **Parameters**
 - **tick**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **callback**: () => *void*
   
 Notes:
@@ -992,7 +977,6 @@ walkTo(mob: minecraftserver.Entity, blockLocation: minecraftserver.Vector3, spee
 - **mob**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **speedModifier**?: *number* = `1`
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -1008,7 +992,6 @@ walkToLocation(mob: minecraftserver.Entity, location: minecraftserver.Vector3, s
 - **mob**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **speedModifier**?: *number* = `1`
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
   
 Notes:
 - This function can't be called in restricted-execution mode.

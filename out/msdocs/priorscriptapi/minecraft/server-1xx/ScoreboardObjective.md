@@ -48,7 +48,6 @@ addScore(participant: Entity | ScoreboardIdentity | string, scoreToAdd: number):
 #### **Parameters**
 - **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
 - **scoreToAdd**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** *number*
   
@@ -134,7 +133,6 @@ setScore(participant: Entity | ScoreboardIdentity | string, score: number): void
 #### **Parameters**
 - **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
 - **score**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.

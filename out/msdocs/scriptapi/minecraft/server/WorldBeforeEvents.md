@@ -32,44 +32,29 @@ Type: [*EffectAddBeforeEventSignal*](EffectAddBeforeEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityHeal**
 `read-only entityHeal: EntityHealBeforeEventSignal;`
 
 Type: [*EntityHealBeforeEventSignal*](EntityHealBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityHurt**
 `read-only entityHurt: EntityHurtBeforeEventSignal;`
 
 Type: [*EntityHurtBeforeEventSignal*](EntityHurtBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityItemPickup**
 `read-only entityItemPickup: EntityItemPickupBeforeEventSignal;`
 
 Type: [*EntityItemPickupBeforeEventSignal*](EntityItemPickupBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveBeforeEventSignal;`

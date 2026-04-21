@@ -72,7 +72,7 @@ getItem(slot: number): ItemStack | undefined
 
 #### **Parameters**
 - **slot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
   
@@ -86,7 +86,7 @@ getSlot(slot: number): ContainerSlot
 
 #### **Parameters**
 - **slot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 
 **Returns** [*ContainerSlot*](ContainerSlot.md)
   
@@ -110,9 +110,9 @@ moveItem(fromSlot: number, toSlot: number, toContainer: Container): void
 
 #### **Parameters**
 - **fromSlot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 - **toSlot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 - **toContainer**: [*Container*](Container.md)
   
 Notes:
@@ -127,7 +127,7 @@ setItem(slot: number, itemStack?: ItemStack): void
 
 #### **Parameters**
 - **slot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
   
 Notes:
@@ -142,9 +142,9 @@ swapItems(slot: number, otherSlot: number, otherContainer: Container): void
 
 #### **Parameters**
 - **slot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 - **otherSlot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 - **otherContainer**: [*Container*](Container.md)
   
 Notes:
@@ -159,7 +159,7 @@ transferItem(fromSlot: number, toContainer: Container): ItemStack | undefined
 
 #### **Parameters**
 - **fromSlot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
+  * Minimum Bound: `0`
 - **toContainer**: [*Container*](Container.md)
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*

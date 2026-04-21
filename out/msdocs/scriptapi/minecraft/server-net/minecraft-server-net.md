@@ -46,6 +46,10 @@ This is version 1.x.x of this module, which is the latest as of version 1.20.0 o
 - [PacketEventOptions](PacketEventOptions.md)
 
 ## Errors
+- [HttpRequestBodyTooLargeError](HttpRequestBodyTooLargeError.md)
+- [HttpRequestLimitExceededError](HttpRequestLimitExceededError.md)
+- [HttpRequestNotAllowedError](HttpRequestNotAllowedError.md)
+- [HttpsOnlyError](HttpsOnlyError.md)
 - [InternalHttpRequestError](InternalHttpRequestError.md)
 - [MalformedHttpRequestError](MalformedHttpRequestError.md)
 

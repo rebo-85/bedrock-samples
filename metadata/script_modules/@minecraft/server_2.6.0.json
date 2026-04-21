@@ -8,5 +8,7 @@
   "peer_dependencies": [
   ],
   "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-  "wrapper_module": "@minecraft/server-bindings-v2-wrapper"
+  "wrapper_module": "@minecraft/server-bindings-v2-wrapper",
+  "version": "2.6.0",
+  "minecraft_version": "1.20.0"
 }

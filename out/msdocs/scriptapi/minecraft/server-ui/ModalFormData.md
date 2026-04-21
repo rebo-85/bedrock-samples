@@ -91,9 +91,7 @@ slider(label: minecraftserver.RawMessage | string, minimumValue: number, maximum
 #### **Parameters**
 - **label**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
 - **minimumValue**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **maximumValue**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **sliderOptions**?: [*ModalFormDataSliderOptions*](ModalFormDataSliderOptions.md) = `null`
 
 **Returns** [*ModalFormData*](ModalFormData.md)

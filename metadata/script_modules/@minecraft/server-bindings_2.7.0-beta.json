@@ -1,4 +1,8 @@
 {
+  "version": "2.7.0-beta",
+  "minecraft_version": "1.20.0",
+  "name": "@minecraft/server-bindings",
+  "module_type": "script",
   "classes": [
     {
       "base_types": [],
@@ -60942,6 +60946,6 @@
     }
   ],
   "uuid": "0196a2fa-8fb5-79a7-b29e-ce3cbc644f82",
-  "version": "2.6.0-beta",
+  "version": "2.7.0-beta",
   "minecraft_version": "1.20.0"
 }

@@ -21,7 +21,9 @@ Saves or loads a structure in the world.
 </table>
 
 ## Usage
-### `/structure save <name: string> <from: x y z> <to: x y z> [includeEntities: Boolean] [includeBlocks: Boolean]`
+### `/structure save <name: string> <from: x y z> <to: x y z> [saveMode: StructureSaveMode]`
+
+### `/structure save <name: string> <from: x y z> <to: x y z> [includeEntities: Boolean] [saveMode: StructureSaveMode] [includeBlocks: Boolean]`
 
 ### `/structure delete <name: string>`
 
@@ -39,6 +41,7 @@ Saves or loads a structure in the world.
 - `mirror`: Mirror
 - `name`: string
 - `rotation`: Rotation
+- `saveMode`: StructureSaveMode
 - `seed`: string
 - `to: x y z`: position
 - `waterlogged`: [Boolean](../enums/Boolean.md)
@@ -65,3 +68,9 @@ Saves or loads a structure in the world.
 #### Values
 - `block_by_block`
 - `layer_by_layer`
+
+### `StructureSaveMode`
+
+#### Values
+- `disk`
+- `memory`

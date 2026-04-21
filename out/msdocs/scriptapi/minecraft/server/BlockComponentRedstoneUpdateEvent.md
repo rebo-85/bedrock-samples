@@ -19,12 +19,7 @@ description: Contents of the @minecraft/server.BlockComponentRedstoneUpdateEvent
 
 Type: *number*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **previousPowerLevel**
 `read-only previousPowerLevel: number;`
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

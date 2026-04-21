@@ -16,12 +16,7 @@ description: Contents of the @minecraft/server.BlockType class.
 
 Type: *string*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **localizationKey**
 `read-only localizationKey: string;`
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

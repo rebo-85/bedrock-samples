@@ -26,6 +26,7 @@ export enum HttpRequestMethod {
     Delete = 'Delete',
     Get = 'Get',
     Head = 'Head',
+    Patch = 'Patch',
     Post = 'Post',
     Put = 'Put',
 }
@@ -65,9 +66,10 @@ export enum PacketId {
     ChangeDimensionPacket = 'ChangeDimensionPacket',
     ChangeMobPropertyPacket = 'ChangeMobPropertyPacket',
     ChunkRadiusUpdatedPacket = 'ChunkRadiusUpdatedPacket',
+    ClientboundAttributeLayerSyncPacket = 'ClientboundAttributeLayerSyncPacket',
     ClientboundCloseFormPacket = 'ClientboundCloseFormPacket',
     ClientboundControlSchemeSetPacket = 'ClientboundControlSchemeSetPacket',
-    ClientboundDataDrivenUICloseAllScreensPacket = 'ClientboundDataDrivenUICloseAllScreensPacket',
+    ClientboundDataDrivenUICloseScreenPacket = 'ClientboundDataDrivenUICloseScreenPacket',
     ClientboundDataDrivenUIReloadPacket = 'ClientboundDataDrivenUIReloadPacket',
     ClientboundDataDrivenUIShowScreenPacket = 'ClientboundDataDrivenUIShowScreenPacket',
     ClientboundDataStorePacket = 'ClientboundDataStorePacket',
@@ -128,6 +130,7 @@ export enum PacketId {
     LevelEventGenericPacket = 'LevelEventGenericPacket',
     LevelEventPacket = 'LevelEventPacket',
     LevelSoundEventPacket = 'LevelSoundEventPacket',
+    LocatorBarPacket = 'LocatorBarPacket',
     LoginPacket = 'LoginPacket',
     MapCreateLockedCopyPacket = 'MapCreateLockedCopyPacket',
     MapInfoRequestPacket = 'MapInfoRequestPacket',
@@ -150,6 +153,7 @@ export enum PacketId {
     OnScreenTextureAnimationPacket = 'OnScreenTextureAnimationPacket',
     OpenSignPacket = 'OpenSignPacket',
     PacketViolationWarningPacket = 'PacketViolationWarningPacket',
+    PartyChangedPacket = 'PartyChangedPacket',
     PhotoTransferPacket = 'PhotoTransferPacket',
     PlayerActionPacket = 'PlayerActionPacket',
     PlayerArmorDamagePacket = 'PlayerArmorDamagePacket',
@@ -181,9 +185,11 @@ export enum PacketId {
     ResourcePackClientResponsePacket = 'ResourcePackClientResponsePacket',
     ResourcePackDataInfoPacket = 'ResourcePackDataInfoPacket',
     ResourcePacksInfoPacket = 'ResourcePacksInfoPacket',
+    ResourcePacksReadyForValidationPacket = 'ResourcePacksReadyForValidationPacket',
     ResourcePackStackPacket = 'ResourcePackStackPacket',
     RespawnPacket = 'RespawnPacket',
     ScriptMessagePacket = 'ScriptMessagePacket',
+    ServerboundDataDrivenScreenClosedPacket = 'ServerboundDataDrivenScreenClosedPacket',
     ServerboundDataStorePacket = 'ServerboundDataStorePacket',
     ServerboundDiagnosticsPacket = 'ServerboundDiagnosticsPacket',
     ServerboundLoadingScreenPacket = 'ServerboundLoadingScreenPacket',
@@ -228,6 +234,7 @@ export enum PacketId {
     SubChunkRequestPacket = 'SubChunkRequestPacket',
     SubClientLoginPacket = 'SubClientLoginPacket',
     SyncActorPropertyPacket = 'SyncActorPropertyPacket',
+    SyncWorldClocksPacket = 'SyncWorldClocksPacket',
     TakeItemActorPacket = 'TakeItemActorPacket',
     TextPacket = 'TextPacket',
     TickingAreasLoadStatusPacket = 'TickingAreasLoadStatusPacket',
@@ -348,8 +355,6 @@ export class HttpRequest {
      * @remarks
      * This function can be called in early-execution mode.
      *
-     * @param timeout
-     * Bounds: [0, 4294967295]
      */
     setTimeout(timeout: number): HttpRequest;
 }
@@ -454,6 +459,62 @@ export class PacketSendBeforeEventSignal {
 export interface PacketEventOptions {
     ignoredPacketIds?: PacketId[];
     monitoredPacketIds?: PacketId[];
+}
+
+// @ts-ignore Class inheritance allowed for native defined classes
+export class HttpRequestBodyTooLargeError extends Error {
+    private constructor();
+    /**
+     * @remarks
+     * This property can be read in early-execution mode.
+     *
+     */
+    readonly maxBytes: number;
+    /**
+     * @remarks
+     * This property can be read in early-execution mode.
+     *
+     */
+    readonly providedBytes: number;
+}
+
+// @ts-ignore Class inheritance allowed for native defined classes
+export class HttpRequestLimitExceededError extends Error {
+    private constructor();
+    /**
+     * @remarks
+     * This property can be read in early-execution mode.
+     *
+     */
+    readonly inFlightRequests: number;
+    /**
+     * @remarks
+     * This property can be read in early-execution mode.
+     *
+     */
+    readonly maxConcurrentRequests: number;
+}
+
+// @ts-ignore Class inheritance allowed for native defined classes
+export class HttpRequestNotAllowedError extends Error {
+    private constructor();
+    /**
+     * @remarks
+     * This property can be read in early-execution mode.
+     *
+     */
+    readonly uri: string;
+}
+
+// @ts-ignore Class inheritance allowed for native defined classes
+export class HttpsOnlyError extends Error {
+    private constructor();
+    /**
+     * @remarks
+     * This property can be read in early-execution mode.
+     *
+     */
+    readonly uri: string;
 }
 
 // @ts-ignore Class inheritance allowed for native defined classes

@@ -210,8 +210,6 @@ export class System {
      * @remarks
      * This function can be called in early-execution mode.
      *
-     * @param runId
-     * Bounds: [0, 4294967295]
      */
     clearRun(runId: number): void;
     /**

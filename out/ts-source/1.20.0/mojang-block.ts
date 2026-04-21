@@ -558,6 +558,7 @@ export enum MinecraftBlockTypes {
     Glowstone = 'minecraft:glowstone',
     GoldBlock = 'minecraft:gold_block',
     GoldOre = 'minecraft:gold_ore',
+    GoldenDandelion = 'minecraft:golden_dandelion',
     GoldenRail = 'minecraft:golden_rail',
     Granite = 'minecraft:granite',
     GraniteDoubleSlab = 'minecraft:granite_double_slab',
@@ -1407,6 +1408,7 @@ export type BlockStateSuperset = {
     ['minecraft:connection_west']?: boolean;
     ['minecraft:corner']?: string;
     ['minecraft:facing_direction']?: string;
+    ['minecraft:multi_block_part']?: number;
     ['minecraft:vertical_half']?: string;
     ['moisturized_amount']?: number;
     ['monster_egg_stone_type']?: string;

@@ -25,6 +25,9 @@ import * as minecraftserver from '@minecraft/server';
 export class DebugArrow extends DebugLine {
     headLength: number;
     headRadius: number;
+    /**
+     * Bounds: [3, 128]
+     */
     headSegments: number;
     constructor(
         location: minecraftserver.DimensionLocation | minecraftserver.Vector3,

@@ -55,7 +55,6 @@ clearJob(jobId: number): void
 
 #### **Parameters**
 - **jobId**: *number*
-  * Bounds: [`0`, `4294967295`]
   
 Notes:
 - This function can be called in early-execution mode.
@@ -67,7 +66,6 @@ clearRun(runId: number): void
 
 #### **Parameters**
 - **runId**: *number*
-  * Bounds: [`0`, `4294967295`]
   
 Notes:
 - This function can be called in early-execution mode.
@@ -146,7 +144,7 @@ waitTicks(ticks: number): Promise<void>
 
 #### **Parameters**
 - **ticks**: *number*
-  * Bounds: [`1`, `4294967295`]
+  * Minimum Bound: `1`
 
 **Returns** Promise&lt;*void*&gt;
   

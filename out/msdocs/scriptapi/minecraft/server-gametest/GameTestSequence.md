@@ -39,7 +39,6 @@ thenExecuteAfter(delayTicks: number, callback: () => void): GameTestSequence
 
 #### **Parameters**
 - **delayTicks**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **callback**: () => *void*
 
 **Returns** [*GameTestSequence*](GameTestSequence.md)
@@ -54,7 +53,6 @@ thenExecuteFor(tickCount: number, callback: () => void): GameTestSequence
 
 #### **Parameters**
 - **tickCount**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **callback**: () => *void*
 
 **Returns** [*GameTestSequence*](GameTestSequence.md)
@@ -80,7 +78,6 @@ thenIdle(delayTicks: number): GameTestSequence
 
 #### **Parameters**
 - **delayTicks**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*GameTestSequence*](GameTestSequence.md)
   
@@ -115,7 +112,6 @@ thenWaitAfter(delayTicks: number, callback: () => void): GameTestSequence
 
 #### **Parameters**
 - **delayTicks**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **callback**: () => *void*
 
 **Returns** [*GameTestSequence*](GameTestSequence.md)

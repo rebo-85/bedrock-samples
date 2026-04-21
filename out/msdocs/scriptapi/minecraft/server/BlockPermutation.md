@@ -11,15 +11,10 @@ description: Contents of the @minecraft/server.BlockPermutation class.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **localizationKey**
 `read-only localizationKey: string;`
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **type**
 `read-only type: BlockType;`

@@ -43,7 +43,6 @@ maxAttempts(attemptCount: number): RegistrationBuilder
 
 #### **Parameters**
 - **attemptCount**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md)
   
@@ -58,7 +57,6 @@ maxTicks(tickCount: number): RegistrationBuilder
 
 #### **Parameters**
 - **tickCount**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md)
   
@@ -73,7 +71,6 @@ padding(paddingBlocks: number): RegistrationBuilder
 
 #### **Parameters**
 - **paddingBlocks**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md)
   
@@ -102,7 +99,6 @@ requiredSuccessfulAttempts(attemptCount: number): RegistrationBuilder
 
 #### **Parameters**
 - **attemptCount**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md)
   
@@ -131,7 +127,6 @@ setupTicks(tickCount: number): RegistrationBuilder
 
 #### **Parameters**
 - **tickCount**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md)
   

@@ -42,30 +42,20 @@ Type: *boolean*
 
 Type: [*Scoreboard*](Scoreboard.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **seed**
 `read-only seed: string;`
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **structureManager**
 `read-only structureManager: StructureManager;`
 
 Type: [*StructureManager*](StructureManager.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **tickingAreaManager**
 `read-only tickingAreaManager: TickingAreaManager;`
 
 Type: [*TickingAreaManager*](TickingAreaManager.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 ::: moniker range="=minecraft-bedrock-experimental"

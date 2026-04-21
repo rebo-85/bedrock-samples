@@ -129,7 +129,6 @@ above(steps?: number): Block | undefined
 
 #### **Parameters**
 - **steps**?: *number* = `1`
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*Block*](Block.md) | *undefined*
   
@@ -144,7 +143,6 @@ below(steps?: number): Block | undefined
 
 #### **Parameters**
 - **steps**?: *number* = `1`
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*Block*](Block.md) | *undefined*
   
@@ -201,7 +199,6 @@ east(steps?: number): Block | undefined
 
 #### **Parameters**
 - **steps**?: *number* = `1`
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*Block*](Block.md) | *undefined*
   
@@ -350,7 +347,6 @@ north(steps?: number): Block | undefined
 
 #### **Parameters**
 - **steps**?: *number* = `1`
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*Block*](Block.md) | *undefined*
   
@@ -418,7 +414,6 @@ south(steps?: number): Block | undefined
 
 #### **Parameters**
 - **steps**?: *number* = `1`
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*Block*](Block.md) | *undefined*
   
@@ -433,7 +428,6 @@ west(steps?: number): Block | undefined
 
 #### **Parameters**
 - **steps**?: *number* = `1`
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** [*Block*](Block.md) | *undefined*
   

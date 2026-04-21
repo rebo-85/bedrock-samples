@@ -133,9 +133,7 @@ Type: *number*
 - [center](#center)
 - [east](#east)
 - [getComponent](#getcomponent)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getComponents](#getcomponents)
-::: moniker-end
 - [getItemStack](#getitemstack)
 - [getLightLevel](#getlightlevel)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -144,9 +142,7 @@ Type: *number*
 - [getRedstonePower](#getredstonepower)
 - [getSkyLightLevel](#getskylightlevel)
 - [getTags](#gettags)
-::: moniker range="=minecraft-bedrock-experimental"
 - [hasComponent](#hascomponent)
-::: moniker-end
 - [hasTag](#hastag)
 - [isLiquidBlocking](#isliquidblocking)
 - [liquidCanFlowFromDirection](#liquidcanflowfromdirection)
@@ -284,21 +280,16 @@ Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getComponents**
 `
 getComponents(): BlockComponent[]
 `
 
 **Returns** [*BlockComponent*](BlockComponent.md)[]
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **getItemStack**
 `
@@ -378,7 +369,6 @@ Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hasComponent**
 `
 hasComponent(componentId: string): boolean
@@ -388,14 +378,10 @@ hasComponent(componentId: string): boolean
 - **componentId**: *string*
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **hasTag**
 `

@@ -75,6 +75,9 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [stopSound](#stopsound)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [containsBiomes](#containsbiomes)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **containsBiomes**
@@ -572,4 +575,22 @@ stopSound(soundId: string): void
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **containsBiomes**
+`
+containsBiomes(volume: BlockVolumeBase, biomeFilter: BiomeFilter, isSuperset: boolean): boolean
+`
+
+#### **Parameters**
+- **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
+- **biomeFilter**: [*BiomeFilter*](BiomeFilter.md)
+- **isSuperset**: *boolean*
+
+**Returns** *boolean*
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md), [*UnloadedChunksError*](UnloadedChunksError.md)
 ::: moniker-end

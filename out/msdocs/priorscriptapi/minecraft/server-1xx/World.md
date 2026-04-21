@@ -262,7 +262,6 @@ setAbsoluteTime(absoluteTime: number): void
 
 #### **Parameters**
 - **absoluteTime**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.

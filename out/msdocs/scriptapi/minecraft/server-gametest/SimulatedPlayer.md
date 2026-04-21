@@ -283,9 +283,7 @@ move(westEast: number, northSouth: number, speed?: number): void
 
 #### **Parameters**
 - **westEast**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **northSouth**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **speed**?: *number* = `1`
   * Bounds: [`0`, `1`]
   
@@ -300,9 +298,7 @@ moveRelative(leftRight: number, backwardForward: number, speed?: number): void
 
 #### **Parameters**
 - **leftRight**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **backwardForward**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **speed**?: *number* = `1`
   * Bounds: [`0`, `1`]
   
@@ -421,7 +417,6 @@ rotateBody(angleInDegrees: number): void
 
 #### **Parameters**
 - **angleInDegrees**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -434,7 +429,6 @@ setBodyRotation(angleInDegrees: number): void
 
 #### **Parameters**
 - **angleInDegrees**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -448,7 +442,6 @@ setItem(itemStack: minecraftserver.ItemStack, slot: number, selectSlot?: boolean
 #### **Parameters**
 - **itemStack**: [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md)
 - **slot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **selectSlot**?: *boolean* = `false`
 
 **Returns** *boolean*
@@ -477,7 +470,6 @@ startBuild(slot?: number): void
 
 #### **Parameters**
 - **slot**?: *number* = `0`
-  * Bounds: [`-2147483648`, `2147483647`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -587,7 +579,6 @@ useItemInSlot(slot: number): boolean
 
 #### **Parameters**
 - **slot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 
 **Returns** *boolean*
   
@@ -602,7 +593,6 @@ useItemInSlotOnBlock(slot: number, blockLocation: minecraftserver.Vector3, direc
 
 #### **Parameters**
 - **slot**: *number*
-  * Bounds: [`-2147483648`, `2147483647`]
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **direction**?: [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md) = `1`
 - **faceLocation**?: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) = `null`

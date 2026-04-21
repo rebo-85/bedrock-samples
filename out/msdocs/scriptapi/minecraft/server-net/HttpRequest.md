@@ -129,7 +129,6 @@ setTimeout(timeout: number): HttpRequest
 
 #### **Parameters**
 - **timeout**: *number*
-  * Bounds: [`0`, `4294967295`]
 
 **Returns** [*HttpRequest*](HttpRequest.md)
   

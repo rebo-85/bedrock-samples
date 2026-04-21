@@ -14,7 +14,7 @@
   ],
   "peerDependencies": {
     "@minecraft/common": "^1.0.0",
-    "@minecraft/server": "^2.0.0 || ^2.6.0-beta"
+    "@minecraft/server": "^2.0.0 || ^2.7.0-beta"
   },
   "license": "MIT"
 }

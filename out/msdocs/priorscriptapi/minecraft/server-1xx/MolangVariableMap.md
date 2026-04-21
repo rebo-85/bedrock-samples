@@ -59,7 +59,6 @@ setFloat(variableName: string, number: number): void
 #### **Parameters**
 - **variableName**: *string*
 - **number**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
   
 Notes:
 - This function can throw errors.
@@ -72,7 +71,6 @@ setSpeedAndDirection(variableName: string, speed: number, direction: Vector3): v
 #### **Parameters**
 - **variableName**: *string*
 - **speed**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **direction**: [*Vector3*](Vector3.md)
   
 Notes:

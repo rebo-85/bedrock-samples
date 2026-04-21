@@ -29,6 +29,9 @@ Type: *number*
 
 Type: *number*
 
+Notes:
+  - This property has a bounds of [`3`, `128`]
+
 ## Methods
 - [constructor](#constructor)
 

@@ -64,11 +64,8 @@ slider(label: minecraftserver.RawMessage | string, minimumValue: number, maximum
 #### **Parameters**
 - **label**: [*@minecraft/server.RawMessage*](../../../priorscriptapi/minecraft/server-1xx/RawMessage.md) | *string*
 - **minimumValue**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **maximumValue**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **valueStep**: *number*
-  * Bounds: [`-3.402823466385289e+38`, `3.402823466385289e+38`]
 - **defaultValue**?: *number* = `null`
 
 **Returns** [*ModalFormData*](ModalFormData.md)
